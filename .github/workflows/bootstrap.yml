@@ -28,9 +28,8 @@ jobs:
       - name: Publish the complete research tree
         shell: bash
         run: |
-          cp -a /tmp/projecttaxila/ProjectTaxila/. ./
+          rsync -a --exclude='.github/workflows/' /tmp/projecttaxila/ProjectTaxila/ ./
           rm -rf .bootstrap
-          rm -f .github/workflows/bootstrap.yml
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A
