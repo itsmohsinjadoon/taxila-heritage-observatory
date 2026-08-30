@@ -1,0 +1,39 @@
+name: Build manuscript PDFs
+
+on:
+  push:
+    paths:
+      - "manuscript/**"
+      - ".github/workflows/latex.yml"
+  pull_request:
+    paths:
+      - "manuscript/**"
+      - ".github/workflows/latex.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Install TeX dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y latexmk texlive-latex-extra texlive-fonts-recommended texlive-bibtex-extra
+      - name: Compile manuscript and Supplementary Information
+        working-directory: manuscript
+        run: bash compile.sh
+      - name: Upload compiled PDFs
+        uses: actions/upload-artifact@v4
+        with:
+          name: ProjectTaxila-manuscript-PDFs
+          path: |
+            manuscript/output/Taxila_CHIP_Manuscript.pdf
+            manuscript/output/Taxila_CHIP_Supplementary_Information.pdf
+          retention-days: 30
+          if-no-files-found: error
+
