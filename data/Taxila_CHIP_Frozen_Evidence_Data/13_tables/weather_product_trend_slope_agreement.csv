@@ -1,0 +1,4 @@
+variable,open_meteo_theil_sen_slope_per_year,nasa_power_theil_sen_slope_per_year,direction_agreement,absolute_slope_difference,interpretation
+precipitation_sum,-10.303703703703706,29.211999999999996,False,39.5157037037037,product trend agreement; not station-validated accuracy
+temperature_2m_mean,0.04175342465753417,-0.03721746575342455,False,0.07897089041095873,product trend agreement; not station-validated accuracy
+temperature_2m_max,0.03333333333333328,-0.057586206896551785,False,0.09091954022988506,product trend agreement; not station-validated accuracy

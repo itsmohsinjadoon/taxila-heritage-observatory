@@ -1,0 +1,6 @@
+method,implementation,version,date_checked,selection_reason,limitation
+Theil-Sen slope,scipy.stats.theilslopes,1.17.0,2026-08-01,robust monotonic slope under non-normal climate metrics,does not by itself correct serial dependence
+Five-year moving-block bootstrap,project implementation,1.0,2026-08-01,serial-dependence-aware slope and uncertainty sensitivity,"block length is a defensible sensitivity choice, not uniquely identified"
+Spatial GroupKFold,scikit-learn,1.8.0,2026-08-01,prevent sample-level pixel leakage during development,inner folds may share boundaries; final test uses a full buffer
+Buffered contiguous spatial test stripe,project implementation,1.0,2026-08-01,separates all test blocks from development by 2.01 km,single geographic holdout tests one transfer direction
+Hierarchical composite weighting,project implementation,1.0,2026-08-01,prevents correlated NDVI/NDBI evidence from double counting,weights are structural assumptions tested by Monte Carlo

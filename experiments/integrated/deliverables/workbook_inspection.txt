@@ -1,0 +1,28 @@
+{"kind":"workbook","id":"wb/f87cd6","sheets":13}
+{"kind":"sheet","id":"ws/84238t","name":"Summary","index":0,"range":"A1:B15","address":"A1:B15","formulas":9}
+{"kind":"formula","sheet":"Summary","address":"B5","formula":"='Endpoint Screen'!B6/100"}
+{"kind":"formula","sheet":"Summary","address":"B6","formula":"='Endpoint Screen'!B12/100"}
+{"kind":"formula","sheet":"Summary","address":"B7","formula":"='Endpoint Screen'!B13/100"}
+{"kind":"formula","sheet":"Summary","address":"B8","formula":"=MAX('Climate Epochs'!AA5:AA9)"}
+{"kind":"formula","sheet":"Summary","address":"B9","formula":"='2024 Ranking'!A5"}
+{"kind":"formula","sheet":"Summary","address":"B10","formula":"='2024 Ranking'!G5"}
+{"kind":"formula","sheet":"Summary","address":"B11","formula":"=MAX('Model Comparison'!E5:E9)"}
+{"kind":"formula","sheet":"Summary","address":"B12","formula":"=\"[\"&TEXT('Model Comparison'!N5,\"0.000\")&\", \"&TEXT('Model Comparison'!O5,\"0.000\")&\"]\""}
+{"kind":"formula","sheet":"Summary","address":"B13","formula":"='Validation'!B6&\"/\"&'Validation'!B7"}
+{"kind":"sheet","id":"ws/fekdm4","name":"Experiment Matrix","index":1,"range":"A1:E10","address":"A1:E10"}
+{"kind":"sheet","id":"ws/t3xgcu","name":"Endpoint Screen","index":2,"range":"A1:B16","address":"A1:B16"}
+{"kind":"sheet","id":"ws/waffue","name":"Climate Epochs","index":3,"range":"A1:AI9","address":"A1:AI9"}
+{"kind":"drawing","sheet":"Climate Epochs","drawingType":"chart","id":"ch/rmdwnu5s","anchor":{"from":{"row":3,"col":36,"rowOffsetEmu":0,"colOffsetEmu":0,"rowOffsetPx":0,"colOffsetPx":0},"to":{"row":20,"col":45,"rowOffsetEmu":0,"colOffsetEmu":0,"rowOffsetPx":0,"colOffsetPx":0}}}
+{"kind":"sheet","id":"ws/tizhp4","name":"2024 Ranking","index":4,"range":"A1:G21","address":"A1:G21"}
+{"kind":"drawing","sheet":"2024 Ranking","drawingType":"chart","id":"ch/nml4bilw","anchor":{"from":{"row":3,"col":8,"rowOffsetEmu":0,"colOffsetEmu":0,"rowOffsetPx":0,"colOffsetPx":0},"to":{"row":24,"col":17,"rowOffsetEmu":0,"colOffsetEmu":0,"rowOffsetPx":0,"colOffsetPx":0}}}
+{"kind":"sheet","id":"ws/fop9qb","name":"Component Epochs","index":5,"range":"A1:AM259","address":"A1:AM259"}
+{"kind":"sheet","id":"ws/vlaql9","name":"Rank Uncertainty","index":6,"range":"A1:J21","address":"A1:J21"}
+{"kind":"drawing","sheet":"Rank Uncertainty","drawingType":"chart","id":"ch/4z6d4nml","anchor":{"from":{"row":3,"col":11,"rowOffsetEmu":0,"colOffsetEmu":0,"rowOffsetPx":0,"colOffsetPx":0},"to":{"row":23,"col":20,"rowOffsetEmu":0,"colOffsetEmu":0,"rowOffsetPx":0,"colOffsetPx":0}}}
+{"kind":"sheet","id":"ws/26t3b4","name":"Model Comparison","index":7,"range":"A1:S9","address":"A1:S9"}
+{"kind":"drawing","sheet":"Model Comparison","drawingType":"chart","id":"ch/zm1crm54","anchor":{"from":{"row":3,"col":20,"rowOffsetEmu":0,"colOffsetEmu":0,"rowOffsetPx":0,"colOffsetPx":0},"to":{"row":20,"col":29,"rowOffsetEmu":0,"colOffsetEmu":0,"rowOffsetPx":0,"colOffsetPx":0}}}
+{"kind":"sheet","id":"ws/bo3118","name":"Ablation","index":8,"range":"A1:D10","address":"A1:D10"}
+{"kind":"drawing","sheet":"Ablation","drawingType":"chart","id":"ch/upsba1g3","anchor":{"from":{"row":3,"col":5,"rowOffsetEmu":0,"colOffsetEmu":0,"rowOffsetPx":0,"colOffsetPx":0},"to":{"row":20,"col":14,"rowOffsetEmu":0,"colOffsetEmu":0,"rowOffsetPx":0,"colOffsetPx":0}}}
+{"kind":"sheet","id":"ws/xoj0yi","name":"Scale Sensitivity","index":9,"range":"A1:C13","address":"A1:C13"}
+{"kind":"sheet","id":"ws/udfofu","name":"Terrain","index":10,"range":"A1:N55","address":"A1:N55"}
+{"kind":"sheet","id":"ws/rw82eg","name":"Climate-Spectral","index":11,"range":"A1:H11","address":"A1:H11"}
+{"kind":"sheet","id":"ws/8l3jud","name":"Validation","index":12,"range":"A1:B16","address":"A1:B16"}

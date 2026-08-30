@@ -1,0 +1,11 @@
+feature,permutation_importance_macro_f1_mean,permutation_importance_macro_f1_sd,evaluation_data,primary_model
+red,0.2637983439962933,0.005667113996624446,held-out buffered test stripe,MLP sensitivity
+NDVI,0.26299133466171687,0.00616798498048931,held-out buffered test stripe,MLP sensitivity
+MNDWI,0.2335031839174234,0.0040383885073040455,held-out buffered test stripe,MLP sensitivity
+green,0.2279339444875669,0.006125691784838841,held-out buffered test stripe,MLP sensitivity
+swir22,0.20438027693689986,0.005808049118700295,held-out buffered test stripe,MLP sensitivity
+BSI,0.17349993146596596,0.0075452595062673305,held-out buffered test stripe,MLP sensitivity
+blue,0.1412712745354587,0.005911058218601169,held-out buffered test stripe,MLP sensitivity
+swir16,0.11876418312989642,0.005065728138957096,held-out buffered test stripe,MLP sensitivity
+nir08,0.11788164461628428,0.004887578343951366,held-out buffered test stripe,MLP sensitivity
+NDBI,0.03549710750327466,0.002584705677869096,held-out buffered test stripe,MLP sensitivity

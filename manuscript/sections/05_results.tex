@@ -1,0 +1,193 @@
+\section{Results}\label{sec:results}
+
+\subsection{Analytical support, completeness and experiment status}\label{sec:results-support}
+
+The documentary inventory contained 18 Taxila components, of which 17 entered coordinate-dependent analysis. Saraikala (139-002) remained in the inventory but was excluded from component summaries and rankings because its geometry could not be resolved. The five Landsat composites were assembled from 55 retained scenes: 11 in E2004, 10 in E2009, 8 each in E2014 and E2019, and 18 in E2024. After quality masking and endpoint intersection, 386,280 grid cells had valid observations in both E2004 and E2024. This represented 95.7371\% of the fixed analytical grid and provided the common support for endpoint comparisons.
+
+The weather record was complete for all four returned Open-Meteo cells associated with the 17 mapped components. Each cell contained 12,784 daily records from 1 January 1991 to 31 December 2025, with no missing dates or requested values after quality control. Fourteen of the 16 declared experiments were completed, the weather-spectral association experiment was retained as exploratory, and the optional ancillary-hazard experiment was not executed. The final frozen run passed all 18 pipeline validation checks and produced 17 figure or map families, 48 machine-readable tables and five fitted models. These checks establish computational completeness and file consistency. They do not constitute field validation of archaeological condition.
+
+The fixed raster contained 403,480 cells before endpoint intersection. The 386,280-cell common support therefore removed 17,200 cells from endpoint percentage calculations. Data availability was not uniform at every acquisition, but the composite and endpoint-mask design preserved a shared denominator for E2004 to E2024 comparison. At component level, the same 17 geolocated records were retained at 250, 500 and 1,000 m. Consequently, scale comparisons reflect a change in neighbourhood extent rather than a change in component membership. The inventory, analytical support and experiment status jointly answer the completeness part of RQ1.
+
+\input{tables/main/table_02_experiment_status.tex}
+
+\cref{tab:experiment-status} distinguishes execution status from inferential strength. The completed label applies to acquisition, processing or an analysis that produced its expected record. It does not imply that every associated scientific claim was supported. The exploratory status of experiment 7 records the five-epoch limitation before interpretation. The non-executed status of experiment 16 prevents unharmonised earthquake, flood-event, landslide, quarry or population layers from being presented as absent hazards or negative findings.
+
+\subsection{Multi-temporal landscape-pressure evidence}\label{sec:results-spectral}
+
+The five-epoch composites showed spatially heterogeneous surface trajectories rather than a uniform directional change across the Taxila landscape. The directional pressure transformations separated reduced vegetation expression, increased built or bare-surface expression, and reduced wetness expression. Their mapped distributions varied among epochs and components, with localised zones of convergence embedded within a much larger area where the three criteria did not coincide. This pattern supports component-specific inspection prioritisation more directly than a property-wide assertion of deterioration.
+
+\begin{figure}[p]
+\centering
+\includegraphics[width=\textwidth]{figure_03_five_epoch_landscape_pressure_maps.pdf}
+\caption{Five-epoch relative landscape-pressure surfaces for E2004, E2009, E2014, E2019 and E2024. Each surface combines pressure-oriented NDVI, NDBI and MNDWI evidence on the common 30 m analytical grid. Values are relative empirical scores rather than condition measurements. The panels share spatial support in WGS 84/UTM zone 43N (EPSG:32643); masked or NoData cells are transparent and must not be interpreted as low pressure. Landsat Collection 2 Level-2 surface reflectance supplied all spectral inputs.}
+\label{fig:multiepoch-pressure}
+\end{figure}
+
+The mapped sequence in \cref{fig:multiepoch-pressure} contains both persistence and reordering. No single epoch formed a monotonic property-wide progression, and a high relative value in one composite did not guarantee persistence in the next. Because each panel is a three-year post-monsoon median, the comparison emphasises medium-term surface context while suppressing some short-lived responses. This temporal behaviour is consistent with using the maps as repeated screening evidence. It is incompatible with interpreting their colour scale as a cumulative deterioration trajectory.
+
+For the E2004 to E2024 endpoint screen, the empirical adverse-change thresholds were $\Delta$NDVI $\leq -0.0054349$, $\Delta$MNDWI $\leq -0.0374276$, and $\Delta$NDBI $\geq 0.0083486$. Of the 386,280 commonly supported cells, 65,391 cells, or 16.9284\%, met at least two criteria. Only 5,493 cells, or 1.4220\%, met all three. Thus, multi-indicator convergence was spatially selective, and the most stringent three-criterion class occupied a small fraction of the supported grid. These proportions quantify agreement among data-derived spectral screening rules; they are not estimates of damaged area, annual risk or causal land-use change.
+
+\begin{figure}[p]
+\centering
+\includegraphics[width=0.84\textwidth]{figure_04_spectral_pressure_convergence.pdf}
+\caption{Endpoint adverse-spectral convergence between E2004 and E2024. The count at each commonly supported 30 m cell is the number of empirical adverse-change criteria met: lower-tail NDVI change, lower-tail MNDWI change and upper-tail NDBI change. The common denominator is 386,280 cells. Coordinates use EPSG:32643 and NoData is transparent. Convergence indicates agreement among spectral screening rules; it is not a map of monument damage, causal land-use change or annual risk.}
+\label{fig:spectral-convergence}
+\end{figure}
+
+\cref{fig:spectral-convergence} shows that the two- and three-criterion classes were not evenly distributed. Their localisation is important because the overall proportion alone cannot identify which component surroundings merit inspection. Conversely, a component neighbourhood may contain few three-criterion cells yet still receive a higher integrated priority through terrain or drainage context. Endpoint convergence therefore remained a distinct line of evidence rather than being relabelled as the final priority surface.
+
+The component-level redundancy screen revealed that NDVI-pressure and NDBI-pressure carried closely aligned rank information at 500 m (Spearman $\rho=0.971707$). Their joint treatment within a surface-cover subdomain therefore materially reduced double counting. The high correlation does not make the indicators physically interchangeable, because vegetation loss and built or bare-surface response may arise through different processes. It does show that a simple equal-weight sum of all three spectral indicators would give disproportionate influence to a single correlated evidence axis.
+
+The corresponding redundancy matrix retained the weaker relationships as well as the strongest pair, allowing the grouping decision to be examined rather than asserted. The close NDVI-NDBI rank alignment was specific to the derived pressure terms and component summaries, not a universal physical identity between the raw indices. RQ1 was therefore answered in two layers: the study identified heterogeneous multi-epoch pressure patterns and a selective endpoint convergence class, while also showing that part of the apparent multi-indicator evidence was structurally redundant.
+
+\subsection{Climate trends and Landsat-epoch weather context}\label{sec:results-climate}
+
+Open-Meteo described a warmer and, in annual totals, drier 1991 to 2025 regional trajectory. Annual precipitation had a Theil-Sen slope of $-10.3037$ mm year$^{-1}$, with a five-year moving-block 95\% interval from $-17.9150$ to $-2.6679$ mm year$^{-1}$ and false-discovery-rate adjusted $p=0.03598$. Annual mean temperature increased by $0.041753$ degrees C year$^{-1}$, with a block interval from $0.009929$ to $0.073133$ degrees C year$^{-1}$ and adjusted $p=0.03498$. Annual heavy-precipitation days decreased by $0.142857$ days year$^{-1}$ (adjusted $p=0.01399$), while mean soil moisture declined by $0.001278$ m$^3$ m$^{-3}$ year$^{-1}$ (adjusted $p=0.03498$). These results are internally consistent within the selected reanalysis product, period and bootstrap design.
+
+\begin{figure}[p]
+\centering
+\includegraphics[width=0.92\textwidth]{figure_05_annual_climate_trends.pdf}
+\caption{Annual Open-Meteo climate trends for the Taxila weather support, 1991 to 2025. Panels show annual metrics and robust Theil-Sen trend summaries with uncertainty from 2,000 five-year moving-block draws. Temperature is in degrees C, precipitation in mm, soil moisture in m$^3$ m$^{-3}$ and event counts in days. False-discovery-rate adjustment was applied to related planned tests. The curves describe regional gridded climate forcing and are not station observations or 30 m weather estimates.}
+\label{fig:annual-climate}
+\end{figure}
+
+The block intervals in \cref{fig:annual-climate} were material to interpretation. They quantify how the estimated slopes changed when multi-year temporal structure was resampled, rather than displaying only independent-year standard errors. The supported annual precipitation and temperature directions were accompanied by supported declines in heavy-precipitation-day frequency and mean soil moisture, but these metrics describe different aspects of the regional series. A decline in annual heavy-precipitation days, for example, cannot be used to rule out an extreme event or local drainage problem at a component.
+
+Several apparently directional climate statistics did not retain evidence after serial-dependence and multiple-testing controls. Annual one-day maximum rainfall had an adjusted $p=0.27111$, monsoon precipitation had $p=0.39110$, and post-monsoon mean temperature had $p=0.08862$. Annual five-day maximum precipitation also remained above the adjusted threshold ($p=0.11054$). By contrast, monsoon mean temperature increased by $0.048333$ degrees C year$^{-1}$ and spring one-day maximum rainfall declined by $0.742105$ mm year$^{-1}$, both with adjusted $p=0.006997$. Non-rejection for the other metrics does not establish climatic stability; it identifies results for which this 35-year gridded series did not support a corrected trend claim.
+
+Scene-date matching overturned the earlier characterisation of E2024 as uniformly wet. The E2024 mean antecedent precipitation was 42.4694 mm over 30 days, 221.1917 mm over 90 days and 852.9194 mm over 365 days. None was the maximum among the five epochs. The interpretation of a Landsat composite therefore depended on the exact acquisition dates, averaging window and weather product rather than the calendar year label alone.
+
+\begin{figure}[p]
+\centering
+\includegraphics[width=\textwidth]{figure_06_epoch_specific_weather_forcing.pdf}
+\caption{Weather forcing matched to every retained Landsat acquisition and aggregated within the five composite epochs. Antecedent windows are 7, 30, 90, 180 and 365 days and retain the four native Open-Meteo cells associated with the mapped components. Precipitation is shown in mm and temperature-related quantities in degrees C where applicable. These acquisition-window summaries explain the weather context of the satellite observations; they do not infer a causal climate effect on the spectral indices.}
+\label{fig:epoch-weather}
+\end{figure}
+
+The window comparison in \cref{fig:epoch-weather} resolved which period supported each statement. E2004 had the largest 30-day mean precipitation, 66.07 mm; E2019 had the largest 90-day mean, 313.67 mm; and E2014 had the largest 365-day mean, 1,151.44 mm. E2024 was therefore not the wettest under any of those three Open-Meteo acquisition-window summaries. The corrected result does not imply that E2024 was dry. It shows that a legacy annual or product-specific extreme cannot be transferred automatically to a multi-scene satellite composite.
+
+Product comparison exposed a second, larger uncertainty. At daily resolution, Open-Meteo and NASA POWER temperatures tracked one another closely, with Spearman correlations of 0.9734 for mean temperature and 0.9730 for minimum temperature, although Open-Meteo mean temperature was lower by 2.503 degrees C on average. Daily precipitation agreement was weaker ($\rho=0.6817$), and annual precipitation agreement was negligible across 35 years ($\rho=0.08263$, Pearson $r=0.10582$, RMSE 646.739 mm year$^{-1}$ and MAE 431.913 mm year$^{-1}$). The products also returned opposing annual trends: $-10.3037$ versus $+29.2120$ mm year$^{-1}$ for precipitation, and $+0.041753$ versus $-0.037217$ degrees C year$^{-1}$ for mean temperature. Without local station validation, these discrepancies establish product sensitivity but do not identify which gridded series is more accurate.
+
+\begin{figure}[p]
+\centering
+\includegraphics[width=\textwidth]{figure_07_weather_product_comparison.pdf}
+\caption{Open-Meteo and NASA POWER comparison at daily, annual and Landsat-epoch supports. Agreement statistics include Pearson correlation, Spearman rank correlation, bias, root mean square error and mean absolute error using matched dates and variables. Units follow the underlying variable: precipitation in mm, temperature in degrees C, humidity in percent and wind in m s$^{-1}$. Neither gridded product is a ground-truth reference; disagreement is interpreted as product sensitivity.}
+\label{fig:weather-products}
+\end{figure}
+
+The comparison in \cref{fig:weather-products} separates temporal co-movement from absolute agreement. Strong daily temperature rank correlation coexisted with a sizeable mean offset, while precipitation agreement weakened sharply after annual aggregation. Six NASA POWER daily precipitation values above 200 mm were flagged and retained in the quality-control record, with sensitivity subsets reported separately. Removing or retaining flagged values can diagnose leverage, but it cannot adjudicate the products without an external observation. RQ2 was therefore answered conditionally: the Open-Meteo series supports several historical tendencies, yet the direction and magnitude of some trends are product dependent.
+
+All weather-spectral correlations were based on only five independent epochs. The largest absolute full-sample coefficient was the seven-day precipitation association with MNDWI ($\rho=-0.80$), while the 365-day precipitation association with MNDWI was $\rho=0.70$. However, leave-one-epoch analyses were often broad or crossed zero. For example, the 365-day precipitation association with NDVI ranged from $-0.40$ to $0.80$, and the 30-day precipitation associations were zero in the full five-epoch sample but ranged as widely as $-1.00$ to $0.20$ for NDVI. These coefficients were retained as descriptive temporal comparisons without $p$ values. They do not support attribution of spectral change to climate forcing.
+
+This instability was not a contradiction with the annual trend analysis because the two analyses used different effective samples and questions. Climate trends used 35 annual observations with dependence-aware uncertainty, whereas the lag experiment related only five composite-level spectral values to matched weather summaries. Leaving out one epoch removed 20\% of the latter sample and could change both rank order and coefficient sign. The result narrows RQ2 by showing that climate context can be described, but its association with the five observed spectral epochs remains unresolved.
+
+\subsection{Terrain and hydrological susceptibility}\label{sec:results-terrain}
+
+Terrain and drainage features differentiated components that were similar in spectral pressure. Component neighbourhoods varied in elevation, slope, roughness, terrain position, flow accumulation, wetness proxy and distance to the derived drainage network. Their spatial patterns did not coincide uniformly with adverse spectral convergence. Consequently, a component could rank highly because of topographic and hydrological context even when its surface-cover pressure was not the most pronounced, or show the reverse pattern.
+
+\begin{figure}[p]
+\centering
+\includegraphics[width=0.94\textwidth]{figure_08_terrain_hydrological_susceptibility.pdf}
+\caption{Terrain, flow-convergence and drainage-related susceptibility around the mapped Taxila components. Panels derive from the approximately 30 m N33E072 elevation tile and include elevation, slope, D8 flow accumulation, topographic wetness and drainage proximity. Metric mapping uses EPSG:32643. The panels represent DEM-derived susceptibility descriptors, not observed flood depth, erosion, blocked drainage or structural condition; NoData is transparent.}
+\label{fig:terrain-susceptibility}
+\end{figure}
+
+\cref{fig:terrain-susceptibility} explains why the terrain domain changed the ordering even though all components occupy the same broader Taxila landscape. Local slope and flow convergence varied over distances smaller than the separation between several components, while derived drainage proximity introduced a spatial structure different from the endpoint spectral screen. Agreement between domains was therefore partial rather than expected. This differentiated context provides the direct answer to RQ3: terrain and hydrological evidence adds information that the spectral domain alone does not preserve.
+
+The ablation experiment quantified this distinction. A landscape-only ranking correlated weakly with the full integrated ranking ($\rho=0.32495$, Kendall $\tau=0.18450$), retained only one of the full top five and moved one component by as many as 11 positions. It placed Sirkap first. A terrain-only ranking was more similar to the integrated result ($\rho=0.82975$, $\tau=0.68659$), retained four of the top five and placed the Buddhist remains around Bhallar stupa first, although the maximum rank change remained seven positions. Climate-only scores tied all components because 17 sites resolved to only four weather cells and the primary implementation deliberately prevented coarse climate support from creating spurious local differentiation. Accordingly, removing climate did not change the local ranking.
+
+The domain contrast also separates fixed priority from causal explanation. A terrain-only high rank identifies a neighbourhood where DEM-derived susceptibility is relatively elevated; it does not show that terrain produced the observed spectral pattern. Likewise, Sirkap's landscape-only rank does not establish encroachment or a material response. The integrated ordering records convergence among decision criteria under fixed weights, and the ablation results reveal which criterion family is responsible for that convergence.
+
+\subsection{Integrated relative field-inspection priority}\label{sec:results-priority}
+
+At the primary 500 m support, the fixed local score ranked the Giri complex of monuments first at 0.591176. Giri Mosque and tombs ranked second at 0.572549, Jaulian stupa and monastery third at 0.567647, Mohra Moradu fourth at 0.539216, and Dharmarajika fifth at 0.536275. Bhir Mound had the lowest fixed score, 0.339706. The score range and ordering describe relative priority among the 17 mapped components under the stated hierarchy. They do not imply that the leading component is damaged, unsafe or subject to a known annual probability of loss.
+
+\begin{figure}[p]
+\centering
+\includegraphics[width=0.88\textwidth]{figure_09_integrated_priority_map.pdf}
+\caption{E2024 relative field-inspection priority at the primary 500 m analytical support. Component scores combine equal-weight landscape-pressure and terrain-susceptibility domains using the executed hierarchy. The map uses WGS 84 geographic coordinates for communication, while calculations used EPSG:32643. Point-centred circles are analytical supports rather than legal buffers. Scores compare 17 mapped components and do not express damage, condition, hazard probability or expected loss.}
+\label{fig:priority-map}
+\end{figure}
+
+The mapped ordering in \cref{fig:priority-map} should be interpreted with the small score separation among several leading components. The difference between the first and second fixed scores was 0.018627, and between the second and third it was 0.004902. These distances are conditional on the empirical percentile scale and equal-domain weights, so they do not support qualitatively distinct management categories without sensitivity evidence. A practical reading is to recognise a leading inspection tier and then use the uncertainty results to sequence or co-schedule visits.
+
+The leading group changed with spatial support. At 250 m, Giri Mosque and tombs ranked first (0.622059), followed by Jaulian (0.567157) and Dharmarajika (0.520588); the Giri complex ranked fourth. At 1,000 m, Jaulian ranked first (0.593137), the Giri complex second (0.578431), and Khader Mohra third (0.575490). The 500 m leader was therefore not invariant to neighbourhood size. The maps and component table should be read as a tiered inspection sequence, with uncertainty information considered alongside fixed scores, rather than as a definitive league table.
+
+The three supports answer related but different operational questions. The 250 m result emphasises the immediate surroundings of the inventory point; the 500 m result balances local and neighbourhood context; and the 1,000 m result incorporates broader landscape structure. None is inherently the true buffer because no official polygon-based optimisation was possible. RQ4 therefore concerns stability across defensible analytical supports, not selection of a legally meaningful radius.
+
+\subsection{Scale, ablation and ranking uncertainty}\label{sec:results-uncertainty}
+
+Rank agreement was strongest between the two larger supports. The 500 and 1,000 m rankings had Spearman $\rho=0.91846$ and Kendall $\tau=0.77491$, with two shared top-three components and four shared top-five components. The 250 and 500 m comparison gave $\rho=0.80319$ and $\tau=0.61255$, while 250 and 1,000 m declined to $\rho=0.71078$ and $\tau=0.52941$. Ten of 17 components changed by at least three positions between 250 and 1,000 m, and the maximum movement was eight positions. These results show that analytical support is a substantive design choice rather than a cartographic detail.
+
+\begin{figure}[p]
+\centering
+\includegraphics[width=\textwidth]{figure_10_component_ranks_by_scale.pdf}
+\caption{Component ranks across 250, 500 and 1,000 m analytical supports. Lines connect the same 17 mapped components and show rank movement when the sampling radius changes. Rank 1 denotes the highest relative field-inspection priority under the fixed score architecture. The figure evaluates spatial-support sensitivity; the radii are analytical neighbourhoods rather than official boundaries.}
+\label{fig:scale-ranks}
+\end{figure}
+
+\cref{fig:scale-ranks} shows that high overall correlation did not eliminate consequential local reversals. A correlation above 0.9 for the two larger supports coexisted with a change in the leading component and movement elsewhere in the ordering. Top-$k$ overlap and maximum movement were therefore necessary complements to a single rank-correlation coefficient. The result supports reporting the full multi-scale table rather than selecting the 500 m ordering without qualification.
+
+Factor ablation identified MNDWI as the most influential retained spectral term. Removing it reversed much of the ordering relative to the full score ($\rho=-0.27958$, $\tau=-0.21402$), produced no overlap in the top five, placed Bhallar first and moved one component by 13 positions. In contrast, removing NDVI or NDBI preserved the ordering closely ($\rho=0.99203$ and 0.98958, respectively), consistent with their measured redundancy. Within the terrain domain, removing slope yielded $\rho=0.61067$ and a maximum shift of eight positions; removing drainage proximity yielded $\rho=0.46012$ and a maximum shift of 8.5 positions; removing the wetness proxy had a smaller, though visible, effect ($\rho=0.89202$, maximum shift four). The ranking was therefore controlled jointly by the distinct wetness signal and the representation of local terrain and drainage.
+
+\begin{figure}[p]
+\centering
+\includegraphics[width=0.86\textwidth]{figure_12_indicator_redundancy.pdf}
+\caption{Spearman rank-correlation matrix for pressure-oriented indicators and composite scores at the primary analytical support. Colour and annotations show the direction and magnitude of rank association. The matrix diagnoses overlapping information, especially the NDVI-pressure and NDBI-pressure pair; it does not imply identical physical mechanisms or causal relationships.}
+\label{fig:redundancy}
+\end{figure}
+
+\begin{figure}[p]
+\centering
+\includegraphics[width=0.92\textwidth]{figure_14_ablation.pdf}
+\caption{Factor- and domain-ablation sensitivity at 500 m. Each scenario removes one factor or domain, renormalises the retained architecture and compares the resulting ordering with the full reference using rank agreement, top-five overlap and maximum movement. Large changes diagnose structural dependence of the relative priority ranking; they do not identify a causal environmental driver.}
+\label{fig:ablation}
+\end{figure}
+
+The paired evidence in \cref{fig:redundancy,fig:ablation} clarifies why redundancy screening and ablation answer different questions. Correlation identified information that could be double counted before integration. Ablation identified terms whose absence materially changed the decision ordering after integration. MNDWI was not the most redundant variable, yet its removal produced the largest spectral reversal. By contrast, the two highly correlated surface-cover terms could substitute for each other with little change to the final ranking.
+
+Weight perturbation broadened the uncertainty around the fixed leader. Across 50,000 Dirichlet domain-weight draws, the Giri complex retained median rank 1 but had a 2.5th to 97.5th percentile rank interval of 1 to 9 and a 0.77398 probability of appearing in the top three. The fixed rank should consequently be interpreted as the outcome under the declared equal-domain architecture, not as a weight-free property of the site.
+
+Spatial block resampling addressed a different uncertainty and shifted the median leader. Across 2,000 draws of 150 m spectral blocks, Bhallar had median score 0.598039, median rank 1, a rank interval of 1 to 5 and top-three probability 0.9110. The Giri complex had a slightly higher median score of 0.602941 but median rank 2, a narrower rank interval of 1 to 3 and top-three probability 0.9855. Giri Mosque and tombs had median rank 3 with an interval of approximately 2 to 5 and top-three probability 0.6150. Jaulian had median rank 4, interval 2 to 8.5 and top-three probability 0.2940. The overlap between Giri and Bhallar demonstrates that deterministic scores, weight uncertainty and spatial sampling uncertainty answer different questions. Together they support a high-priority group rather than an unqualified single-site conclusion.
+
+\begin{figure}[p]
+\centering
+\includegraphics[width=\textwidth]{figure_13_rank_uncertainty.pdf}
+\caption{Weight and spatial-block uncertainty in component ranks. Domain-weight distributions use 50,000 Dirichlet draws; spatial-sampling distributions use 2,000 resamples of 150 m E2024 spectral blocks with terrain held fixed. Intervals are percentile summaries and top-three probabilities are draw proportions. They express sensitivity under the stated experiments, not posterior probabilities of damage or universal rank confidence.}
+\label{fig:rank-uncertainty}
+\end{figure}
+
+\cref{fig:rank-uncertainty} makes the overlap operationally visible. The Giri complex remained consistently near the top under spectral block resampling, but its weight-perturbation interval was much wider. Bhallar's median spatial-bootstrap rank was first even though its deterministic fixed score did not lead. No single uncertainty experiment supersedes the others: fixed scores state the declared decision rule, weight draws test preference structure, and spatial blocks test local spectral sampling. RQ4 is answered by their joint result, which favours a high-priority group and explicit revisit rules over a permanent single-site winner.
+
+\subsection{Spatially buffered proxy-label experiment}\label{sec:results-proxy}
+
+The geographically buffered experiment used 12,094 development samples, excluded 4,467 samples in a 2.01 km separation zone and evaluated 4,188 samples in 20 contiguous test blocks. There was no development-test block overlap. Inner spatial cross-validation selected the multilayer perceptron, which achieved a held-out macro-F1 of 0.830795 (block-bootstrap 95\% interval 0.700054 to 0.859730) and balanced accuracy of 0.810261 (0.731888 to 0.853752). Its overall agreement was 0.833095, macro one-versus-rest AUROC 0.976507, macro AUPRC 0.910173, log loss 0.458530, multiclass Brier score 0.240592 and ten-bin top-label expected calibration error 0.014280.
+
+\begin{figure}[p]
+\centering
+\includegraphics[width=\textwidth]{figure_11_proxy_model_performance.pdf}
+\caption{Geographically buffered proxy-model performance and calibration. Five classifiers were tuned with development-only spatial folds and evaluated on one contiguous held-out stripe separated by a 2.01 km buffer. Error intervals resample complete test blocks. F1 denotes macro-F1; balanced accuracy averages class recall; ECE denotes ten-bin top-label expected calibration error. All outcomes measure WorldCover-derived proxy land-cover agreement, not independent heritage-condition accuracy.}
+\label{fig:proxy-performance}
+\end{figure}
+
+The performance panel in \cref{fig:proxy-performance} shows that discrimination, class balance and calibration were not interchangeable. The selected multilayer perceptron combined strong held-out discrimination with low top-label calibration error, but its block interval retained meaningful geographic uncertainty. The 20 test blocks represent one contiguous transfer direction, so the interval reflects resampling within that holdout rather than replication across multiple independent landscapes.
+
+Model ordering depended on the metric. Regularised multinomial logistic regression achieved the highest held-out macro-F1, 0.842225, and balanced accuracy, 0.835046, despite having lower inner-CV macro-F1 than the preselected multilayer perceptron. Random forest, extra trees and histogram gradient boosting produced held-out macro-F1 values of 0.828570, 0.826351 and 0.821499, respectively. Because model selection was fixed using development folds, the multilayer perceptron remained the primary unbiased transfer estimate; selecting logistic regression after viewing the outer test result would leak test information into model choice.
+
+The narrow difference among outer-test macro-F1 values does not justify replacing the preselected model. It demonstrates that model ranking itself is metric and geography dependent. Retaining the development-selected estimate preserves the separation between tuning and evaluation, while the complete comparison table allows readers to see that a simpler linear model transferred competitively. RQ5 is therefore answered as a validation-design result as much as a performance result: strict geographic separation reduced the opportunity for neighbouring pixels to inflate agreement.
+
+The primary macro-F1 was lower than the reproduced legacy estimate of approximately 0.887 under the earlier, less restrictive split. This reduction is consistent with the 2.01 km exclusion buffer and one-direction contiguous transfer test. Even so, the interval width and class-level confusion show that proxy-label reproduction was imperfect. The experiment validates agreement with WorldCover-derived land-cover labels under a stricter geographic separation. It does not validate archaeological condition, monument damage, hazard occurrence or the integrated priority score.
+
+\subsection{Corrected, exploratory and unavailable evidence}\label{sec:results-negative}
+
+Three result classes required explicit non-confirmatory reporting. First, the E2024 weather correction replaced an earlier product- or window-specific statement with acquisition-date Open-Meteo summaries. The corrected record does not select a universally superior weather product. It states only that E2024 was not the wettest of the five epochs under the reported 30-, 90- and 365-day Open-Meteo summaries. Second, annual maximum-rainfall and monsoon-precipitation tests did not retain adjusted support, while the five-epoch weather-spectral coefficients remained exploratory. These outcomes were preserved rather than reframed as weak confirmation.
+
+Third, no independently observed heritage-condition response was available for model training or score validation. The proxy experiment therefore remained outside the evidence chain for monument condition. No M3 heritage-condition model was executed, and the 18 pipeline checks cannot substitute for that missing response. Similarly, the absence of harmonised ancillary event layers from the frozen run means that earthquakes, floods, landslides, quarry activity and population pressure were not evaluated. Their omission is a scope boundary, not evidence that those pressures are absent.
+
+Several limitations also constrain otherwise completed outputs. Four weather cells cannot resolve component-scale atmospheric differences at 30 m; the D8 network does not observe drains or flow; five Landsat composites do not identify continuous trajectories or causal timing; point-centred circles do not represent official polygons; and Saraikala has no verified analytical geometry. Equal structural weights were tested but not replaced by an expert-derived preference model. These qualifications complete RQ1 to RQ5 by specifying which evidence is available for inspection prioritisation and which claims remain outside the study.
+
+\input{tables/main/table_04_headline_findings.tex}
+
+\cref{tab:headline-findings} consolidates the eight evidence-locked statements used across the Results, Discussion and Conclusions. Each numerical statement is paired with its uncertainty and permitted boundary. The table is not an additional scoring layer. Its purpose is to prevent a result such as high proxy-label agreement, a fixed rank or an adverse spectral proportion from being detached from the limitation that defines its scientific meaning.
+
+\FloatBarrier

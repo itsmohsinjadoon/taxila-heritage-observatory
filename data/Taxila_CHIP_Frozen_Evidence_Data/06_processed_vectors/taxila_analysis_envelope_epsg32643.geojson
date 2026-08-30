@@ -1,0 +1,48 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "role": "rectangular_analysis_envelope",
+        "context_margin_m": 5000,
+        "snap_cell_m": 30,
+        "basis": "bbox of 17 official-coordinate points expanded by 5 km and snapped outward"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              292980.0,
+              3728970.0
+            ],
+            [
+              311460.0,
+              3728970.0
+            ],
+            [
+              311460.0,
+              3748620.0
+            ],
+            [
+              292980.0,
+              3748620.0
+            ],
+            [
+              292980.0,
+              3728970.0
+            ]
+          ]
+        ]
+      }
+    }
+  ],
+  "name": "taxila_analysis_envelope",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:EPSG::32643"
+    }
+  }
+}

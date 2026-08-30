@@ -1,0 +1,194 @@
+{
+  "schema_version": "1.0",
+  "generated_by": "analysis/extract_geotiff_raw.mjs",
+  "width": 616,
+  "height": 655,
+  "grid_transform_gdal": [
+    292980,
+    30,
+    0,
+    3748620,
+    0,
+    -30
+  ],
+  "crs": "EPSG:32643",
+  "files": [
+    {
+      "epoch": "E2004",
+      "kind": "indices",
+      "source": "work/landsat/outputs/composites/E2004_oli_like_indices.tif",
+      "output": "analysis/derived/raw/E2004_indices_ndvi_ndbi_mndwi_bsi.f32",
+      "dtype": "float32_le",
+      "layout": "row_major_pixel_interleaved",
+      "bands": [
+        "NDVI",
+        "NDBI",
+        "MNDWI",
+        "BSI"
+      ],
+      "nodata": -9999
+    },
+    {
+      "epoch": "E2004",
+      "kind": "valid_observations",
+      "source": "work/landsat/outputs/composites/E2004_valid_observation_count.tif",
+      "output": "analysis/derived/raw/E2004_valid_observations.f32",
+      "dtype": "float32_le",
+      "layout": "row_major"
+    },
+    {
+      "epoch": "E2004",
+      "kind": "provisional_landcover",
+      "source": "work/landcover/Taxila_PreserveX_Stage4_Batch2/outputs/E2004_provisional_landcover.tif",
+      "output": "analysis/derived/raw/E2004_provisional_landcover.u8",
+      "dtype": "uint8",
+      "layout": "row_major",
+      "nodata": 0
+    },
+    {
+      "epoch": "E2009",
+      "kind": "indices",
+      "source": "work/landsat/outputs/composites/E2009_oli_like_indices.tif",
+      "output": "analysis/derived/raw/E2009_indices_ndvi_ndbi_mndwi_bsi.f32",
+      "dtype": "float32_le",
+      "layout": "row_major_pixel_interleaved",
+      "bands": [
+        "NDVI",
+        "NDBI",
+        "MNDWI",
+        "BSI"
+      ],
+      "nodata": -9999
+    },
+    {
+      "epoch": "E2009",
+      "kind": "valid_observations",
+      "source": "work/landsat/outputs/composites/E2009_valid_observation_count.tif",
+      "output": "analysis/derived/raw/E2009_valid_observations.f32",
+      "dtype": "float32_le",
+      "layout": "row_major"
+    },
+    {
+      "epoch": "E2009",
+      "kind": "provisional_landcover",
+      "source": "work/landcover/Taxila_PreserveX_Stage4_Batch2/outputs/E2009_provisional_landcover.tif",
+      "output": "analysis/derived/raw/E2009_provisional_landcover.u8",
+      "dtype": "uint8",
+      "layout": "row_major",
+      "nodata": 0
+    },
+    {
+      "epoch": "E2014",
+      "kind": "indices",
+      "source": "work/landsat/outputs/composites/E2014_oli_like_indices.tif",
+      "output": "analysis/derived/raw/E2014_indices_ndvi_ndbi_mndwi_bsi.f32",
+      "dtype": "float32_le",
+      "layout": "row_major_pixel_interleaved",
+      "bands": [
+        "NDVI",
+        "NDBI",
+        "MNDWI",
+        "BSI"
+      ],
+      "nodata": -9999
+    },
+    {
+      "epoch": "E2014",
+      "kind": "valid_observations",
+      "source": "work/landsat/outputs/composites/E2014_valid_observation_count.tif",
+      "output": "analysis/derived/raw/E2014_valid_observations.f32",
+      "dtype": "float32_le",
+      "layout": "row_major"
+    },
+    {
+      "epoch": "E2014",
+      "kind": "provisional_landcover",
+      "source": "work/landcover/Taxila_PreserveX_Stage4_Batch2/outputs/E2014_provisional_landcover.tif",
+      "output": "analysis/derived/raw/E2014_provisional_landcover.u8",
+      "dtype": "uint8",
+      "layout": "row_major",
+      "nodata": 0
+    },
+    {
+      "epoch": "E2019",
+      "kind": "indices",
+      "source": "work/landsat/outputs/composites/E2019_oli_like_indices.tif",
+      "output": "analysis/derived/raw/E2019_indices_ndvi_ndbi_mndwi_bsi.f32",
+      "dtype": "float32_le",
+      "layout": "row_major_pixel_interleaved",
+      "bands": [
+        "NDVI",
+        "NDBI",
+        "MNDWI",
+        "BSI"
+      ],
+      "nodata": -9999
+    },
+    {
+      "epoch": "E2019",
+      "kind": "valid_observations",
+      "source": "work/landsat/outputs/composites/E2019_valid_observation_count.tif",
+      "output": "analysis/derived/raw/E2019_valid_observations.f32",
+      "dtype": "float32_le",
+      "layout": "row_major"
+    },
+    {
+      "epoch": "E2019",
+      "kind": "provisional_landcover",
+      "source": "work/landcover/Taxila_PreserveX_Stage4_Batch2/outputs/E2019_provisional_landcover.tif",
+      "output": "analysis/derived/raw/E2019_provisional_landcover.u8",
+      "dtype": "uint8",
+      "layout": "row_major",
+      "nodata": 0
+    },
+    {
+      "epoch": "E2024",
+      "kind": "indices",
+      "source": "work/landsat/outputs/composites/E2024_oli_like_indices.tif",
+      "output": "analysis/derived/raw/E2024_indices_ndvi_ndbi_mndwi_bsi.f32",
+      "dtype": "float32_le",
+      "layout": "row_major_pixel_interleaved",
+      "bands": [
+        "NDVI",
+        "NDBI",
+        "MNDWI",
+        "BSI"
+      ],
+      "nodata": -9999
+    },
+    {
+      "epoch": "E2024",
+      "kind": "valid_observations",
+      "source": "work/landsat/outputs/composites/E2024_valid_observation_count.tif",
+      "output": "analysis/derived/raw/E2024_valid_observations.f32",
+      "dtype": "float32_le",
+      "layout": "row_major"
+    },
+    {
+      "epoch": "E2024",
+      "kind": "provisional_landcover",
+      "source": "work/landcover/Taxila_PreserveX_Stage4_Batch2/outputs/E2024_provisional_landcover.tif",
+      "output": "analysis/derived/raw/E2024_provisional_landcover.u8",
+      "dtype": "uint8",
+      "layout": "row_major",
+      "nodata": 0
+    },
+    {
+      "epoch": "E2019",
+      "kind": "reflectance",
+      "source": "work/landsat/outputs/composites/E2019_oli_like_surface_reflectance.tif",
+      "output": "analysis/derived/raw/E2019_reflectance_6band.f32",
+      "dtype": "float32_le",
+      "layout": "row_major_pixel_interleaved",
+      "bands": [
+        "blue",
+        "green",
+        "red",
+        "nir08",
+        "swir16",
+        "swir22"
+      ],
+      "nodata": -9999
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "batch_id": "stage4_batch3",
+  "purpose": "Blinded, temporally matched Sentinel-2 evidence packages for independent interpretation of the frozen E2019 and E2024 validation samples",
+  "analysis_grid_10m": {
+    "crs": "EPSG:32643",
+    "resolution_m": 10,
+    "width": 1848,
+    "height": 1965,
+    "transform": [10.0, 0.0, 292980.0, 0.0, -10.0, 3748620.0],
+    "bounds": [292980.0, 3728970.0, 311460.0, 3748620.0]
+  },
+  "source": {
+    "collection": "sentinel-2-l2a",
+    "product": "Sentinel-2 Level-2A bottom-of-atmosphere reflectance",
+    "provider": "ESA/Copernicus; cloud-optimized access through Microsoft Planetary Computer",
+    "assets": ["B02", "B03", "B04", "B08", "B11", "B12", "SCL"],
+    "global_cloud_cover_max_percent": 60,
+    "expected_tiles": ["43SBT", "43SCT"]
+  },
+  "epochs": [
+    {"epoch_id": "E2019", "label_year": 2019, "years": [2018, 2019, 2020]},
+    {"epoch_id": "E2024", "label_year": 2024, "years": [2023, 2024, 2025]}
+  ],
+  "season": {"start": "10-01", "end": "12-15"},
+  "reflectance": {
+    "quantification_value": 10000.0,
+    "pre_pb_04_offset_dn": 0.0,
+    "pb_04_and_later_offset_dn": -1000.0,
+    "equation": "reflectance = (DN + offset_dn) / 10000",
+    "valid_range": [-0.1, 1.2]
+  },
+  "mask": {
+    "source": "Sentinel-2 Scene Classification Layer (SCL)",
+    "reject_codes": [0, 1, 2, 3, 7, 8, 9, 10, 11],
+    "retained_codes": [4, 5, 6],
+    "note": "SCL=2 is conservatively rejected across processing baselines because it represents dark features in older products and cast shadow after PB 04.00. SCL=7 is unclassified/low-probability cloud and is also rejected."
+  },
+  "scene_gate": {
+    "minimum_local_valid_percent": 5.0,
+    "minimum_retained_acquisitions": 3,
+    "maximum_selected_acquisitions_per_year": 4,
+    "require_both_expected_tiles_for_selection": true
+  },
+  "composite": {
+    "statistic": "per-pixel median",
+    "minimum_valid_observations": 3,
+    "preferred_valid_observations": 5,
+    "minimum_grid_coverage_percent_at_minimum_support": 90.0
+  },
+  "chips": {
+    "true_color_context_pixels": 61,
+    "zoom_pixels": 31,
+    "output_pixels_width": 900,
+    "output_pixels_height": 360,
+    "blinding": "No mapped class, proxy label, model probability, or predicted change is printed on or encoded in chip filenames."
+  },
+  "reference_rules": {
+    "selected_epochs": ["E2019", "E2024"],
+    "expected_samples": 1050,
+    "required_interpreters": 2,
+    "reference_classes": [
+      {"id": 1, "name": "Built-up / impervious"},
+      {"id": 2, "name": "Quarry or exposed excavation"},
+      {"id": 3, "name": "Other bare ground"},
+      {"id": 4, "name": "Cultivated land"},
+      {"id": 5, "name": "Woody or dense vegetation"},
+      {"id": 6, "name": "Sparse vegetation / grass"},
+      {"id": 7, "name": "Water"},
+      {"id": 8, "name": "Mixed / indeterminate"},
+      {"id": 9, "name": "Evidence unavailable"}
+    ],
+    "acceptance_note": "Codes 8 and 9 trigger adjudication or missing-response handling and are not valid land-cover classes for accuracy estimation."
+  }
+}

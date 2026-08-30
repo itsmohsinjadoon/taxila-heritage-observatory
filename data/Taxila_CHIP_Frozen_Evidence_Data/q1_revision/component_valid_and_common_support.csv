@@ -1,0 +1,52 @@
+component_id,component_name,radius_m,support_cells,common_support_cells,common_support_fraction,E2004_valid_fraction,E2009_valid_fraction,E2014_valid_fraction,E2019_valid_fraction,E2024_valid_fraction
+139-001,Khanpur Cave,250,220,220,1.0,1.0,1.0,1.0,1.0,1.0
+139-001,Khanpur Cave,500,871,871,1.0,1.0,1.0,1.0,1.0,1.0
+139-001,Khanpur Cave,1000,3493,3493,1.0,1.0,1.0,1.0,1.0,1.0
+139-003,Bhir Mound,250,218,218,1.0,1.0,1.0,1.0,1.0,1.0
+139-003,Bhir Mound,500,874,874,1.0,1.0,1.0,1.0,1.0,1.0
+139-003,Bhir Mound,1000,3489,3489,1.0,1.0,1.0,1.0,1.0,1.0
+139-004,Sirkap (fortified city),250,219,219,1.0,1.0,1.0,1.0,1.0,1.0
+139-004,Sirkap (fortified city),500,874,874,1.0,1.0,1.0,1.0,1.0,1.0
+139-004,Sirkap (fortified city),1000,3494,3494,1.0,1.0,1.0,1.0,1.0,1.0
+139-005,Sirsukh (fortified ruined city),250,220,220,1.0,1.0,1.0,1.0,1.0,1.0
+139-005,Sirsukh (fortified ruined city),500,871,871,1.0,1.0,1.0,1.0,1.0,1.0
+139-005,Sirsukh (fortified ruined city),1000,3493,3493,1.0,1.0,1.0,1.0,1.0,1.0
+139-006,Dharmarajika stupa and monastery,250,219,219,1.0,1.0,1.0,1.0,1.0,1.0
+139-006,Dharmarajika stupa and monastery,500,870,870,1.0,1.0,1.0,1.0,1.0,1.0
+139-006,Dharmarajika stupa and monastery,1000,3494,3494,1.0,1.0,1.0,1.0,1.0,1.0
+139-007,Khader Mohra (Akhuri),250,220,220,1.0,1.0,1.0,1.0,1.0,1.0
+139-007,Khader Mohra (Akhuri),500,871,871,1.0,1.0,1.0,1.0,1.0,1.0
+139-007,Khader Mohra (Akhuri),1000,3493,3493,1.0,1.0,1.0,1.0,1.0,1.0
+139-008,Kalawan group of buildings,250,220,220,1.0,1.0,1.0,1.0,1.0,1.0
+139-008,Kalawan group of buildings,500,875,875,1.0,1.0,1.0,1.0,1.0,1.0
+139-008,Kalawan group of buildings,1000,3498,3498,1.0,1.0,1.0,1.0,1.0,1.0
+139-009,Giri complex of monuments,250,214,214,1.0,1.0,1.0,1.0,1.0,1.0
+139-009,Giri complex of monuments,500,874,874,1.0,1.0,1.0,1.0,1.0,1.0
+139-009,Giri complex of monuments,1000,3483,3483,1.0,1.0,1.0,1.0,1.0,1.0
+139-010,Kunala stupa and monastery,250,219,219,1.0,1.0,1.0,1.0,1.0,1.0
+139-010,Kunala stupa and monastery,500,872,872,1.0,1.0,1.0,1.0,1.0,1.0
+139-010,Kunala stupa and monastery,1000,3496,3496,1.0,1.0,1.0,1.0,1.0,1.0
+139-011,Jandial complex,250,223,223,1.0,1.0,1.0,1.0,1.0,1.0
+139-011,Jandial complex,500,870,870,1.0,1.0,1.0,1.0,1.0,1.0
+139-011,Jandial complex,1000,3495,3495,1.0,1.0,1.0,1.0,1.0,1.0
+139-012,Lalchak and Badalpur Buddhist stuppa,250,218,218,1.0,1.0,1.0,1.0,1.0,1.0
+139-012,Lalchak and Badalpur Buddhist stuppa,500,872,872,1.0,1.0,1.0,1.0,1.0,1.0
+139-012,Lalchak and Badalpur Buddhist stuppa,1000,3488,3488,1.0,1.0,1.0,1.0,1.0,1.0
+139-013,Mohra Moradu stupa and monastery,250,222,222,1.0,1.0,1.0,1.0,1.0,1.0
+139-013,Mohra Moradu stupa and monastery,500,871,871,1.0,1.0,1.0,1.0,1.0,1.0
+139-013,Mohra Moradu stupa and monastery,1000,3493,3493,1.0,1.0,1.0,1.0,1.0,1.0
+139-014,Pippala stupa and monastery,250,218,218,1.0,1.0,1.0,1.0,1.0,1.0
+139-014,Pippala stupa and monastery,500,872,872,1.0,1.0,1.0,1.0,1.0,1.0
+139-014,Pippala stupa and monastery,1000,3491,3491,1.0,1.0,1.0,1.0,1.0,1.0
+139-015,Jaulian stupa and monastery,250,220,220,1.0,1.0,1.0,1.0,1.0,1.0
+139-015,Jaulian stupa and monastery,500,870,870,1.0,1.0,1.0,1.0,1.0,1.0
+139-015,Jaulian stupa and monastery,1000,3491,3491,1.0,1.0,1.0,1.0,1.0,1.0
+139-016,Lalchak mounds,250,217,217,1.0,1.0,1.0,1.0,1.0,1.0
+139-016,Lalchak mounds,500,875,875,1.0,1.0,1.0,1.0,1.0,1.0
+139-016,Lalchak mounds,1000,3489,3489,1.0,1.0,1.0,1.0,1.0,1.0
+139-017,Buddhist remains around Bhallar stupa,250,219,219,1.0,1.0,1.0,1.0,1.0,1.0
+139-017,Buddhist remains around Bhallar stupa,500,870,870,1.0,1.0,1.0,1.0,1.0,1.0
+139-017,Buddhist remains around Bhallar stupa,1000,3494,3494,1.0,1.0,1.0,1.0,1.0,1.0
+139-018,Giri Mosque and tombs,250,219,219,1.0,1.0,1.0,1.0,1.0,1.0
+139-018,Giri Mosque and tombs,500,874,874,1.0,1.0,1.0,1.0,1.0,1.0
+139-018,Giri Mosque and tombs,1000,3491,3491,1.0,1.0,1.0,1.0,1.0,1.0

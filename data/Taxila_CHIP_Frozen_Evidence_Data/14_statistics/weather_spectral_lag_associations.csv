@@ -1,0 +1,16 @@
+climate_metric,spectral_metric,n_unique_epochs,spearman_rho,leave_one_epoch_out_rho_min,leave_one_epoch_out_rho_max,sign_stability,inference_status
+precipitation_preceding_7d_mm_mean,grid_median_ndvi,5,0.39999999999999997,-0.19999999999999998,1.0,0.8,EXPLORATORY_NO_P_VALUE_N5
+precipitation_preceding_7d_mm_mean,grid_median_mndwi,5,-0.7999999999999999,-0.7999999999999999,-0.6000000000000001,1.0,EXPLORATORY_NO_P_VALUE_N5
+precipitation_preceding_7d_mm_mean,grid_median_ndbi,5,-0.39999999999999997,-1.0,0.19999999999999998,0.8,EXPLORATORY_NO_P_VALUE_N5
+precipitation_preceding_30d_mm_mean,grid_median_ndvi,5,0.0,-1.0,0.19999999999999998,0.0,EXPLORATORY_NO_P_VALUE_N5
+precipitation_preceding_30d_mm_mean,grid_median_mndwi,5,0.0,-0.39999999999999997,0.39999999999999997,0.0,EXPLORATORY_NO_P_VALUE_N5
+precipitation_preceding_30d_mm_mean,grid_median_ndbi,5,0.0,-0.19999999999999998,1.0,0.0,EXPLORATORY_NO_P_VALUE_N5
+precipitation_preceding_90d_mm_mean,grid_median_ndvi,5,0.3,-0.39999999999999997,0.7999999999999999,0.8,EXPLORATORY_NO_P_VALUE_N5
+precipitation_preceding_90d_mm_mean,grid_median_mndwi,5,-0.09999999999999999,-0.6000000000000001,0.39999999999999997,0.6666666666666666,EXPLORATORY_NO_P_VALUE_N5
+precipitation_preceding_90d_mm_mean,grid_median_ndbi,5,-0.3,-0.7999999999999999,0.39999999999999997,0.8,EXPLORATORY_NO_P_VALUE_N5
+precipitation_preceding_180d_mm_mean,grid_median_ndvi,5,0.49999999999999994,0.19999999999999998,0.6000000000000001,1.0,EXPLORATORY_NO_P_VALUE_N5
+precipitation_preceding_180d_mm_mean,grid_median_mndwi,5,0.49999999999999994,0.0,0.7999999999999999,1.0,EXPLORATORY_NO_P_VALUE_N5
+precipitation_preceding_180d_mm_mean,grid_median_ndbi,5,-0.49999999999999994,-0.6000000000000001,-0.19999999999999998,1.0,EXPLORATORY_NO_P_VALUE_N5
+precipitation_preceding_365d_mm_mean,grid_median_ndvi,5,-0.09999999999999999,-0.39999999999999997,0.7999999999999999,0.8,EXPLORATORY_NO_P_VALUE_N5
+precipitation_preceding_365d_mm_mean,grid_median_mndwi,5,0.7,0.39999999999999997,1.0,1.0,EXPLORATORY_NO_P_VALUE_N5
+precipitation_preceding_365d_mm_mean,grid_median_ndbi,5,0.09999999999999999,-0.7999999999999999,0.39999999999999997,0.8,EXPLORATORY_NO_P_VALUE_N5

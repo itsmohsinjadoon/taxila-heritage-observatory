@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0",
+  "run_id": "Taxila_PreserveX_Experimental_Run_20260801_042452",
+  "source_project_root": "..",
+  "random_seed": 311,
+  "metric_crs": "EPSG:32643",
+  "analysis_radii_m": [250, 500, 1000],
+  "climate_period": ["1991-01-01", "2025-12-31"],
+  "climate_baseline": ["1991-01-01", "2020-12-31"],
+  "open_meteo_model": "era5_seamless",
+  "weather_lag_days": [7, 30, 90, 180, 365],
+  "trend_block_length_years": 5,
+  "trend_bootstrap_draws": 2000,
+  "model_block_bootstrap_draws": 2000,
+  "ranking_block_bootstrap_draws": 2000,
+  "monte_carlo_weight_draws": 50000,
+  "primary_local_domain_weights": {
+    "landscape_pressure": 0.5,
+    "terrain_susceptibility": 0.5
+  },
+  "integrated_context_domain_weights": {
+    "landscape_pressure": 0.3333333333333333,
+    "terrain_susceptibility": 0.3333333333333333,
+    "climate_forcing": 0.3333333333333333
+  },
+  "terminology": {
+    "satellite_output": "relative landscape pressure",
+    "integrated_output": "field-inspection priority",
+    "machine_learning": "WorldCover-derived proxy land-cover agreement"
+  }
+}

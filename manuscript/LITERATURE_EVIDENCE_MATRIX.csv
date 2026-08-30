@@ -1,0 +1,92 @@
+key,theme,source_type,verified_identifier,manuscript_role,status
+khan2022taxila,Taxila benchmark,peer-reviewed article,doi:10.1016/j.culher.2022.03.011,"Closest Taxila comparison; ground and satellite hazard documentation",verified
+agapiou2015paphos,urban pressure on heritage,peer-reviewed article,doi:10.1016/j.culher.2014.12.006,"Remote-sensing evidence of urban pressure around heritage",verified
+agapiou2016paphos,risk screening,peer-reviewed article,doi:10.1007/s11069-016-2211-6,"GIS and satellite-based heritage screening precedent",verified
+hadjimitsis2013cyprus,remote sensing and GIS,peer-reviewed article,doi:10.1080/17538947.2011.602119,"Integrated natural and anthropogenic pressure assessment",verified
+liu2019angkor,flood hazard,peer-reviewed article,doi:10.3390/rs11010098,"Hydrological hazard mapping at a World Heritage property",verified
+guerriero2022derwent,multi-hazard susceptibility,peer-reviewed article,doi:10.1016/j.culher.2022.04.009,"Susceptibility integration and AHP comparison",verified
+yang2023yongtai,heritage risk assessment,peer-reviewed article,doi:10.1016/j.ijdrr.2023.103593,"Recent remote-sensing and GIS risk-assessment comparison",verified
+romao2022risk,risk concepts,peer-reviewed review,doi:10.1016/j.ijdrr.2021.102652,"Distinguish hazard, vulnerability, exposure and risk",verified
+sesana2021climate,climate impacts,peer-reviewed review,doi:10.1002/wcc.710,"Climate-change impact pathways and evidence limits",verified
+yao2023overview,archaeological GIS-RS,peer-reviewed review,doi:10.3390/rs15245766,"Recent synthesis of archaeological GIS and remote sensing",verified
+agapiou2020eo,Earth observation for DRM,peer-reviewed article,doi:10.3390/rs12081330,"Role and limits of Earth observation in heritage disaster management",verified
+xiao2018geoinformatics,heritage geoinformatics,peer-reviewed review,doi:10.1016/j.isprsjprs.2018.01.001,"Geoinformatics contribution to conservation",verified
+roy2016landsat,cross-sensor continuity,peer-reviewed article,doi:10.1016/j.rse.2015.12.024,"Landsat 7/8 continuity and harmonisation",verified
+xu2006mndwi,spectral index,peer-reviewed article,doi:10.1080/01431160600589179,"MNDWI equation and interpretation",verified
+zha2003ndbi,spectral index,peer-reviewed article,doi:10.1080/01431160304987,"NDBI equation and mixed built/bare interpretation",verified
+sen1968slope,robust trend estimation,peer-reviewed article,doi:10.1080/01621459.1968.10480934,"Theil-Sen slope method",verified
+mann1945trend,trend testing,peer-reviewed article,doi:10.2307/1907187,"Mann-Kendall trend test basis",verified
+benjamini1995fdr,multiple testing,peer-reviewed article,doi:10.1111/j.2517-6161.1995.tb02031.x,"False-discovery-rate control",verified
+farr2007srtm,terrain data,peer-reviewed article,doi:10.1029/2005RG000183,"SRTM mission and elevation provenance",verified
+tarboton1997flow,terrain hydrology,peer-reviewed article,doi:10.1029/96WR03137,"Flow-direction and contributing-area context",verified
+beven1979topmodel,wetness index,peer-reviewed article,doi:10.1080/02626667909491834,"Topographic wetness concept",verified
+olofsson2014accuracy,land-cover validation,peer-reviewed article,doi:10.1016/j.rse.2014.02.015,"Accuracy assessment and proxy-label caveat",verified
+breiman2001rf,machine learning,peer-reviewed article,doi:10.1023/A:1010933404324,"Random-forest comparator",verified
+pedregosa2011sklearn,reproducible modelling,peer-reviewed software article,journal:jmlr-12-2825-2830,"Scikit-learn implementation provenance",verified
+unesco_taxila,Taxila official record,official source,url:https://whc.unesco.org/en/list/139/,"World Heritage status and component context",verified
+usgs_landsat_c2,Landsat data documentation,official source,url:https://www.usgs.gov/landsat-missions/landsat-collection-2-level-2-science-products,"Collection 2 Level-2 provenance and QA",verified
+esa_worldcover,proxy labels,official source,url:https://esa-worldcover.org/en/data-access,"WorldCover source and 10 m product description",verified
+openmeteo_archive,weather source,official documentation,url:https://open-meteo.com/en/docs/historical-weather-api,"ERA5-Seamless variables and access provenance",verified
+nasa_power,weather comparison,official documentation,url:https://power.larc.nasa.gov/docs/services/api/temporal/daily/,"Independent gridded-product comparison provenance",verified
+lasaponara2011satellite,archaeological remote sensing,peer-reviewed review,doi:10.1016/j.jas.2011.02.002,"Historical development and interpretive scope of satellite archaeology",verified
+tapete2018geosciences,archaeological geoscience,peer-reviewed article,doi:10.3390/geosciences8020041,"Geoscience and remote-sensing roles in archaeological investigation",verified
+opitz2018trends,archaeological remote sensing,peer-reviewed review,doi:10.5334/jcaa.11,"Technical progress and persistent validation problems",verified
+lambers2019ml,automated prospection,peer-reviewed article,doi:10.3390/rs11070794,"Machine-learning and citizen-science archaeological workflow",verified
+orengo2020mounds,automated prospection,peer-reviewed article,doi:10.1073/pnas.2005583117,"Multisensor archaeological-object detection benchmark",verified
+argyrou2022review,artificial intelligence and archaeology,peer-reviewed review,doi:10.3390/rs14236000,"Training-label and interpretive limits of automated archaeological screening",verified
+luo2023space,heritage safeguarding,peer-reviewed article,doi:10.1016/j.xinn.2023.100420,"Space-technology contribution to World Heritage safeguarding",verified
+hansen2012landsat,Landsat monitoring,peer-reviewed review,doi:10.1016/j.rse.2011.08.024,"Large-area land-cover monitoring context",verified
+wulder2019landsat,Landsat programme,peer-reviewed review,doi:10.1016/j.rse.2019.02.015,"Archive continuity and application context",verified
+woodcock1987scale,remote-sensing scale,peer-reviewed article,doi:10.1016/0034-4257(87)90015-0,"Analytical support and scale effects",verified
+tucker1979ndvi,spectral index,peer-reviewed article,doi:10.1016/0034-4257(79)90013-0,"NDVI basis and vegetation interpretation",verified
+fatoric2017threatened,climate impacts,peer-reviewed systematic review,doi:10.1007/s10584-017-1929-9,"Climate-threat evidence pathways and research gaps",verified
+orr2021climate,climate impacts,peer-reviewed systematic review,doi:10.1080/17567505.2021.1957264,"Recent climate and cultural-heritage evidence synthesis",verified
+guzman2020monitoring,World Heritage monitoring,peer-reviewed article,doi:10.3390/cli8030039,"Landscape-based climate monitoring within World Heritage reporting",verified
+reimann2018mediterranean,coastal heritage exposure,peer-reviewed article,doi:10.1038/s41467-018-06645-9,"Mechanism-specific future coastal exposure comparison",verified
+hollesen2018arctic,archaeological preservation,peer-reviewed article,doi:10.15184/aqy.2018.8,"Climate-linked archaeological preservation mechanisms",verified
+moore1991terrain,terrain analysis,peer-reviewed review,doi:10.1002/hyp.3360050103,"Hydrological and geomorphological terrain variables",verified
+quinn1991flow,terrain hydrology,peer-reviewed article,doi:10.1002/hyp.3360050106,"Distributed flow-path estimation from terrain",verified
+arrighi2023flood,heritage flood damage,peer-reviewed article,doi:10.1016/j.ijdrr.2023.103654,"Contrast with mechanism-specific flood-damage modelling",verified
+malczewski2006gis,multi-criteria analysis,peer-reviewed review,doi:10.1080/13658810600661508,"GIS-MCDA architecture and assumptions",verified
+chen2010sensitivity,weight sensitivity,peer-reviewed article,doi:10.1016/j.envsoft.2010.06.001,"Spatial sensitivity to alternative criterion weights",verified
+feizizadeh2014uncertainty,MCDA uncertainty,peer-reviewed article,doi:10.1016/j.cageo.2013.11.009,"Spatially explicit sensitivity and uncertainty analysis",verified
+efron1979bootstrap,statistical uncertainty,peer-reviewed article,doi:10.1214/aos/1176344552,"Bootstrap basis for empirical uncertainty estimation",verified
+roberts2017cv,spatial validation,peer-reviewed review,doi:10.1111/ecog.02881,"Structured cross-validation for dependent data",verified
+valavi2019blockcv,spatial validation,peer-reviewed software article,doi:10.1111/2041-210X.13107,"Spatially separated fold construction",verified
+ploton2020spatial,spatial validation,peer-reviewed article,doi:10.1038/s41467-020-18321-y,"Optimism revealed by geographically stricter validation",verified
+wadoux2021spatial,map accuracy,peer-reviewed article,doi:10.1016/j.ecolmodel.2021.109692,"Distinguish model transfer evaluation from map-accuracy inference",verified
+stehman2019accuracy,land-cover accuracy,peer-reviewed review,doi:10.1016/j.rse.2019.05.018,"Reference-design requirements for land-cover accuracy claims",verified
+zanaga2021worldcover,proxy land-cover labels,official dataset,doi:10.5281/zenodo.5571936,"WorldCover product provenance and proxy-label boundary",verified
+peng2011reproducible,reproducible computation,peer-reviewed perspective,doi:10.1126/science.1213847,"Reproducible computational research principles",verified
+stodden2016enhancing,reproducible methods,peer-reviewed perspective,doi:10.1126/science.aah6168,"Preservation of computational methods and artefacts",verified
+wilson2017practices,scientific computing,peer-reviewed guidance,doi:10.1371/journal.pcbi.1005510,"Practical organisation and reproducibility guidance",verified
+nust2018reproducible,GIScience reproducibility,peer-reviewed article,doi:10.7717/peerj.5072,"Evidence on reproducibility limitations in GIScience papers",verified
+verbesselt2010bfast,time-series change detection,peer-reviewed method,doi:10.1016/j.rse.2009.08.014,"Breaks For Additive Season and Trend for distinguishing gradual and abrupt change",verified
+zhu2012fmask,Landsat cloud masking,peer-reviewed method,doi:10.1016/j.rse.2011.10.028,"Automated cloud and cloud-shadow screening for Landsat",verified
+zhu2015fmask,Landsat and Sentinel-2 masking,peer-reviewed method,doi:10.1016/j.rse.2014.12.014,"Improved Fmask workflow and cross-sensor scope",verified
+kennedy2010landtrendr,temporal segmentation,peer-reviewed method,doi:10.1016/j.rse.2010.07.008,"LandTrendr trajectory segmentation for disturbance and recovery",verified
+hersbach2020era5,climate reanalysis,peer-reviewed dataset paper,doi:10.1002/qj.3803,"ERA5 production system characteristics and uncertainty context",verified
+munozsabater2021era5land,land reanalysis,peer-reviewed dataset paper,doi:10.5194/essd-13-4349-2021,"ERA5-Land formulation spatial support and limitations",verified
+yue2002autocorrelation,trend inference,peer-reviewed method,doi:10.1002/hyp.1095,"Influence of serial correlation on Mann-Kendall trend testing",verified
+hamed1998mk,trend inference,peer-reviewed method,doi:10.1016/S0022-1694(97)00125-X,"Variance correction for autocorrelated Mann-Kendall series",verified
+politis1994stationary,uncertainty resampling,peer-reviewed method,doi:10.1080/01621459.1994.10476870,"Stationary bootstrap for dependent observations",verified
+helton2006sensitivity,sensitivity analysis,peer-reviewed review,doi:10.1016/j.ress.2005.11.017,"Sampling-based uncertainty and sensitivity analysis",verified
+wilks2016stippling,climate uncertainty communication,peer-reviewed article,doi:10.1175/BAMS-D-15-00267.1,"Interpretation limits of stippling and hatching in climate maps",verified
+hijmans2012cv,spatial validation,peer-reviewed method,doi:10.1890/11-0826.1,"Cross-validation design for spatially structured distribution models",verified
+meyer2021aoa,spatial prediction limits,peer-reviewed method,doi:10.1111/2041-210X.13650,"Area of applicability for spatial prediction",verified
+meyer2018target,spatial cross-validation,peer-reviewed method,doi:10.1016/j.envsoft.2017.12.001,"Target-oriented validation for spatial prediction models",verified
+meyer2019selection,spatial predictor selection,peer-reviewed method,doi:10.1016/j.ecolmodel.2019.108815,"Predictor selection under spatial cross-validation",verified
+saito2015precision,class-imbalance metrics,peer-reviewed method,doi:10.1371/journal.pone.0118432,"Precision-recall evaluation under class imbalance",verified
+hand2001auc,classification metrics,peer-reviewed critique,doi:10.1023/A:1010920819831,"Limitations of the area under the ROC curve",verified
+gneiting2007scoring,probabilistic calibration,peer-reviewed review,doi:10.1198/016214506000001437,"Proper scoring rules prediction and calibration",verified
+crowley2022risk,heritage climate assessment,peer-reviewed framework,doi:10.1002/cli2.45,"Gaps and requirements in heritage climate and disaster assessment",verified
+agapiou2021dynamic,heritage Earth observation,peer-reviewed application,doi:10.1186/s40494-021-00542-z,"Satellite time-series change detection at archaeological sites",verified
+agapiou2017petabyte,archaeological remote sensing,peer-reviewed application,doi:10.1080/17538947.2016.1250829,"Large-scale satellite data use for archaeological monitoring",verified
+tapete2017sar,heritage monitoring,peer-reviewed review,doi:10.1016/j.jasrep.2016.07.017,"Satellite radar contributions to cultural heritage monitoring",verified
+daly2022adaptation,heritage adaptation policy,peer-reviewed synthesis,doi:10.15184/aqy.2022.114,"Climate adaptation planning for heritage in low- and middle-income countries",verified
+sesana2020vulnerability,heritage climate impacts,peer-reviewed review,doi:10.1016/j.culher.2019.06.013,"Climate vulnerability and impact assessment methods for cultural heritage",verified
+foody2002accuracy,remote-sensing accuracy,peer-reviewed review,doi:10.1016/S0034-4257(01)00295-4,"Accuracy assessment concepts for land-cover classification",verified
+congalton1991accuracy,remote-sensing accuracy,peer-reviewed review,doi:10.1016/0034-4257(91)90048-B,"Review of classification accuracy assessment",verified
+pontius2011kappa,map comparison,peer-reviewed method,doi:10.1080/01431161.2011.552923,"Quantity and allocation disagreement as alternatives to kappa",verified
+vermote2016landsat,Landsat surface reflectance,peer-reviewed algorithm paper,doi:10.1016/j.rse.2016.04.008,"LaSRC surface-reflectance processing for Landsat 8",verified
+masek2006ledaps,Landsat surface reflectance,peer-reviewed algorithm paper,doi:10.1109/LGRS.2005.857030,"LEDAPS atmospheric correction and North American surface-reflectance product",verified

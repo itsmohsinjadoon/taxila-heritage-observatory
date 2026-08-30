@@ -1,0 +1,158 @@
+\section{Scope and interpretation boundary}
+
+This Supplementary Information is the evidence-routing guide for the extended Taxila manuscript. It identifies the complete records that support the condensed methods, results and displays in the main paper. The analytical outputs describe relative landscape pressure, terrain and hydrological susceptibility, regional climate forcing and relative field-inspection priority. They do not demonstrate monument damage, condition, structural safety, annual loss probability or a legally defined risk zone. The 250, 500 and 1,000~m circles are analytical supports rather than official property or buffer boundaries. WorldCover-derived classes are proxy land-cover labels and are not independent heritage-condition observations.
+
+The final validated experiment package is authoritative. Legacy summaries and remembered values must not be used when they differ from the claim-evidence matrix, discrepancy record or final tables. Saraikala remains in the documentary inventory but is excluded from coordinate-dependent summaries because its geometry is unresolved.
+
+\section{Final display allocation}
+
+The main manuscript uses 18 non-duplicative display items: 14 figures and four tables. The Supplementary Information uses four additional figures and seven detailed tables. Source identifiers below refer to the frozen experiment package. Main figures retain only the scientific argument needed for interpretation; complete component, scale, climate, sensitivity and model records remain supplementary.
+
+\subsection{Main-manuscript display sequence}
+
+\setcounter{table}{-2}
+
+\begin{longtable}{p{0.10\textwidth}p{0.31\textwidth}p{0.48\textwidth}}
+\toprule
+ID & Display & Verified source or construction basis \\
+\midrule
+\endfirsthead
+\toprule
+ID & Display & Verified source or construction basis \\
+\midrule
+\endhead
+F1 & Study area, component inventory and analytical supports & \path{12_maps/figure_01_study_area_context_map.pdf} \\
+F2 & CHIP workflow and inference boundaries & Run sequence, configurations and \path{16_validation/experiment_status_matrix.csv}; contains no new result \\
+F3 & Five-epoch relative landscape-pressure surfaces & \path{12_maps/figure_02_five_epoch_landscape_pressure_maps.pdf} \\
+F4 & Endpoint adverse-spectral convergence & \path{12_maps/figure_03_spectral_pressure_convergence.pdf} \\
+F5 & Annual climate trends and moving-block uncertainty & \path{11_figures/figure_05_annual_climate_trends.pdf} \\
+F6 & Landsat-epoch antecedent weather & \path{11_figures/figure_07_epoch_specific_weather_forcing.pdf} \\
+F7 & Open-Meteo and NASA POWER comparison & \path{11_figures/figure_09_open_meteo_nasa_power_comparison.pdf} \\
+F8 & Terrain, flow and drainage susceptibility & \path{12_maps/figure_11_terrain_flow_drainage_susceptibility.pdf} \\
+F9 & E2024 integrated 500~m inspection priority & \path{12_maps/figure_12_integrated_component_priority_map.pdf} \\
+F10 & Component ranks across analytical supports & \path{11_figures/figure_13_component_rankings_by_scale.pdf} \\
+F11 & Buffered proxy-model performance and calibration & \path{11_figures/figure_14_proxy_model_performance_calibration.pdf} \\
+F12 & Indicator redundancy & \path{11_figures/figure_15_indicator_redundancy_matrix.pdf} \\
+F13 & Weight and spatial-block rank uncertainty & \path{11_figures/figure_16_rank_stability_uncertainty.pdf} \\
+F14 & Factor and domain ablation & \path{11_figures/figure_17_factor_domain_ablation.pdf} \\
+T1 & Data sources, periods, supports and roles & Source manifest and reproducibility data dictionary \\
+T2 & Experiment and evidence-completeness status & Experiment-status and unsuccessful-analysis records \\
+T3 & Indicator transformations, formulae and weights & \path{13_tables/composite_formulas_weights_normalisation.csv} \\
+T4 & Headline findings and inference boundaries & Final claim-evidence matrix and cited numerical outputs \\
+\bottomrule
+\end{longtable}
+
+\subsection{Supplementary display sequence}
+
+\begin{longtable}{p{0.10\textwidth}p{0.31\textwidth}p{0.48\textwidth}}
+\toprule
+ID & Display & Verified source output \\
+\midrule
+\endfirsthead
+\toprule
+ID & Display & Verified source output \\
+\midrule
+\endhead
+F S1 & Monthly Open-Meteo climatology & \path{11_figures/figure_04_open_meteo_climatology.pdf} \\
+F S2 & Seasonal and monsoon climate anomalies & \path{11_figures/figure_06_seasonal_monsoon_anomalies.pdf} \\
+F S3 & Climate-extreme timeline, 1991--2025 & \path{11_figures/figure_08_climate_extremes_timeline.pdf} \\
+F S4 & Exploratory weather-spectral lag associations & \path{11_figures/figure_10_weather_spectral_lag_associations.pdf} \\
+T S1 & Component inventory and geometry status & \path{06_processed_vectors/taxila_components_wgs84.geojson} \\
+T S2 & Complete ranks and scores at 250, 500 and 1,000~m & \path{13_tables/component_rankings_250m_500m_1000m.csv} \\
+T S3 & Climate trends and baseline sensitivity & \path{14_statistics/open_meteo_climate_trends_block_bootstrap.csv}; \path{14_statistics/climate_baseline_period_sensitivity.csv} \\
+T S4 & Complete weather-product comparison & \path{13_tables/open_meteo_nasa_power_comparison.csv} and product-agreement tables \\
+T S5 & Complete factor and domain ablation & \path{13_tables/complete_factor_domain_ablation.csv}; \path{13_tables/component_factor_domain_ablation_ranks.csv} \\
+T S6 & Weight and spatial-block rank distributions & Monte Carlo rank table and \path{14_statistics/component_rank_spatial_block_bootstrap.csv} \\
+T S7 & Proxy-model metrics, calibration and confusion records & Buffered comparison, calibration, class distribution and primary confusion matrix tables \\
+\bottomrule
+\end{longtable}
+
+\section{S1: Spatial inventory and analytical supports}
+
+\setcounter{table}{0}
+
+Table~S1 must report all 18 documentary component records, official identifiers, geometry status and coordinate-dependent inclusion. It must state that 17 components were geolocated, that Saraikala was not ranked, and that point-centred analytical circles are not official polygons. Figure~1 in the main paper should carry the cartographic context, coordinate reference system, scale bar, north arrow, component names and transparent NoData treatment.
+
+\input{../tables/supplementary/table_s01_component_inventory.tex}
+
+\input{../tables/supplementary/table_s02_component_ranks.tex}
+
+\section{S2: Landsat record, quality control and common support}
+
+This section must preserve the complete 55-scene inventory, sensor allocation, three-year post-monsoon windows, quality-flag exclusions, Collection~2 scaling, valid-observation counts and common-support construction. Landsat surface-reflectance provenance and cross-sensor interpretation are anchored by established processing and product studies \citep{masek2006ledaps,vermote2016landsat,roy2016landsat}. The workflow used Collection~2 quality flags; Fmask literature documents the broader importance of cloud and shadow control but does not describe an extra algorithm executed in this study \citep{zhu2012fmask,zhu2015fmask}. Denser breakpoint and trajectory methods provide methodological context for what a five-epoch design cannot resolve \citep{verbesselt2010bfast,kennedy2010landtrendr}.
+
+\section{S3: Spectral transformations and convergence}
+
+This section must give the executed equations, band mapping, pressure direction, normalisation, percentile thresholds and common-support denominator. It must preserve exact endpoint thresholds and the counts for zero, one, two and three convergent criteria. The full component-by-epoch summaries belong here. Captions must call the outputs landscape pressure or spectral convergence, never condition, damage or risk.
+
+\section{S4: Climate provenance, trends and product sensitivity}
+
+Figures~S1--S4 and Tables~S3--S4 provide the complete monthly, seasonal, annual, extreme, baseline-sensitivity, product-comparison and acquisition-window records. ERA5 and ERA5-Land publications establish the reanalysis context but do not convert a gridded product into local station truth \citep{hersbach2020era5,munozsabater2021era5land}. Trend interpretation must retain the consequences of serial dependence and multiple comparisons \citep{hamed1998mk,yue2002autocorrelation,wilks2016stippling}. The moving-block design is a dependence-preserving resampling choice, not an assertion that five years is the uniquely correct block length \citep{politis1994stationary}. All five-epoch weather-spectral correlations remain exploratory, without causal language or formal significance claims.
+
+\begin{figure}[p]
+\centering
+\includegraphics[width=0.94\textwidth]{figure_s01_climatology.pdf}
+\caption{Monthly Open-Meteo climatology for the four weather cells associated with the 17 mapped Taxila components. The 1991 to 2020 baseline summarises the seasonal cycle of precipitation, temperature, humidity, soil moisture and reference evapotranspiration using each variable's native units. Values describe regional gridded forcing, not station observations or 30 m weather.}
+\label{fig:s-climatology}
+\end{figure}
+
+\begin{figure}[p]
+\centering
+\includegraphics[width=0.90\textwidth]{figure_s02_seasonal_anomalies.pdf}
+\caption{Seasonal and monsoon climate anomalies from the Open-Meteo 1991 to 2025 record. Anomalies are referenced to the matching 1991 to 2020 climatological aggregation. Precipitation is in mm and temperature in degrees C. The panels show interannual variability and do not constitute a future projection or component-scale hazard record.}
+\label{fig:s-seasonal}
+\end{figure}
+
+\begin{figure}[p]
+\centering
+\includegraphics[width=0.91\textwidth]{figure_s03_extreme_timeline.pdf}
+\caption{Timeline of selected regional climate-extreme metrics, 1991 to 2025. Metrics were calculated from the complete Open-Meteo daily series after quality control. Counts and magnitudes follow the definitions in the reproducibility data dictionary. The figure describes gridded historical variability and does not establish event occurrence or impact at a heritage component.}
+\label{fig:s-extremes}
+\end{figure}
+
+\begin{figure}[p]
+\centering
+\includegraphics[width=0.96\textwidth]{figure_s04_weather_spectral_associations.pdf}
+\caption{Exploratory associations between antecedent weather summaries and five satellite-composite spectral summaries. Coefficients use only five independent epochs; leave-one-epoch ranges show sensitivity to omitting one composite. The display is descriptive, contains no confirmatory significance claim and does not attribute spectral change to climate forcing.}
+\label{fig:s-weather-spectral}
+\end{figure}
+
+\FloatBarrier
+\input{../tables/supplementary/table_s03_climate_trends.tex}
+
+\input{../tables/supplementary/table_s04_weather_comparison.tex}
+
+\section{S5: Terrain and hydrological susceptibility}
+
+This section must document elevation, slope, roughness, terrain position, D8 flow accumulation, wetness proxy, derived drainage network and drainage distance at each analytical radius. It must report transformations and NoData rules, then preserve complete component summaries. The variables are susceptibility descriptors based on digital elevation data. They are not observed flood depth, erosion rate, blocked drainage or calibrated hazard probability.
+
+\section{S6: Component scores and scale sensitivity}
+
+Table~S2 must preserve every score and rank at all three analytical supports, including ties and the component identifiers used in the vector inventory. The main text reports the fixed 500~m sequence, while the supplementary table allows the reader to inspect every reversal. Rank correlations, top-three overlap, top-five overlap and maximum movement must be reported with the exact paired scales.
+
+
+\section{S7: Redundancy, ablation and rank uncertainty}
+
+Tables~S5--S6 must include the complete indicator-correlation matrix, all factor and domain removals, 50,000 Dirichlet weight draws and 2,000 spatial-block rank draws. Sampling-based uncertainty and sensitivity address different questions and must remain separately labelled \citep{helton2006sensitivity}. The fixed Giri score, the weight-perturbation distribution and the spatial-bootstrap Bhallar/Giri overlap must not be collapsed into a single winning component.
+
+\input{../tables/supplementary/table_s05_ablation.tex}
+
+\input{../tables/supplementary/table_s06_rank_uncertainty.tex}
+
+\section{S8: Geographic proxy-label experiment}
+
+Table~S7 must preserve development, buffer and test sample counts, group definitions, tuning records, all model metrics, class-wise confusion, calibration and block-bootstrap intervals. Spatial validation must be aligned with the geographic transfer claim \citep{hijmans2012cv,meyer2018target,meyer2019selection,meyer2021aoa,roberts2017cv}. Macro-F1, multiclass area under the receiver-operating-characteristic curve and probability scores describe complementary properties \citep{saito2015precision,hand2001auc,gneiting2007scoring}. None can overcome the lack of independent condition labels. The accuracy claim is restricted to WorldCover-derived proxy agreement, consistent with established land-cover accuracy and disagreement literature \citep{congalton1991accuracy,foody2002accuracy,olofsson2014accuracy,pontius2011kappa}.
+
+\input{../tables/supplementary/table_s07_proxy_model.tex}
+
+\section{S9: Heritage interpretation and field use}
+
+The supplementary interpretation record must distinguish screening from complete risk assessment, and it must keep landscape change separate from material condition. Heritage Earth-observation studies support repeated landscape surveillance and change detection \citep{agapiou2017petabyte,agapiou2021dynamic,tapete2017sar}. Climate-vulnerability and adaptation research further shows that usable conservation decisions require vulnerability, capacity, local knowledge and field evidence beyond remote forcing layers \citep{sesana2020vulnerability,crowley2022risk,daly2022adaptation}. These sources support the paper's conservative field-inspection endpoint; they do not supply missing condition labels for Taxila.
+
+\section{S10: Reproducibility and experiment disposition}
+
+The final supplementary archive must include or cross-reference the source manifest, scene and weather inventories, data dictionary, configurations, random seed, dependency record, execution logs, checksums, claim-evidence audit, equation-code map, display-source map, discrepancy record, result-disposition matrix and limitations register. Fourteen experiments were completed, the weather-spectral association experiment remained exploratory, and the ancillary-hazard experiment was not executed. Earthquake, flood-event, landslide, quarry and population layers must not appear as completed analyses.
+
+\section{Caption and reporting checklist}
+
+Every final display must define abbreviations, units, denominator, uncertainty and analysis scale. Maps must state the coordinate reference system and identify whether they represent pressure, susceptibility or priority. Captions must explain NoData and source provenance. Table notes must distinguish fixed scores, ranks, percentile intervals and probabilities. No caption may use damage, condition accuracy or risk unless the displayed analysis independently supports that term. Final insertion, numbering and cross-referencing of the verified files are Phase~8 assembly tasks.

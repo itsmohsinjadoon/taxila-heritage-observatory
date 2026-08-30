@@ -1,0 +1,279 @@
+{
+  "schema_version": "1.0",
+  "random_seed": 311,
+  "endpoint_screening": {
+    "endpoint_supported_cells": 386280,
+    "endpoint_supported_percent": 95.73708734014077,
+    "thresholds": {
+      "delta_ndvi_q20": -0.005434888415038586,
+      "delta_mndwi_q20": -0.037427619099617004,
+      "delta_ndbi_q80": 0.008348563686013222
+    },
+    "convergence_cell_counts": {
+      "0": 225396,
+      "1": 95493,
+      "2": 59898,
+      "3": 5493
+    },
+    "share_c_ge_2_percent": 16.928393911152533,
+    "share_c_eq_3_percent": 1.4220254737496116,
+    "grid_median_delta": {
+      "NDVI": 0.07835812866687775,
+      "MNDWI": -0.0070809125900268555,
+      "NDBI": -0.04649501293897629
+    }
+  },
+  "climate": {
+    "source": "NASA POWER daily point API",
+    "coordinate": {
+      "longitude": 72.835,
+      "latitude": 33.746
+    },
+    "baseline": "1991-2020",
+    "thresholds": {
+      "wet_day_p95_mm": 31.84,
+      "tmax_p95_c": 42.591499999999996,
+      "dtr_p95_c": 18.169999999999998,
+      "wind_p95_ms": 3.72
+    },
+    "epoch_extreme_scores": [
+      {
+        "epoch_id": "E2004",
+        "label_year": 2004,
+        "climate_extreme_score": 0.5166666666666666
+      },
+      {
+        "epoch_id": "E2009",
+        "label_year": 2009,
+        "climate_extreme_score": 0.462037037037037
+      },
+      {
+        "epoch_id": "E2014",
+        "label_year": 2014,
+        "climate_extreme_score": 0.4842592592592592
+      },
+      {
+        "epoch_id": "E2019",
+        "label_year": 2019,
+        "climate_extreme_score": 0.3138888888888889
+      },
+      {
+        "epoch_id": "E2024",
+        "label_year": 2024,
+        "climate_extreme_score": 0.5259259259259259
+      }
+    ],
+    "highest_climate_extreme_epoch": "E2024"
+  },
+  "terrain": {
+    "source": "1 arc-second HGT N33E072 public terrain tile",
+    "component_scale_records": 51
+  },
+  "proxy_model_comparison": {
+    "best_model": "Neural MLP",
+    "best_outer_proxy_macro_f1": 0.8870803659870798,
+    "best_outer_proxy_balanced_accuracy": 0.8870082208613931,
+    "best_outer_proxy_overall_agreement": 0.8693682955899881,
+    "role": "held-out WorldCover-consensus proxy agreement; not independent accuracy"
+  },
+  "integrated_2024_500m_top_components": [
+    {
+      "component_id": "139-009",
+      "component_name": "Giri complex of monuments",
+      "local_priority_score": 0.5911764705882352,
+      "landscape_pressure_score": 0.5058823529411764,
+      "terrain_susceptibility_score": 0.676470588235294
+    },
+    {
+      "component_id": "139-018",
+      "component_name": "Giri Mosque and tombs",
+      "local_priority_score": 0.5725490196078431,
+      "landscape_pressure_score": 0.48823529411764705,
+      "terrain_susceptibility_score": 0.6568627450980392
+    },
+    {
+      "component_id": "139-015",
+      "component_name": "Jaulian stupa and monastery",
+      "local_priority_score": 0.5676470588235294,
+      "landscape_pressure_score": 0.5176470588235295,
+      "terrain_susceptibility_score": 0.6176470588235294
+    },
+    {
+      "component_id": "139-013",
+      "component_name": "Mohra Moradu stupa and monastery",
+      "local_priority_score": 0.5392156862745099,
+      "landscape_pressure_score": 0.5,
+      "terrain_susceptibility_score": 0.5784313725490197
+    },
+    {
+      "component_id": "139-006",
+      "component_name": "Dharmarajika stupa and monastery",
+      "local_priority_score": 0.5362745098039217,
+      "landscape_pressure_score": 0.5529411764705883,
+      "terrain_susceptibility_score": 0.5196078431372549
+    },
+    {
+      "component_id": "139-007",
+      "component_name": "Khader Mohra (Akhuri)",
+      "local_priority_score": 0.5352941176470587,
+      "landscape_pressure_score": 0.5117647058823529,
+      "terrain_susceptibility_score": 0.5588235294117646
+    },
+    {
+      "component_id": "139-008",
+      "component_name": "Kalawan group of buildings",
+      "local_priority_score": 0.5191176470588235,
+      "landscape_pressure_score": 0.5676470588235294,
+      "terrain_susceptibility_score": 0.4705882352941176
+    },
+    {
+      "component_id": "139-017",
+      "component_name": "Buddhist remains around Bhallar stupa",
+      "local_priority_score": 0.517156862745098,
+      "landscape_pressure_score": 0.338235294117647,
+      "terrain_susceptibility_score": 0.6960784313725489
+    },
+    {
+      "component_id": "139-005",
+      "component_name": "Sirsukh (fortified ruined city)",
+      "local_priority_score": 0.5014705882352941,
+      "landscape_pressure_score": 0.5617647058823529,
+      "terrain_susceptibility_score": 0.4411764705882353
+    },
+    {
+      "component_id": "139-010",
+      "component_name": "Kunala stupa and monastery",
+      "local_priority_score": 0.5009803921568627,
+      "landscape_pressure_score": 0.5411764705882353,
+      "terrain_susceptibility_score": 0.46078431372549017
+    }
+  ],
+  "monte_carlo_top5_probabilities": [
+    {
+      "component_id": "139-015",
+      "component_name": "Jaulian stupa and monastery",
+      "probability_top_5": 0.83424,
+      "rank_p2_5": 2.0,
+      "rank_p97_5": 7.0
+    },
+    {
+      "component_id": "139-009",
+      "component_name": "Giri complex of monuments",
+      "probability_top_5": 0.83178,
+      "rank_p2_5": 1.0,
+      "rank_p97_5": 9.0
+    },
+    {
+      "component_id": "139-018",
+      "component_name": "Giri Mosque and tombs",
+      "probability_top_5": 0.73022,
+      "rank_p2_5": 2.0,
+      "rank_p97_5": 11.0
+    },
+    {
+      "component_id": "139-013",
+      "component_name": "Mohra Moradu stupa and monastery",
+      "probability_top_5": 0.61448,
+      "rank_p2_5": 4.0,
+      "rank_p97_5": 11.0
+    },
+    {
+      "component_id": "139-006",
+      "component_name": "Dharmarajika stupa and monastery",
+      "probability_top_5": 0.51224,
+      "rank_p2_5": 2.0,
+      "rank_p97_5": 8.0
+    }
+  ],
+  "scale_rank_correlations": [
+    {
+      "radius_a_m": 250,
+      "radius_b_m": 250,
+      "spearman_rank_correlation": 1.0
+    },
+    {
+      "radius_a_m": 250,
+      "radius_b_m": 500,
+      "spearman_rank_correlation": 0.8014705882352942
+    },
+    {
+      "radius_a_m": 250,
+      "radius_b_m": 1000,
+      "spearman_rank_correlation": 0.7107843137254903
+    },
+    {
+      "radius_a_m": 500,
+      "radius_b_m": 250,
+      "spearman_rank_correlation": 0.8014705882352942
+    },
+    {
+      "radius_a_m": 500,
+      "radius_b_m": 500,
+      "spearman_rank_correlation": 1.0
+    },
+    {
+      "radius_a_m": 500,
+      "radius_b_m": 1000,
+      "spearman_rank_correlation": 0.9240196078431374
+    },
+    {
+      "radius_a_m": 1000,
+      "radius_b_m": 250,
+      "spearman_rank_correlation": 0.7107843137254903
+    },
+    {
+      "radius_a_m": 1000,
+      "radius_b_m": 500,
+      "spearman_rank_correlation": 0.9240196078431374
+    },
+    {
+      "radius_a_m": 1000,
+      "radius_b_m": 1000,
+      "spearman_rank_correlation": 1.0
+    }
+  ],
+  "ablation": [
+    {
+      "ablation": "Full local (landscape + terrain)",
+      "spearman_rho_with_full": 1.0,
+      "top5_overlap_with_full": 5,
+      "rank_1_component": "Giri complex of monuments"
+    },
+    {
+      "ablation": "Landscape only",
+      "spearman_rho_with_full": 0.31617647058823534,
+      "top5_overlap_with_full": 1,
+      "rank_1_component": "Sirkap (fortified city)"
+    },
+    {
+      "ablation": "Terrain only",
+      "spearman_rho_with_full": 0.8186274509803922,
+      "top5_overlap_with_full": 4,
+      "rank_1_component": "Buddhist remains around Bhallar stupa"
+    },
+    {
+      "ablation": "No NDVI",
+      "spearman_rho_with_full": 0.9877450980392157,
+      "top5_overlap_with_full": 5,
+      "rank_1_component": "Giri complex of monuments"
+    },
+    {
+      "ablation": "No MNDWI",
+      "spearman_rho_with_full": -0.27450980392156865,
+      "top5_overlap_with_full": 0,
+      "rank_1_component": "Buddhist remains around Bhallar stupa"
+    },
+    {
+      "ablation": "No NDBI",
+      "spearman_rho_with_full": 0.9901960784313727,
+      "top5_overlap_with_full": 4,
+      "rank_1_component": "Giri complex of monuments"
+    }
+  ],
+  "caveats": [
+    "Climate forcing is site-wide at NASA POWER native meteorological support and does not distinguish nearby components.",
+    "The integrated score is a relative pressure/exposure screen, not a probability of physical monument damage.",
+    "Land-cover model comparisons use WorldCover consensus as weak supervision and must not be reported as independent expert accuracy.",
+    "Five Landsat epochs support descriptive trajectories and sensitivity analysis, not high-powered causal trend inference."
+  ]
+}

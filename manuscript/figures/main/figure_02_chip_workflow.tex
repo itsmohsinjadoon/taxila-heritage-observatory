@@ -1,0 +1,25 @@
+\begin{tikzpicture}[
+  font=\sffamily\footnotesize,
+  node distance=5.5mm,
+  process/.style={draw=blue!55!black, rounded corners=2pt, fill=blue!5,
+    minimum height=8mm, text width=0.78\linewidth, align=center, inner sep=4pt},
+  boundary/.style={draw=orange!70!black, rounded corners=2pt, fill=orange!7,
+    text width=0.72\linewidth, align=center, inner sep=4pt},
+  arrow/.style={-Latex, semithick, draw=black!65}
+]
+\node[process] (a) {1. Source assembly and provenance control\\Landsat, weather, terrain, WorldCover proxy labels and component inventory};
+\node[process, below=of a] (b) {2. Quality control and harmonisation\\Cloud and shadow masking, fixed 30 m grid, complete weather dates and metric CRS};
+\node[process, below=of b] (c) {3. Domain-specific evidence\\Multi-epoch landscape pressure, climate forcing, and terrain and hydrological susceptibility};
+\node[process, below=of c] (d) {4. Component aggregation\\Empirical percentiles within 250, 500 and 1,000 m analytical supports};
+\node[process, below=of d] (e) {5. Relative field-inspection priority\\Hierarchical combination with declared structural weights};
+\node[process, below=of e] (f) {6. Robustness assessment\\Scale sensitivity, redundancy, ablation, 50,000 weight draws and 2,000 spatial-block draws};
+\node[process, below=of f] (g) {7. Geographic proxy-label experiment\\Development-only spatial tuning, 2.01 km buffer and contiguous held-out test stripe};
+\node[boundary, below=7mm of g] (h) {Decision output: an uncertainty-aware sequence for targeted field inspection\\Not a monument-condition observation, damage probability, legal buffer or validated risk model};
+\draw[arrow] (a) -- (b);
+\draw[arrow] (b) -- (c);
+\draw[arrow] (c) -- (d);
+\draw[arrow] (d) -- (e);
+\draw[arrow] (e) -- (f);
+\draw[arrow] (f) -- (g);
+\draw[arrow] (g) -- (h);
+\end{tikzpicture}

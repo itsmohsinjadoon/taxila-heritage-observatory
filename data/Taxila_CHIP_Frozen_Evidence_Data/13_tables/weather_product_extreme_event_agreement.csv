@@ -1,0 +1,3 @@
+variable,open_meteo_p95,nasa_power_p95,open_event_days,nasa_event_days,intersection_days,jaccard_agreement,open_event_recall_against_nasa
+precipitation_sum,14.907499999999983,13.194499999999989,617,743,250,0.22522522522522523,0.3364737550471063
+temperature_2m_max,37.42874999999999,42.591499999999996,650,590,415,0.503030303030303,0.7033898305084746

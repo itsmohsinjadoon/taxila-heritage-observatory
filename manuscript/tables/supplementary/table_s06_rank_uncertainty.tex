@@ -1,0 +1,73 @@
+\begin{landscape}
+\begingroup
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{longtable}{p{0.09\textwidth}p{0.30\textwidth}rrp{0.14\textwidth}rr}
+\caption{Complete domain-weight and spatial-block rank distributions.}\label{tab:s-rank-uncertainty}\\
+\toprule
+ID & Component & Fixed R & Median R & 95\% R interval & P(top 3) & P(top 5) \\
+\midrule
+\endfirsthead
+\caption[]{Complete domain-weight and spatial-block rank distributions. (continued)}\\
+\toprule
+ID & Component & Fixed R & Median R & 95\% R interval & P(top 3) & P(top 5) \\
+\midrule
+\endhead
+\midrule
+\multicolumn{7}{r}{Continued on next page}\\
+\endfoot
+\bottomrule
+\endlastfoot
+139-009 & Giri complex of monuments & 1.0 & 1.0 & [1.0, 9.0] & 0.774 & 0.832 \\
+139-018 & Giri Mosque and tombs & 2.0 & 3.0 & [2.0, 11.0] & 0.679 & 0.730 \\
+139-015 & Jaulian stupa and monastery & 3.0 & 4.0 & [2.0, 7.0] & 0.440 & 0.834 \\
+139-013 & Mohra Moradu stupa and monastery & 4.0 & 5.0 & [4.0, 11.0] & 0.000 & 0.614 \\
+139-006 & Dharmarajika stupa and monastery & 5.0 & 5.0 & [2.0, 8.0] & 0.219 & 0.512 \\
+139-007 & Khader Mohra (Akhuri) & 6.0 & 6.0 & [5.0, 9.0] & 0.000 & 0.045 \\
+139-008 & Kalawan group of buildings & 7.0 & 7.0 & [2.0, 9.0] & 0.254 & 0.386 \\
+139-017 & Buddhist remains around Bhallar stupa & 8.0 & 8.0 & [1.0, 15.0] & 0.305 & 0.443 \\
+139-005 & Sirsukh (fortified ruined city) & 9.0 & 9.0 & [3.0, 11.0] & 0.102 & 0.202 \\
+139-014 & Pippala stupa and monastery & 10.0 & 10.0 & [7.0, 13.0] & 0.000 & 0.000 \\
+139-010 & Kunala stupa and monastery & 11.0 & 10.0 & [6.0, 10.0] & 0.000 & 0.009 \\
+139-004 & Sirkap (fortified city) & 12.0 & 12.0 & [1.0, 15.0] & 0.226 & 0.270 \\
+139-016 & Lalchak mounds & 13.0 & 13.0 & [4.0, 16.0] & 0.000 & 0.123 \\
+139-001 & Khanpur Cave & 14.0 & 14.0 & [12.0, 15.0] & 0.000 & 0.000 \\
+139-012 & Lalchak and Badalpur Buddhist stuppa & 15.0 & 15.0 & [12.0, 17.0] & 0.000 & 0.000 \\
+139-011 & Jandial complex & 16.0 & 16.0 & [13.0, 17.0] & 0.000 & 0.000 \\
+139-003 & Bhir Mound & 17.0 & 16.0 & [14.0, 17.0] & 0.000 & 0.000 \\
+\end{longtable}
+\noindent\textit{Note:} Panel A uses 50,000 Dirichlet domain-weight draws. Panel B uses 2,000 resamples of 150 m spectral blocks with terrain held fixed.
+\endgroup
+\par\medskip\noindent\textit{Panel B: Spatial-block rank distribution}\par
+\begingroup
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{center}
+\begin{adjustbox}{max width=\linewidth}
+\begin{tabular}{p{0.09\textwidth}p{0.27\textwidth}rp{0.14\textwidth}rp{0.14\textwidth}rr}
+\toprule
+ID & Component & Median S & 95\% S interval & Median R & 95\% R interval & P(top 3) & P(top 5) \\
+\midrule
+139-017 & Buddhist remains around Bhallar stupa & 0.598 & [0.547, 0.627] & 1.0 & [1.0, 5.0] & 0.911 & 0.989 \\
+139-009 & Giri complex of monuments & 0.603 & [0.581, 0.603] & 2.0 & [1.0, 3.0] & 0.986 & 1.000 \\
+139-018 & Giri Mosque and tombs & 0.564 & [0.564, 0.586] & 3.0 & [2.0, 5.0] & 0.615 & 0.997 \\
+139-015 & Jaulian stupa and monastery & 0.559 & [0.515, 0.581] & 4.0 & [2.0, 8.5] & 0.294 & 0.838 \\
+139-006 & Dharmarajika stupa and monastery & 0.532 & [0.488, 0.576] & 6.0 & [3.0, 11.0] & 0.038 & 0.376 \\
+139-013 & Mohra Moradu stupa and monastery & 0.510 & [0.436, 0.583] & 8.0 & [3.0, 15.0] & 0.051 & 0.218 \\
+139-014 & Pippala stupa and monastery & 0.510 & [0.473, 0.569] & 8.0 & [3.5, 12.0] & 0.025 & 0.148 \\
+139-010 & Kunala stupa and monastery & 0.510 & [0.466, 0.554] & 8.0 & [4.5, 12.0] & 0.005 & 0.089 \\
+139-007 & Khader Mohra (Akhuri) & 0.500 & [0.434, 0.588] & 9.0 & [3.0, 15.0] & 0.046 & 0.175 \\
+139-008 & Kalawan group of buildings & 0.500 & [0.448, 0.551] & 9.0 & [4.5, 14.0] & 0.004 & 0.086 \\
+139-005 & Sirsukh (fortified ruined city) & 0.500 & [0.456, 0.530] & 9.0 & [5.5, 13.0] & 0.001 & 0.023 \\
+139-004 & Sirkap (fortified city) & 0.490 & [0.461, 0.534] & 10.0 & [6.0, 13.0] & 0.001 & 0.018 \\
+139-016 & Lalchak mounds & 0.446 & [0.417, 0.475] & 14.0 & [11.0, 16.0] & 0.000 & 0.000 \\
+139-011 & Jandial complex & 0.438 & [0.404, 0.471] & 14.0 & [12.0, 16.0] & 0.000 & 0.000 \\
+139-001 & Khanpur Cave & 0.441 & [0.404, 0.507] & 14.0 & [8.5, 16.0] & 0.001 & 0.002 \\
+139-003 & Bhir Mound & 0.426 & [0.390, 0.449] & 16.0 & [13.0, 16.0] & 0.000 & 0.000 \\
+139-012 & Lalchak and Badalpur Buddhist stuppa & 0.363 & [0.333, 0.407] & 17.0 & [16.0, 17.0] & 0.000 & 0.000 \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{center}
+\endgroup
+\end{landscape}

@@ -1,0 +1,11 @@
+{
+  "rows": 12784,
+  "start_date": "1991-01-01 00:00:00",
+  "end_date": "2025-12-31 00:00:00",
+  "duplicate_dates": 0,
+  "missing_values": 0,
+  "negative_precipitation": 0,
+  "precipitation_gt200mm_days": 6,
+  "maximum_daily_precipitation_mm": 450.57,
+  "decision": "retain source values; report full comparison and flagged-value/pre-2020 sensitivity; do not choose the preferred product without station validation"
+}

@@ -1,0 +1,7 @@
+epoch_id,platform,sensor,catalogue_scenes
+E2004,landsat-7,ETM+,11
+E2009,landsat-7,ETM+,11
+E2014,landsat-8,OLI,14
+E2019,landsat-8,OLI,13
+E2024,landsat-8,OLI/OLI-2,14
+E2024,landsat-9,OLI/OLI-2,14

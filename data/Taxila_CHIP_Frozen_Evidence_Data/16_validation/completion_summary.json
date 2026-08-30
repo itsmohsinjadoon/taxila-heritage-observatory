@@ -1,0 +1,90 @@
+{
+  "status": "PASS",
+  "run_root": "/workspace/scratch/7991c049fd41/Taxila_PreserveX_Experimental_Run_20260801_042452",
+  "baseline_validation": "PASS",
+  "final_validation": {
+    "status": "PASS",
+    "checks_passed": 18,
+    "checks_total": 18,
+    "checks": [
+      {
+        "check": "baseline_reproduction_pass",
+        "pass": true
+      },
+      {
+        "check": "open_meteo_four_unique_cells",
+        "pass": true
+      },
+      {
+        "check": "open_meteo_17_components",
+        "pass": true
+      },
+      {
+        "check": "open_meteo_qc_pass",
+        "pass": true
+      },
+      {
+        "check": "buffered_model_block_overlap_zero",
+        "pass": true
+      },
+      {
+        "check": "buffered_model_minimum_separation",
+        "pass": true
+      },
+      {
+        "check": "primary_model_selected_from_inner_cv_once",
+        "pass": true
+      },
+      {
+        "check": "figure_png_count_at_least_17",
+        "pass": true
+      },
+      {
+        "check": "figure_pdf_count_at_least_17",
+        "pass": true
+      },
+      {
+        "check": "publication_png_integrity",
+        "pass": true
+      },
+      {
+        "check": "publication_pdf_integrity",
+        "pass": true
+      },
+      {
+        "check": "integrated_geojson_exists",
+        "pass": true
+      },
+      {
+        "check": "derived_geotiff_validation_pass",
+        "pass": true
+      },
+      {
+        "check": "derived_geotiff_count_six",
+        "pass": true
+      },
+      {
+        "check": "claim_evidence_matrix_exists",
+        "pass": true
+      },
+      {
+        "check": "experiment_status_matrix_has_16_rows",
+        "pass": true
+      },
+      {
+        "check": "proxy_role_explicit",
+        "pass": true
+      },
+      {
+        "check": "saraikala_retained_unresolved",
+        "pass": true
+      }
+    ],
+    "generated_utc": "2026-07-31T22:15:35.709412+00:00"
+  },
+  "figures_and_maps": 17,
+  "tables_csv": 48,
+  "models": 5,
+  "random_seed": 311,
+  "completed_utc": "2026-07-31T22:15:35.957480+00:00"
+}

@@ -1,0 +1,92 @@
+{
+  "status": "PASS",
+  "checks_passed": 20,
+  "checks_total": 20,
+  "checks": [
+    {
+      "check": "table_exists:component_epoch_multiscale_landsat.csv",
+      "pass": true
+    },
+    {
+      "check": "table_exists:component_endpoint_hotspots.csv",
+      "pass": true
+    },
+    {
+      "check": "table_exists:matched_epoch_climate_metrics.csv",
+      "pass": true
+    },
+    {
+      "check": "table_exists:component_multiscale_terrain_hydrology.csv",
+      "pass": true
+    },
+    {
+      "check": "table_exists:component_epoch_integrated_scores.csv",
+      "pass": true
+    },
+    {
+      "check": "table_exists:spatially_blocked_model_comparison.csv",
+      "pass": true
+    },
+    {
+      "check": "table_exists:monte_carlo_domain_weight_rank_uncertainty.csv",
+      "pass": true
+    },
+    {
+      "check": "table_exists:leave_one_domain_factor_out_ablation.csv",
+      "pass": true
+    },
+    {
+      "check": "figure_exists:figure_01_",
+      "pass": true
+    },
+    {
+      "check": "figure_exists:figure_02_",
+      "pass": true
+    },
+    {
+      "check": "figure_exists:figure_03_",
+      "pass": true
+    },
+    {
+      "check": "figure_exists:figure_04_",
+      "pass": true
+    },
+    {
+      "check": "figure_exists:figure_05_",
+      "pass": true
+    },
+    {
+      "check": "figure_exists:figure_06_",
+      "pass": true
+    },
+    {
+      "check": "figure_exists:figure_07_",
+      "pass": true
+    },
+    {
+      "check": "figure_exists:figure_08_",
+      "pass": true
+    },
+    {
+      "check": "figure_exists:figure_09_",
+      "pass": true
+    },
+    {
+      "check": "endpoint_cell_count_reproduced",
+      "pass": true
+    },
+    {
+      "check": "model_block_overlap_zero",
+      "pass": true
+    },
+    {
+      "check": "scores_finite_and_bounded",
+      "pass": true
+    }
+  ],
+  "source_hashes": {
+    "nasa_power_json": "d1868aa2b5d39f523c13f87a4a3848fdf22e8222b15d089ce06d6da3db42a6ef",
+    "terrain_hgt_gz": "3533552b896de675087a6cfbd6d758f44b1ef46397b1a277b195c1d760c9fbd0",
+    "raw_manifest": "b047de233f280a24275f73e21b55d10bd64b2f2ba768ff21653067041c6f188c"
+  }
+}

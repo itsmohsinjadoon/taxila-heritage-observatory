@@ -1,0 +1,38 @@
+\begingroup
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{longtable}{p{0.05\textwidth}p{0.27\textwidth}p{0.15\textwidth}p{0.44\textwidth}}
+\caption{Executed experiment and evidence-completeness status.}\label{tab:experiment-status}\\
+\toprule
+No. & Experiment & Status & Technical disposition \\
+\midrule
+\endfirsthead
+\caption[]{Executed experiment and evidence-completeness status. (continued)}\\
+\toprule
+No. & Experiment & Status & Technical disposition \\
+\midrule
+\endhead
+\midrule
+\multicolumn{4}{r}{Continued on next page}\\
+\endfoot
+\bottomrule
+\endlastfoot
+1 & Existing Landsat/proxy baseline reproduction & COMPLETED & Exact legacy outputs reproduced in isolated run; validation gates checked. \\
+2 & Data acquisition and completeness & COMPLETED & Workspace inventory, four Open-Meteo weather cells and source manifests created. \\
+3 & Open-Meteo weather analysis & COMPLETED & 1991--2025 ERA5-Seamless daily data acquired and quality controlled. \\
+4 & Open-Meteo versus NASA POWER & COMPLETED & Daily, seasonal, annual and extreme-event agreement quantified; neither treated as ground truth. \\
+5 & Historical climate variability and trends & COMPLETED & Annual/seasonal metrics, Theil-Sen slopes, moving-block intervals and FDR produced. \\
+6 & Weather during Landsat epochs & COMPLETED & Weather matched to every retained scene date and aggregated to composite epochs. \\
+7 & Weather-spectral relationships & EXPLORATORY & Five unique epochs; descriptive lag associations and leave-one-epoch sensitivity only. \\
+8 & Terrain and hydrological susceptibility & COMPLETED & Elevation, slope, D8 convergence, wetness proxy and drainage distance analysed. \\
+9 & Integrated component priority & COMPLETED & Hierarchical landscape/terrain score plus climate context; not monument risk. \\
+10 & Scale sensitivity & COMPLETED & 250/500/1000 m Spearman, Kendall, top-k and reversals quantified. \\
+11 & Redundancy analysis & COMPLETED & Indicator correlations and NDVI/NDBI grouping decision recorded. \\
+12 & Factor and domain ablation & COMPLETED & Leave-factor and leave-domain ranking effects calculated. \\
+13 & Weighting uncertainty & COMPLETED & 50,000 Dirichlet domain-weight simulations reproduced; expert weights unavailable. \\
+14 & Block-bootstrap uncertainty & COMPLETED & 2,000 150 m spectral-block ranking draws plus 2,000 test-block model draws. \\
+15 & Proxy-model comparison & COMPLETED & Legacy 79/21 split reproduced and stricter buffered split executed with calibration. \\
+16 & Optional ancillary hazards & NOT EXECUTED & No reliable harmonised event inventory was required for the central question; scope preserved. \\
+\end{longtable}
+\noindent\textit{Note:} Completed refers to successful execution and output validation within the frozen pipeline, not independent validation of heritage condition.
+\endgroup

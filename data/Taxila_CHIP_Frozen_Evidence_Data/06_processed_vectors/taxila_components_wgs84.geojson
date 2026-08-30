@@ -1,0 +1,384 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "139-001",
+      "properties": {
+        "component_id": "139-001",
+        "name": "Khanpur Cave",
+        "coordinate_status": "official_web_point",
+        "source_authority": "UNESCO World Heritage Centre",
+        "source_url": "https://whc.unesco.org/en/list/139/maps/",
+        "legal_buffer_available": false,
+        "longitude": 72.909294444,
+        "latitude": 33.7992
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.909294444,
+          33.7992
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "139-002",
+      "properties": {
+        "component_id": "139-002",
+        "name": "Saraikala, prehistoric mound",
+        "coordinate_status": "official_id_geometry_missing",
+        "source_authority": "UNESCO World Heritage Centre",
+        "source_url": "https://whc.unesco.org/en/list/139/maps/",
+        "legal_buffer_available": false,
+        "longitude": null,
+        "latitude": null
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "id": "139-003",
+      "properties": {
+        "component_id": "139-003",
+        "name": "Bhir Mound",
+        "coordinate_status": "official_web_point",
+        "source_authority": "UNESCO World Heritage Centre",
+        "source_url": "https://whc.unesco.org/en/list/139/maps/",
+        "legal_buffer_available": false,
+        "longitude": 72.819330556,
+        "latitude": 33.743944444
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.819330556,
+          33.743944444
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "139-004",
+      "properties": {
+        "component_id": "139-004",
+        "name": "Sirkap (fortified city)",
+        "coordinate_status": "official_web_point",
+        "source_authority": "UNESCO World Heritage Centre",
+        "source_url": "https://whc.unesco.org/en/list/139/maps/",
+        "legal_buffer_available": false,
+        "longitude": 72.829877778,
+        "latitude": 33.753402778
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.829877778,
+          33.753402778
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "139-005",
+      "properties": {
+        "component_id": "139-005",
+        "name": "Sirsukh (fortified ruined city)",
+        "coordinate_status": "official_web_point",
+        "source_authority": "UNESCO World Heritage Centre",
+        "source_url": "https://whc.unesco.org/en/list/139/maps/",
+        "legal_buffer_available": false,
+        "longitude": 72.849738889,
+        "latitude": 33.772255556
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.849738889,
+          33.772255556
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "139-006",
+      "properties": {
+        "component_id": "139-006",
+        "name": "Dharmarajika stupa and monastery",
+        "coordinate_status": "official_web_point",
+        "source_authority": "UNESCO World Heritage Centre",
+        "source_url": "https://whc.unesco.org/en/list/139/maps/",
+        "legal_buffer_available": false,
+        "longitude": 72.842666667,
+        "latitude": 33.744669444
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.842666667,
+          33.744669444
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "139-007",
+      "properties": {
+        "component_id": "139-007",
+        "name": "Khader Mohra (Akhuri)",
+        "coordinate_status": "official_web_point",
+        "source_authority": "UNESCO World Heritage Centre",
+        "source_url": "https://whc.unesco.org/en/list/139/maps/",
+        "legal_buffer_available": false,
+        "longitude": 72.860722222,
+        "latitude": 33.760805556
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.860722222,
+          33.760805556
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "139-008",
+      "properties": {
+        "component_id": "139-008",
+        "name": "Kalawan group of buildings",
+        "coordinate_status": "official_web_point",
+        "source_authority": "UNESCO World Heritage Centre",
+        "source_url": "https://whc.unesco.org/en/list/139/maps/",
+        "legal_buffer_available": false,
+        "longitude": 72.839752778,
+        "latitude": 33.746291667
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.839752778,
+          33.746291667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "139-009",
+      "properties": {
+        "component_id": "139-009",
+        "name": "Giri complex of monuments",
+        "coordinate_status": "official_web_point",
+        "source_authority": "UNESCO World Heritage Centre",
+        "source_url": "https://whc.unesco.org/en/list/139/maps/",
+        "legal_buffer_available": false,
+        "longitude": 72.883325,
+        "latitude": 33.729088889
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.883325,
+          33.729088889
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "139-010",
+      "properties": {
+        "component_id": "139-010",
+        "name": "Kunala stupa and monastery",
+        "coordinate_status": "official_web_point",
+        "source_authority": "UNESCO World Heritage Centre",
+        "source_url": "https://whc.unesco.org/en/list/139/maps/",
+        "legal_buffer_available": false,
+        "longitude": 72.831444444,
+        "latitude": 33.750552778
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.831444444,
+          33.750552778
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "139-011",
+      "properties": {
+        "component_id": "139-011",
+        "name": "Jandial complex",
+        "coordinate_status": "official_web_point",
+        "source_authority": "UNESCO World Heritage Centre",
+        "source_url": "https://whc.unesco.org/en/list/139/maps/",
+        "legal_buffer_available": false,
+        "longitude": 72.828913889,
+        "latitude": 33.764455556
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.828913889,
+          33.764455556
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "139-012",
+      "properties": {
+        "component_id": "139-012",
+        "name": "Lalchak and Badalpur Buddhist stuppa",
+        "coordinate_status": "official_web_point",
+        "source_authority": "UNESCO World Heritage Centre",
+        "source_url": "https://whc.unesco.org/en/list/139/maps/",
+        "legal_buffer_available": false,
+        "longitude": 72.868019444,
+        "latitude": 33.781802778
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.868019444,
+          33.781802778
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "139-013",
+      "properties": {
+        "component_id": "139-013",
+        "name": "Mohra Moradu stupa and monastery",
+        "coordinate_status": "official_web_point",
+        "source_authority": "UNESCO World Heritage Centre",
+        "source_url": "https://whc.unesco.org/en/list/139/maps/",
+        "legal_buffer_available": false,
+        "longitude": 72.861052778,
+        "latitude": 33.761097222
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.861052778,
+          33.761097222
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "139-014",
+      "properties": {
+        "component_id": "139-014",
+        "name": "Pippala stupa and monastery",
+        "coordinate_status": "official_web_point",
+        "source_authority": "UNESCO World Heritage Centre",
+        "source_url": "https://whc.unesco.org/en/list/139/maps/",
+        "legal_buffer_available": false,
+        "longitude": 72.866686111,
+        "latitude": 33.765922222
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.866686111,
+          33.765922222
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "139-015",
+      "properties": {
+        "component_id": "139-015",
+        "name": "Jaulian stupa and monastery",
+        "coordinate_status": "official_web_point",
+        "source_authority": "UNESCO World Heritage Centre",
+        "source_url": "https://whc.unesco.org/en/list/139/maps/",
+        "legal_buffer_available": false,
+        "longitude": 72.875311111,
+        "latitude": 33.765041667
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.875311111,
+          33.765041667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "139-016",
+      "properties": {
+        "component_id": "139-016",
+        "name": "Lalchak mounds",
+        "coordinate_status": "official_web_point",
+        "source_authority": "UNESCO World Heritage Centre",
+        "source_url": "https://whc.unesco.org/en/list/139/maps/",
+        "legal_buffer_available": false,
+        "longitude": 72.849469444,
+        "latitude": 33.77445
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.849469444,
+          33.77445
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "139-017",
+      "properties": {
+        "component_id": "139-017",
+        "name": "Buddhist remains around Bhallar stupa",
+        "coordinate_status": "official_web_point",
+        "source_authority": "UNESCO World Heritage Centre",
+        "source_url": "https://whc.unesco.org/en/list/139/maps/",
+        "legal_buffer_available": false,
+        "longitude": 72.825358333,
+        "latitude": 33.813497222
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.825358333,
+          33.813497222
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "139-018",
+      "properties": {
+        "component_id": "139-018",
+        "name": "Giri Mosque and tombs",
+        "coordinate_status": "official_web_point",
+        "source_authority": "UNESCO World Heritage Centre",
+        "source_url": "https://whc.unesco.org/en/list/139/maps/",
+        "legal_buffer_available": false,
+        "longitude": 72.880522222,
+        "latitude": 33.727769444
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.880522222,
+          33.727769444
+        ]
+      }
+    }
+  ],
+  "name": "taxila_components_wgs84",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:EPSG::4326"
+    }
+  }
+}

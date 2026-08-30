@@ -1,0 +1,194 @@
+\begingroup
+\tiny
+\setlength{\tabcolsep}{3pt}
+\begin{longtable}{p{0.22\textwidth}r r p{0.13\textwidth}rrrrr}
+\caption{Complete geographically buffered proxy-model metrics, calibration and confusion records.}\label{tab:s-proxy-model}\\
+\toprule
+Model & Inner F1 & Test F1 & 95\% interval & Bal. acc. & AUROC & AUPRC & Log loss & ECE \\
+\midrule
+\endfirsthead
+\caption[]{Complete geographically buffered proxy-model metrics, calibration and confusion records. (continued)}\\
+\toprule
+Model & Inner F1 & Test F1 & 95\% interval & Bal. acc. & AUROC & AUPRC & Log loss & ECE \\
+\midrule
+\endhead
+\midrule
+\multicolumn{9}{r}{Continued on next page}\\
+\endfoot
+\bottomrule
+\endlastfoot
+MLP sensitivity & 0.871 & 0.831 & [0.700, 0.860] & 0.810 & 0.977 & 0.910 & 0.459 & 0.014 \\
+Histogram gradient boosting & 0.863 & 0.821 & [0.693, 0.850] & 0.799 & 0.974 & 0.909 & 0.483 & 0.041 \\
+Extra trees & 0.861 & 0.826 & [0.685, 0.838] & 0.808 & 0.973 & 0.904 & 0.498 & 0.017 \\
+Random forest & 0.860 & 0.829 & [0.689, 0.842] & 0.810 & 0.973 & 0.906 & 0.500 & 0.016 \\
+Regularised multinomial logistic & 0.844 & 0.842 & [0.676, 0.860] & 0.835 & 0.971 & 0.900 & 0.527 & 0.035 \\
+\end{longtable}
+\noindent\textit{Note:} All outcomes measure agreement with WorldCover-derived proxy land-cover labels. They do not measure independent heritage-condition accuracy.
+\endgroup
+\par\medskip\noindent\textit{Panel B: Proxy-class sample distribution}\par
+\begingroup
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{center}
+\begin{adjustbox}{max width=\linewidth}
+\begin{tabular}{lrrr}
+\toprule
+Class & Development & Buffer-excluded & Test \\
+\midrule
+1 & 1885 & 1228 & 887 \\
+2 & 2604 & 666 & 730 \\
+3 & 2182 & 881 & 937 \\
+4 & 2442 & 873 & 685 \\
+5 & 2340 & 801 & 859 \\
+6 & 641 & 18 & 90 \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{center}
+\endgroup
+\par\medskip\noindent\textit{Panel C: Primary-model test confusion matrix}\par
+\begingroup
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{center}
+\begin{adjustbox}{max width=\linewidth}
+\begin{tabular}{lrrrrrr}
+\toprule
+Reference & Pred. 1 & Pred. 2 & Pred. 3 & Pred. 4 & Pred. 5 & Pred. 6 \\
+\midrule
+reference\_1 & 729 & 63 & 93 & 0 & 2 & 0 \\
+reference\_2 & 56 & 663 & 8 & 0 & 2 & 1 \\
+reference\_3 & 39 & 45 & 772 & 21 & 60 & 0 \\
+reference\_4 & 1 & 0 & 26 & 569 & 89 & 0 \\
+reference\_5 & 6 & 21 & 124 & 12 & 696 & 0 \\
+reference\_6 & 1 & 29 & 0 & 0 & 0 & 60 \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{center}
+\endgroup
+\par\medskip\noindent\textit{Panel D: Calibration for Regularised multinomial logistic}\par
+\begingroup
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{center}
+\begin{adjustbox}{max width=\linewidth}
+\begin{tabular}{rrrrr}
+\toprule
+Bin & Count & Accuracy & Confidence & ECE \\
+\midrule
+0.0--0.1 & 0 &  &  & 0.035 \\
+0.1--0.2 & 0 &  &  & 0.035 \\
+0.2--0.3 & 1 & 0.000 & 0.297 & 0.035 \\
+0.3--0.4 & 31 & 0.355 & 0.372 & 0.035 \\
+0.4--0.5 & 215 & 0.447 & 0.463 & 0.035 \\
+0.5--0.6 & 579 & 0.582 & 0.551 & 0.035 \\
+0.6--0.7 & 589 & 0.705 & 0.651 & 0.035 \\
+0.7--0.8 & 613 & 0.811 & 0.752 & 0.035 \\
+0.8--0.9 & 717 & 0.914 & 0.850 & 0.035 \\
+0.9--1.0 & 1443 & 0.971 & 0.965 & 0.035 \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{center}
+\endgroup
+\par\medskip\noindent\textit{Panel D: Calibration for Random forest}\par
+\begingroup
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{center}
+\begin{adjustbox}{max width=\linewidth}
+\begin{tabular}{rrrrr}
+\toprule
+Bin & Count & Accuracy & Confidence & ECE \\
+\midrule
+0.0--0.1 & 0 &  &  & 0.016 \\
+0.1--0.2 & 0 &  &  & 0.016 \\
+0.2--0.3 & 0 &  &  & 0.016 \\
+0.3--0.4 & 32 & 0.438 & 0.367 & 0.016 \\
+0.4--0.5 & 159 & 0.478 & 0.460 & 0.016 \\
+0.5--0.6 & 402 & 0.585 & 0.552 & 0.016 \\
+0.6--0.7 & 386 & 0.679 & 0.650 & 0.016 \\
+0.7--0.8 & 548 & 0.748 & 0.754 & 0.016 \\
+0.8--0.9 & 851 & 0.826 & 0.854 & 0.016 \\
+0.9--1.0 & 1810 & 0.962 & 0.967 & 0.016 \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{center}
+\endgroup
+\par\medskip\noindent\textit{Panel D: Calibration for Extra trees}\par
+\begingroup
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{center}
+\begin{adjustbox}{max width=\linewidth}
+\begin{tabular}{rrrrr}
+\toprule
+Bin & Count & Accuracy & Confidence & ECE \\
+\midrule
+0.0--0.1 & 0 &  &  & 0.017 \\
+0.1--0.2 & 0 &  &  & 0.017 \\
+0.2--0.3 & 0 &  &  & 0.017 \\
+0.3--0.4 & 46 & 0.457 & 0.376 & 0.017 \\
+0.4--0.5 & 190 & 0.511 & 0.462 & 0.017 \\
+0.5--0.6 & 456 & 0.586 & 0.550 & 0.017 \\
+0.6--0.7 & 451 & 0.687 & 0.650 & 0.017 \\
+0.7--0.8 & 621 & 0.778 & 0.751 & 0.017 \\
+0.8--0.9 & 808 & 0.855 & 0.850 & 0.017 \\
+0.9--1.0 & 1616 & 0.970 & 0.967 & 0.017 \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{center}
+\endgroup
+\par\medskip\noindent\textit{Panel D: Calibration for Histogram gradient boosting}\par
+\begingroup
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{center}
+\begin{adjustbox}{max width=\linewidth}
+\begin{tabular}{rrrrr}
+\toprule
+Bin & Count & Accuracy & Confidence & ECE \\
+\midrule
+0.0--0.1 & 0 &  &  & 0.041 \\
+0.1--0.2 & 0 &  &  & 0.041 \\
+0.2--0.3 & 0 &  &  & 0.041 \\
+0.3--0.4 & 16 & 0.562 & 0.376 & 0.041 \\
+0.4--0.5 & 96 & 0.417 & 0.464 & 0.041 \\
+0.5--0.6 & 297 & 0.485 & 0.549 & 0.041 \\
+0.6--0.7 & 308 & 0.617 & 0.654 & 0.041 \\
+0.7--0.8 & 411 & 0.703 & 0.754 & 0.041 \\
+0.8--0.9 & 633 & 0.798 & 0.855 & 0.041 \\
+0.9--1.0 & 2427 & 0.941 & 0.972 & 0.041 \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{center}
+\endgroup
+\par\medskip\noindent\textit{Panel D: Calibration for MLP sensitivity}\par
+\begingroup
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{center}
+\begin{adjustbox}{max width=\linewidth}
+\begin{tabular}{rrrrr}
+\toprule
+Bin & Count & Accuracy & Confidence & ECE \\
+\midrule
+0.0--0.1 & 0 &  &  & 0.014 \\
+0.1--0.2 & 0 &  &  & 0.014 \\
+0.2--0.3 & 0 &  &  & 0.014 \\
+0.3--0.4 & 27 & 0.333 & 0.371 & 0.014 \\
+0.4--0.5 & 121 & 0.430 & 0.468 & 0.014 \\
+0.5--0.6 & 334 & 0.530 & 0.552 & 0.014 \\
+0.6--0.7 & 365 & 0.658 & 0.651 & 0.014 \\
+0.7--0.8 & 458 & 0.729 & 0.752 & 0.014 \\
+0.8--0.9 & 735 & 0.848 & 0.854 & 0.014 \\
+0.9--1.0 & 2148 & 0.956 & 0.970 & 0.014 \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{center}
+\endgroup

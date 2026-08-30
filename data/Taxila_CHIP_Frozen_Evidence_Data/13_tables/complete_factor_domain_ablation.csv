@@ -1,0 +1,15 @@
+scenario,spearman_rho_with_full_integrated,kendall_tau_with_full_integrated,top5_overlap,rank_1_component,maximum_absolute_rank_change
+Full integrated context,1.0,1.0,5,Giri complex of monuments,0.0
+Primary local priority,1.0,1.0,5,Giri complex of monuments,0.0
+Landscape only,0.3249540770190428,0.1845031011541865,1,Sirkap (fortified city),11.0
+Terrain only,0.8297494129963187,0.686586283020789,4,Buddhist remains around Bhallar stupa,7.0
+Climate only,,,0,All components tied,
+Leave climate out,1.0,1.0,5,Giri complex of monuments,0.0
+Leave landscape out,0.8297494129963187,0.686586283020789,4,Buddhist remains around Bhallar stupa,7.0
+Leave terrain out,0.3249540770190428,0.1845031011541865,1,Sirkap (fortified city),11.0
+Leave NDVI out,0.9920296162581344,0.9520360019556025,5,Giri complex of monuments,1.0
+Leave MNDWI out,-0.279583130416384,-0.21402359733885637,0,Buddhist remains around Bhallar stupa,13.0
+Leave NDBI out,0.9895771326579906,0.9520360019556025,4,Giri complex of monuments,2.0
+Leave slope out,0.6106684164357861,0.4354273187238802,3,Sirsukh (fortified ruined city),8.0
+Leave terrain wetness out,0.8920245398773007,0.7481481481481482,4,Giri Mosque and tombs,4.0
+Leave drainage proximity out,0.46012269938650313,0.31111111111111117,2,Sirsukh (fortified ruined city),8.5

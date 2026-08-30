@@ -1,0 +1,7 @@
+,Mapped Built-up / impervious,Mapped Bare or sparsely vegetated,Mapped Cultivated land,Mapped Woody or dense vegetation,"Mapped Shrub, grass or herbaceous",Mapped Water
+Reference Built-up / impervious,688,25,110,2,2,0
+Reference Bare or sparsely vegetated,50,736,15,0,3,1
+Reference Cultivated land,40,8,710,5,73,0
+Reference Woody or dense vegetation,4,0,20,752,32,0
+"Reference Shrub, grass or herbaceous",0,7,63,88,616,0
+Reference Water,0,0,0,0,0,145

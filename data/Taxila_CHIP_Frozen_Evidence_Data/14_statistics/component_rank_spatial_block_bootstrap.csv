@@ -1,0 +1,18 @@
+component_id,component_name,score_median,score_ci_low_95,score_ci_high_95,rank_median,rank_ci_low_95,rank_ci_high_95,probability_top_3,probability_top_5,spatial_block_size_m,bootstrap_draws,uncertainty_scope
+139-017,Buddhist remains around Bhallar stupa,0.5980392156862744,0.5465686274509803,0.6274509803921569,1.0,1.0,5.0,0.911,0.989,150,2000,E2024 30m spectral sampling blocks; terrain held fixed
+139-009,Giri complex of monuments,0.6029411764705882,0.5808823529411764,0.6029411764705882,2.0,1.0,3.0,0.9855,1.0,150,2000,E2024 30m spectral sampling blocks; terrain held fixed
+139-018,Giri Mosque and tombs,0.5637254901960784,0.5637254901960784,0.5857843137254901,3.0,1.9750000000000014,5.0,0.615,0.9965,150,2000,E2024 30m spectral sampling blocks; terrain held fixed
+139-015,Jaulian stupa and monastery,0.5588235294117647,0.5147058823529411,0.5808823529411764,4.0,2.0,8.5,0.294,0.8375,150,2000,E2024 30m spectral sampling blocks; terrain held fixed
+139-006,Dharmarajika stupa and monastery,0.5318627450980393,0.48774509803921573,0.5759803921568627,6.0,3.0,11.0,0.0385,0.376,150,2000,E2024 30m spectral sampling blocks; terrain held fixed
+139-013,Mohra Moradu stupa and monastery,0.5098039215686274,0.4362745098039216,0.5833333333333334,8.0,3.0,15.0,0.051,0.2185,150,2000,E2024 30m spectral sampling blocks; terrain held fixed
+139-014,Pippala stupa and monastery,0.5098039215686274,0.4730392156862745,0.5686274509803921,8.0,3.5,12.0,0.0245,0.148,150,2000,E2024 30m spectral sampling blocks; terrain held fixed
+139-010,Kunala stupa and monastery,0.5098039215686274,0.4656862745098039,0.553921568627451,8.0,4.5,12.0,0.0055,0.0895,150,2000,E2024 30m spectral sampling blocks; terrain held fixed
+139-007,Khader Mohra (Akhuri),0.49999999999999994,0.43382352941176466,0.588235294117647,9.0,3.0,15.0,0.0465,0.1755,150,2000,E2024 30m spectral sampling blocks; terrain held fixed
+139-008,Kalawan group of buildings,0.5,0.4483455882352941,0.551470588235294,9.0,4.5,14.0,0.004,0.0855,150,2000,E2024 30m spectral sampling blocks; terrain held fixed
+139-005,Sirsukh (fortified ruined city),0.5,0.45588235294117646,0.5295955882352931,9.0,5.5,13.0,0.0005,0.023,150,2000,E2024 30m spectral sampling blocks; terrain held fixed
+139-004,Sirkap (fortified city),0.4901960784313726,0.4607843137254902,0.5343137254901961,10.0,6.0,13.0,0.001,0.018,150,2000,E2024 30m spectral sampling blocks; terrain held fixed
+139-016,Lalchak mounds,0.446078431372549,0.41666666666666663,0.47549019607843135,14.0,11.0,16.0,0.0,0.0,150,2000,E2024 30m spectral sampling blocks; terrain held fixed
+139-011,Jandial complex,0.4375,0.40441176470588236,0.47058823529411764,14.0,12.0,16.0,0.0,0.0,150,2000,E2024 30m spectral sampling blocks; terrain held fixed
+139-001,Khanpur Cave,0.4411764705882353,0.40441176470588236,0.5073529411764706,14.0,8.5,16.0,0.0005,0.0015,150,2000,E2024 30m spectral sampling blocks; terrain held fixed
+139-003,Bhir Mound,0.42647058823529405,0.3897058823529411,0.44852941176470584,16.0,13.0,16.0,0.0,0.0,150,2000,E2024 30m spectral sampling blocks; terrain held fixed
+139-012,Lalchak and Badalpur Buddhist stuppa,0.36274509803921573,0.3333333333333333,0.4068627450980392,17.0,16.0,17.0,0.0,0.0,150,2000,E2024 30m spectral sampling blocks; terrain held fixed

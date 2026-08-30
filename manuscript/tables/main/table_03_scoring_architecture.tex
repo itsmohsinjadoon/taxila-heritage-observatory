@@ -1,0 +1,27 @@
+\begingroup
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{longtable}{p{0.23\textwidth}p{0.32\textwidth}p{0.27\textwidth}p{0.09\textwidth}}
+\caption{Executed indicator transformations, composite formulae and weights.}\label{tab:scoring-architecture}\\
+\toprule
+Output & Executed formula & Normalisation & Missing data \\
+\midrule
+\endfirsthead
+\caption[]{Executed indicator transformations, composite formulae and weights. (continued)}\\
+\toprule
+Output & Executed formula & Normalisation & Missing data \\
+\midrule
+\endhead
+\midrule
+\multicolumn{4}{r}{Continued on next page}\\
+\endfoot
+\bottomrule
+\endlastfoot
+surface cover pressure & 0.5 x NDVI pressure + 0.5 x NDBI pressure & empirical percentile within scale across all component-epochs & complete-case \\
+landscape pressure score & 0.5 x surface cover pressure + 0.5 x MNDWI pressure & hierarchical equal weighting & complete-case \\
+terrain susceptibility score & mean(slope pressure, terrain wetness pressure, drainage proximity pressure) & empirical percentile within scale & complete-case \\
+local field inspection priority & 0.5 x landscape pressure score + 0.5 x terrain susceptibility score & equal domain weighting & complete-case \\
+integrated context score & mean(landscape pressure score, terrain susceptibility score, climate extreme score) & equal domain weighting & complete-case \\
+\end{longtable}
+\noindent\textit{Note:} All percentile normalisation was empirical within the stated analytical scale. Scores are relative to the 17 mapped components and do not express probability or condition.
+\endgroup

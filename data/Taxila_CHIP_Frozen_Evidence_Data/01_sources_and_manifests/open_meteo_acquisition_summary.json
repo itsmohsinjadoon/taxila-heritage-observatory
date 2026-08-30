@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "retrieved_utc": "2026-07-31T21:28:38.714079+00:00",
+  "model": "era5_seamless",
+  "components_mapped": 17,
+  "unique_weather_cells": 4,
+  "period": [
+    "1991-01-01",
+    "2025-12-31"
+  ],
+  "variables": [
+    "temperature_2m_mean",
+    "temperature_2m_max",
+    "temperature_2m_min",
+    "precipitation_sum",
+    "relative_humidity_2m_mean",
+    "dew_point_2m_mean",
+    "wind_speed_10m_max",
+    "soil_moisture_0_to_7cm_mean",
+    "et0_fao_evapotranspiration_sum"
+  ],
+  "mapping_file": "13_tables/component_open_meteo_grid_mapping.csv",
+  "request_manifest": "01_sources_and_manifests/open_meteo_request_manifest.csv",
+  "reason_for_era5_seamless": "Open-Meteo ERA5-Land supplies surface temperature, humidity and soil fields; ERA5 forcing supplies precipitation and wind, which are unavailable in the ERA5-Land-only API selection."
+}

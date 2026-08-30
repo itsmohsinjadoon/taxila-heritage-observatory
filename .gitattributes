@@ -1,0 +1,22 @@
+* text=auto eol=lf
+*.bat text eol=crlf
+*.ipynb text diff=jupyter
+*.csv text
+*.geojson text
+*.json text
+*.md text
+*.py text
+*.tex text
+*.bib text
+*.tif binary
+*.f32 binary
+*.gz binary
+*.png binary
+*.pdf binary
+*.docx binary
+*.xlsx binary
+
+# Preserve the original CRLF bytes of frozen files covered by SHA-256 manifests.
+data/Taxila_CHIP_Frozen_Evidence_Data/01_sources_and_manifests/open_meteo_request_manifest.csv -text
+data/Taxila_CHIP_Frozen_Evidence_Data/13_tables/component_open_meteo_grid_mapping.csv -text
+data/Taxila_CHIP_Frozen_Evidence_Data/MANIFEST.csv -text

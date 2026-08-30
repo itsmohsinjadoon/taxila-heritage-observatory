@@ -1,0 +1,22 @@
+{
+  "endpoint_supported_cells": 386280,
+  "endpoint_supported_percent": 95.73708734014077,
+  "thresholds": {
+    "delta_ndvi_q20": -0.005434888415038586,
+    "delta_mndwi_q20": -0.037427619099617004,
+    "delta_ndbi_q80": 0.008348563686013222
+  },
+  "convergence_cell_counts": {
+    "0": 225396,
+    "1": 95493,
+    "2": 59898,
+    "3": 5493
+  },
+  "share_c_ge_2_percent": 16.928393911152533,
+  "share_c_eq_3_percent": 1.4220254737496116,
+  "grid_median_delta": {
+    "NDVI": 0.07835812866687775,
+    "MNDWI": -0.0070809125900268555,
+    "NDBI": -0.04649501293897629
+  }
+}

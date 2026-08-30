@@ -1,0 +1,22 @@
+{
+  "width": 616,
+  "height": 655,
+  "crs": "EPSG:32643",
+  "transform_gdal": [
+    292980.0,
+    30.0,
+    0,
+    3748620.0,
+    0,
+    -30.0
+  ],
+  "nodata": -9999,
+  "float32_files": [
+    "E2004_relative_landscape_pressure.f32",
+    "E2009_relative_landscape_pressure.f32",
+    "E2014_relative_landscape_pressure.f32",
+    "E2019_relative_landscape_pressure.f32",
+    "E2024_relative_landscape_pressure.f32",
+    "E2004_E2024_spectral_convergence.f32"
+  ]
+}

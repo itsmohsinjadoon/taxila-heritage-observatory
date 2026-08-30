@@ -1,0 +1,6 @@
+output,formula,normalisation,missing_data
+surface_cover_pressure,0.5*NDVI_pressure + 0.5*NDBI_pressure,empirical percentile within scale across all component-epochs,complete-case
+landscape_pressure_score,0.5*surface_cover_pressure + 0.5*MNDWI_pressure,hierarchical equal weighting,complete-case
+terrain_susceptibility_score,"mean(slope_pressure, terrain_wetness_pressure, drainage_proximity_pressure)",empirical percentile within scale,complete-case
+local_field_inspection_priority,0.5*landscape_pressure_score + 0.5*terrain_susceptibility_score,equal domain weighting,complete-case
+integrated_context_score,"mean(landscape_pressure_score, terrain_susceptibility_score, climate_extreme_score)",equal domain weighting,complete-case

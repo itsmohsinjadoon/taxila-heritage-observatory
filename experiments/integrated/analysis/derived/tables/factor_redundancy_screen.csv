@@ -1,0 +1,2 @@
+factor_a,factor_b,spearman_rho,decision
+ndvi_pressure,ndbi_pressure,0.9717069166957711,Group NDVI and NDBI into one surface-cover subdomain before combining with MNDWI.

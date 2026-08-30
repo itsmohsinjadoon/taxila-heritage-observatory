@@ -1,0 +1,15 @@
+{
+  "generated_utc": "2026-07-31T22:15:35.957793+00:00",
+  "python": "3.12.13 (main, Mar  3 2026, 14:59:34) [Clang 21.1.4 ]",
+  "platform": "Linux-6.12.13-x86_64-with-glibc2.39",
+  "random_seed": 311,
+  "packages": {
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scipy": "1.17.0",
+    "sklearn": "1.8.0",
+    "matplotlib": "3.10.8",
+    "seaborn": "0.13.2",
+    "joblib": "1.5.3"
+  }
+}

@@ -1,0 +1,18 @@
+component_id,component_name,requested_latitude,requested_longitude,weather_cell_id,returned_latitude,returned_longitude,weather_elevation_m,model,nominal_resolution
+139-001,Khanpur Cave,33.7992,72.909294444,OM_01,33.800003,72.90001,597.0,era5_seamless,ERA5-Land 0.1 degree surface fields; ERA5 forcing for precipitation/wind
+139-003,Bhir Mound,33.743944444,72.819330556,OM_02,33.700005,72.8,518.0,era5_seamless,ERA5-Land 0.1 degree surface fields; ERA5 forcing for precipitation/wind
+139-004,Sirkap (fortified city),33.753402778,72.829877778,OM_03,33.800003,72.8,514.0,era5_seamless,ERA5-Land 0.1 degree surface fields; ERA5 forcing for precipitation/wind
+139-005,Sirsukh (fortified ruined city),33.772255556,72.849738889,OM_03,33.800003,72.8,511.0,era5_seamless,ERA5-Land 0.1 degree surface fields; ERA5 forcing for precipitation/wind
+139-006,Dharmarajika stupa and monastery,33.744669444,72.842666667,OM_02,33.700005,72.8,539.0,era5_seamless,ERA5-Land 0.1 degree surface fields; ERA5 forcing for precipitation/wind
+139-007,Khader Mohra (Akhuri),33.760805556,72.860722222,OM_01,33.800003,72.90001,566.0,era5_seamless,ERA5-Land 0.1 degree surface fields; ERA5 forcing for precipitation/wind
+139-008,Kalawan group of buildings,33.746291667,72.839752778,OM_02,33.700005,72.8,545.0,era5_seamless,ERA5-Land 0.1 degree surface fields; ERA5 forcing for precipitation/wind
+139-009,Giri complex of monuments,33.729088889,72.883325,OM_04,33.700005,72.90001,621.0,era5_seamless,ERA5-Land 0.1 degree surface fields; ERA5 forcing for precipitation/wind
+139-010,Kunala stupa and monastery,33.750552778,72.831444444,OM_03,33.800003,72.8,537.0,era5_seamless,ERA5-Land 0.1 degree surface fields; ERA5 forcing for precipitation/wind
+139-011,Jandial complex,33.764455556,72.828913889,OM_03,33.800003,72.8,502.0,era5_seamless,ERA5-Land 0.1 degree surface fields; ERA5 forcing for precipitation/wind
+139-012,Lalchak and Badalpur Buddhist stuppa,33.781802778,72.868019444,OM_01,33.800003,72.90001,528.0,era5_seamless,ERA5-Land 0.1 degree surface fields; ERA5 forcing for precipitation/wind
+139-013,Mohra Moradu stupa and monastery,33.761097222,72.861052778,OM_01,33.800003,72.90001,582.0,era5_seamless,ERA5-Land 0.1 degree surface fields; ERA5 forcing for precipitation/wind
+139-014,Pippala stupa and monastery,33.765922222,72.866686111,OM_01,33.800003,72.90001,543.0,era5_seamless,ERA5-Land 0.1 degree surface fields; ERA5 forcing for precipitation/wind
+139-015,Jaulian stupa and monastery,33.765041667,72.875311111,OM_01,33.800003,72.90001,559.0,era5_seamless,ERA5-Land 0.1 degree surface fields; ERA5 forcing for precipitation/wind
+139-016,Lalchak mounds,33.77445,72.849469444,OM_03,33.800003,72.8,512.0,era5_seamless,ERA5-Land 0.1 degree surface fields; ERA5 forcing for precipitation/wind
+139-017,Buddhist remains around Bhallar stupa,33.813497222,72.825358333,OM_03,33.800003,72.8,496.0,era5_seamless,ERA5-Land 0.1 degree surface fields; ERA5 forcing for precipitation/wind
+139-018,Giri Mosque and tombs,33.727769444,72.880522222,OM_04,33.700005,72.90001,612.0,era5_seamless,ERA5-Land 0.1 degree surface fields; ERA5 forcing for precipitation/wind

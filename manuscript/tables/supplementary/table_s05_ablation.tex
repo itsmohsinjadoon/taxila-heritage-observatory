@@ -1,0 +1,102 @@
+\begin{landscape}
+\begingroup
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{longtable}{p{0.22\textwidth}rrrp{0.25\textwidth}r}
+\caption{Factor- and domain-ablation sensitivity.}\label{tab:s-ablation}\\
+\toprule
+Scenario & Spearman & Kendall & Top 5 & Rank 1 component & Max shift \\
+\midrule
+\endfirsthead
+\caption[]{Factor- and domain-ablation sensitivity. (continued)}\\
+\toprule
+Scenario & Spearman & Kendall & Top 5 & Rank 1 component & Max shift \\
+\midrule
+\endhead
+\midrule
+\multicolumn{6}{r}{Continued on next page}\\
+\endfoot
+\bottomrule
+\endlastfoot
+Full integrated context & 1.000 & 1.000 & 5 & Giri complex of monuments & 0.0 \\
+Primary local priority & 1.000 & 1.000 & 5 & Giri complex of monuments & 0.0 \\
+Landscape only & 0.325 & 0.185 & 1 & Sirkap (fortified city) & 11.0 \\
+Terrain only & 0.830 & 0.687 & 4 & Buddhist remains around Bhallar stupa & 7.0 \\
+Climate only &  &  & 0 & All components tied &  \\
+Leave climate out & 1.000 & 1.000 & 5 & Giri complex of monuments & 0.0 \\
+Leave landscape out & 0.830 & 0.687 & 4 & Buddhist remains around Bhallar stupa & 7.0 \\
+Leave terrain out & 0.325 & 0.185 & 1 & Sirkap (fortified city) & 11.0 \\
+Leave NDVI out & 0.992 & 0.952 & 5 & Giri complex of monuments & 1.0 \\
+Leave MNDWI out & -0.280 & -0.214 & 0 & Buddhist remains around Bhallar stupa & 13.0 \\
+Leave NDBI out & 0.990 & 0.952 & 4 & Giri complex of monuments & 2.0 \\
+Leave slope out & 0.611 & 0.435 & 3 & Sirsukh (fortified ruined city) & 8.0 \\
+Leave terrain wetness out & 0.892 & 0.748 & 4 & Giri Mosque and tombs & 4.0 \\
+Leave drainage proximity out & 0.460 & 0.311 & 2 & Sirsukh (fortified ruined city) & 8.5 \\
+\end{longtable}
+\noindent\textit{Note:} Panel A compares each scenario with the full integrated ordering. Panels B and C report all component ranks.
+\endgroup
+\par\medskip\noindent\textit{Panel B: Domain-ablation component ranks}\par
+\begingroup
+\tiny
+\setlength{\tabcolsep}{3pt}
+\begin{center}
+\begin{adjustbox}{max width=\linewidth}
+\begin{tabular}{p{0.08\textwidth}p{0.25\textwidth}rrrrrrr}
+\toprule
+ID & Component & Full & Local & Landscape & Terrain & Climate & No climate & No landscape \\
+\midrule
+139-001 & Khanpur Cave & 14.0 & 14.0 & 14.0 & 12.0 & 9.0 & 14.0 & 12.0 \\
+139-003 & Bhir Mound & 17.0 & 17.0 & 16.0 & 14.0 & 9.0 & 17.0 & 14.0 \\
+139-004 & Sirkap (fortified city) & 12.0 & 12.0 & 1.0 & 15.0 & 9.0 & 12.0 & 15.0 \\
+139-005 & Sirsukh (fortified ruined city) & 9.0 & 9.0 & 3.0 & 12.0 & 9.0 & 9.0 & 12.0 \\
+139-006 & Dharmarajika stupa and monastery & 5.0 & 5.0 & 5.0 & 8.0 & 9.0 & 5.0 & 8.0 \\
+139-007 & Khader Mohra (Akhuri) & 6.0 & 6.0 & 8.0 & 6.0 & 9.0 & 6.0 & 6.0 \\
+139-008 & Kalawan group of buildings & 7.0 & 7.0 & 2.0 & 9.0 & 9.0 & 7.0 & 9.0 \\
+139-009 & Giri complex of monuments & 1.0 & 1.0 & 9.0 & 2.0 & 9.0 & 1.0 & 2.0 \\
+139-010 & Kunala stupa and monastery & 10.5 & 10.5 & 6.0 & 10.0 & 9.0 & 10.5 & 10.0 \\
+139-011 & Jandial complex & 16.0 & 16.0 & 17.0 & 12.0 & 9.0 & 16.0 & 12.0 \\
+139-012 & Lalchak and Badalpur Buddhist stuppa & 15.0 & 15.0 & 12.0 & 17.0 & 9.0 & 15.0 & 17.0 \\
+139-013 & Mohra Moradu stupa and monastery & 4.0 & 4.0 & 10.0 & 5.0 & 9.0 & 4.0 & 5.0 \\
+139-014 & Pippala stupa and monastery & 10.5 & 10.5 & 13.0 & 7.0 & 9.0 & 10.5 & 7.0 \\
+139-015 & Jaulian stupa and monastery & 3.0 & 3.0 & 7.0 & 4.0 & 9.0 & 3.0 & 4.0 \\
+139-016 & Lalchak mounds & 13.0 & 13.0 & 4.0 & 16.0 & 9.0 & 13.0 & 16.0 \\
+139-017 & Buddhist remains around Bhallar stupa & 8.0 & 8.0 & 15.0 & 1.0 & 9.0 & 8.0 & 1.0 \\
+139-018 & Giri Mosque and tombs & 2.0 & 2.0 & 11.0 & 3.0 & 9.0 & 2.0 & 3.0 \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{center}
+\endgroup
+\par\medskip\noindent\textit{Panel C: Factor-ablation component ranks}\par
+\begingroup
+\tiny
+\setlength{\tabcolsep}{3pt}
+\begin{center}
+\begin{adjustbox}{max width=\linewidth}
+\begin{tabular}{p{0.08\textwidth}p{0.25\textwidth}rrrrrrr}
+\toprule
+ID & Component & No terrain & No NDVI & No MNDWI & No NDBI & No slope & No wetness & No drainage \\
+\midrule
+139-001 & Khanpur Cave & 14.0 & 14.0 & 8.0 & 14.0 & 16.0 & 11.0 & 15.0 \\
+139-003 & Bhir Mound & 16.0 & 17.0 & 4.0 & 17.0 & 17.0 & 17.0 & 16.0 \\
+139-004 & Sirkap (fortified city) & 1.0 & 12.0 & 3.0 & 12.0 & 10.0 & 12.0 & 7.0 \\
+139-005 & Sirsukh (fortified ruined city) & 3.0 & 9.0 & 14.0 & 11.0 & 1.0 & 13.0 & 1.0 \\
+139-006 & Dharmarajika stupa and monastery & 5.0 & 4.0 & 7.0 & 6.0 & 2.0 & 9.0 & 3.0 \\
+139-007 & Khader Mohra (Akhuri) & 8.0 & 6.0 & 11.0 & 5.0 & 11.0 & 4.0 & 13.0 \\
+139-008 & Kalawan group of buildings & 2.0 & 8.0 & 10.0 & 7.0 & 6.0 & 8.0 & 9.0 \\
+139-009 & Giri complex of monuments & 9.0 & 1.0 & 13.0 & 1.0 & 4.0 & 2.0 & 8.0 \\
+139-010 & Kunala stupa and monastery & 6.0 & 10.0 & 6.0 & 10.0 & 14.0 & 6.5 & 2.0 \\
+139-011 & Jandial complex & 17.0 & 16.0 & 5.0 & 16.0 & 15.0 & 15.0 & 17.0 \\
+139-012 & Lalchak and Badalpur Buddhist stuppa & 12.0 & 15.0 & 17.0 & 15.0 & 13.0 & 16.0 & 14.0 \\
+139-013 & Mohra Moradu stupa and monastery & 10.0 & 5.0 & 9.0 & 4.0 & 12.0 & 5.0 & 10.0 \\
+139-014 & Pippala stupa and monastery & 13.0 & 11.0 & 2.0 & 9.0 & 8.0 & 6.5 & 12.0 \\
+139-015 & Jaulian stupa and monastery & 7.0 & 2.0 & 12.0 & 3.0 & 5.0 & 3.0 & 11.0 \\
+139-016 & Lalchak mounds & 4.0 & 13.0 & 16.0 & 13.0 & 7.0 & 14.0 & 5.5 \\
+139-017 & Buddhist remains around Bhallar stupa & 15.0 & 7.0 & 1.0 & 8.0 & 3.0 & 10.0 & 5.5 \\
+139-018 & Giri Mosque and tombs & 11.0 & 3.0 & 15.0 & 2.0 & 9.0 & 1.0 & 4.0 \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{center}
+\endgroup
+\end{landscape}

@@ -1,0 +1,7 @@
+ablation,spearman_rho_with_full,top5_overlap_with_full,rank_1_component
+Full local (landscape + terrain),1.0,5,Giri complex of monuments
+Landscape only,0.31617647058823534,1,Sirkap (fortified city)
+Terrain only,0.8186274509803922,4,Buddhist remains around Bhallar stupa
+No NDVI,0.9877450980392157,5,Giri complex of monuments
+No MNDWI,-0.27450980392156865,0,Buddhist remains around Bhallar stupa
+No NDBI,0.9901960784313727,4,Giri complex of monuments

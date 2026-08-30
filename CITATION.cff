@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the accompanying manuscript and software release."
+type: software
+title: "ProjectTaxila: Climate-contextual Heritage Inspection Prioritisation (CHIP)"
+version: "0.9.0-pre-submission"
+date-released: 2026-08-29
+authors:
+  - family-names: Khan
+    given-names: Mohsin
+    affiliation: "FAST School of Computing, National University of Computer and Emerging Sciences (FAST-NUCES), Islamabad, Pakistan"
+    email: mohsin.khan@isb.nu.edu.pk
+keywords:
+  - cultural heritage
+  - Taxila
+  - remote sensing
+  - climate context
+  - inspection prioritisation
+  - reproducible research
+license: other
+

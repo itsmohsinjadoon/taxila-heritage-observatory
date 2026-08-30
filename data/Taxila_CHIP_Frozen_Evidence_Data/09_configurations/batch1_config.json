@@ -1,0 +1,102 @@
+{
+  "schema_version": "1.0",
+  "project": "PreserveX Taxila corrected M1 - Stage 4 Batch 1",
+  "generated_utc": "2026-07-19",
+  "stac": {
+    "endpoint": "https://planetarycomputer.microsoft.com/api/stac/v1",
+    "collection": "landsat-c2-l2",
+    "sas_endpoint": "https://planetarycomputer.microsoft.com/api/sas/v1/token/landsat-c2-l2",
+    "catalogue_provider": "Microsoft Planetary Computer",
+    "data_authority": "U.S. Geological Survey",
+    "collection_category": "T1",
+    "allowed_processing_levels": ["L2SP", "L2SR"],
+    "maximum_catalogue_cloud_cover_percent": 80.0,
+    "require_full_aoi_footprint_coverage": true
+  },
+  "spatial_contract": {
+    "grid_spec": "../stage3_spatial/derived/taxila_grid_spec_30m_epsg32643.json",
+    "reference_grid": "../stage3_spatial/derived/taxila_reference_grid_30m_epsg32643.tif",
+    "target_crs": "EPSG:32643",
+    "width": 616,
+    "height": 655,
+    "transform_gdal": [292980.0, 30.0, 0.0, 3748620.0, 0.0, -30.0],
+    "aoi_bbox_wgs84": [72.76220326039639, 33.68050528316277, 72.96603932039646, 33.861062770037684],
+    "aoi_bounds_target_crs": [292980.0, 3728970.0, 311460.0, 3748620.0]
+  },
+  "temporal_contract": {
+    "season": {
+      "name": "fixed post-monsoon/dry-season window",
+      "start_month_day": "10-01",
+      "end_month_day": "12-15",
+      "reason": "Hold phenology and monsoon timing approximately constant while retaining multiple low-cloud observations."
+    },
+    "epochs": [
+      {"epoch_id": "E2004", "label_year": 2004, "years": [2003, 2004, 2005], "primary_platforms": ["landsat-7"], "sensor": "ETM+", "slc_status": "SLC-off"},
+      {"epoch_id": "E2009", "label_year": 2009, "years": [2008, 2009, 2010], "primary_platforms": ["landsat-7"], "sensor": "ETM+", "slc_status": "SLC-off"},
+      {"epoch_id": "E2014", "label_year": 2014, "years": [2013, 2014, 2015], "primary_platforms": ["landsat-8"], "sensor": "OLI"},
+      {"epoch_id": "E2019", "label_year": 2019, "years": [2018, 2019, 2020], "primary_platforms": ["landsat-8"], "sensor": "OLI"},
+      {"epoch_id": "E2024", "label_year": 2024, "years": [2023, 2024, 2025], "primary_platforms": ["landsat-8", "landsat-9"], "sensor": "OLI/OLI-2", "cross_calibration_note": "USGS Collection 2 calibration aligns Landsat 9 OLI-2 with Landsat 8 OLI; the missions are offset by eight days."}
+    ]
+  },
+  "spectral_contract": {
+    "reflectance_assets": ["blue", "green", "red", "nir08", "swir16", "swir22"],
+    "required_qa_assets": ["qa_pixel", "qa_radsat"],
+    "oli_only_qa_asset": "qa_aerosol",
+    "surface_reflectance_scale": 0.0000275,
+    "surface_reflectance_offset": -0.2,
+    "physical_reflectance_range": [-0.2, 1.6],
+    "qa_pixel_rejected_bits": {
+      "fill": 0,
+      "dilated_cloud": 1,
+      "cirrus": 2,
+      "cloud": 3,
+      "cloud_shadow": 4,
+      "snow": 5
+    },
+    "qa_radsat_rule": "Reject any pixel for which QA_RADSAT is non-zero.",
+    "oli_aerosol_rule": "Baseline: reject aerosol fill and high aerosol level (bits 6-7 equal 3). Sensitivity: additionally require a valid retrieval and reject interpolated aerosol. Report both coverages.",
+    "resampling": {
+      "reflectance": "bilinear",
+      "quality_assurance": "nearest"
+    }
+  },
+  "composite_contract": {
+    "estimator": "per-pixel median of valid observations",
+    "minimum_valid_observations": 3,
+    "preferred_valid_observations": 5,
+    "minimum_epoch_grid_coverage_percent": 90.0,
+    "scene_local_clear_fraction_floor_percent": 5.0,
+    "minimum_retained_scenes_per_epoch": 3
+  },
+  "harmonisation_contract": {
+    "primary_common_scale": "Landsat 8 OLI-like surface reflectance",
+    "transformation": "For ETM+ epochs, apply the Roy et al. (2016) surface-reflectance OLS equations OLI = intercept + slope * ETM+ after USGS Collection 2 DN scaling.",
+    "reference": "Roy et al. (2016), Remote Sensing of Environment 185:57-70, doi:10.1016/j.rse.2015.12.024",
+    "etm_plus_to_oli_coefficients": {
+      "blue": {"intercept": 0.0003, "slope": 0.8474},
+      "green": {"intercept": 0.0088, "slope": 0.8483},
+      "red": {"intercept": 0.0061, "slope": 0.9047},
+      "nir08": {"intercept": 0.0412, "slope": 0.8462},
+      "swir16": {"intercept": 0.0254, "slope": 0.8937},
+      "swir22": {"intercept": 0.0172, "slope": 0.9071}
+    },
+    "cross_sensor_status": "VERIFIED_GLOBAL_TRANSFORMATION_WITH_LOCAL_SENSITIVITY_REQUIRED",
+    "rule": "Retain both sensor-native and OLI-like composites; a claimed change must remain directionally stable under both representations.",
+    "planned_sensitivity": [
+      "published OLI-to-ETM+/TM-like surface-reflectance transformation",
+      "untransformed sensor-native indices",
+      "local pseudo-invariant-feature or overlap calibration if suitable pairs are available"
+    ]
+  },
+  "landsat7_slc_off_contract": {
+    "rule": "No single-scene interpolation or synthetic strip filling. Treat SLC-off gaps as missing observations and composite only valid measurements.",
+    "acceptance_gate": "Report the per-pixel valid-observation count; exclude pixels below the epoch minimum and reject the epoch if grid coverage or retained-scene thresholds fail."
+  },
+  "output": {
+    "inventory_json": "outputs/landsat_scene_inventory.json",
+    "inventory_csv": "outputs/landsat_scene_inventory.csv",
+    "discovery_validation_json": "outputs/discovery_validation.json",
+    "composite_directory": "outputs/composites",
+    "preprocessing_report_json": "outputs/preprocessing_validation.json"
+  }
+}

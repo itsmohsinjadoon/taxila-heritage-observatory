@@ -1,0 +1,12 @@
+dataset,variable,unit,description,missing_data_treatment
+Open-Meteo cleaned daily by grid cell,weather_cell_id,identifier_or_date,weather cell id,no imputation; complete coverage required by QC
+Open-Meteo cleaned daily by grid cell,temperature_2m_mean,degC,temperature 2m mean,no imputation; complete coverage required by QC
+Open-Meteo cleaned daily by grid cell,temperature_2m_max,degC,temperature 2m max,no imputation; complete coverage required by QC
+Open-Meteo cleaned daily by grid cell,temperature_2m_min,degC,temperature 2m min,no imputation; complete coverage required by QC
+Open-Meteo cleaned daily by grid cell,precipitation_sum,mm/day,precipitation sum,no imputation; complete coverage required by QC
+Open-Meteo cleaned daily by grid cell,relative_humidity_2m_mean,percent,relative humidity 2m mean,no imputation; complete coverage required by QC
+Open-Meteo cleaned daily by grid cell,dew_point_2m_mean,degC,dew point 2m mean,no imputation; complete coverage required by QC
+Open-Meteo cleaned daily by grid cell,wind_speed_10m_max,km/h,wind speed 10m max,no imputation; complete coverage required by QC
+Open-Meteo cleaned daily by grid cell,soil_moisture_0_to_7cm_mean,m3/m3,soil moisture 0 to 7cm mean,no imputation; complete coverage required by QC
+Open-Meteo cleaned daily by grid cell,et0_fao_evapotranspiration_sum,mm/day,et0 fao evapotranspiration sum,no imputation; complete coverage required by QC
+Open-Meteo cleaned daily by grid cell,date,identifier_or_date,date,no imputation; complete coverage required by QC

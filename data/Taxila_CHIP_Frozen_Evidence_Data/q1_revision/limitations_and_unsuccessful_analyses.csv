@@ -1,0 +1,13 @@
+limitation,implication
+No local station validation,Neither Open-Meteo nor NASA POWER is ground truth; product agreement is not accuracy.
+Coarse weather support,Four 0.1-degree returned cells cover 17 mapped components; no 30 m weather surfaces were created.
+Limited satellite epochs,Five composites preclude high-powered weather-spectral inference and causal identification.
+Composite acquisition windows,Each epoch is a multi-scene median across three post-monsoon years; scene-specific lags are aggregated.
+Proxy supervision,WorldCover consensus labels are not independent field-condition labels.
+No M3 heritage-condition model,Independent heritage-condition outcomes were unavailable.
+Saraikala unresolved,Component 139-002 remains without a verified analytical geometry.
+Official property polygons unavailable,Analytical circles are sampling supports only and not legal or UNESCO buffers.
+Terrain approximation,D8 flow and wetness are DEM-derived susceptibility proxies without field hydrological validation.
+Expert weighting unavailable,No documented expert elicitation was supplied; equal/hierarchical weights and Monte Carlo sensitivity are reported.
+Single buffered test geography,The stricter model evaluates one contiguous transfer direction and should not be generalised as universal accuracy.
+Ancillary hazards omitted,"Earthquake, flood, landslide, quarry and population layers were not added without a necessary, harmonised evidential role."

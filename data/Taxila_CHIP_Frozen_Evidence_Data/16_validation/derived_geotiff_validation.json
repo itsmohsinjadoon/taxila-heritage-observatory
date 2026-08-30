@@ -1,0 +1,108 @@
+{
+  "status": "PASS",
+  "geotiffWriter": "geotiff.js 2.1.3",
+  "outputs": [
+    {
+      "file": "05_processed_rasters/E2004_relative_landscape_pressure.tif",
+      "width": 616,
+      "height": 655,
+      "projectedCSTypeGeoKey": 32643,
+      "boundingBox": [
+        292980,
+        3728970,
+        311460,
+        3748620
+      ],
+      "nodata": -9999,
+      "dataMin": 0,
+      "dataMax": 2.2132354574075882e-38,
+      "bytes": 404480,
+      "pass": true
+    },
+    {
+      "file": "05_processed_rasters/E2009_relative_landscape_pressure.tif",
+      "width": 616,
+      "height": 655,
+      "projectedCSTypeGeoKey": 32643,
+      "boundingBox": [
+        292980,
+        3728970,
+        311460,
+        3748620
+      ],
+      "nodata": -9999,
+      "dataMin": -2.396108050553397e+30,
+      "dataMax": 2.2219146797060768e-38,
+      "bytes": 404480,
+      "pass": true
+    },
+    {
+      "file": "05_processed_rasters/E2014_relative_landscape_pressure.tif",
+      "width": 616,
+      "height": 655,
+      "projectedCSTypeGeoKey": 32643,
+      "boundingBox": [
+        292980,
+        3728970,
+        311460,
+        3748620
+      ],
+      "nodata": -9999,
+      "dataMin": -2.396108050553397e+30,
+      "dataMax": 2.2219146797060768e-38,
+      "bytes": 404480,
+      "pass": true
+    },
+    {
+      "file": "05_processed_rasters/E2019_relative_landscape_pressure.tif",
+      "width": 616,
+      "height": 655,
+      "projectedCSTypeGeoKey": 32643,
+      "boundingBox": [
+        292980,
+        3728970,
+        311460,
+        3748620
+      ],
+      "nodata": -9999,
+      "dataMin": -2.396108050553397e+30,
+      "dataMax": 2.2219146797060768e-38,
+      "bytes": 404480,
+      "pass": true
+    },
+    {
+      "file": "05_processed_rasters/E2024_relative_landscape_pressure.tif",
+      "width": 616,
+      "height": 655,
+      "projectedCSTypeGeoKey": 32643,
+      "boundingBox": [
+        292980,
+        3728970,
+        311460,
+        3748620
+      ],
+      "nodata": -9999,
+      "dataMin": -2.396108050553397e+30,
+      "dataMax": 2.3694278276172396e-38,
+      "bytes": 404480,
+      "pass": true
+    },
+    {
+      "file": "05_processed_rasters/E2004_E2024_spectral_convergence.tif",
+      "width": 616,
+      "height": 655,
+      "projectedCSTypeGeoKey": 32643,
+      "boundingBox": [
+        292980,
+        3728970,
+        311460,
+        3748620
+      ],
+      "nodata": -9999,
+      "dataMin": -2.396108050553397e+30,
+      "dataMax": 1.4220253950118892e-36,
+      "bytes": 404480,
+      "pass": true
+    }
+  ]
+}

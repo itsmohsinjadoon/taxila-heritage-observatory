@@ -1,0 +1,7 @@
+variable,temporal_scale,comparison_subset,n,pearson_r,spearman_rho,mean_bias_open_minus_nasa,rmse,mae
+precipitation_preceding_7d_mm_mean,landsat_epoch_n5,retained_scene_date_aggregates,5,0.3138679755179942,0.6,1.2086131313131303,5.256099151942824,3.728668686868687
+precipitation_preceding_30d_mm_mean,landsat_epoch_n5,retained_scene_date_aggregates,5,0.37078808811026304,0.09999999999999999,1.7978217171717161,16.9457519915889,11.962132828282831
+precipitation_preceding_90d_mm_mean,landsat_epoch_n5,retained_scene_date_aggregates,5,-0.032154287991418694,0.0,-82.34337070707072,159.47415434727355,101.95100707070708
+precipitation_preceding_180d_mm_mean,landsat_epoch_n5,retained_scene_date_aggregates,5,0.309825774283835,0.7,-276.94449696969696,421.89674226358846,294.6677696969697
+precipitation_preceding_365d_mm_mean,landsat_epoch_n5,retained_scene_date_aggregates,5,-0.03219205300811863,0.09999999999999999,-242.21727676767676,540.5690263904044,415.53786767676775
+temperature_mean_preceding_30d_c_mean,landsat_epoch_n5,retained_scene_date_aggregates,5,0.7577719333308992,0.7,-1.6873448484848474,1.808492472830222,1.6873448484848474
