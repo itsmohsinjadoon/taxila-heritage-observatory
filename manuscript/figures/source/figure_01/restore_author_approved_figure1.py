@@ -44,7 +44,7 @@ def build(output: Path) -> None:
         invariant=1,
     )
     pdf.setTitle("Taxila Figure 1 — author-approved original cartography")
-    pdf.setAuthor("ProjectTaxila")
+    pdf.setAuthor("Taxila Heritage Observatory")
     pdf.setSubject("Study-area context and analytical neighbourhoods")
     pdf.drawImage(
         ImageReader(str(ARCHIVE)),

@@ -162,7 +162,7 @@ function writeDataSheet(name, title, subtitle, rows, options = {}) {
 const summary = wb.worksheets.add("Summary");
 styleTitle(
   summary,
-  "Taxila PreserveX | Integrated Experiments",
+  "Taxila Heritage Observatory | Integrated Experiments",
   "Audited numerical companion to the standalone Experiments, Results and Discussion manuscript section",
   "N",
 );
@@ -465,8 +465,8 @@ for (const sheet of wb.worksheets.items) {
 }
 
 const output = await SpreadsheetFile.exportXlsx(wb);
-await output.save(path.join(outputDir, "Taxila_PreserveX_Integrated_Experiments_Results.xlsx"));
+await output.save(path.join(outputDir, "Taxila_Heritage_Observatory_Integrated_Experiments_Results.xlsx"));
 console.log(JSON.stringify({
-  workbook: path.join(outputDir, "Taxila_PreserveX_Integrated_Experiments_Results.xlsx"),
+  workbook: path.join(outputDir, "Taxila_Heritage_Observatory_Integrated_Experiments_Results.xlsx"),
   sheets: wb.worksheets.items.map((sheet) => sheet.name),
 }));

@@ -43,7 +43,7 @@ generated tables/figures, checksums, data-quality report and
 Python/package environment, duration and evidence-lock outcome without storing
 machine-specific source paths.
 
-Use [`notebooks/ProjectTaxila_Colab_Kaggle_Launcher.ipynb`](notebooks/ProjectTaxila_Colab_Kaggle_Launcher.ipynb)
+Use [`notebooks/Taxila_Heritage_Observatory_Colab_Kaggle_Launcher.ipynb`](notebooks/Taxila_Heritage_Observatory_Colab_Kaggle_Launcher.ipynb)
 for the same workflow on Colab or Kaggle.
 
 To run the reduced notebook profile:

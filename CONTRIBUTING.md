@@ -1,6 +1,6 @@
 # Contributing
 
-ProjectTaxila is currently a private pre-submission research repository. Changes should preserve the frozen evidence chain and must not silently alter numerical claims.
+Taxila Heritage Observatory is currently a private pre-submission research repository. Changes should preserve the frozen evidence chain and must not silently alter numerical claims.
 
 ## Change discipline
 
@@ -13,4 +13,3 @@ ProjectTaxila is currently a private pre-submission research repository. Changes
 7. Request review before merging into `main`.
 
 Do not commit credentials, local absolute paths, downloaded publisher PDFs, LaTeX auxiliary files, or unverified replacement datasets.
-

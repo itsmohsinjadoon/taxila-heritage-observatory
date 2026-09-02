@@ -35,6 +35,8 @@ outputs/
 artifacts/
 tmp/
 .cache/
+experiments/integrated/deliverables/*.docx
+experiments/integrated/deliverables/*.xlsx
 
 # Secrets and local configuration
 .env

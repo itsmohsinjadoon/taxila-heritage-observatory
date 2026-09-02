@@ -30,7 +30,7 @@ jobs:
       - name: Upload compiled PDFs
         uses: actions/upload-artifact@v6
         with:
-          name: ProjectTaxila-manuscript-PDFs
+          name: taxila-heritage-observatory-manuscript-pdfs
           path: |
             manuscript/output/Taxila_CHIP_Manuscript.pdf
             manuscript/output/Taxila_CHIP_Supplementary_Information.pdf

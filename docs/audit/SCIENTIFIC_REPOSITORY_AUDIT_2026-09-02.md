@@ -1,4 +1,4 @@
-# ProjectTaxila scientific and repository audit
+# Taxila Heritage Observatory scientific and repository audit
 
 **Audit date:** 2 September 2026  
 **Scope:** frozen evidence package, executable notebook, integrated experiment bundle, figures, journal-neutral LaTeX source, and the submitted anonymised main and supplementary PDFs supplied separately by the author.  

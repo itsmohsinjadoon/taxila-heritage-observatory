@@ -1,9 +1,10 @@
 cff-version: 1.2.0
 message: "If you use this repository, please cite the accompanying manuscript and software release."
 type: software
-title: "ProjectTaxila: Climate-contextual Heritage Inspection Prioritisation (CHIP)"
+title: "Taxila Heritage Observatory: Climate-contextual Heritage Inspection Prioritisation"
 version: "0.9.0-pre-submission"
 date-released: 2026-08-29
+repository-code: "https://github.com/itsmohsinjadoon/taxila-heritage-observatory"
 authors:
   - family-names: Khan
     given-names: Mohsin
@@ -17,4 +18,3 @@ keywords:
   - inspection prioritisation
   - reproducible research
 license: other
-

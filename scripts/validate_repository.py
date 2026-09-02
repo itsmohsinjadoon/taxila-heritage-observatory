@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Lightweight, dependency-free structural validation for ProjectTaxila."""
+"""Lightweight structural validation for Taxila Heritage Observatory."""
 
 from __future__ import annotations
 
@@ -32,7 +32,7 @@ REQUIRED = [
     "requirements.txt",
     "requirements-audit.txt",
     "notebooks/Taxila_CHIP_Q1_Executable_Analysis.ipynb",
-    "notebooks/ProjectTaxila_Colab_Kaggle_Launcher.ipynb",
+    "notebooks/Taxila_Heritage_Observatory_Colab_Kaggle_Launcher.ipynb",
     "data/Taxila_CHIP_Frozen_Evidence_Data/README.md",
     "data/Taxila_CHIP_Frozen_Evidence_Data/SHA256SUMS.txt",
     "data/Taxila_CHIP_Frozen_Evidence_Data/17_reproducibility/software_environment.json",
@@ -123,12 +123,12 @@ def main() -> int:
             )
 
     if errors:
-        print("ProjectTaxila validation FAILED")
+        print("Taxila Heritage Observatory validation FAILED")
         for error in errors:
             print(f"- {error}")
         return 1
 
-    print(f"ProjectTaxila validation PASSED: {len(files)} files checked")
+    print(f"Taxila Heritage Observatory validation PASSED: {len(files)} files checked")
     return 0
 
 

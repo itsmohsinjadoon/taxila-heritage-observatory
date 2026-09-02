@@ -2,7 +2,7 @@
 
 > This historical checkpoint predates the 2 September 2026 cross-version audit. Its engineering checks remain useful, but its clean-run wording must not be used as evidence that all current publication-profile locks pass. See [`SCIENTIFIC_REPOSITORY_AUDIT_2026-09-02.md`](SCIENTIFIC_REPOSITORY_AUDIT_2026-09-02.md).
 
-This report records checks performed after consolidating the ProjectTaxila research assets into the GitHub repository structure.
+This report records checks performed after consolidating the Taxila Heritage Observatory research assets into the GitHub repository structure.
 
 ## Passed checks
 

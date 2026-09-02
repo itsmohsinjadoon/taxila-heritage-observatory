@@ -1,4 +1,4 @@
-# ProjectTaxila fresh execution report
+# Taxila Heritage Observatory fresh execution report
 
 **Execution date:** 3 September 2026  
 **Platform:** Windows 11, Python 3.12.13  

@@ -1,4 +1,4 @@
-# Taxila PreserveX integrated experiments
+# Taxila Heritage Observatory integrated experiments
 
 This bundle reproduces the standalone **Experiments, Results and Discussion**
 section for the 2004–2024 Taxila study. It contains the executed analysis code,

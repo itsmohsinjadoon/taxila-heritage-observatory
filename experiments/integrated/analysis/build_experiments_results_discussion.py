@@ -22,7 +22,7 @@ TABLES = ANALYSIS / "derived" / "tables"
 FIGURES = ANALYSIS / "figures"
 VALIDATION = ANALYSIS / "validation"
 DELIVERABLES = ROOT / "deliverables"
-OUTPUT = DELIVERABLES / "Taxila_PreserveX_Experiments_Results_Discussion.docx"
+OUTPUT = DELIVERABLES / "Taxila_Heritage_Observatory_Experiments_Results_Discussion.docx"
 
 # narrative_proposal preset, with the memo_masthead first-page pattern.
 BLUE = "2E74B5"
@@ -302,7 +302,7 @@ def configure_section(doc):
     section.header_distance = Inches(0.492)
     section.footer_distance = Inches(0.492)
     header = section.header.paragraphs[0]
-    header.text = "Taxila PreserveX  |  Experiments, Results and Discussion"
+    header.text = "Taxila Heritage Observatory  |  Experiments, Results and Discussion"
     header.alignment = WD_ALIGN_PARAGRAPH.RIGHT
     for run in header.runs:
         set_run_font(run, size=9, color=MUTED)
@@ -901,7 +901,7 @@ def build_document():
     doc.add_heading("5.8 Implications for the paper’s central claim", level=2)
     add_body(
         doc,
-        "The evidence supports a clear, defensible claim: PreserveX provides a reproducible way to integrate multi-temporal satellite change, matched weather extremes and terrain susceptibility while exposing redundancy, spatial-scale effects, model uncertainty and weight sensitivity. It identifies places and mechanisms that merit field inspection. The evidence does not support claiming automated monument-damage detection, a calibrated probability of heritage loss or a universally correct site ranking.",
+        "The evidence supports a clear, defensible claim: Taxila Heritage Observatory provides a reproducible way to integrate multi-temporal satellite change, matched weather extremes and terrain susceptibility while exposing redundancy, spatial-scale effects, model uncertainty and weight sensitivity. It identifies places and mechanisms that merit field inspection. The evidence does not support claiming automated monument-damage detection, a calibrated probability of heritage loss or a universally correct site ranking.",
     )
     add_callout(
         doc,
@@ -926,9 +926,9 @@ def build_document():
         run = paragraph.add_run(reference)
         set_run_font(run, size=9, color=INK)
 
-    doc.core_properties.title = "Taxila PreserveX Experiments, Results and Discussion"
+    doc.core_properties.title = "Taxila Heritage Observatory Experiments, Results and Discussion"
     doc.core_properties.subject = "Climate-linked, terrain-aware and uncertainty-explicit experiments for the Taxila World Heritage property"
-    doc.core_properties.author = "PreserveX research workflow"
+    doc.core_properties.author = "Taxila Heritage Observatory research workflow"
     doc.core_properties.keywords = "Taxila; Landsat; NASA POWER; climate extremes; terrain; machine learning; uncertainty; cultural heritage"
     doc.save(OUTPUT)
     return OUTPUT

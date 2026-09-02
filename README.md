@@ -1,6 +1,8 @@
-# ProjectTaxila — CHIP / PreserveX
+# Taxila Heritage Observatory
 
-Reproducible research repository for **Climate-contextual landscape-pressure screening and sensitivity-aware field-inspection prioritisation across the Taxila World Heritage property, Pakistan**.
+A reproducible geospatial evidence framework for **climate-contextual
+landscape-pressure screening and sensitivity-aware field-inspection
+prioritisation across the Taxila World Heritage property, Pakistan**.
 
 This repository consolidates the executable analysis, frozen evidence package, experiments, results, publication figures, source-traceability records, and LaTeX manuscript prepared for further revision toward submission to the *Journal of Cultural Heritage*.
 
@@ -29,10 +31,10 @@ The output is a **relative field-inspection priority**, not a monument-damage pr
 | --- | --- |
 | [`notebooks/`](notebooks/) | Canonical executable analysis plus a minimal Colab/Kaggle launcher |
 | [`data/Taxila_CHIP_Frozen_Evidence_Data/`](data/Taxila_CHIP_Frozen_Evidence_Data/) | Frozen inputs, processed rasters/vectors, tables, statistics, configurations, validation records, and acquisition scripts |
-| [`experiments/integrated/`](experiments/integrated/) | Standalone integrated experiment code, 22 result tables, nine figures, validation records, and rendered analytical deliverables |
+| [`experiments/integrated/`](experiments/integrated/) | Standalone experiment code, 22 result tables, nine figures, validation records, and reproducible deliverable builders |
 | [`manuscript/`](manuscript/) | Modular LaTeX manuscript, Supplementary Information, figures, tables, bibliography, and claim/evidence traceability |
 | [`docs/audit/`](docs/audit/) | Manuscript QA, Q1 review-response matrix, and revision history |
-| [`scripts/`](scripts/) | Reproduction runner, scientific data audit, cross-version inventory, and repository validation |
+| [`scripts/`](scripts/) | Reproduction runner, scientific data audit, and repository validation |
 
 The exact environment, two execution profiles, evidence-lock rule, and known rerun boundary are documented in [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md).
 
@@ -70,10 +72,15 @@ Open [`Taxila_CHIP_Q1_Executable_Analysis.ipynb`](notebooks/Taxila_CHIP_Q1_Execu
 For a quick engineering check, set `TAXILA_PROFILE=validation`. Use `TAXILA_PROFILE=publication` for the full stochastic analysis: 50,000 Dirichlet weight draws, 2,000 spatial-block draws per block size, 2,000 point-displacement draws per radius, and 500 spatial states crossed with 10 decision settings. The notebook writes to `Taxila_CHIP_Q1_outputs/`, which is ignored by Git.
 
 For Colab or Kaggle, open
-[`ProjectTaxila_Colab_Kaggle_Launcher.ipynb`](notebooks/ProjectTaxila_Colab_Kaggle_Launcher.ipynb).
+[`Taxila_Heritage_Observatory_Colab_Kaggle_Launcher.ipynb`](notebooks/Taxila_Heritage_Observatory_Colab_Kaggle_Launcher.ipynb).
 It installs the pinned environment, invokes the same runner, and preserves the
 same receipt. Never paste a GitHub token into a notebook cell; upload a private
 checkout/ZIP or use the platform's protected secret mechanism.
+
+The repository was renamed to **Taxila Heritage Observatory** on 3 September
+2026. Historical run IDs and bundle names embedded in checksum-locked evidence
+are retained only for provenance; see
+[`docs/BRANDING_AND_LINEAGE.md`](docs/BRANDING_AND_LINEAGE.md).
 
 ### 3. Validate the repository
 

@@ -39,7 +39,7 @@ jobs:
       - name: Upload data-quality evidence
         uses: actions/upload-artifact@v6
         with:
-          name: ProjectTaxila-data-quality-report
+          name: taxila-heritage-observatory-data-quality-report
           path: scientific-data-quality-report.json
           retention-days: 30
           if-no-files-found: error

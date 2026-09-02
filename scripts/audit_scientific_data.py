@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate the frozen ProjectTaxila evidence at its declared analytical grain."""
+"""Validate Taxila Heritage Observatory evidence at its analytical grain."""
 
 from __future__ import annotations
 

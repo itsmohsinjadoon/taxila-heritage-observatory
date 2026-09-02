@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Execute the canonical ProjectTaxila notebook and write an audit receipt."""
+"""Execute the Taxila Heritage Observatory notebook and write an audit receipt."""
 
 from __future__ import annotations
 
