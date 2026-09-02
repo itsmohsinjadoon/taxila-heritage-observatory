@@ -8,7 +8,7 @@ This repository consolidates the executable analysis, frozen evidence package, e
 
 ![Taxila study area, mapped UNESCO components, and 500 m analytical neighbourhoods](docs/assets/figure_01_taxila_study_area_preview.png)
 
-*Study-area context generated from the frozen UNESCO inventory, Sentinel-2 L2A imagery, OpenStreetMap orientation features, Natural Earth and geoBoundaries. The circles are analytical neighbourhoods, not legal or UNESCO buffer boundaries.*
+*Author-approved study-area cartography showing the frozen UNESCO inventory and primary 500 m analytical neighbourhoods. Esri World Imagery provides contextual display only and is not an analytical input; road and museum features are from OpenStreetMap. The circles are sampling supports, not legal or UNESCO buffer boundaries.*
 
 ## What the study does
 

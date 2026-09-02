@@ -20,7 +20,7 @@ The principal scientific risk is not missing analysis but version consistency. T
 | Submitted main PDF | 15 pages; SHA-256 `8C627FC4FF4883D9905174373BA35CFD730FE4182C5F664BDCA9CE384B9AE7E1`. |
 | Submitted supplementary PDF | 18 pages; SHA-256 `86B10F3A93071CBE6A4737D8D8BDB1DF86F718FF31F18F3A730CF6EAB8B02EF6`. |
 | Repository LaTeX source | A different journal-neutral manuscript generation: previously compiled as 50 main pages plus 21 supplementary pages. It is not the editable source of the supplied 15/18-page submission PDFs. |
-| Latest Figure 1 | Rebuilt from the documented Sentinel-2 display raster and frozen vector sources; source bundle and caption are now versioned. |
+| Latest Figure 1 | Author-approved original cartography restored from a checksum-locked archival render; caption, attribution and manuscript callout are versioned. |
 
 The supplied submission PDFs are retained by the author outside the repository. Their checksums are recorded here to make the reviewed snapshot unambiguous without adding about 39 MiB of pre-submission binary PDFs to Git history.
 
@@ -60,16 +60,17 @@ The exact package versions recorded by the frozen Linux run are now pinned in `r
 4. Reconcile intentional experiment snapshots and exact duplicate payloads. The audit found about 14.3 MiB of duplicate content across 44 hash groups, principally SRTM and derived-table copies. Duplication is not a scientific error, but each preserved snapshot should have a documented purpose.
 5. Confirm the live Journal of Cultural Heritage submission checklist immediately before upload, including anonymisation, highlights, graphical abstract, figure files, supplementary file naming, and declarations.
 
-## Figure 1 correction
+## Figure 1 author-approved restoration
 
-The earlier “Final Cyan” graphic displayed Esri World Imagery while its caption described Sentinel-2 and did not show the required basemap attribution. The audited replacement removes that mismatch:
+The high-contrast Sentinel-2 audit variant reduced the legibility of contextual labels and cyan analytical neighbourhoods and was not retained as the manuscript figure. The author-approved original visual has been restored without cartographic restyling. The scientific documentation was corrected around the visual:
 
-- panel (c) now uses a 10 m true-colour display derived from Copernicus Sentinel-2 L2A tiles T43SCT and T43SBT acquired 26 October 2024;
-- panels (a) and (b) use Natural Earth and geoBoundaries administrative outlines, with a frozen OpenStreetMap snapshot for orientation features;
-- the 500 m circles are explicitly described as analytical neighbourhoods, not UNESCO or legal buffer boundaries;
-- visible attribution, a reproducible QGIS script, source metadata, checksums, and validation notes are included under `manuscript/figures/source/figure_01/`.
+- the manuscript text now calls out Figure 1 directly and explains the 500 m reporting support;
+- the caption identifies Esri World Imagery as contextual display rather than Sentinel-2 analytical input;
+- the cyan circles are explicitly described as analytical neighbourhoods, not UNESCO or legal buffer boundaries;
+- the exact 180 dpi archival render is checksum-locked, and a deterministic wrapper script rebuilds the 260 x 175 mm manuscript PDF;
+- the Sentinel-2 QGIS reconstruction is retained only as a labelled non-canonical audit variant.
 
-The repository-relative QGIS 3.44.13 build completed successfully on 2 September 2026 and the regenerated preview passed visual inspection. The replacement PDF SHA-256 is `C78F4780494A109727B7497D300183079A4E938BEF34D662231E7C2CEB4CA36E`. The derived Sentinel-2 display raster SHA-256 is `B5BB42028C5140CABA22D033DD23CA93EFE18EFDD1357640CCECC8A0CF3162AD`.
+The restored PDF and the complete manuscript are independently rendered and visually inspected before release. Current checksums are recorded with the Figure 1 source package.
 
 ## Security, privacy, and repository hygiene
 

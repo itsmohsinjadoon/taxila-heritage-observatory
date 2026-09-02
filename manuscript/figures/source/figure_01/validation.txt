@@ -1,21 +1,11 @@
-VALIDATION STATUS: EXPORT PASS - VISUAL QA PASS (2026-09-02)
-[x] true landscape page (260 x 175 mm)
-[x] Pakistan first
-[x] dotted zoom connectors present
-[x] no FIGURE 1 text
-[x] no embedded manuscript caption
-[x] no satellite-context label
-[x] no 007-013 inset or combined label
-[x] 17 official-coordinate UNESCO components packaged and mapped
-[x] Saraikala inventory-only
-[x] labels set to 5.7 pt with thin charcoal halo
-[x] markers set to 2.2 mm
-[x] 500 m circles use a thin sky-cyan outline with improved vegetation contrast
-[x] main extent derived from all 17 official coordinates plus 850 m margin
-[x] Taxila Museum verified and packaged
-[x] N-125 ref/highway attributes verified and packaged
-[x] main panel uses the documented Sentinel-2 L2A true-colour raster
-[x] Pakistan and regional locators use open vector data without a commercial basemap
-[x] source and licence attribution is printed on the figure and expanded in the caption
-[x] EPSG:32643 used; EPSG:32642 not used
-[x] PDF, SVG, 600-dpi RGB PNG/TIFF, preview and editable QGIS project exported
+VALIDATION STATUS: RESTORATION PASS - MANUSCRIPT RENDER QA REQUIRED
+[x] author-approved original visual restored without cartographic restyling
+[x] archival PNG matches SHA-256 ffb87ca7a17fc5cd283a7058b419fbe55ee08dfa736ff0c19468abfb34c16c22
+[x] 260 x 175 mm landscape PDF built deterministically
+[x] Pakistan and regional contextual panels visible
+[x] 17 mapped component markers and labels visible
+[x] thin cyan 500 m analytical neighbourhoods visible
+[x] Saraikala retained in the inventory and identified as unmapped
+[x] manuscript caption identifies Esri World Imagery as contextual display
+[x] manuscript text cites Figure 1 and distinguishes analytical from statutory buffers
+[x] high-contrast Sentinel-2 version labelled as a non-canonical audit variant

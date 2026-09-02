@@ -32,7 +32,7 @@ See [`SCIENTIFIC_REPOSITORY_AUDIT_2026-09-02.md`](audit/SCIENTIFIC_REPOSITORY_AU
 - Adapt the journal-neutral LaTeX source to the current *Journal of Cultural Heritage* submission template and live author guidelines.
 - Re-check abstract length, keywords, highlights, graphical abstract, declarations, figure/table placement, and separate-file requirements against the live submission portal.
 - Perform a final language, reference, figure-resolution, and cross-file consistency audit after journal formatting.
-- Replace Figure 1 in the submission with the audited Sentinel-2-based version and its corrected source/caption attribution.
+- Use the restored author-approved Figure 1, its Esri World Imagery attribution, and the manuscript text that distinguishes analytical neighbourhoods from legal or UNESCO buffers.
 - Retain a transparent generative-AI declaration consistent with the publisher's current policy; do not conceal code, figure-production, or language-editing assistance.
 
 ## Scientific wording that must remain controlled

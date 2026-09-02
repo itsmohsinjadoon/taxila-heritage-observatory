@@ -12,6 +12,7 @@ pyogrio>=0.7,<1
 shapely>=2,<3
 pyproj>=3.6,<4
 pillow>=10,<13
+reportlab>=4.2,<5
 nbformat>=5.9,<6
 nbclient>=0.9,<1
 ipykernel>=6.29,<8

@@ -10,11 +10,10 @@ The package does not redistribute original third-party raster archives. Selected
 
 ## Figure 1 source package
 
-The Figure 1 source bundle under `figures/source/figure_01/` includes a derived 10 m Sentinel-2 L2A true-colour display raster, the frozen UNESCO component inventory, a frozen OpenStreetMap query response, and locator boundaries. It is accompanied by a reproducible QGIS script, metadata, validation notes and the manuscript caption.
+The canonical Figure 1 under `figures/main/` preserves the author-approved cartography as a checksum-locked archival render. `figures/source/figure_01/restore_author_approved_figure1.py` embeds that render without restyling it in the 260 x 175 mm manuscript PDF. The source bundle also retains a reproducible, non-canonical open-data QGIS variant for audit and comparison.
 
-- Sentinel-2: contains modified Copernicus Sentinel data (2024), tiles T43SCT and T43SBT acquired 26 October 2024.
+- Esri World Imagery: contextual basemap only; imagery sources credited as Esri, Maxar, Earthstar Geographics and the GIS User Community. The basemap is not redistributed as a standalone dataset and is not an analytical input.
 - OpenStreetMap: road and museum data © OpenStreetMap contributors, Open Database Licence; see <https://www.openstreetmap.org/copyright>.
-- Natural Earth: public-domain 1:50 m administrative boundary data.
-- geoBoundaries: Pakistan ADM1/ADM2 data under CC BY 4.0; cite Runfola et al. (2020), <https://doi.org/10.1371/journal.pone.0231866>.
+- Sentinel-2, Natural Earth and geoBoundaries files in the same directory support the clearly labelled open-data comparison variant; they are not represented as the basemap of the canonical manuscript figure.
 
 The analytical circles in the figure are sampling neighbourhoods and are not UNESCO or legal boundaries.
