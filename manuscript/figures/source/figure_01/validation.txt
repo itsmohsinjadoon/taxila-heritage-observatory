@@ -1,0 +1,21 @@
+VALIDATION STATUS: EXPORT PASS - VISUAL QA PASS (2026-09-02)
+[x] true landscape page (260 x 175 mm)
+[x] Pakistan first
+[x] dotted zoom connectors present
+[x] no FIGURE 1 text
+[x] no embedded manuscript caption
+[x] no satellite-context label
+[x] no 007-013 inset or combined label
+[x] 17 official-coordinate UNESCO components packaged and mapped
+[x] Saraikala inventory-only
+[x] labels set to 5.7 pt with thin charcoal halo
+[x] markers set to 2.2 mm
+[x] 500 m circles use a thin sky-cyan outline with improved vegetation contrast
+[x] main extent derived from all 17 official coordinates plus 850 m margin
+[x] Taxila Museum verified and packaged
+[x] N-125 ref/highway attributes verified and packaged
+[x] main panel uses the documented Sentinel-2 L2A true-colour raster
+[x] Pakistan and regional locators use open vector data without a commercial basemap
+[x] source and licence attribution is printed on the figure and expanded in the caption
+[x] EPSG:32643 used; EPSG:32642 not used
+[x] PDF, SVG, 600-dpi RGB PNG/TIFF, preview and editable QGIS project exported

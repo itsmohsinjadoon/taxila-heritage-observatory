@@ -1,0 +1,18 @@
+Taxila Figure 1 - final journal cartography
+Source package: repository-relative data and script in manuscript/figures/source/figure_01
+Edited QGIS project: Taxila_Figure1_Final.qgz
+QGIS version: 3.44.13-Solothurn LTR
+Metric CRS: EPSG:32643 - WGS 84 / UTM zone 43N
+Mapped UNESCO components: 17 official-coordinate records
+Inventory records: 18
+Saraikala 139-002: inventory only; secondary coordinate excluded
+Main-panel imagery: Sentinel-2 Collection 1 Level-2A surface reflectance; true-colour RGB B04/B03/B02; 10 m; 2024-10-26; tiles T43SCT and T43SBT
+Locator context: Natural Earth 1:50m and geoBoundaries Pakistan ADM1/ADM2 vector data; no commercial basemap
+Analytical support: 500 m circles centred on the true official coordinates
+Analytical support styling: sky-cyan #64CBE2 outline selected for contrast against green satellite vegetation
+Taxila Museum: OpenStreetMap node 2446416669; tourism=museum; name:en=Taxila Museum
+N-125: OpenStreetMap ways selected only where ref=N-125 and highway=trunk
+OSM query bounding box: 33.71455,72.76848,33.80719,72.94266
+Locator boundaries: Natural Earth 1:50m countries and geoBoundaries Pakistan ADM1/ADM2
+Cartographic displacement: small display-only offsets are stored separately from true_x/true_y; analytical buffers remain on official coordinates
+No manuscript caption is embedded in the figure.
