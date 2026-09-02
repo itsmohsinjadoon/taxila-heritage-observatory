@@ -4,7 +4,11 @@ Reproducible research repository for **Climate-contextual landscape-pressure scr
 
 This repository consolidates the executable analysis, frozen evidence package, experiments, results, publication figures, source-traceability records, and LaTeX manuscript prepared for further revision toward submission to the *Journal of Cultural Heritage*.
 
-> **Research status:** private pre-submission working repository. The scientific pipeline and manuscript package have passed the recorded internal validation gates, but author-supplied declarations, permissions, final repository identifiers, and journal-specific formatting still require confirmation before submission.
+> **Research status:** private pre-submission working repository. Deterministic and frozen-table checks pass, while the full proxy-model refit remains sensitive to the numerical environment and has not yet reproduced every locked value on Windows. The dated audit records this issue together with the remaining author declarations, permissions, source-version, and journal-formatting actions required before submission.
+
+![Taxila study area, mapped UNESCO components, and 500 m analytical neighbourhoods](docs/assets/figure_01_taxila_study_area_preview.png)
+
+*Study-area context generated from the frozen UNESCO inventory, Sentinel-2 L2A imagery, OpenStreetMap orientation features, Natural Earth and geoBoundaries. The circles are analytical neighbourhoods, not legal or UNESCO buffer boundaries.*
 
 ## What the study does
 
@@ -30,6 +34,8 @@ The output is a **relative field-inspection priority**, not a monument-damage pr
 | [`docs/audit/`](docs/audit/) | Manuscript QA, Q1 review-response matrix, and revision history |
 | [`scripts/`](scripts/) | Lightweight repository validation utilities |
 
+The exact environment, two execution profiles, evidence-lock rule, and known rerun boundary are documented in [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md).
+
 ## Quick start
 
 ### 1. Create the Python environment
@@ -38,16 +44,16 @@ The output is a **relative field-inspection priority**, not a monument-damage pr
 python -m venv .venv
 source .venv/bin/activate            # Windows: .venv\Scripts\activate
 python -m pip install --upgrade pip
-python -m pip install -r requirements.txt
+python -m pip install -r requirements-reproduction.txt
 ```
 
-The exact frozen environment is recorded in [`software_environment.json`](data/Taxila_CHIP_Frozen_Evidence_Data/17_reproducibility/software_environment.json). The random seed is **311**.
+`requirements-reproduction.txt` preserves the claim-critical versions used by the frozen run. `requirements.txt` remains a compatible-range environment for development. The original Linux environment is recorded in [`software_environment.json`](data/Taxila_CHIP_Frozen_Evidence_Data/17_reproducibility/software_environment.json), and the random seed is **311**.
 
 ### 2. Run the notebook
 
 Open [`Taxila_CHIP_Q1_Executable_Analysis.ipynb`](notebooks/Taxila_CHIP_Q1_Executable_Analysis.ipynb) from the repository root and choose **Run All**. The notebook automatically detects `data/Taxila_CHIP_Frozen_Evidence_Data/`. It also supports Colab and Kaggle layouts.
 
-For a quick engineering check, use the notebook's validation profile. Use the publication profile for the full stochastic analysis: 50,000 Dirichlet weight draws, 2,000 spatial-block draws per block size, 2,000 point-displacement draws per radius, and 500 spatial states crossed with 10 decision settings.
+For a quick engineering check, set `TAXILA_PROFILE=validation`. Use `TAXILA_PROFILE=publication` for the full stochastic analysis: 50,000 Dirichlet weight draws, 2,000 spatial-block draws per block size, 2,000 point-displacement draws per radius, and 500 spatial states crossed with 10 decision settings. The notebook writes to `Taxila_CHIP_Q1_outputs/`, which is ignored by Git.
 
 ### 3. Validate the repository
 
@@ -71,7 +77,7 @@ Compiled PDFs are written to `manuscript/output/` and intentionally ignored by G
 - Cells meeting at least two adverse spectral criteria: **16.93%**; all three: **1.42%**.
 - Highest hierarchical 2024 local priority at 500 m: **Giri complex (0.591)**.
 - The development-selected geographically buffered MLP achieved held-out macro-F1 **0.831** (95% block-bootstrap CI 0.700–0.860) on 4,188 samples.
-- Integrated analytical validation gates: **20/20 passed**.
+- The clean notebook's deterministic and frozen-table checks pass in the validation profile. Full proxy-model refitting is environment-sensitive and must be compared with the pinned evidence lock before reporting a clean publication reproduction; see the dated scientific audit in [`docs/audit/`](docs/audit/).
 
 These values are tied to the frozen evidence and validation records; they should not be generalized beyond the documented study design.
 

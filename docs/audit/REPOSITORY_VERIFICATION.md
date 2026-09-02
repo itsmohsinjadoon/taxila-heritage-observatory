@@ -1,4 +1,6 @@
-# Repository verification — 2026-08-29
+# Repository verification — 2026-08-29 (superseded in part)
+
+> This historical checkpoint predates the 2 September 2026 cross-version audit. Its engineering checks remain useful, but its clean-run wording must not be used as evidence that all current publication-profile locks pass. See [`SCIENTIFIC_REPOSITORY_AUDIT_2026-09-02.md`](SCIENTIFIC_REPOSITORY_AUDIT_2026-09-02.md).
 
 This report records checks performed after consolidating the ProjectTaxila research assets into the GitHub repository structure.
 
@@ -15,6 +17,10 @@ This report records checks performed after consolidating the ProjectTaxila resea
 - LaTeX: the main manuscript and Supplementary Information compiled successfully with `latexmk`, `pdflatex`, and BibTeX.
 - Final LaTeX logs: no undefined citations, undefined references, missing-file errors, or fatal compilation errors.
 - Current build: 50 A4 pages for the main manuscript and 21 A4 pages for Supplementary Information.
+
+## Later audit qualification
+
+The reduced validation profile passes, but later publication-profile reruns expose environment-sensitive proxy-model drift. The executed V8 notebook corresponding to the supplied submission values passes 24 of 27 headline checks, not a clean set of locks. The separate 15/18-page supplied PDFs are also not built from the journal-neutral 50/21-page source recorded here.
 
 ## Preserved audit history
 
