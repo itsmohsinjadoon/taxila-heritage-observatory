@@ -5,13 +5,18 @@ __pycache__/
 .mypy_cache/
 .ruff_cache/
 .venv/
+.venv-*/
 venv/
+.mplconfig/
 
 # Jupyter
 .ipynb_checkpoints/
+*_outputs/
 
 # LaTeX generated files
 manuscript/output/
+manuscript/figures/source/figure_01/generated/
+manuscript/figures/source/figure_01/data/*.aux.xml
 *.aux
 *.bbl
 *.blg
@@ -44,4 +49,3 @@ secrets*.json
 Thumbs.db
 .idea/
 .vscode/
-

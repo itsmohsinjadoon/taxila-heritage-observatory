@@ -13,6 +13,18 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 MAX_GITHUB_BYTES = 95 * 1024 * 1024
+IGNORED_PARTS = {
+    ".git",
+    ".ipynb_checkpoints",
+    ".mypy_cache",
+    ".pytest_cache",
+    ".ruff_cache",
+    "__pycache__",
+    "output",
+    "outputs",
+    "artifacts",
+    "tmp",
+}
 
 REQUIRED = [
     "README.md",
@@ -44,7 +56,15 @@ def fail(message: str, errors: list[str]) -> None:
 
 def main() -> int:
     errors: list[str] = []
-    files = sorted(path for path in ROOT.rglob("*") if path.is_file() and ".git" not in path.parts)
+    files = sorted(
+        path
+        for path in ROOT.rglob("*")
+        if path.is_file()
+        and not any(
+            part in IGNORED_PARTS or part.startswith(".venv") or part.endswith("_outputs")
+            for part in path.relative_to(ROOT).parts
+        )
+    )
 
     for relative in REQUIRED:
         if not (ROOT / relative).is_file():
@@ -102,4 +122,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     sys.exit(main())
-
