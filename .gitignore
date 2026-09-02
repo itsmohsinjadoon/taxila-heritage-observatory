@@ -30,6 +30,7 @@ manuscript/figures/source/figure_01/data/*.aux.xml
 *.toc
 
 # Local experiment outputs and caches
+output/
 outputs/
 artifacts/
 tmp/

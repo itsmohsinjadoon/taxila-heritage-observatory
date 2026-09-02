@@ -1,4 +1,4 @@
-VALIDATION STATUS: RESTORATION PASS - MANUSCRIPT RENDER QA REQUIRED
+VALIDATION STATUS: RESTORATION PASS - MANUSCRIPT RENDER QA PASS (2026-09-03)
 [x] author-approved original visual restored without cartographic restyling
 [x] archival PNG matches SHA-256 ffb87ca7a17fc5cd283a7058b419fbe55ee08dfa736ff0c19468abfb34c16c22
 [x] 260 x 175 mm landscape PDF built deterministically
@@ -9,3 +9,6 @@ VALIDATION STATUS: RESTORATION PASS - MANUSCRIPT RENDER QA REQUIRED
 [x] manuscript caption identifies Esri World Imagery as contextual display
 [x] manuscript text cites Figure 1 and distinguishes analytical from statutory buffers
 [x] high-contrast Sentinel-2 version labelled as a non-canonical audit variant
+[x] GitHub Actions manuscript build 33671356013 completed successfully
+[x] compiled manuscript page 10 independently rendered at 180 dpi
+[x] restored map, cyan neighbourhoods and full caption passed visual inspection in the compiled paper
