@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
       - name: Install TeX dependencies
         run: |
           sudo apt-get update
@@ -28,7 +28,7 @@ jobs:
         working-directory: manuscript
         run: bash compile.sh
       - name: Upload compiled PDFs
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: ProjectTaxila-manuscript-PDFs
           path: |
@@ -36,4 +36,3 @@ jobs:
             manuscript/output/Taxila_CHIP_Supplementary_Information.pdf
           retention-days: 30
           if-no-files-found: error
-
