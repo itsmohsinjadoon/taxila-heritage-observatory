@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "profile": "validation",
+  "started_utc": "2026-09-02T20:05:24.375095+00:00",
+  "git_commit": "0c8eb255afbfe3a7b22a5dad57941464407529d3",
+  "source_notebook": "notebooks/Taxila_CHIP_Q1_Executable_Analysis.ipynb",
+  "source_notebook_sha256": "0C371C50B1708A95167023D8F4EF47C2F483E9052D7A5AE3B0FF9442E54B7A5E2",
+  "data_root": "data/Taxila_CHIP_Frozen_Evidence_Data",
+  "random_seed": 311,
+  "python": "3.12.13",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "packages": {
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scipy": "1.17.0",
+    "scikit-learn": "1.8.0",
+    "matplotlib": "3.10.8",
+    "seaborn": "0.13.2",
+    "joblib": "1.5.3",
+    "rasterio": "1.5.1",
+    "geopandas": "1.1.4",
+    "pyogrio": "0.13.0",
+    "shapely": "2.1.2",
+    "pyproj": "3.7.2",
+    "nbformat": "5.11.1",
+    "nbclient": "0.11.0"
+  },
+  "scientific_boundary": "Relative landscape-pressure and field-inspection prioritisation only; not confirmed deterioration, causal climate impact, legal boundaries or external accuracy.",
+  "executed_notebook": "Taxila_CHIP_Q1_validation_executed.ipynb",
+  "executed_notebook_sha256": "6FDFDB90DA856996089A757636F65F9BDEFCC99D8BA5D8C1883E07AE88A5830A5",
+  "artifact_manifest": "artifacts/output_manifest.csv",
+  "headline_evidence_lock": {
+    "status": "PASS",
+    "passed": 19,
+    "total": 19,
+    "failed_claims": []
+  },
+  "data_quality_status": "PASS",
+  "finished_utc": "2026-09-02T20:07:33.737648+00:00",
+  "duration_seconds": 129.362
+}

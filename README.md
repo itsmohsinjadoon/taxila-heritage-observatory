@@ -27,12 +27,12 @@ The output is a **relative field-inspection priority**, not a monument-damage pr
 
 | Path | Contents |
 | --- | --- |
-| [`notebooks/`](notebooks/) | Clean, one-click executable Q1 analysis notebook |
+| [`notebooks/`](notebooks/) | Canonical executable analysis plus a minimal Colab/Kaggle launcher |
 | [`data/Taxila_CHIP_Frozen_Evidence_Data/`](data/Taxila_CHIP_Frozen_Evidence_Data/) | Frozen inputs, processed rasters/vectors, tables, statistics, configurations, validation records, and acquisition scripts |
 | [`experiments/integrated/`](experiments/integrated/) | Standalone integrated experiment code, 22 result tables, nine figures, validation records, and rendered analytical deliverables |
 | [`manuscript/`](manuscript/) | Modular LaTeX manuscript, Supplementary Information, figures, tables, bibliography, and claim/evidence traceability |
 | [`docs/audit/`](docs/audit/) | Manuscript QA, Q1 review-response matrix, and revision history |
-| [`scripts/`](scripts/) | Lightweight repository validation utilities |
+| [`scripts/`](scripts/) | Reproduction runner, scientific data audit, cross-version inventory, and repository validation |
 
 The exact environment, two execution profiles, evidence-lock rule, and known rerun boundary are documented in [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md).
 
@@ -49,17 +49,42 @@ python -m pip install -r requirements-reproduction.txt
 
 `requirements-reproduction.txt` preserves the claim-critical versions used by the frozen run. `requirements.txt` remains a compatible-range environment for development. The original Linux environment is recorded in [`software_environment.json`](data/Taxila_CHIP_Frozen_Evidence_Data/17_reproducibility/software_environment.json), and the random seed is **311**.
 
-### 2. Run the notebook
+### 2. Run the reproducible pipeline
+
+The recommended entry point creates a unique run directory, an executed notebook,
+an output manifest, a data-quality report, and a machine-readable execution
+receipt:
+
+```bash
+python scripts/run_reproduction.py --profile validation
+```
+
+Use `--profile publication` for the claim-critical stochastic rerun. A
+publication run is not a clean reproduction unless its receipt reports every
+applicable headline evidence lock as passing.
+
+You can also open the canonical notebook directly:
 
 Open [`Taxila_CHIP_Q1_Executable_Analysis.ipynb`](notebooks/Taxila_CHIP_Q1_Executable_Analysis.ipynb) from the repository root and choose **Run All**. The notebook automatically detects `data/Taxila_CHIP_Frozen_Evidence_Data/`. It also supports Colab and Kaggle layouts.
 
 For a quick engineering check, set `TAXILA_PROFILE=validation`. Use `TAXILA_PROFILE=publication` for the full stochastic analysis: 50,000 Dirichlet weight draws, 2,000 spatial-block draws per block size, 2,000 point-displacement draws per radius, and 500 spatial states crossed with 10 decision settings. The notebook writes to `Taxila_CHIP_Q1_outputs/`, which is ignored by Git.
 
+For Colab or Kaggle, open
+[`ProjectTaxila_Colab_Kaggle_Launcher.ipynb`](notebooks/ProjectTaxila_Colab_Kaggle_Launcher.ipynb).
+It installs the pinned environment, invokes the same runner, and preserves the
+same receipt. Never paste a GitHub token into a notebook cell; upload a private
+checkout/ZIP or use the platform's protected secret mechanism.
+
 ### 3. Validate the repository
 
 ```bash
 python scripts/validate_repository.py
+python scripts/audit_scientific_data.py --output output/data-quality-report.json --quiet
 ```
+
+The structural validator is dependency-free. The scientific audit verifies the
+157-file frozen checksum manifest, analytical grains and keys, temporal
+coverage, proxy partitions, and alignment of all 21 GeoTIFFs.
 
 ### 4. Compile the manuscript
 
@@ -78,6 +103,10 @@ Compiled PDFs are written to `manuscript/output/` and intentionally ignored by G
 - Highest hierarchical 2024 local priority at 500 m: **Giri complex (0.591)**.
 - The development-selected geographically buffered MLP achieved held-out macro-F1 **0.831** (95% block-bootstrap CI 0.700–0.860) on 4,188 samples.
 - The clean notebook's deterministic and frozen-table checks pass in the validation profile. Full proxy-model refitting is environment-sensitive and must be compared with the pinned evidence lock before reporting a clean publication reproduction; see the dated scientific audit in [`docs/audit/`](docs/audit/).
+
+The proxy split is derived from spatial block columns; the checksum-locked feature
+table's older `partition` field is deliberately ignored. See the
+[`proxy split contract`](docs/audit/PROXY_SPLIT_CONTRACT.md).
 
 These values are tied to the frozen evidence and validation records; they should not be generalized beyond the documented study design.
 

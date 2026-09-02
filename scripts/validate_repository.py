@@ -30,7 +30,9 @@ REQUIRED = [
     "README.md",
     "CITATION.cff",
     "requirements.txt",
+    "requirements-audit.txt",
     "notebooks/Taxila_CHIP_Q1_Executable_Analysis.ipynb",
+    "notebooks/ProjectTaxila_Colab_Kaggle_Launcher.ipynb",
     "data/Taxila_CHIP_Frozen_Evidence_Data/README.md",
     "data/Taxila_CHIP_Frozen_Evidence_Data/SHA256SUMS.txt",
     "data/Taxila_CHIP_Frozen_Evidence_Data/17_reproducibility/software_environment.json",
@@ -41,10 +43,13 @@ REQUIRED = [
     "manuscript/CLAIM_EVIDENCE_AUDIT.csv",
     "experiments/integrated/analysis/run_integrated_experiments.py",
     "experiments/integrated/analysis/validation/integrated_experiment_validation.json",
+    "scripts/audit_scientific_data.py",
+    "scripts/run_reproduction.py",
 ]
 
 SECRET_PATTERNS = {
-    "GitHub token": re.compile(r"gh[pousr]_[A-Za-z0-9]{30,}"),
+    "GitHub token": re.compile(r"(?:gh[pousr]_[A-Za-z0-9]{30,}|github_pat_[A-Za-z0-9_]{20,})"),
+    "OpenAI key": re.compile(r"\bsk-[A-Za-z0-9_-]{20,}\b"),
     "AWS access key": re.compile(r"AKIA[0-9A-Z]{16}"),
     "private key": re.compile(r"-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----"),
 }
@@ -94,7 +99,10 @@ def main() -> int:
             except Exception as exc:  # noqa: BLE001
                 fail(f"unreadable CSV: {relative}: {exc}", errors)
 
-        if path.suffix.lower() in {".md", ".txt", ".py", ".json", ".yml", ".yaml", ".tex", ".bib"}:
+        if path.suffix.lower() in {
+            ".bib", ".cff", ".csv", ".ipynb", ".js", ".json", ".md", ".mjs",
+            ".py", ".tex", ".toml", ".tsv", ".txt", ".yaml", ".yml",
+        }:
             try:
                 text = path.read_text(encoding="utf-8")
             except UnicodeDecodeError:
@@ -103,12 +111,16 @@ def main() -> int:
                 if pattern.search(text):
                     fail(f"possible {label} in {relative}", errors)
 
-    notebook = ROOT / "notebooks/Taxila_CHIP_Q1_Executable_Analysis.ipynb"
-    if notebook.is_file():
+    for notebook in sorted((ROOT / "notebooks").glob("*.ipynb")):
         payload = json.loads(notebook.read_text(encoding="utf-8"))
         outputs = sum(len(cell.get("outputs", [])) for cell in payload.get("cells", []))
-        if outputs:
-            fail(f"clean source notebook contains {outputs} committed outputs", errors)
+        execution_counts = sum(cell.get("execution_count") is not None for cell in payload.get("cells", []))
+        if outputs or execution_counts:
+            fail(
+                f"clean source notebook contains {outputs} outputs and "
+                f"{execution_counts} execution counts: {notebook.relative_to(ROOT)}",
+                errors,
+            )
 
     if errors:
         print("ProjectTaxila validation FAILED")

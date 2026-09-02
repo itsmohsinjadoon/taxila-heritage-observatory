@@ -19,7 +19,32 @@ python -m pip install -r requirements-reproduction.txt
 
 ```bash
 python scripts/validate_repository.py
+python scripts/audit_scientific_data.py --output output/data-quality-report.json --quiet
 ```
+
+The second command requires the scientific stack in `requirements-audit.txt`
+or `requirements-reproduction.txt`. It validates the frozen checksum manifest,
+declared table grains, unique keys, component coverage, complete 1991–2025 daily
+climate sequence, fixed proxy partitions, and common raster grid.
+
+## Recommended execution runner
+
+Use the runner instead of overwriting an earlier executed notebook:
+
+```bash
+python scripts/run_reproduction.py --profile validation
+python scripts/run_reproduction.py --profile publication
+```
+
+Each run receives a unique directory under `output/runs/` unless
+`--output-dir` is supplied. The directory contains the executed notebook,
+generated tables/figures, checksums, data-quality report and
+`execution_receipt.json`. The receipt records the Git revision, notebook hash,
+Python/package environment, duration and evidence-lock outcome without storing
+machine-specific source paths.
+
+Use [`notebooks/ProjectTaxila_Colab_Kaggle_Launcher.ipynb`](notebooks/ProjectTaxila_Colab_Kaggle_Launcher.ipynb)
+for the same workflow on Colab or Kaggle.
 
 To run the reduced notebook profile:
 
@@ -36,7 +61,7 @@ $env:TAXILA_PROFILE = 'validation'
 jupyter nbconvert --to notebook --execute notebooks\Taxila_CHIP_Q1_Executable_Analysis.ipynb --output Taxila_CHIP_Q1_Validation_Executed.ipynb
 ```
 
-The validation profile uses smaller stochastic draws and checks pipeline integrity. It is not publication evidence.
+The validation profile uses smaller stochastic draws and checks pipeline integrity. It is not publication evidence. The runner preserves its receipt separately from publication-scale runs.
 
 ## Publication profile
 

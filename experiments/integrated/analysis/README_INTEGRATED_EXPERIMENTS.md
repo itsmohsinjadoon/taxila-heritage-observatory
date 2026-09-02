@@ -42,7 +42,7 @@ recorded by `raw_manifest.json`, then execute:
 NODE_PATH="$CODEX_PRIMARY_RUNTIME_NODE_MODULES" \
   "$CODEX_PRIMARY_RUNTIME_NODE" extract_geotiff_raw.mjs
 
-MPLCONFIGDIR=/tmp/mpl_taxila \
+MPLCONFIGDIR=../../../.mplconfig \
   "$CODEX_PRIMARY_RUNTIME_PYTHON" run_integrated_experiments.py
 
 "$CODEX_PRIMARY_RUNTIME_PYTHON" build_experiments_results_discussion.py
