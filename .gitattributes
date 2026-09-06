@@ -20,3 +20,9 @@
 data/Taxila_CHIP_Frozen_Evidence_Data/01_sources_and_manifests/open_meteo_request_manifest.csv -text
 data/Taxila_CHIP_Frozen_Evidence_Data/13_tables/component_open_meteo_grid_mapping.csv -text
 data/Taxila_CHIP_Frozen_Evidence_Data/MANIFEST.csv -text
+
+# Preserve raw execution evidence bytes across platforms for recorded SHA-256 checks.
+experiments/spatial_extension/2026-09-06-windows/** -text
+experiments/spatial_extension/2026-09-06-colab/** -text
+experiments/reproduction/2026-09-06-windows/** -text
+notebooks/Taxila_CHIP_Q1_Executable_Analysis.ipynb -text
