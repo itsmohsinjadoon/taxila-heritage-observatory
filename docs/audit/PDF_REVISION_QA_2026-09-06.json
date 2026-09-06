@@ -1,16 +1,16 @@
 {
   "status": "PASS",
-  "revision": "Experimental emphasis; internal audit narration removed",
+  "revision": "Mathematical depth, exact decision-weight analysis and comprehensive framework",
   "pdfs": [
     {
       "file": "JCH_main_anonymous.pdf",
-      "pages": 17,
-      "sha256": "006d9636bcc6679ac5a710fca1ec2dbcf12fc444abf19bd88d5b0ef8f94afb5d"
+      "pages": 20,
+      "sha256": "4811882e4eabdd46762e849ec63c57f592f406f758632152e3d14aa25d6c970e"
     },
     {
       "file": "JCH_supplementary_information.pdf",
       "pages": 7,
-      "sha256": "61144fef704fca1db52e842c155e195e6dfa8de8ebef3e079151ca9f270b805b"
+      "sha256": "1c0eb044fdbc7909e70e524f409b0cb194b8ed8ad1c83ab3859012049a9699a3"
     },
     {
       "file": "JCH_title_page_AUTHOR_CONFIRMATIONS_PENDING.pdf",
@@ -18,13 +18,50 @@
       "sha256": "11f35f3cf3fcc1fcdf46502b1a0a20289917b18bee649d4d6806645216d3c184"
     }
   ],
-  "approximate_source_words_including_captions_excluding_tables_references": 4658,
+  "conservative_source_word_estimate_including_all_captions_and_equation_tokens": 4965,
+  "numbered_equations": 14,
+  "active_references": 44,
   "main_figures": 7,
   "main_tables": 3,
-  "main_component_illustrations": 17,
+  "main_component_illustrations": 19,
   "unresolved_references": false,
   "internal_audit_narration_in_article": false,
-  "visual_review": "All 17 main and 7 supplementary pages inspected; four-panel figure inspected separately and legend moved outside plotting area.",
-  "data_policy": "No observations, experiment outputs or evaluation targets changed.",
-  "submission_status": "Author declarations pending"
+  "visual_review": "All 20 main and 7 supplementary pages inspected; mathematical pages and both new figures inspected separately. Latest minor definition edits verified in the final render.",
+  "new_deterministic_analysis": {
+    "status": "PASS",
+    "source": "data/Taxila_CHIP_Frozen_Evidence_Data/13_tables/baseline_reproduction/component_epoch_integrated_scores.csv",
+    "source_sha256": "0f733c8640310a2e3f76dfb966336842a8deb1dde85c91294b2883197b24f4fe",
+    "analysis": "Analytical pairwise crossings of fixed E2024 scores, equal-factor terrain",
+    "radii_m": [
+      250,
+      500,
+      1000
+    ],
+    "checks": [
+      {
+        "radius_m": 250,
+        "interior_intervals": 93,
+        "ordering_probes": 186
+      },
+      {
+        "radius_m": 500,
+        "interior_intervals": 69,
+        "ordering_probes": 138
+      },
+      {
+        "radius_m": 1000,
+        "interior_intervals": 58,
+        "ordering_probes": 116
+      },
+      {
+        "recorded_mc_draws": 50000,
+        "max_absolute_difference": 0.0023815980629540157,
+        "check": "Exact uniform mass versus recorded Monte Carlo"
+      }
+    ],
+    "observational_data_changed": false,
+    "radius_interpolation": false
+  },
+  "original_observations_and_prior_experiments": "unchanged",
+  "submission_status": "Author declarations and reviewer access pending"
 }

@@ -1,6 +1,6 @@
 \section{Materials and methods}
 \subsection{Study area, inventory and evidence sources}
-Taxila is a serial World Heritage property in Punjab, Pakistan, inscribed under reference 139 \citep{unesco_taxila}. The inventory contained 18 component records. Seventeen had usable point coordinates; Saraikala (139-002) remained in the documentary inventory but was excluded from coordinate-dependent analysis because its location was unresolved. All metric operations used WGS 84/UTM zone 43N (EPSG:32643). Point-centred circles of 250, 500 and 1,000 m defined analytical neighbourhoods, with 500 m used for primary reporting. They are neither official property polygons nor statutory or UNESCO buffer zones (Fig.~\ref{fig:study}).
+Taxila is a serial World Heritage property in Punjab, Pakistan, inscribed under reference 139 \citep{unesco_taxila}. The inventory contained 18 component records. Seventeen had usable point coordinates; Saraikala (139-002) remained in the documentary inventory but was excluded from coordinate-dependent analysis because its location was unresolved. Spectral neighbourhoods used WGS 84/UTM zone 43N (EPSG:32643); terrain extraction used local metric approximations on the geographic elevation grid. Point-centred circles of 250, 500 and 1,000 m defined analytical neighbourhoods, with 500 m used for primary reporting. They are neither official property polygons nor statutory or UNESCO buffer zones (Fig.~\ref{fig:study}).
 
 \begin{figure}[tbp]\centering
 \includegraphics[width=\textwidth]{figure_01_study_area_context_map.pdf}
@@ -24,53 +24,130 @@ UNESCO component inventory & 18 records; 17 mapped points & Component identifier
 \end{tabular}
 \end{table}
 
-\begin{figure}[tbp]\centering
+\begin{figure}[p]\centering
 \includegraphics[width=\textwidth]{figure_02_chip_framework.pdf}
-\caption{CHIP framework. Landscape and terrain evidence contribute to relative priority; climate retains its contextual role at native support. The land-cover benchmark is a separate diagnostic and does not validate the conservation score. The vector diagram is generated from an editable Python script. Codex assisted schematic preparation; the diagram contains no generated observational imagery.}\label{fig:framework}
+\caption{CHIP framework linking observation support, mathematical transformations, experiments and conservation interpretation. Solid arrows carry analytical inputs; dashed arrows carry interpretation. Climate retains native support and land-cover evaluation remains a separate diagnostic. Fixed and reconstructed spectral percentile populations are distinguished. Counts describe executed designs. Codex assisted this editable vector schematic.}\label{fig:framework}
 \end{figure}
 
-\subsection{Comparable spectral evidence}
-Cloud, shadow and invalid observations were masked before compositing on a fixed 30 m grid. Endpoint change used the intersection of valid E2004 and E2024 cells, preserving a common denominator. NDVI, NDBI and MNDWI were calculated from scaled reflectance using their standard band ratios \citep{zha2003ndbi,xu2006mndwi}. Lower NDVI and MNDWI and higher NDBI were oriented towards greater relative pressure. NDBI can respond to bare soil as well as built surfaces; its direction was a screening assumption, not an attribution of urban expansion.
 
-Within each radius, component-epoch medians were transformed to empirical percentiles using the pooled component-epoch distribution. Denote the oriented percentiles by $z_N,z_B,z_W$. Correlated vegetation and built/bare terms were grouped before combination:
-\begin{equation}
-L=\tfrac12(\tfrac12z_N+\tfrac12z_B)+\tfrac12z_W.
+\subsection{Spectral transformations and common-support convergence}
+Cloud, shadow and invalid observations were masked before compositing on a fixed 30 m grid. With scaled reflectance $\rho_b$ in band $b$, the indices were
+\begin{equation}\label{eq:indices}
+\mathrm{NDVI}=\frac{\rho_{\mathrm{NIR}}-\rho_{\mathrm{red}}}{\rho_{\mathrm{NIR}}+\rho_{\mathrm{red}}},\quad
+\mathrm{NDBI}=\frac{\rho_{\mathrm{SWIR1}}-\rho_{\mathrm{NIR}}}{\rho_{\mathrm{SWIR1}}+\rho_{\mathrm{NIR}}},\quad
+\mathrm{MNDWI}=\frac{\rho_{\mathrm{green}}-\rho_{\mathrm{SWIR1}}}{\rho_{\mathrm{green}}+\rho_{\mathrm{SWIR1}}}.
 \end{equation}
-This structure reduces the influence that two closely related indicators would otherwise receive in an equal three-term sum. It does not remove all statistical dependence. Percentiles are conditional on the analysed inventory and epochs; they are not transferable physical thresholds.
+These ratios follow their original definitions \citep{tucker1979ndvi,zha2003ndbi,xu2006mndwi}. NDBI responds to bare soil as well as built surfaces; its adverse direction is a screening assumption, not an attribution of urban expansion.
 
-For endpoint changes, the lower 20\% tails of NDVI and MNDWI and the upper 20\% tail of NDBI defined three adverse criteria. Their sum identified cells meeting at least two or all three criteria. Because these thresholds are data-derived and the indicators correlated, convergence measures descriptive screening prevalence rather than damaged area or statistical hotspot significance. Scene provenance and preprocessing specifications accompany the analysis.
+For component $i$, epoch $e$, radius $r$ and factor $k$, let $x_{ierk}$ denote the neighbourhood median. The oriented empirical percentile is
+\begin{equation}\label{eq:percentile}
+z_{ierk}=\frac{\operatorname{rank}_{\mathcal I_r}(s_kx_{ierk})-\tfrac12}{N_r},
+\qquad s_N=s_W=-1,\quad s_B=+1.
+\end{equation}
+Ranks ascend with average ties; $N_r=|\mathcal I_r|=85$ component--epoch observations at each radius ($17\times5$). Terrain percentiles use the 17 static component summaries. Spatial reconstruction experiments instead rerank the 17 simultaneously reconstructed E2024 summaries. Reconstruction differences therefore include a reference-population effect. Percentiles describe relative evidence within their stated population, not transferable physical thresholds.
 
-\subsection{Terrain, priority and uncertainty}
-Slope, a contributing-area wetness proxy and distance to a thresholded D8 drainage network described terrain context \citep{farr2007srtm,beven1979topmodel}. Higher slope and wetness and shorter drainage distance were oriented towards greater susceptibility. Their component percentiles were averaged to obtain $T$. Flow accumulation represents topographic convergence, not discharge; the DEM cannot resolve all culverts, walls or local drains.
+Endpoint differences $\Delta I_k(p)=I_{k,\mathrm{E2024}}(p)-I_{k,\mathrm{E2004}}(p)$ used only the common valid-cell set $\Omega$. With $Q_k(q)$ denoting its empirical $q$-quantile,
+\begin{equation}\label{eq:convergence}
+\begin{aligned}
+C(p)&=\mathbf1[\Delta I_N(p)\leq Q_N(.2)]+\mathbf1[\Delta I_W(p)\leq Q_W(.2)]
+       +\mathbf1[\Delta I_B(p)\geq Q_B(.8)],\\
+\pi_{\geq h}&=|\Omega|^{-1}\sum_{p\in\Omega}\mathbf1[C(p)\geq h],\qquad h\in\{2,3\}.
+\end{aligned}
+\end{equation}
+The indicator function $\mathbf1[\cdot]$ equals one when its condition holds. These overlapping, data-derived tails quantify descriptive convergence; they are neither independent tests nor measurements of damaged area.
 
-The primary score was $P=0.5L+0.5T$. Equal domain weights were a declared structural choice, not an expert-elicited preference or fitted conservation model. Climate was not used to create fine-scale rank differences. A separate integrated context score was retained as a sensitivity analysis. Scores are dimensionless and relative to the same 17 mapped components.
+\subsection{Terrain representation and hierarchical decision rule}
+D8 routing directs each elevation cell to its steepest strictly lower neighbour; sinks remain terminal. Slope $\theta$ derives from metric elevation gradients. The contributing-cell count $A_c$ and geometric-mean cell width $h$ define the numerical wetness proxy
+\begin{equation}\label{eq:wetness}
+H(p)=\log\!\left[\frac{(A_c(p)+1)\,h/(1\,\mathrm{m})}
+ {\tan(\max\{\theta(p),0.05^\circ\})+0.01}\right].
+\end{equation}
+This regularised topographic proxy follows the contributing-area/slope rationale of hydrological terrain analysis \citep{beven1979topmodel,moore1991terrain}. Drainage comprises cells at or above the 99th percentile of accumulation. Component factors are the 90th percentiles of slope and $H$, and median Euclidean drainage distance. Higher slope and wetness and shorter distance are oriented towards greater susceptibility. Routing approximates topographic convergence, not discharge, and omits unresolved walls, culverts and local drains.
 
-\subsection{Experimental assessment of inspection priorities}
-The experiments examine complementary aspects of the decision rule. First, the hierarchical score was compared with an ungrouped equal-factor mean and landscape-only and terrain-only baselines. Leave-one-factor-out scores were recomputed with retained weights renormalised. Spearman correlation, Kendall concordance, top-five overlap and maximum rank movement quantify departures from the reference; the component ranked first identifies their management consequence.
+With $S,H,D$ indexing slope, wetness and drainage proximity, landscape pressure $L$, terrain susceptibility $T$ and priority $P$ are
+\begin{equation}\label{eq:priority}
+\begin{aligned}
+L_{ier}&=\tfrac14z_{ierN}+\tfrac14z_{ierB}+\tfrac12z_{ierW},\\
+T_{ir}&=\tfrac13(z_{irS}+z_{irH}+z_{irD}),\\
+P_{ier}(w)&=wL_{ier}+(1-w)T_{ir},\qquad P_{ier}^{\mathrm{ref}}=P_{ier}(0.5).
+\end{aligned}
+\end{equation}
+Grouping NDVI and NDBI limits their combined weight relative to MNDWI without claiming statistical independence. Equal domain weights are declared choices, not fitted conservation parameters. This hierarchical construction connects GIS multicriteria assessment \citep{malczewski2006gis} to explicitly testable sensitivity assumptions \citep{chen2010sensitivity,feizizadeh2014uncertainty}. A regional climate term remains contextual: adding the same value to every component through an equal-weight integrated score is an affine transformation of $P^{\mathrm{ref}}$ and cannot alter the within-epoch ordering.
 
-Second, the 250, 500 and 1,000 m neighbourhoods were crossed with landscape weights of 0.25, 0.50 and 0.75 and three terrain formulations: equal factors, inverse-correlation-weighted factors, and a reduced slope--drainage formulation. The resulting 27 scenarios assess structural persistence. Components occurring in the top three in at least half the scenarios define a core inspection tier; components outside that tier occurring in the top five in at least half define a conditional tier. These operational thresholds organise scenario frequencies and do not represent measured damage severity. A continuous weight experiment sampled $w\sim\mathrm{Beta}(\alpha,\alpha)$ in $P_w=wL+(1-w)T$, with $\alpha=0.5,1,2$ and 50,000 draws per setting.
+\subsection{Structural experiments and exact weight transitions}
+The hierarchy was compared with an equal six-factor mean, landscape-only and terrain-only baselines. Factor ablations removed one term and renormalised retained weights. Spearman correlation, Kendall concordance, top-five overlap and maximum rank displacement describe ordering changes.
 
-Third, 2,000 spatial draws were generated at each of 90, 150 and 300 m block sizes within the 500 m neighbourhoods. Exponential block weights were shared across components occupying the same grid blocks and multiplied by valid-cell counts. Support-weighted medians of block-level spectral medians supplied each draw, with terrain fixed. This design represents spatial dependence and overlap between analytical neighbourhoods.
+Three radii, three landscape weights ($0.25,0.50,0.75$) and three terrain formulations produce 27 scenarios. Terrain alternatives comprise equal factors, inverse-correlation weights and the reduced slope--drainage mean. For the correlation-adjusted case, $a_k\propto[\sum_\ell|\rho_{k\ell}|]^{-1}$ with $\sum_ka_k=1$, where $\rho$ is the Spearman matrix of the three terrain factors, including its diagonal. Continuous-weight experiments sample $w\sim\mathrm{Beta}(\alpha,\alpha)$ for $\alpha\in\{0.5,1,2\}$, with 50,000 draws each. This evaluates stated preference distributions rather than inferring stakeholders' preferences, consistent with rank-acceptability analysis \citep{lahdelma2001smaa}.
 
-Fourth, component centres were displaced independently within uniform-area discs of maximum radius 30, 60 or 120 m. Spectral and terrain summaries were re-extracted and percentiles recalculated for 2,000 draws per radius. An undisplaced re-extraction provides the control. It is distinguished from the fixed summary-table reference because feature reconstruction itself can change ranks; differences between these controls must not be attributed to positional error.
+An additional deterministic analysis resolves every pairwise score crossing. For E2024 components $i,j$ at fixed radius and equal-factor terrain, solving $P_i(w)=P_j(w)$ gives
+\begin{equation}\label{eq:crossing}
+w^*_{ij}=\frac{T_j-T_i}{(L_i-T_i)-(L_j-T_j)}.
+\end{equation}
+Only nonzero denominators and crossings in $(0,1)$ are retained. Sorting these crossings partitions the weight interval into regions of constant rank order; midpoint evaluation identifies the leader in each region. Boundary ties retain component-inventory order. Figure~\ref{fig:scales} combines fixed ranks, a three-dimensional rank response and exact leadership intervals. Radii remain discrete; no interpolated spatial-resolution surface is implied.
 
-Finally, 500 spatial states combined a sampled block size, shared block weights and independently displaced centres within 120 m. Each state was crossed with ten decision settings, sampling a uniform landscape weight and one of the three terrain formulations. The resulting 5,000 score vectors quantify joint sensitivity; they are nested simulations, not 5,000 independent geographic observations. Median ranks, central 95\% intervals and top-three frequencies summarise the conditional distributions. Figures~\ref{fig:scales} and \ref{fig:robustness} report the central spatial, structural and joint experiments in the main article.
+\subsection{Spatial, positional and joint uncertainty propagation}
+At each block size (90, 150, 300 m), 2,000 spatial draws used shared exponential weights. If $m_{ibk}$ is the median of factor $k$ in block $b$ intersecting component $i$, and $n_{ib}$ its valid-cell count,
+\begin{equation}\label{eq:block}
+E_b^{(d)}\sim\operatorname{Exp}(1),\quad v_{ib}^{(d)}=n_{ib}E_b^{(d)},\quad
+\widetilde x_{ik}^{(d)}=\operatorname{wmed}_{b}\{m_{ibk};v_{ib}^{(d)}\}.
+\end{equation}
+The weighted median is the first ordered block median reaching half the cumulative weight. Sharing $E_b^{(d)}$ across overlapping neighbourhoods preserves their resampling dependence; cell counts retain unequal spatial support. Terrain remains fixed in this experiment.
 
-\subsection{Climate trends and acquisition windows}
-The regional series averages each day equally across the four unique weather cells before annual aggregation; it is not an average over 17 independent component climates. Annual metrics were characterised by Theil--Sen slopes \citep{sen1968slope}. For annual uncertainty analysis, we fitted a robust linear trend, resampled five-year blocks of its residuals and restored the fitted trend to obtain slope intervals. Null slopes were calculated by adding the same resampled residuals to a constant baseline. The two-sided Monte Carlo probability was $(1+\#\{|\beta_b^0|\geq|\widehat\beta|\})/(B+1)$, with $B=2,000$. Benjamini--Hochberg adjustment was applied to the 12 annual metrics \citep{benjamini1995fdr}. The procedure assumes that detrended residual blocks adequately represent short-range dependence; it does not resolve product bias.
+For positional sensitivity, independent uniform-area displacements are
+\begin{equation}\label{eq:displacement}
+\boldsymbol\delta_i=d_{\max}\sqrt{U_i}(\cos\phi_i,\sin\phi_i),\quad
+U_i\sim U(0,1),\quad \phi_i\sim U(0,2\pi).
+\end{equation}
+Spectral and terrain summaries were re-extracted for 2,000 draws at each $d_{\max}\in\{30,60,120\}$ m. An undisplaced re-extraction supplies the appropriate control. Equation~\eqref{eq:percentile} distinguishes this endpoint reference from the fixed summary-table reference.
 
-Antecedent weather was calculated for every Landsat acquisition over 7, 30, 90, 180 and 365 days and then averaged within each epoch. Product comparisons used matched dates and periods. Weather--spectral correlations involved only five independent composite epochs and were retained as exploratory, without causal interpretation. No weather field was downscaled to the Landsat grid.
+Joint simulation generates 500 spatial states, each with sampled block size, shared block weights and independent displacement within 120 m. Ten decision settings per state sample $w\sim U(0,1)$ and one terrain formulation. For resulting ordinal ranks $R_i^{sd}$, top-$k$ frequency is
+\begin{equation}\label{eq:acceptability}
+\widehat b_i(k)=\frac{1}{500\times10}\sum_{s=1}^{500}\sum_{d=1}^{10}
+ \mathbf1[R_i^{sd}\leq k].
+\end{equation}
+Median ranks and central 95\% intervals summarise these 5,000 nested score vectors. They are conditional sensitivity distributions, not 5,000 independent maps or posterior probabilities of deterioration. The same frequency definition over 27 structural scenarios defines a core tier at $b_i(3)\geq0.5$ and a conditional tier outside it at $b_i(5)\geq0.5$.
 
-\subsection{Retrospective spatial proxy benchmark}
-The feature table contained 20,749 class-stratified samples with six reflectance bands and four indices. The outer split assigned 4,188 samples in block columns 3--4 to testing, excluded 4,467 samples in columns 2 and 5 as a buffer, and retained 12,094 development samples. The 20 test blocks did not overlap the 60 development blocks. The minimum observed sample separation was calculated from grid coordinates. Labels represent WorldCover agreement and carry temporal mismatch with the E2019 predictors.
+\subsection{Climate trends and acquisition-matched forcing}
+The regional daily series averages four unique weather cells equally before annual aggregation. For annual values $Y_t$, the Theil--Sen estimator is
+\begin{equation}\label{eq:sen}
+\widehat\beta=\operatorname{median}_{u>t}\frac{Y_u-Y_t}{u-t}.
+\end{equation}
+After robust trend fitting, five-year residual blocks were resampled and the fitted trend restored to obtain 2,000 slope replicates \citep{sen1968slope,yue2002autocorrelation}. Null replicates add resampled residuals to a constant baseline. The two-sided probability is $(1+\sum_b\mathbf1[|\beta_b^0|\geq|\widehat\beta|])/(2,001)$; Benjamini--Hochberg adjustment covers 12 annual metrics \citep{benjamini1995fdr}. Inference assumes adequate representation of short-range residual dependence and remains conditional on the weather product.
 
-The experiment compared multinomial logistic regression, random forest, extra trees, histogram gradient boosting, a multilayer perceptron, XGBoost and CatBoost \citep{breiman2001rf,pedregosa2011sklearn,chen2016xgboost,prokhorenkova2018catboost}. Each family received three predeclared configurations and the same three contiguous inner validation bands. Adjacent block rows were excluded from inner training. Standardisation was fitted inside each training fold; early stopping was disabled to avoid an implicit random validation split. Mean inner macro-F1, computed over all six classes even when a fold omitted a class, selected the primary family and configuration before outer predictions were generated.
+For acquisition dates $a\in\mathcal A_e$, daily precipitation $W(t)$ and antecedent window $\ell$,
+\begin{equation}\label{eq:lags}
+\overline W_e(\ell)=\frac{1}{|\mathcal A_e|}\sum_{a\in\mathcal A_e}
+ \sum_{u=1}^{\ell}W(a-u),\qquad \ell\in\{7,30,90,180,365\}\ \mathrm{days}.
+\end{equation}
+Temperature uses window means. Product comparisons match dates and periods. Five composite epochs provide only five temporal replicates for exploratory weather--spectral associations; no weather field was downscaled to 30 m.
 
-The water proxy was geographically concentrated and absent from one inner training fold. We retained this difficult fold, assigned zero predicted mass to an unseen class where necessary, and kept the six-class scoring denominator. This tests transfer under the observed label geography rather than manufacturing class coverage. It also limits the precision of comparisons.
+\subsection{Buffered model selection and probability diagnostics}
+The weakly supervised benchmark contained 20,749 class-stratified samples, six reflectance bands and four indices. Its outer stripe contained 4,188 samples in 20 blocks; 4,467 samples in adjacent block columns were excluded, leaving 12,094 development samples in 60 blocks. Three contiguous inner validation bands each excluded an adjacent block row from training. This design targets geographical transfer \citep{roberts2017cv,meyer2018target}, with class-stratified agreement interpreted separately from population-area map accuracy \citep{olofsson2014accuracy,stehman2019accuracy}.
 
-Outer metrics included macro-F1, fixed-six-class mean recall, overall agreement, log loss, Brier score and ten-bin top-label calibration error. Two thousand shared test-block resamples produced paired macro-F1 differences and percentile intervals. A scalar temperature was estimated from development out-of-fold predictions and applied to outer probabilities. Fixed-capacity bands-only, indices-only, location-only, shuffled-label and class-prior controls diagnosed information content; three seeds assessed the selected model's refit sensitivity. These controls did not alter primary selection.
+Seven families---logistic regression, random forest, extra trees, histogram gradient boosting, MLP, XGBoost and CatBoost---each received three predeclared configurations \citep{breiman2001rf,pedregosa2011sklearn,chen2016xgboost,prokhorenkova2018catboost}. The resulting 63 inner fits selected family $m$ and configuration $\eta$ through
+\begin{equation}\label{eq:selection}
+\begin{aligned}
+(\widehat m,\widehat\eta)&=\arg\max_{m,\eta}\frac13\sum_{v=1}^{3}
+ F_{1,\mathrm{macro}}(y_v,\widehat f_{m,\eta}^{(-v)}(X_v)),\\
+F_{1,\mathrm{macro}}&=\frac16\sum_{c=1}^{6}
+ \frac{2\mathrm{TP}_c}{2\mathrm{TP}_c+\mathrm{FP}_c+\mathrm{FN}_c}.
+\end{aligned}
+\end{equation}
+Undefined class terms receive zero. Water was absent from one inner training fold; the six-class denominator was retained and unseen-class probability set to zero where necessary. Standardisation was fitted within training folds and early stopping disabled. All families were refitted on development data before outer prediction; selection used only inner scores.
 
-The outer stripe had been inspected in earlier analyses. The comparison is therefore retrospective, even though its model selection uses development data only. It does not provide a new untouched test, a population-area accuracy estimate, or independent evidence of monument condition \citep{olofsson2014accuracy,foody2002accuracy}.
+Alongside macro-F1, fixed-six-class mean recall and overall agreement, probability quality used
+\begin{equation}\label{eq:probability}
+\mathcal L=-\frac1n\sum_{j=1}^n\log p_{j,y_j},\qquad
+\mathrm{BS}=\frac1n\sum_{j=1}^n\sum_{c=1}^{6}(p_{jc}-\mathbf1[y_j=c])^2.
+\end{equation}
+Log loss and the unnormalised multiclass Brier score assess probabilistic predictions \citep{gneiting2007scoring}. Ten equal-width confidence bins define top-label calibration error as $\sum_b(n_b/n)|\mathrm{accuracy}_b-\mathrm{confidence}_b|$. A scalar $\tau\in[0.25,4]$ minimised development out-of-fold log loss, using
+\begin{equation}\label{eq:temperature}
+p_{jc}^{(\tau)}=\frac{\exp[\log(\max\{p_{jc},10^{-12}\})/\tau]}
+ {\sum_{h=1}^{6}\exp[\log(\max\{p_{jh},10^{-12}\})/\tau]}.
+\end{equation}
+The transform follows temperature scaling \citep{guo2017calibration}; its transfer was tested on outer probabilities. Two thousand shared test-block resamples estimated paired macro-F1 differences. Bands-only, indices-only, location-only, shuffled-label and class-prior controls tested information content; three seeds assessed refit sensitivity.
+
+The outer stripe had been examined previously, making this a retrospective comparison. WorldCover consensus labels also differ temporally from E2019 predictors. These experiments therefore evaluate land-cover proxy agreement without establishing independent monument-condition accuracy.
 
 \subsection{Computational implementation}
-The land-cover experiments were executed in Google Colab and independently repeated on Windows with recorded package versions. Model selection was completed before outer predictions were generated. Colab outputs supply the main model comparison. The accompanying code records input identifiers, spatial splits, configurations and per-sample probabilities, supporting reproduction from the distributed derived-data package \citep{wilson2017practices,nust2018reproducible}. Source acquisition and preprocessing are documented separately through scene manifests and provider specifications.
+Model experiments ran in Google Colab and independently on Windows with recorded package versions, spatial splits, configurations and per-sample probabilities. Derived inputs and deterministic figure/table builders support reproduction \citep{wilson2017practices,nust2018reproducible}. Scene manifests document acquisition and preprocessing. The exact weight analysis uses recorded component summaries without refitting their percentile transforms.

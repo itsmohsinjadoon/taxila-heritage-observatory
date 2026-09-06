@@ -14,7 +14,7 @@ This repository consolidates the executable analysis, frozen evidence package, e
 
 ## Current manuscript emphasis
 
-The main article now presents the central experimental results in seven figures and three tables. Internal audit history is retained in repository documentation; the article focuses on the scientific method, findings and conservation implications.
+The main article presents 14 numbered equations, 44 references, seven figures and three tables. A comprehensive framework and a three-panel scale/weight figure expose the mathematical and experimental design. The new exact decision-weight analysis reports leadership intervals and validates them against the recorded Monte Carlo results. Internal review history remains in repository documentation. See [mathematical revision](docs/audit/MATHEMATICAL_REVISION_2026-09-06.md).
 
 ## What the study does
 

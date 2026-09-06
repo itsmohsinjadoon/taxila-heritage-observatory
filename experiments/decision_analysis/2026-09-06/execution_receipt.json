@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "source": "data/Taxila_CHIP_Frozen_Evidence_Data/13_tables/baseline_reproduction/component_epoch_integrated_scores.csv",
+  "source_sha256": "0f733c8640310a2e3f76dfb966336842a8deb1dde85c91294b2883197b24f4fe",
+  "analysis": "Analytical pairwise crossings of fixed E2024 scores, equal-factor terrain",
+  "radii_m": [
+    250,
+    500,
+    1000
+  ],
+  "checks": [
+    {
+      "radius_m": 250,
+      "interior_intervals": 93,
+      "ordering_probes": 186
+    },
+    {
+      "radius_m": 500,
+      "interior_intervals": 69,
+      "ordering_probes": 138
+    },
+    {
+      "radius_m": 1000,
+      "interior_intervals": 58,
+      "ordering_probes": 116
+    },
+    {
+      "recorded_mc_draws": 50000,
+      "max_absolute_difference": 0.0023815980629540157,
+      "check": "Exact uniform mass versus recorded Monte Carlo"
+    }
+  ],
+  "observational_data_changed": false,
+  "radius_interpolation": false
+}

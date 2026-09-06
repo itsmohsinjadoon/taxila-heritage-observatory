@@ -167,7 +167,7 @@ Component & Median rank & Low & High & Top-3 frequency \\
 \section{Spatial benchmark protocol and complete diagnostics}
 The input SHA-256 is \texttt{3188160a144c5020e7d21bb50a195e07a686d941134ade35a57232fe41ddc1b1}. The outer development/buffer/test counts are 12,094/4,467/4,188. The minimum observed inter-sample distance is 2,040 m; the nominal grid-boundary separation is 2,010 m. The observed distance is used for reporting.
 
-Inner validation covers block rows 0--2, 3--6 and 7--9, with adjacent block rows excluded from training. One fold has no water-class training observations. The six-class scoring denominator remains fixed. All model families receive three configurations; there is no test-driven hyperparameter search. Random forest and extra trees use 300 trees; histogram boosting 250 iterations; XGBoost and CatBoost 300 iterations; MLP a (64,32) hidden layout and 400 iterations. Complete parameters and per-fold scores are in the executable notebook and JSON search record. Early stopping is disabled. XGBoost and CatBoost are strong additional comparators, not evidence of a universal SOTA result.
+Inner validation covers block rows 0--2, 3--6 and 7--9, with adjacent block rows excluded from training. One fold has no water-class training observations. The six-class scoring denominator remains fixed. All model families receive three configurations; there is no test-driven hyperparameter search. Random forest and extra trees use 300 trees; histogram boosting 250 iterations; XGBoost and CatBoost 300 iterations; MLP a (64,32) hidden layout and 400 iterations. Complete parameters and per-fold scores are in the executable notebook and JSON search record. Early stopping is disabled. All families share the same split and selection protocol.
 
 \begin{longtable}{p{.38\linewidth}rrr}
 \caption{Paired 2,000-block-bootstrap macro-F1 differences: primary random forest minus comparator. Intervals are unadjusted exploratory comparisons.} \\
@@ -266,6 +266,9 @@ The main experimental robustness figure presents selected components and contras
 \input{../tables/supplementary/table_full_joint}
 \input{../tables/supplementary/table_full_structural}
 \input{../tables/supplementary/table_full_ablation}
+\section{Exact decision-weight intervals}
+All pairwise crossings of the fixed E2024 linear scores were enumerated independently at each radius. Interval-interior ranks were checked at two additional points per interval (440 checks across 220 intervals). Integrating top-three membership over these intervals gives exact acceptability under a uniform weight distribution. The 500 m results differed from the recorded 50,000-draw uniform-weight experiment by at most 0.002382. These are deterministic calculations from existing summaries; they do not introduce new field observations. Boundary ties follow component-inventory order. The full machine-readable rank intervals and source checksum accompany the analysis.
+\input{../tables/supplementary/table_exact_weight_intervals}
 \section{Additional environmental diagnostics}
 Source manifests provide retained scene identifiers, acquisition windows and preprocessing specifications. The following figures supply acquisition-specific weather, terrain and indicator-dependence details supporting the main analysis.
 \begin{figure}[p]\centering\includegraphics[width=\textwidth,height=.77\textheight,keepaspectratio]{figure_06_epoch_specific_weather_forcing.pdf}\caption{Weather matched to the retained Landsat acquisition windows; contextual rather than causal.}\end{figure}

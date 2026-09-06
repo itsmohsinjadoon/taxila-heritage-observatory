@@ -2250,5 +2250,886 @@
     },
     "source": "https://api.crossref.org/works/10.1080/01621459.1968.10480934",
     "title_similarity": 1.0
+  },
+  {
+    "key": "butt2025taxila",
+    "doi": "10.3390/su17031059",
+    "status": "verified",
+    "registered_title": "Evaluating the Impact of Urban Encroachment and Land Cover Changes on World Cultural Heritage Site Taxila: A Spatio-Temporal Analysis from 1990 to 2024",
+    "registered_authors": [
+      {
+        "ORCID": "https://orcid.org/0009-0002-0047-2000",
+        "authenticated-orcid": false,
+        "given": "Najam us Saqib Zaheer",
+        "family": "Butt",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Aerospace Information Research Institute, Chinese Academy of Sciences, Beijing 100094, China"
+          },
+          {
+            "name": "International Centre on Space Technologies for Natural and Cultural Heritage, Beijing 100094, China"
+          },
+          {
+            "name": "University of Chinese Academy of Sciences, Beijing 100049, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Xinyuan",
+        "family": "Wang",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Aerospace Information Research Institute, Chinese Academy of Sciences, Beijing 100094, China"
+          },
+          {
+            "name": "International Centre on Space Technologies for Natural and Cultural Heritage, Beijing 100094, China"
+          },
+          {
+            "name": "International Research Center of Big Data for Sustainable Development Goals, Beijing 100094, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-3203-1341",
+        "authenticated-orcid": false,
+        "given": "Lei",
+        "family": "Luo",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Aerospace Information Research Institute, Chinese Academy of Sciences, Beijing 100094, China"
+          },
+          {
+            "name": "International Centre on Space Technologies for Natural and Cultural Heritage, Beijing 100094, China"
+          },
+          {
+            "name": "International Research Center of Big Data for Sustainable Development Goals, Beijing 100094, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Hammad",
+        "family": "Ul Hussan",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Aerospace Information Research Institute, Chinese Academy of Sciences, Beijing 100094, China"
+          },
+          {
+            "name": "University of Chinese Academy of Sciences, Beijing 100049, China"
+          },
+          {
+            "name": "National Engineering Research Center for Satellite Remote Sensing Applications, Chinese Academy of Sciences, Beijing 100094, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "registered_year": {
+      "date-parts": [
+        [
+          2025,
+          1,
+          27
+        ]
+      ]
+    },
+    "source": "https://api.crossref.org/works/10.3390/su17031059",
+    "title_similarity": 1.0
+  },
+  {
+    "key": "chen2010sensitivity",
+    "doi": "10.1016/j.envsoft.2010.06.001",
+    "status": "verified",
+    "registered_title": "Spatial sensitivity analysis of multi-criteria weights in GIS-based land suitability evaluation",
+    "registered_authors": [
+      {
+        "given": "Y.",
+        "family": "Chen",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "J.",
+        "family": "Yu",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "S.",
+        "family": "Khan",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "registered_year": {
+      "date-parts": [
+        [
+          2010,
+          12
+        ]
+      ]
+    },
+    "source": "https://api.crossref.org/works/10.1016/j.envsoft.2010.06.001",
+    "title_similarity": 1.0
+  },
+  {
+    "key": "feizizadeh2014uncertainty",
+    "doi": "10.1016/j.cageo.2013.11.009",
+    "status": "verified",
+    "registered_title": "A GIS based spatially-explicit sensitivity and uncertainty analysis approach for multi-criteria decision analysis",
+    "registered_authors": [
+      {
+        "given": "Bakhtiar",
+        "family": "Feizizadeh",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Piotr",
+        "family": "Jankowski",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Thomas",
+        "family": "Blaschke",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "registered_year": {
+      "date-parts": [
+        [
+          2014,
+          3
+        ]
+      ]
+    },
+    "source": "https://api.crossref.org/works/10.1016/j.cageo.2013.11.009",
+    "title_similarity": 1.0
+  },
+  {
+    "key": "gneiting2007scoring",
+    "doi": "10.1198/016214506000001437",
+    "status": "verified",
+    "registered_title": "Strictly Proper Scoring Rules, Prediction, and Estimation",
+    "registered_authors": [
+      {
+        "given": "Tilmann",
+        "family": "Gneiting",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Adrian E",
+        "family": "Raftery",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "registered_year": {
+      "date-parts": [
+        [
+          2007,
+          3
+        ]
+      ]
+    },
+    "source": "https://api.crossref.org/works/10.1198/016214506000001437",
+    "title_similarity": 1.0
+  },
+  {
+    "key": "guo2017calibration",
+    "doi": null,
+    "status": "verified-proceedings-page",
+    "source": "https://proceedings.mlr.press/v70/guo17a.html",
+    "registered_title": "On Calibration of Modern Neural Networks",
+    "registered_authors": [
+      "Chuan Guo",
+      "Geoff Pleiss",
+      "Yu Sun",
+      "Kilian Q. Weinberger"
+    ],
+    "registered_year": 2017,
+    "pages": "1321-1330",
+    "verification": "Official PMLR paper page read on 2026-09-06; no DOI assigned on that page."
+  },
+  {
+    "key": "lahdelma2001smaa",
+    "doi": "10.1287/opre.49.3.444.11220",
+    "status": "verified",
+    "registered_title": "SMAA-2: Stochastic Multicriteria Acceptability Analysis for Group Decision Making",
+    "registered_authors": [
+      {
+        "given": "Risto",
+        "family": "Lahdelma",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "University of Turku, Department of Computer Science, Lemmink\u00e4isenkatu 14 A, FIN-20520 Turku, Finland"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Pekka",
+        "family": "Salminen",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of Joensuu, Department of Economics, P.O. Box 111, FIN-80101 Joensuu, Finland"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "registered_year": {
+      "date-parts": [
+        [
+          2001,
+          6
+        ]
+      ]
+    },
+    "source": "https://api.crossref.org/works/10.1287/opre.49.3.444.11220",
+    "title_similarity": 1.0
+  },
+  {
+    "key": "malczewski2006gis",
+    "doi": "10.1080/13658810600661508",
+    "status": "verified",
+    "registered_title": "GIS\u2010based multicriteria decision analysis: a survey of the literature",
+    "registered_authors": [
+      {
+        "given": "Jacek",
+        "family": "Malczewski",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "University of Western Ontario",
+            "place": [
+              "Canada"
+            ]
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "registered_year": {
+      "date-parts": [
+        [
+          2006,
+          8
+        ]
+      ]
+    },
+    "source": "https://api.crossref.org/works/10.1080/13658810600661508",
+    "title_similarity": 1.0
+  },
+  {
+    "key": "megarry2026landcover",
+    "doi": "10.1016/j.culher.2025.11.008",
+    "status": "verified",
+    "registered_title": "Land use and land cover analysis of cultural World Heritage to inform assessments of climate vulnerability",
+    "registered_authors": [
+      {
+        "given": "W.P.",
+        "family": "Megarry",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "T.",
+        "family": "Venkatachalam",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "J.C.",
+        "family": "Day",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "S.",
+        "family": "Jain",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "S.F.",
+        "family": "Heron",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "registered_year": {
+      "date-parts": [
+        [
+          2026,
+          1
+        ]
+      ]
+    },
+    "source": "https://api.crossref.org/works/10.1016/j.culher.2025.11.008",
+    "title_similarity": 1.0
+  },
+  {
+    "key": "moore1991terrain",
+    "doi": "10.1002/hyp.3360050103",
+    "status": "verified",
+    "registered_title": "Digital terrain modelling: A review of hydrological, geomorphological, and biological applications",
+    "registered_authors": [
+      {
+        "given": "I. D.",
+        "family": "Moore",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "R. B.",
+        "family": "Grayson",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "A. R.",
+        "family": "Ladson",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "registered_year": {
+      "date-parts": [
+        [
+          1991,
+          1
+        ]
+      ]
+    },
+    "source": "https://api.crossref.org/works/10.1002/hyp.3360050103",
+    "title_similarity": 1.0
+  },
+  {
+    "key": "roberts2017cv",
+    "doi": "10.1111/ecog.02881",
+    "status": "verified",
+    "registered_title": "Cross\u2010validation strategies for data with temporal, spatial, hierarchical, or phylogenetic structure",
+    "registered_authors": [
+      {
+        "given": "David R.",
+        "family": "Roberts",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Dept of Biometry and Environmental System Analysis Univ. of Freiburg Freiburg Germany"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Volker",
+        "family": "Bahn",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Dept of Biological Sciences Wright State Univ. Dayton OH USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Simone",
+        "family": "Ciuti",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Dept of Biometry and Environmental System Analysis Univ. of Freiburg Freiburg Germany"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Mark S.",
+        "family": "Boyce",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Dept of Biological Sciences Univ. of Alberta Edmonton AB Canada"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jane",
+        "family": "Elith",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of BioSciences, Univ. of Melbourne Melbourne Australia"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Gurutzeta",
+        "family": "Guillera\u2010Arroita",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of BioSciences, Univ. of Melbourne Melbourne Australia"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Severin",
+        "family": "Hauenstein",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Dept of Biometry and Environmental System Analysis Univ. of Freiburg Freiburg Germany"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jos\u00e9 J.",
+        "family": "Lahoz\u2010Monfort",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of BioSciences, Univ. of Melbourne Melbourne Australia"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Boris",
+        "family": "Schr\u00f6der",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Inst. of Geoecology, Div. of Landscape Ecology and Environmental Systems Analysis, Technische Univ. Braunschweig, Braunschweig, Germany, and: Berlin\u2010Brandenburg Inst. of Advanced Biodiversity Research (BBIB) Berlin Germany"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Wilfried",
+        "family": "Thuiller",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Lab. d\u2019\u00c9cologie Alpine, Univ. Joseph Fourier Grenoble France"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "David I.",
+        "family": "Warton",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of Mathematics and Statistics and Evolution and Ecology Research Centre, The Univ. of New South Wales Sydney Australia"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Brendan A.",
+        "family": "Wintle",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of BioSciences, Univ. of Melbourne Melbourne Australia"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Florian",
+        "family": "Hartig",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Dept of Biometry and Environmental System Analysis Univ. of Freiburg Freiburg Germany"
+          },
+          {
+            "name": "Theoretical Ecology, Univ. of Regensburg Regensburg Germany"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Carsten F.",
+        "family": "Dormann",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Dept of Biometry and Environmental System Analysis Univ. of Freiburg Freiburg Germany"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "registered_year": {
+      "date-parts": [
+        [
+          2017,
+          3,
+          3
+        ]
+      ]
+    },
+    "source": "https://api.crossref.org/works/10.1111/ecog.02881",
+    "title_similarity": 1.0
+  },
+  {
+    "key": "stehman2019accuracy",
+    "doi": "10.1016/j.rse.2019.05.018",
+    "status": "verified",
+    "registered_title": "Key issues in rigorous accuracy assessment of land cover products",
+    "registered_authors": [
+      {
+        "given": "Stephen V.",
+        "family": "Stehman",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Giles M.",
+        "family": "Foody",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "registered_year": {
+      "date-parts": [
+        [
+          2019,
+          9
+        ]
+      ]
+    },
+    "source": "https://api.crossref.org/works/10.1016/j.rse.2019.05.018",
+    "title_similarity": 1.0
+  },
+  {
+    "key": "tucker1979ndvi",
+    "doi": "10.1016/0034-4257(79)90013-0",
+    "status": "verified",
+    "registered_title": "Red and photographic infrared linear combinations for monitoring vegetation",
+    "registered_authors": [
+      {
+        "given": "Compton J.",
+        "family": "Tucker",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "registered_year": {
+      "date-parts": [
+        [
+          1979,
+          5
+        ]
+      ]
+    },
+    "source": "https://api.crossref.org/works/10.1016/0034-4257(79)90013-0",
+    "title_similarity": 1.0
+  },
+  {
+    "key": "yue2002autocorrelation",
+    "doi": "10.1002/hyp.1095",
+    "status": "verified",
+    "registered_title": "The influence of autocorrelation on the ability to detect trend in hydrological series",
+    "registered_authors": [
+      {
+        "given": "Sheng",
+        "family": "Yue",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Paul",
+        "family": "Pilon",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Bob",
+        "family": "Phinney",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "George",
+        "family": "Cavadias",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "registered_year": {
+      "date-parts": [
+        [
+          2002,
+          6,
+          19
+        ]
+      ]
+    },
+    "source": "https://api.crossref.org/works/10.1002/hyp.1095",
+    "title_similarity": 1.0
   }
 ]

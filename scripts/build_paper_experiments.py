@@ -35,5 +35,7 @@ s.columns=j.columns;supplementary('table_full_structural.tex',s,'All components 
 a=pd.read_csv(PUB/'ablation_summary.csv')[['scenario','spearman_rho_with_reference','top5_overlap','maximum_absolute_rank_shift']]
 a.columns=['Scenario','Spearman rho','Top-5 overlap','Max shift'];supplementary('table_full_ablation.tex',a,'Complete factor and domain ablation comparisons.',r'p{.38\linewidth}rrr')
 sources=[EXT/n for n in ['summary.json','model_comparison.csv','model_selection.csv','calibration_comparison.csv','diagnostic_controls.csv','paired_block_comparisons.csv','seed_sensitivity.csv']]+[PUB/n for n in ['annual_climate_trends_recomputed.csv','ablation_summary.csv','baseline_comparison_summary.csv','structural_scenario_stability.csv','domain_weight_rank_sensitivity.csv','shared_block_size_rank_sensitivity.csv','point_displacement_rank_sensitivity.csv','joint_uncertainty_rank_summary.csv','primary_500m_component_priority.csv']]
-pd.DataFrame([dict(path=p.relative_to(ROOT).as_posix(),sha256=hashlib.sha256(p.read_bytes()).hexdigest()) for p in sources]).to_csv(M/'source_traceability/revision_result_sources.csv',index=False)
+decision=ROOT/'experiments/decision_analysis/2026-09-06'
+sources += [decision/n for n in ['exact_leader_intervals.csv','exact_uniform_weight_acceptability.csv','execution_receipt.json']]
+pd.DataFrame([dict(path=p.relative_to(ROOT).as_posix(),sha256=hashlib.sha256(p.read_bytes()).hexdigest()) for p in sources]).to_csv(M/'source_traceability/revision_result_sources.csv',index=False,lineterminator='\n')
 print('Generated main comparison tables, full supplementary tables and source traceability.')
