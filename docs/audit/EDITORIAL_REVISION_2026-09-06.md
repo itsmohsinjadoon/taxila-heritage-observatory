@@ -1,0 +1,7 @@
+# Experimental manuscript restructuring
+
+The corresponding author requested a stronger main article and removal of internal audit narration. The article now presents the central experiments directly, with seven figures and three tables. Main results include hierarchical-versus-ungrouped baselines, factor ablation, 27 structural scenarios, continuous domain weights, shared spatial blocks, coordinate perturbations with zero-displacement control, joint uncertainty, seven model families, paired model comparisons, feature controls, calibration and refit seeds.
+
+Audit/development history, original score-lock discrepancies and the history of the climate-code correction remain in internal repository records and execution receipts. They are no longer used as article narrative. The final scientific method and its assumptions, negative comparisons, reused-test status and absence of independent condition labels remain disclosed. No experimental evidence or expected score was altered. In particular, the zero-displacement re-extraction control is explicitly distinguished from the fixed summary-table reference so that representation changes are not misattributed to positional error.
+
+The numerical builder now generates only tables and traceability records; it cannot restore superseded editorial prose. The new four-panel figure reads the recorded full-run outputs. Current PDFs supersede the earlier 14-page main and 9-page supplement; prior snapshots remain historical files.

@@ -12,6 +12,10 @@ This repository consolidates the executable analysis, frozen evidence package, e
 
 *Author-approved study-area cartography showing the frozen UNESCO inventory and primary 500 m analytical neighbourhoods. Esri World Imagery provides contextual display only and is not an analytical input; road and museum features are from OpenStreetMap. The circles are sampling supports, not legal or UNESCO buffer boundaries.*
 
+## Current manuscript emphasis
+
+The main article now presents the central experimental results in seven figures and three tables. Internal audit history is retained in repository documentation; the article focuses on the scientific method, findings and conservation implications.
+
 ## What the study does
 
 The Climate-contextual Heritage Inspection Prioritisation (CHIP) framework integrates:

@@ -1,3 +1,5 @@
+> Current editorial revision: seven main figures and three main tables; internal audit narration removed. See `docs/audit/EDITORIAL_REVISION_2026-09-06.md` for the internal change record.
+
 # Active manuscript revision — 6 September 2026
 
 `main.tex` is the anonymous main article; `supplementary/supplementary_information.tex` is its anonymous supplement. `title_page.tex` contains the author identities and unresolved declarations. `highlights.txt` and `cover_letter.txt` are separate submission components. Compiled PDFs are in `output/` locally and the versioned `review-package/` directory for repository handoff.

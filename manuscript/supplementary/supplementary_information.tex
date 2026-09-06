@@ -12,22 +12,22 @@
 \renewcommand{\thefigure}{S\arabic{figure}}
 \begin{center}\Large\bfseries Supplementary Information\end{center}
 \begin{center}Sensitivity-aware inspection prioritisation for archaeological landscapes: a reproducible Taxila observatory\end{center}
-\section{Scope and evidence generations}
-The main manuscript is the anonymous source in \texttt{main.tex}. This supplement distinguishes historical frozen records from the corrected annual bootstrap and the new seven-family spatial extension. Counts and component scores can be reproduced from frozen inputs; historical stochastic records remain labelled by their uncertainty design. No outer proxy agreement validates monument condition. The previously examined outer stripe makes the new comparison retrospective.
+\section{Supporting methods and complete experimental results}
+The main article presents the multitemporal maps, score baselines, ablations, support and joint-uncertainty experiments, climate comparison and seven-family land-cover analysis. This supplement provides full component inventories, numerical tables, configurations and secondary diagnostics. Spatial simulations and land-cover agreement have the distinct scopes specified in the main methods.
 
 \section{Component inventory and analytical support}
 Saraikala is preserved without invented geometry. Coordinates are inventory points, not property polygons. The same 17 mapped components are compared at all three radii.
 \input{../tables/supplementary/table_s01_component_inventory.tex}
-\section{Corrected annual climate analysis}
-The notebook now resamples detrended residual blocks. A trend-restored ensemble supplies confidence intervals; a constant-baseline ensemble supplies null slopes. The 12 annual metrics form the multiplicity family. This differs from the historical annual/seasonal family, so adjusted values must not be interchanged. Heavy precipitation counts days exceeding the 1991--2020 wet-day 95th percentile (wet days have at least 1 mm rain); hot days exceed the baseline maximum-temperature 95th percentile. Heatwave duration is the longest run above that temperature threshold, without a separate minimum-duration criterion. Dry-spell duration counts consecutive days below 1 mm. Rx1day and Rx5day are the largest one-day and rolling five-day precipitation totals. The observed precipitation point slope is unchanged; the earlier notebook's raw-series block intervals and probabilities are superseded. Validation checks newly computed probability bounds and finite ordered intervals, in addition to historical-reference checks.
+\section{Annual climate analysis}
+The procedure resamples detrended residual blocks. A trend-restored ensemble supplies confidence intervals; a constant-baseline ensemble supplies null slopes. The 12 annual metrics form the multiplicity family. Heavy precipitation counts days exceeding the 1991--2020 wet-day 95th percentile (wet days have at least 1 mm rain); hot days exceed the baseline maximum-temperature 95th percentile. Heatwave duration is the longest run above that temperature threshold, without a separate minimum-duration criterion. Dry-spell duration counts consecutive days below 1 mm. Rx1day and Rx5day are the largest one-day and rolling five-day precipitation totals.
 
 \begingroup\scriptsize\setlength{\tabcolsep}{3pt}\begin{longtable}{p{.35\linewidth}rrrrr}
-\caption{Corrected annual residual-block trends; 2,000 draws and five-year blocks.} \\
+\caption{Annual residual-block trends; 2,000 draws and five-year blocks.} \\
 \toprule
 Metric & Slope/year & CI low & CI high & p & Annual q \\
 \midrule
 \endfirsthead
-\caption[]{Corrected annual residual-block trends; 2,000 draws and five-year blocks.} \\
+\caption[]{Annual residual-block trends; 2,000 draws and five-year blocks.} \\
 \toprule
 Metric & Slope/year & CI low & CI high & p & Annual q \\
 \midrule
@@ -54,15 +54,15 @@ et0\_sum\_mm & 2.2850 & -1.2405 & 5.5941 & 0.2164 & 0.2597 \\
 \endgroup
 Precipitation and evapotranspiration slopes are in mm year$^{-1}$, temperature slopes in $^\circ$C year$^{-1}$, humidity in percentage points year$^{-1}$, soil moisture in m$^3$ m$^{-3}$ year$^{-1}$ and event counts in days year$^{-1}$. Effective-sample-size diagnostics use detrended lag-one correlation and are bounded by the observed record length; they do not replace the bootstrap.
 \section{Ranks and uncertainty scope}
-The following tables retain the archived component-score and uncertainty generations. The weight experiment perturbs the integrated domain architecture; the spatial experiment resamples 150 m spectral blocks with terrain fixed. They must not be described as the same probability distribution.
+The following tables report component scores and two complementary sensitivity designs. The weight experiment perturbs the integrated domain architecture; the spatial experiment resamples 150 m spectral blocks with terrain fixed. They must not be described as the same probability distribution.
 
 \begin{longtable}{lrrrr}
-\caption{Frozen component scores and scale-dependent ranks.} \\
+\caption{Component scores and scale-dependent ranks.} \\
 \toprule
 Component & Rank 250 m & Rank 500 m & Rank 1,000 m & Score 500 m \\
 \midrule
 \endfirsthead
-\caption[]{Frozen component scores and scale-dependent ranks.} \\
+\caption[]{Component scores and scale-dependent ranks.} \\
 \toprule
 Component & Rank 250 m & Rank 500 m & Rank 1,000 m & Score 500 m \\
 \midrule
@@ -93,12 +93,12 @@ Component & Rank 250 m & Rank 500 m & Rank 1,000 m & Score 500 m \\
 \end{longtable}
 
 \begin{longtable}{lrrrr}
-\caption{Archived spatial-block rank uncertainty; terrain held fixed.} \\
+\caption{Spatial-block rank uncertainty; terrain held fixed.} \\
 \toprule
 Component & Median rank & Low & High & Top-3 frequency \\
 \midrule
 \endfirsthead
-\caption[]{Archived spatial-block rank uncertainty; terrain held fixed.} \\
+\caption[]{Spatial-block rank uncertainty; terrain held fixed.} \\
 \toprule
 Component & Median rank & Low & High & Top-3 frequency \\
 \midrule
@@ -129,12 +129,12 @@ Component & Median rank & Low & High & Top-3 frequency \\
 \end{longtable}
 
 \begin{longtable}{lrrrr}
-\caption{Archived 50,000-draw integrated-domain weight sensitivity.} \\
+\caption{50,000-draw integrated-domain weight sensitivity.} \\
 \toprule
 Component & Median rank & Low & High & Top-3 frequency \\
 \midrule
 \endfirsthead
-\caption[]{Archived 50,000-draw integrated-domain weight sensitivity.} \\
+\caption[]{50,000-draw integrated-domain weight sensitivity.} \\
 \toprule
 Component & Median rank & Low & High & Top-3 frequency \\
 \midrule
@@ -165,7 +165,7 @@ Component & Median rank & Low & High & Top-3 frequency \\
 \end{longtable}
 
 \section{Spatial benchmark protocol and complete diagnostics}
-The input SHA-256 is \texttt{3188160a144c5020e7d21bb50a195e07a686d941134ade35a57232fe41ddc1b1}. The outer development/buffer/test counts are 12,094/4,467/4,188. The minimum observed inter-sample distance is 2,040 m; the earlier nominal grid-boundary separation was 2,010 m. Both refer to the same geographic split but different distance definitions.
+The input SHA-256 is \texttt{3188160a144c5020e7d21bb50a195e07a686d941134ade35a57232fe41ddc1b1}. The outer development/buffer/test counts are 12,094/4,467/4,188. The minimum observed inter-sample distance is 2,040 m; the nominal grid-boundary separation is 2,010 m. The observed distance is used for reporting.
 
 Inner validation covers block rows 0--2, 3--6 and 7--9, with adjacent block rows excluded from training. One fold has no water-class training observations. The six-class scoring denominator remains fixed. All model families receive three configurations; there is no test-driven hyperparameter search. Random forest and extra trees use 300 trees; histogram boosting 250 iterations; XGBoost and CatBoost 300 iterations; MLP a (64,32) hidden layout and 400 iterations. Complete parameters and per-fold scores are in the executable notebook and JSON search record. Early stopping is disabled. XGBoost and CatBoost are strong additional comparators, not evidence of a universal SOTA result.
 
@@ -261,18 +261,14 @@ Seed & Macro-F1 & Agreement & Log loss & ECE \\
 2026.0000 & 0.8205 & 0.8116 & 0.4987 & 0.0133 \\
 \end{longtable}
 
-\section{Historical reproduction discrepancies}
-The original frozen targets are macro-F1 0.830795, agreement 0.833095 and ECE 0.014280. The historical exact-package Windows rerun reported 0.830072, 0.828080 and 0.015117. The original bootstrap had also changed the macro-F1 denominator when a resample lacked a class; the fixed-six-class correction produced the previously audited interval 0.701--0.851. Historical expected values were not overwritten after observing a rerun. Full current execution status and environment are preserved in the accompanying receipt. Engineering validation that reuses frozen model tables is not a full model refit.
-
-\section{Additional evidence and reproduction boundary}
-The frozen archive contains retained scene identifiers, acquisition-window weather, seasonal climate comparisons, sensor composition, common-support counts, threshold sensitivity, harmonisation sensitivity, complete factor/domain ablations, all component ranks and source licences. The notebook additionally generates shared-block, positional and joint-uncertainty analyses. The standalone legacy integrated script references missing intermediate reflectance inputs and is not presented as a self-contained source-to-result pipeline. Original satellite data should be recovered through the acquisition manifests where needed.
-
-The selected supplementary figures below preserve archived non-primary evidence and retain their original scientific scope. Files and caption sources are indexed in the review package.
-
-\begin{figure}[p]\centering\includegraphics[width=\textwidth,height=.77\textheight,keepaspectratio]{figure_03_five_epoch_landscape_pressure_maps.pdf}\caption{Five-epoch landscape-pressure context. Colour denotes relative pressure, not accumulated deterioration.}\end{figure}
+\section{Complete sensitivity experiments}
+The main experimental robustness figure presents selected components and contrasts. The tables below report every component in the joint simulation and structural scenarios, together with complete baseline and ablation comparisons. Spatial states and decision settings remain nested; frequencies are conditional simulation summaries.
+\input{../tables/supplementary/table_full_joint}
+\input{../tables/supplementary/table_full_structural}
+\input{../tables/supplementary/table_full_ablation}
+\section{Additional environmental diagnostics}
+Source manifests provide retained scene identifiers, acquisition windows and preprocessing specifications. The following figures supply acquisition-specific weather, terrain and indicator-dependence details supporting the main analysis.
 \begin{figure}[p]\centering\includegraphics[width=\textwidth,height=.77\textheight,keepaspectratio]{figure_06_epoch_specific_weather_forcing.pdf}\caption{Weather matched to the retained Landsat acquisition windows; contextual rather than causal.}\end{figure}
 \begin{figure}[p]\centering\includegraphics[width=\textwidth,height=.77\textheight,keepaspectratio]{figure_08_terrain_hydrological_susceptibility.pdf}\caption{Elevation-derived terrain and drainage proxies. These do not constitute a hydraulic model.}\end{figure}
-\begin{figure}[p]\centering\includegraphics[width=\textwidth,height=.77\textheight,keepaspectratio]{figure_10_component_ranks_by_scale.pdf}\caption{Component ranks at the three analytical neighbourhood radii.}\end{figure}
 \begin{figure}[p]\centering\includegraphics[width=\textwidth,height=.77\textheight,keepaspectratio]{figure_12_indicator_redundancy.pdf}\caption{Dependence among component-level indicator ranks.}\end{figure}
-\begin{figure}[p]\centering\includegraphics[width=\textwidth,height=.77\textheight,keepaspectratio]{figure_14_ablation.pdf}\caption{Archived factor/domain ablation. Changes in rank identify architectural sensitivity.}\end{figure}
 \end{document}

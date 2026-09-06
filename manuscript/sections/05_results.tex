@@ -1,43 +1,67 @@
 \section{Results}
-\subsection{Common support and spectral convergence}
-The endpoint intersection contained 386,280 of 403,480 cells (95.74\%), excluding 17,200 cells from change denominators. Of the supported cells, 65,391 (16.93\%) met at least two adverse criteria and 5,493 (1.42\%) met all three (Fig.~\ref{fig:convergence}). The empirical thresholds were $\Delta$NDVI $\leq-0.00543$, $\Delta$MNDWI $\leq-0.03743$ and $\Delta$NDBI $\geq0.00835$. Convergence was therefore spatially selective. Its prevalence does not estimate the extent of damaged archaeology.
-
-At 500 m, the NDVI- and NDBI-pressure ranks were strongly aligned ($\rho=0.972$), supporting their treatment within a shared surface-cover term. Five-epoch patterns varied across components and did not establish a uniform, monotonic deterioration trajectory. Complete epoch maps and threshold/harmonisation comparisons are supplied as supplementary evidence.
+\subsection{Multitemporal landscape pressure and spectral convergence}
+The five epochs revealed heterogeneous landscape-pressure patterns across the component neighbourhoods (Fig.~\ref{fig:epochs}). Their common comparison support was substantial: 386,280 of 403,480 cells (95.74\%) were valid at both endpoints, leaving 17,200 cells outside change denominators. On this intersection, 65,391 cells (16.93\%) met at least two adverse criteria and 5,493 (1.42\%) met all three. The empirical thresholds were $\Delta$NDVI $\leq-0.00543$, $\Delta$MNDWI $\leq-0.03743$ and $\Delta$NDBI $\geq0.00835$. Figure~\ref{fig:convergence} locates their convergence relative to the wider pressure pattern.
 
 \begin{figure}[tbp]\centering
-\includegraphics[width=.86\textwidth]{figure_04_spectral_pressure_convergence.pdf}
-\caption{Convergence of adverse endpoint spectral criteria on the common E2004--E2024 mask. Values count coincident empirical criteria, with a denominator of 386,280 cells. The map is a landscape screen, not an observation of heritage damage.}\label{fig:convergence}
+\includegraphics[width=\textwidth]{figure_03_five_epoch_landscape_pressure_maps.pdf}
+\caption{Landscape-pressure patterns across the five Landsat epochs. The common colour scale describes relative pressure; the maps permit comparison of spatial persistence and redistribution across epochs.}\label{fig:epochs}
 \end{figure}
-
-\subsection{Priority depends on the uncertainty being considered}
-Giri complex had the largest fixed 500 m score (0.591). For the separate integrated context score, the archived 50,000-draw weight analysis gave Giri a central 95\% rank interval of 1--9, with a top-three frequency of 0.774. Spatial resampling instead placed Bhallar at median rank 1 and Giri at median rank 2; the respective intervals were 1--5 and 1--3. These summaries answer different questions: the fixed score assumes the declared architecture, weight perturbation varies that architecture, and spatial resampling varies local spectral support while retaining terrain.
-
-Rank concordance was higher between 500 and 1,000 m ($\rho=0.918$) than between 250 and 1,000 m ($\rho=0.711$). Removing whole domains produced substantial changes: landscape-only ranks correlated 0.325 with the full integrated reference, with a maximum movement of 11 positions; terrain-only ranks correlated 0.830, with a maximum movement of seven. Landscape-only scoring placed Sirkap first, whereas terrain-only scoring placed Bhallar first. A single leader therefore conceals materially different inspection rationales (Fig.~\ref{fig:ranks}).
 
 \begin{figure}[tbp]\centering
-\includegraphics[width=\textwidth]{figure_13_rank_uncertainty.pdf}
-\caption{Archived component-rank sensitivity to weight and spatial perturbations. Intervals and top-set frequencies are conditional on their respective resampling designs. They do not combine every measurement, positional or modelling uncertainty. Full component tables and additional joint-uncertainty experiments accompany the notebook.}\label{fig:ranks}
+\includegraphics[width=.85\textwidth]{figure_04_spectral_pressure_convergence.pdf}
+\caption{Coincident adverse spectral criteria between E2004 and E2024. Counts use the 386,280-cell common endpoint support. Convergence is a landscape-screening indicator rather than a mapped observation of archaeological damage.}\label{fig:convergence}
 \end{figure}
 
-\subsection{Climate interpretation is product- and window-dependent}
-Open-Meteo annual precipitation decreased by 10.30 mm year$^{-1}$ and annual mean temperature increased by 0.0418~$^\circ$C year$^{-1}$. The corrected residual-block intervals and annual-family adjusted probabilities are reported in Supplementary Table~S2. The point slopes were reproducible; their interpretation remained conditional on the selected gridded product.
+At 500 m, NDVI- and NDBI-pressure ranks were strongly aligned ($\rho=0.972$). Their grouping therefore affects how surface-cover information contributes to the hierarchy. Giri's surface-cover term was low (0.0176), while its MNDWI-pressure percentile was 0.9941 and terrain score 0.6765. Its leading composite priority consequently arose from the moisture-related spectral and terrain terms, rather than agreement among every indicator. This decomposition gives the priority an explicit inspection rationale.
 
-NASA POWER gave opposing point slopes: +29.21 mm year$^{-1}$ for precipitation and $-0.0372$~$^\circ$C year$^{-1}$ for temperature. Annual precipitation agreement was weak across 35 years (Spearman $\rho=0.083$; RMSE 646.74 mm year$^{-1}$). High daily temperature rank agreement coexisted with a mean offset. These discrepancies reveal product sensitivity, without identifying either series as more accurate (Fig.~\ref{fig:weather}).
+\subsection{Baselines and ablations identify the drivers of priority}
+Giri complex led the fixed 500 m score (0.5912), followed by Giri Mosque and tombs (0.5725) and Jaulian (0.5676). The ungrouped equal-factor baseline retained only three of the reference top five, with $\rho=0.844$ and a maximum movement of seven ranks; it placed Bhallar first. Landscape-only scoring retained one of the top five ($\rho=0.325$; maximum movement 11) and selected Sirkap, whereas terrain-only scoring retained four ($\rho=0.830$; maximum movement seven) and selected Bhallar.
 
-Acquisition matching also changed the epoch interpretation. E2024 mean antecedent precipitation was 42.47, 221.19 and 852.92 mm over 30, 90 and 365 days, respectively. It was not the wettest epoch under any of these windows: the maxima belonged to E2004, E2019 and E2014, respectively. A calendar-year or product-specific extreme therefore could not be assigned automatically to the satellite composite.
+Factor ablations were markedly asymmetric (Fig.~\ref{fig:robustness}a). Removing NDVI or NDBI retained $\rho=0.991$ and 0.990, respectively, and left Giri first. Removing MNDWI instead produced $\rho=-0.280$, no top-five overlap and a maximum movement of 13 positions. Removing slope or drainage proximity produced $\rho=0.611$ and 0.454 and placed Sirsukh first. The hierarchy thus reduced duplication between the vegetation and built/bare terms, while the moisture-related indicator and terrain pathways remained consequential to the decision. These results identify where independent observations would most strongly test the proposed inspection order.
+
+\subsection{Spatial support, structural choices and inspection tiers}
+Rank agreement was stronger between 500 and 1,000 m ($\rho=0.918$) than between 250 and 1,000 m ($\rho=0.711$; Fig.~\ref{fig:scales}). Jaulian ranked 2, 3 and 1 at the three radii, whereas Giri complex ranked 4, 1 and 2. Giri Mosque and tombs moved from first at 250 m to fourth at 1,000 m. These changes indicate that local and broader landscape context can support different inspection sequences.
+
+\begin{figure}[tbp]\centering
+\includegraphics[width=\textwidth]{figure_10_component_ranks_by_scale.pdf}
+\caption{Component ranks at 250, 500 and 1,000 m analytical support. Each line follows one component, exposing the dependence of priority on neighbourhood radius.}\label{fig:scales}
+\end{figure}
+
+Across the 27 structural scenarios, Giri complex, Giri Mosque and tombs, and Jaulian formed the core tier, appearing in the top three in 17, 20 and 18 scenarios, respectively. Khader Mohra and Mohra Moradu formed the conditional tier, appearing in the top five in 15 and 17 scenarios. Scenario agreement therefore supports a small inspection set more clearly than a unique ordering. Continuous domain-weight perturbation reinforced this distinction: Giri's top-three frequency increased from 0.683 to 0.869 as $\alpha$ increased from 0.5 to 2, concentrating weights towards an even balance. Bhallar's frequency decreased from 0.371 to 0.221. The relative emphasis on landscape and terrain is therefore a substantive conservation decision.
+
+\subsection{Spatial, positional and joint uncertainty}
+Shared-block resampling gave Giri top-three frequencies of 0.994, 0.971 and 0.960 for 90, 150 and 300 m blocks (Fig.~\ref{fig:robustness}b). Bhallar's frequencies were 0.914, 0.931 and 0.815, while Giri Mosque and tombs declined from 0.773 to 0.390. Larger blocks therefore altered uncertainty unevenly across components. A single block size would obscure this dependence on the spatial organisation of the input evidence.
+
+The undisplaced re-extraction control ranked Bhallar first, Giri second and Jaulian third, demonstrating a difference from the fixed summary-table ordering before positional perturbation. Relative to that control, displacement effects were modest for Bhallar and Giri: at 120 m their top-three frequencies were 1.000 and 0.993. Jaulian declined from 0.915 at 30 m to 0.824 at 120 m, while Giri Mosque and tombs increased from 0.086 to 0.180 (Fig.~\ref{fig:robustness}c). Feature reconstruction and positional uncertainty thus make separable contributions and should not be interpreted as the same experiment.
+
+\begin{figure}[tbp]\centering
+\includegraphics[width=\textwidth]{figure_15_experimental_robustness.pdf}
+\caption{Experimental assessment of the inspection rule: (a) rank concordance after baseline or factor changes; (b) shared-block sensitivity; (c) coordinate-displacement sensitivity with both spectral and terrain re-extraction; and (d) median ranks and central 95\% intervals under joint spatial--decision simulation. Labels in (d) give top-three frequencies. Panels (b)--(d) condition on their respective reconstruction and perturbation designs; the zero-displacement control in (c) is distinct from the fixed summary-table reference in (a).}\label{fig:robustness}
+\end{figure}
+
+Joint simulation widened the decision envelope (Fig.~\ref{fig:robustness}d). Giri had median rank 2, interval 1--9 and top-three frequency 0.7324; Bhallar had median rank 3, interval 1--13 and frequency 0.5260. Giri Mosque and tombs and Jaulian had frequencies 0.4626 and 0.4096. In particular, Bhallar's prominence under spatial reconstruction contrasted with its limited top-three persistence across the fixed structural scenarios (2/27). This identifies a component requiring a mechanism-led drainage and terrain inspection, rather than treating one aggregate frequency as a universally stable priority.
+
+\subsection{Climate trends and acquisition-matched conditions}
+Open-Meteo annual precipitation decreased by 10.30 mm year$^{-1}$ (95\% residual-block interval $-17.91$ to $-2.67$; annual-family $q=0.027$), while annual mean temperature increased by 0.0418~$^\circ$C year$^{-1}$ (0.0099--0.0731; $q=0.026$). Heavy-precipitation days declined by 0.143 days year$^{-1}$ ($q=0.018$). Soil moisture also declined, although these inferences remain conditional on the product and temporal dependence model.
+
+NASA POWER gave opposing point slopes: +29.21 mm year$^{-1}$ for precipitation and $-0.0372$~$^\circ$C year$^{-1}$ for temperature. Annual precipitation agreement across 35 years was weak (Spearman $\rho=0.083$; RMSE 646.74 mm year$^{-1}$; Fig.~\ref{fig:weather}). These differences materially change the climatic explanation that might otherwise be attached to the landscape maps.
 
 \begin{figure}[tbp]\centering
 \includegraphics[width=\textwidth]{figure_07_weather_product_comparison.pdf}
-\caption{Agreement between the two gridded weather products at matched temporal supports. Differences quantify product dependence, not error relative to station observations. Temporal correlation and absolute agreement are distinct.}\label{fig:weather}
+\caption{Matched annual precipitation and temperature in the two gridded weather products. Dashed lines indicate equality; product disagreement constrains environmental interpretation in the absence of station validation.}\label{fig:weather}
 \end{figure}
 
-\subsection{Buffered model selection and diagnostics}
-The stricter inner spatial comparison selected \ExtensionModel{} with mean development macro-F1 \ExtensionCV{}. Its outer macro-F1 was \ExtensionFOne{} (95\% test-block interval \ExtensionLow{}--\ExtensionHigh{}), and overall agreement was \ExtensionAgreement{}. Table~\ref{tab:models} reports all seven families, including those that did not lead either comparison. Paired differences, calibration and controls are provided in the Supplementary Information; the outer score was not used to replace the development-selected family.
+Acquisition-window matching further differentiated the epochs. E2024 antecedent precipitation averaged 42.47, 221.19 and 852.92 mm over 30, 90 and 365 days. The maxima occurred instead in E2004, E2019 and E2014, respectively. Thus the weather preceding the retained satellite scenes cannot be represented reliably by assigning a single wet or dry label to an epoch. Detailed event definitions and annual trends are supplied in Supplementary Table~S2.
+
+\subsection{Seven-family spatial comparison and diagnostic experiments}
+Buffered development validation selected \ExtensionModel{} with mean macro-F1 \ExtensionCV{}. On the 4,188 outer-stripe samples, it achieved macro-F1 \ExtensionFOne{} (95\% test-block interval \ExtensionLow{}--\ExtensionHigh{}), agreement \ExtensionAgreement{}, log loss 0.498 and calibration error 0.014 (Table~\ref{tab:models}). The MLP achieved the largest outer macro-F1 (0.849), but its lower development score did not support selecting it as the primary model.
 
 \input{tables/main/table_extension_models}
 
-\ExtensionInterpretation{}
+Paired spatial resampling showed random forest exceeding logistic regression by 0.0145 macro-F1 (95\% interval 0.0028--0.0283). Histogram gradient boosting exceeded random forest by 0.0248 (0.0117--0.0663), whereas the MLP comparison had an interval spanning zero. These unadjusted comparisons expose a difference between development selection and performance on the evaluated stripe; no family dominates every criterion.
 
-The selected random forest produced the same macro-F1 to numerical precision in Colab and Windows. XGBoost differed by 0.00061 between platforms (0.82687 versus 0.82748); this difference did not alter primary selection. The complete cross-platform comparison is archived.
+\input{tables/main/table_diagnostic_experiments}
 
-The historical five-family reproduction yielded macro-F1 \LegacyFOne{}, agreement \LegacyAgreement{} and calibration error \LegacyECE{} for its development-selected MLP. These differ from the original stored targets of 0.830795, 0.833095 and 0.014280. The differences are preserved as historical reproduction discrepancies; targets were not reset to make a rerun pass. The stricter extension uses a different inner protocol and is reported as a separate experiment rather than a replacement claim of exact reproduction.
+The feature controls provide a complementary interpretation (Table~\ref{tab:diagnostics}). Fixed-capacity logistic regression using bands alone reached macro-F1 0.824, whereas indices alone reached 0.671. Location-only, shuffled-label and class-prior controls achieved 0.140, 0.070 and 0.049. Spectral information therefore explained substantially more agreement than coordinates or these null controls, but the selected ten-feature random forest did not outperform the simpler bands-only control by its point estimate. This limits the incremental predictive claim for the more elaborate representation.
+
+Development-only temperature scaling ($T=1.658$) increased outer log loss from 0.498 to 0.574, Brier score from 0.269 to 0.300 and calibration error from 0.014 to 0.136. The calibration learned from geographically separated folds transferred poorly to the outer stripe. Random-forest macro-F1 ranged only from 0.8205 to 0.8214 across three refit seeds and matched between Colab and Windows, indicating that the larger differences arose from modelling and spatial-evaluation choices rather than the selected model's refit seed.
