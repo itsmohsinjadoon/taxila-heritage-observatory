@@ -26,3 +26,4 @@ experiments/spatial_extension/2026-09-06-windows/** -text
 experiments/spatial_extension/2026-09-06-colab/** -text
 experiments/reproduction/2026-09-06-windows/** -text
 notebooks/Taxila_CHIP_Q1_Executable_Analysis.ipynb -text
+manuscript/review-package/** -text
