@@ -1,0 +1,362 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "check": "2026-09-06-windows recorded file hashes",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "2026-09-06-windows unique held-out samples",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "2026-09-06-windows Logistic probabilities",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "2026-09-06-windows Logistic independent F1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "2026-09-06-windows Logistic log loss",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "2026-09-06-windows Logistic Brier",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "2026-09-06-windows RandomForest probabilities",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "2026-09-06-windows RandomForest independent F1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "2026-09-06-windows RandomForest log loss",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "2026-09-06-windows RandomForest Brier",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "2026-09-06-windows ExtraTrees probabilities",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "2026-09-06-windows ExtraTrees independent F1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "2026-09-06-windows ExtraTrees log loss",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "2026-09-06-windows ExtraTrees Brier",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "2026-09-06-windows HistGradientBoosting probabilities",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "2026-09-06-windows HistGradientBoosting independent F1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "2026-09-06-windows HistGradientBoosting log loss",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "2026-09-06-windows HistGradientBoosting Brier",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "2026-09-06-windows MLP probabilities",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "2026-09-06-windows MLP independent F1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "2026-09-06-windows MLP log loss",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "2026-09-06-windows MLP Brier",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "2026-09-06-windows XGBoost probabilities",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "2026-09-06-windows XGBoost independent F1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "2026-09-06-windows XGBoost log loss",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "2026-09-06-windows XGBoost Brier",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "2026-09-06-windows CatBoost probabilities",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "2026-09-06-windows CatBoost independent F1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "2026-09-06-windows CatBoost log loss",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "2026-09-06-windows CatBoost Brier",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "2026-09-06-windows primary selected by inner folds",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "2026-09-06-windows split counts",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "2026-09-06-colab recorded file hashes",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "2026-09-06-colab unique held-out samples",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "2026-09-06-colab Logistic probabilities",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "2026-09-06-colab Logistic independent F1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "2026-09-06-colab Logistic log loss",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "2026-09-06-colab Logistic Brier",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "2026-09-06-colab RandomForest probabilities",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "2026-09-06-colab RandomForest independent F1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "2026-09-06-colab RandomForest log loss",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "2026-09-06-colab RandomForest Brier",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "2026-09-06-colab ExtraTrees probabilities",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "2026-09-06-colab ExtraTrees independent F1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "2026-09-06-colab ExtraTrees log loss",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "2026-09-06-colab ExtraTrees Brier",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "2026-09-06-colab HistGradientBoosting probabilities",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "2026-09-06-colab HistGradientBoosting independent F1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "2026-09-06-colab HistGradientBoosting log loss",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "2026-09-06-colab HistGradientBoosting Brier",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "2026-09-06-colab MLP probabilities",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "2026-09-06-colab MLP independent F1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "2026-09-06-colab MLP log loss",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "2026-09-06-colab MLP Brier",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "2026-09-06-colab XGBoost probabilities",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "2026-09-06-colab XGBoost independent F1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "2026-09-06-colab XGBoost log loss",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "2026-09-06-colab XGBoost Brier",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "2026-09-06-colab CatBoost probabilities",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "2026-09-06-colab CatBoost independent F1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "2026-09-06-colab CatBoost log loss",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "2026-09-06-colab CatBoost Brier",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "2026-09-06-colab primary selected by inner folds",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "2026-09-06-colab split counts",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Colab all six cells executed",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Colab no notebook errors",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Taxila_CHIP_Q1_Executable_Analysis.ipynb clean source",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Taxila_Heritage_Observatory_Colab_Kaggle_Launcher.ipynb clean source",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Taxila_Spatial_Benchmark_Extension.ipynb clean source",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "primary cross-platform F1 stable",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "user supplied Figure 1 exact bytes",
+      "status": "PASS",
+      "detail": ""
+    }
+  ],
+  "colab_url": "https://colab.research.google.com/drive/1_-gwyfIhY3L1pYl3VSb3xihCd5TwM2HI",
+  "scope": "Artifact, arithmetic and execution verification; not independent ecological or heritage-condition validation."
+}

@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "pdfs": [
+    {
+      "file": "JCH_main_anonymous.pdf",
+      "pages": 14,
+      "sha256": "b5228ab519be51b73e0469dcb97f7cdec6bd82ef1fc645bcd968a0b05188c2fc",
+      "unresolved_references": false,
+      "author_metadata": ""
+    },
+    {
+      "file": "JCH_supplementary_information.pdf",
+      "pages": 9,
+      "sha256": "ec6b9e0901dbcddda3403616062e0525a4383e402d20ce7c0c2696411eab3fe6",
+      "unresolved_references": false,
+      "author_metadata": ""
+    },
+    {
+      "file": "JCH_title_page_AUTHOR_CONFIRMATIONS_PENDING.pdf",
+      "pages": 1,
+      "sha256": "11f35f3cf3fcc1fcdf46502b1a0a20289917b18bee649d4d6806645216d3c184",
+      "unresolved_references": false,
+      "author_metadata": ""
+    }
+  ],
+  "conservative_main_words_including_captions_tables": 4579,
+  "main_display_items": 7,
+  "main_figures": 5,
+  "main_tables": 2,
+  "highlights_characters": [
+    75,
+    74,
+    72,
+    80,
+    79
+  ],
+  "visual_review": "All 14 main, 9 supplementary and 1 title pages reviewed as rendered contact sheets; figures and title-page overflow checked separately. No clipping or unresolved references. Underfull URL/table spacing warnings remain cosmetic.",
+  "scientific_status": "New benchmark completed in Colab and Windows; historical full rerun REVIEW with 24/27 locks.",
+  "submission_status": "AUTHOR CONFIRMATIONS AND REVIEWER ACCESS PENDING",
+  "source_script_sha256": "d2c83eab33fc08af6780e16f7425f2b5243666bf65b4e60616cadc65600e52c7"
+}

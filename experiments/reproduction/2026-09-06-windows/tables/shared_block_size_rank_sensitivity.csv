@@ -1,0 +1,52 @@
+block_size_m,component_id,component_name,rank_median,rank_ci_low_95,rank_ci_high_95,probability_top_3,probability_top_5,draws,method
+90,139-001,Khanpur Cave,14.0,8.0,16.0,0.0005,0.002,2000,shared support-weighted Bayesian block bootstrap
+90,139-003,Bhir Mound,16.0,14.0,17.0,0.0,0.0,2000,shared support-weighted Bayesian block bootstrap
+90,139-004,Sirkap (fortified city),10.0,5.0,13.0,0.002,0.0405,2000,shared support-weighted Bayesian block bootstrap
+90,139-005,Sirsukh (fortified ruined city),9.0,5.0,13.0,0.0005,0.031,2000,shared support-weighted Bayesian block bootstrap
+90,139-006,Dharmarajika stupa and monastery,5.0,3.0,12.0,0.0655,0.548,2000,shared support-weighted Bayesian block bootstrap
+90,139-007,Khader Mohra (Akhuri),10.0,4.0,14.0,0.023,0.078,2000,shared support-weighted Bayesian block bootstrap
+90,139-008,Kalawan group of buildings,9.0,4.0,15.0,0.0095,0.097,2000,shared support-weighted Bayesian block bootstrap
+90,139-009,Giri complex of monuments,2.0,1.0,3.0,0.9935,1.0,2000,shared support-weighted Bayesian block bootstrap
+90,139-010,Kunala stupa and monastery,6.0,3.0,11.0,0.0395,0.2875,2000,shared support-weighted Bayesian block bootstrap
+90,139-011,Jandial complex,14.0,12.0,16.0,0.0,0.0,2000,shared support-weighted Bayesian block bootstrap
+90,139-012,Lalchak and Badalpur Buddhist stuppa,17.0,16.0,17.0,0.0,0.0,2000,shared support-weighted Bayesian block bootstrap
+90,139-013,Mohra Moradu stupa and monastery,9.0,5.0,14.0,0.0085,0.0705,2000,shared support-weighted Bayesian block bootstrap
+90,139-014,Pippala stupa and monastery,9.0,5.0,12.0,0.0075,0.0695,2000,shared support-weighted Bayesian block bootstrap
+90,139-015,Jaulian stupa and monastery,4.0,3.0,9.0,0.163,0.788,2000,shared support-weighted Bayesian block bootstrap
+90,139-016,Lalchak mounds,14.0,11.0,16.0,0.0,0.0,2000,shared support-weighted Bayesian block bootstrap
+90,139-017,Buddhist remains around Bhallar stupa,1.0,1.0,5.0,0.914,0.9895,2000,shared support-weighted Bayesian block bootstrap
+90,139-018,Giri Mosque and tombs,3.0,2.0,5.0,0.773,0.9985,2000,shared support-weighted Bayesian block bootstrap
+150,139-001,Khanpur Cave,14.0,8.0,17.0,0.0,0.0005,2000,shared support-weighted Bayesian block bootstrap
+150,139-003,Bhir Mound,15.0,12.0,17.0,0.0,0.0,2000,shared support-weighted Bayesian block bootstrap
+150,139-004,Sirkap (fortified city),11.0,6.0,14.0,0.0,0.015,2000,shared support-weighted Bayesian block bootstrap
+150,139-005,Sirsukh (fortified ruined city),11.0,5.0,15.0,0.0005,0.0285,2000,shared support-weighted Bayesian block bootstrap
+150,139-006,Dharmarajika stupa and monastery,5.0,1.0,10.0,0.1985,0.5175,2000,shared support-weighted Bayesian block bootstrap
+150,139-007,Khader Mohra (Akhuri),7.0,2.0,15.0,0.0745,0.2855,2000,shared support-weighted Bayesian block bootstrap
+150,139-008,Kalawan group of buildings,10.0,4.0,16.0,0.0095,0.0975,2000,shared support-weighted Bayesian block bootstrap
+150,139-009,Giri complex of monuments,2.0,1.0,4.0,0.971,0.9995,2000,shared support-weighted Bayesian block bootstrap
+150,139-010,Kunala stupa and monastery,7.0,4.0,12.0,0.017,0.1535,2000,shared support-weighted Bayesian block bootstrap
+150,139-011,Jandial complex,14.0,11.0,17.0,0.0,0.0,2000,shared support-weighted Bayesian block bootstrap
+150,139-012,Lalchak and Badalpur Buddhist stuppa,17.0,15.0,17.0,0.0,0.0,2000,shared support-weighted Bayesian block bootstrap
+150,139-013,Mohra Moradu stupa and monastery,7.0,2.0,14.0,0.1055,0.3295,2000,shared support-weighted Bayesian block bootstrap
+150,139-014,Pippala stupa and monastery,8.0,4.0,12.0,0.0225,0.112,2000,shared support-weighted Bayesian block bootstrap
+150,139-015,Jaulian stupa and monastery,5.0,3.0,12.0,0.17,0.507,2000,shared support-weighted Bayesian block bootstrap
+150,139-016,Lalchak mounds,14.0,10.975000000000001,17.0,0.0,0.0,2000,shared support-weighted Bayesian block bootstrap
+150,139-017,Buddhist remains around Bhallar stupa,1.0,1.0,5.0,0.931,0.9855,2000,shared support-weighted Bayesian block bootstrap
+150,139-018,Giri Mosque and tombs,3.5,2.0,6.0,0.5,0.9685,2000,shared support-weighted Bayesian block bootstrap
+300,139-001,Khanpur Cave,12.0,4.0,16.0,0.0135,0.0505,2000,shared support-weighted Bayesian block bootstrap
+300,139-003,Bhir Mound,15.0,11.0,17.0,0.001,0.005,2000,shared support-weighted Bayesian block bootstrap
+300,139-004,Sirkap (fortified city),8.0,4.0,13.0,0.012,0.0925,2000,shared support-weighted Bayesian block bootstrap
+300,139-005,Sirsukh (fortified ruined city),8.0,4.0,14.0,0.0105,0.079,2000,shared support-weighted Bayesian block bootstrap
+300,139-006,Dharmarajika stupa and monastery,5.0,1.0,11.024999999999864,0.209,0.616,2000,shared support-weighted Bayesian block bootstrap
+300,139-007,Khader Mohra (Akhuri),11.0,3.0,16.0,0.0305,0.0725,2000,shared support-weighted Bayesian block bootstrap
+300,139-008,Kalawan group of buildings,10.0,5.0,16.0,0.017,0.036,2000,shared support-weighted Bayesian block bootstrap
+300,139-009,Giri complex of monuments,2.0,1.0,4.0,0.9595,0.9985,2000,shared support-weighted Bayesian block bootstrap
+300,139-010,Kunala stupa and monastery,7.0,1.0,11.0,0.0895,0.2145,2000,shared support-weighted Bayesian block bootstrap
+300,139-011,Jandial complex,14.0,11.0,16.0,0.0,0.0,2000,shared support-weighted Bayesian block bootstrap
+300,139-012,Lalchak and Badalpur Buddhist stuppa,17.0,16.0,17.0,0.0,0.0,2000,shared support-weighted Bayesian block bootstrap
+300,139-013,Mohra Moradu stupa and monastery,11.0,5.0,15.0,0.009,0.0525,2000,shared support-weighted Bayesian block bootstrap
+300,139-014,Pippala stupa and monastery,9.0,2.0,13.0,0.053,0.1195,2000,shared support-weighted Bayesian block bootstrap
+300,139-015,Jaulian stupa and monastery,4.0,1.0,8.0,0.391,0.829,2000,shared support-weighted Bayesian block bootstrap
+300,139-016,Lalchak mounds,14.0,10.0,16.0,0.0,0.0,2000,shared support-weighted Bayesian block bootstrap
+300,139-017,Buddhist remains around Bhallar stupa,1.0,1.0,8.0,0.815,0.8935,2000,shared support-weighted Bayesian block bootstrap
+300,139-018,Giri Mosque and tombs,4.0,2.0,6.0,0.3895,0.941,2000,shared support-weighted Bayesian block bootstrap

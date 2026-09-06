@@ -1,0 +1,14 @@
+Dear Editor,
+
+Please consider "Sensitivity-aware inspection prioritisation for archaeological landscapes: a reproducible Taxila observatory" for the Journal of Cultural Heritage.
+
+The study addresses how conservation teams can translate heterogeneous geospatial observations into a defensible sequence of field inspections. Using the Taxila World Heritage property, it combines multi-epoch satellite observations, terrain descriptors and acquisition-matched weather with explicit tests of spatial support, indicator dependence and rank uncertainty. A separate buffered land-cover benchmark tests geographic proxy agreement without conflating it with monument condition.
+
+The main methodological contribution is a reproducible account of how inspection decisions change under plausible analytical choices. Contrasting leaders under landscape-only, terrain-only and combined scores show why a single priority map is insufficient. Weather-product disagreement further constrains environmental explanation. The paper is relevant to heritage monitoring and management because its output is a traceable set of survey questions and inspection tiers rather than an unvalidated damage probability.
+
+The manuscript is accompanied by supplementary methods, machine-readable evidence and executable notebooks. We hope that this transparent treatment of evidence and uncertainty will be of interest to the journal's interdisciplinary readership.
+
+Yours sincerely,
+Mohsin Khan
+Corresponding author
+mohsin.khan@isb.nu.edu.pk

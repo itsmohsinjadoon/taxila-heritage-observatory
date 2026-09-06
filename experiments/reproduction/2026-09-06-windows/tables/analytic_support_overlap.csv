@@ -1,0 +1,409 @@
+radius_m,component_a,component_b,distance_m,intersection_area_m2,jaccard_overlap,flag_cluster_aware
+250,Khader Mohra (Akhuri),Mohra Moradu stupa and monastery,44.550843145675216,174103.62898218678,0.796465007933879,False
+250,Sirsukh (fortified ruined city),Lalchak mounds,244.70247007571515,79075.02933961779,0.2521331790237668,False
+250,Giri complex of monuments,Giri Mosque and tombs,298.1682371429495,56645.861660025985,0.16856217492426628,False
+250,Dharmarajika stupa and monastery,Kalawan group of buildings,324.491913879029,46349.99820045345,0.13382451523272149,False
+250,Sirkap (fortified city),Kunala stupa and monastery,347.8844716570877,37694.93452220107,0.10618167371283568,False
+250,Khanpur Cave,Bhir Mound,10345.395807714407,0.0,0.0,False
+250,Khanpur Cave,Sirkap (fortified city),8940.267342165445,0.0,0.0,False
+250,Khanpur Cave,Sirsukh (fortified ruined city),6273.911650043866,0.0,0.0,False
+250,Khanpur Cave,Dharmarajika stupa and monastery,8642.112097872929,0.0,0.0,False
+250,Khanpur Cave,Khader Mohra (Akhuri),6195.282686344946,0.0,0.0,False
+250,Khanpur Cave,Kalawan group of buildings,8714.697947272842,0.0,0.0,False
+250,Khanpur Cave,Giri complex of monuments,8140.77698899129,0.0,0.0,False
+250,Khanpur Cave,Kunala stupa and monastery,9007.10041769407,0.0,0.0,False
+250,Khanpur Cave,Jandial complex,8383.861404314614,0.0,0.0,False
+250,Khanpur Cave,Lalchak and Badalpur Buddhist stuppa,4282.276730418247,0.0,0.0,False
+250,Khanpur Cave,Mohra Moradu stupa and monastery,6150.798801542094,0.0,0.0,False
+250,Khanpur Cave,Pippala stupa and monastery,5403.917100405278,0.0,0.0,False
+250,Khanpur Cave,Jaulian stupa and monastery,4925.980070005173,0.0,0.0,False
+250,Khanpur Cave,Lalchak mounds,6183.953723813376,0.0,0.0,False
+250,Khanpur Cave,Buddhist remains around Bhallar stupa,7932.750880916129,0.0,0.0,False
+250,Khanpur Cave,Giri Mosque and tombs,8359.861888262632,0.0,0.0,False
+250,Bhir Mound,Sirkap (fortified city),1433.8975501063214,0.0,0.0,False
+250,Bhir Mound,Sirsukh (fortified ruined city),4219.1220410182905,0.0,0.0,False
+250,Bhir Mound,Dharmarajika stupa and monastery,2164.0457283569845,0.0,0.0,False
+250,Bhir Mound,Khader Mohra (Akhuri),4267.133308720623,0.0,0.0,False
+250,Bhir Mound,Kalawan group of buildings,1910.3320642539682,0.0,0.0,False
+250,Bhir Mound,Giri complex of monuments,6155.50758967236,0.0,0.0,False
+250,Bhir Mound,Kunala stupa and monastery,1340.7088512591392,0.0,0.0,False
+250,Bhir Mound,Jandial complex,2442.4192344884345,0.0,0.0,False
+250,Bhir Mound,Lalchak and Badalpur Buddhist stuppa,6163.221444512863,0.0,0.0,False
+250,Bhir Mound,Mohra Moradu stupa and monastery,4308.867703074159,0.0,0.0,False
+250,Bhir Mound,Pippala stupa and monastery,5019.6554485982915,0.0,0.0,False
+250,Bhir Mound,Jaulian stupa and monastery,5690.550023940587,0.0,0.0,False
+250,Bhir Mound,Lalchak mounds,4387.365155179741,0.0,0.0,False
+250,Bhir Mound,Buddhist remains around Bhallar stupa,7735.64147813281,0.0,0.0,False
+250,Bhir Mound,Giri Mosque and tombs,5948.190582358525,0.0,0.0,False
+250,Sirkap (fortified city),Sirsukh (fortified ruined city),2785.609193765716,0.0,0.0,False
+250,Sirkap (fortified city),Dharmarajika stupa and monastery,1530.6626467045983,0.0,0.0,False
+250,Sirkap (fortified city),Khader Mohra (Akhuri),2973.539612201248,0.0,0.0,False
+250,Sirkap (fortified city),Kalawan group of buildings,1208.1260046950144,0.0,0.0,False
+250,Sirkap (fortified city),Giri complex of monuments,5639.768795502255,0.0,0.0,False
+250,Sirkap (fortified city),Jandial complex,1229.3205760340443,0.0,0.0,False
+250,Sirkap (fortified city),Lalchak and Badalpur Buddhist stuppa,4734.0289456545515,0.0,0.0,False
+250,Sirkap (fortified city),Mohra Moradu stupa and monastery,3011.9915480619843,0.0,0.0,False
+250,Sirkap (fortified city),Pippala stupa and monastery,3682.303367196694,0.0,0.0,False
+250,Sirkap (fortified city),Jaulian stupa and monastery,4403.063610379605,0.0,0.0,False
+250,Sirkap (fortified city),Lalchak mounds,2957.313961394439,0.0,0.0,False
+250,Sirkap (fortified city),Buddhist remains around Bhallar stupa,6679.373739516666,0.0,0.0,False
+250,Sirkap (fortified city),Giri Mosque and tombs,5487.508309922922,0.0,0.0,False
+250,Sirsukh (fortified ruined city),Dharmarajika stupa and monastery,3129.4451274770786,0.0,0.0,False
+250,Sirsukh (fortified ruined city),Khader Mohra (Akhuri),1627.456871809626,0.0,0.0,False
+250,Sirsukh (fortified ruined city),Kalawan group of buildings,3025.0958582242283,0.0,0.0,False
+250,Sirsukh (fortified ruined city),Giri complex of monuments,5710.8348442602955,0.0,0.0,False
+250,Sirsukh (fortified ruined city),Kunala stupa and monastery,2944.2911686973307,0.0,0.0,False
+250,Sirsukh (fortified ruined city),Jandial complex,2114.4378805554575,0.0,0.0,False
+250,Sirsukh (fortified ruined city),Lalchak and Badalpur Buddhist stuppa,1997.28712248637,0.0,0.0,False
+250,Sirsukh (fortified ruined city),Mohra Moradu stupa and monastery,1621.9528143382859,0.0,0.0,False
+250,Sirsukh (fortified ruined city),Pippala stupa and monastery,1720.0390772084254,0.0,0.0,False
+250,Sirsukh (fortified ruined city),Jaulian stupa and monastery,2500.5645172979816,0.0,0.0,False
+250,Sirsukh (fortified ruined city),Buddhist remains around Bhallar stupa,5101.817110601608,0.0,0.0,False
+250,Sirsukh (fortified ruined city),Giri Mosque and tombs,5699.809443087089,0.0,0.0,False
+250,Dharmarajika stupa and monastery,Khader Mohra (Akhuri),2450.0809737191776,0.0,0.0,False
+250,Dharmarajika stupa and monastery,Giri complex of monuments,4145.52267352744,0.0,0.0,False
+250,Dharmarajika stupa and monastery,Kunala stupa and monastery,1227.7422520238406,0.0,0.0,False
+250,Dharmarajika stupa and monastery,Jandial complex,2537.9538101901844,0.0,0.0,False
+250,Dharmarajika stupa and monastery,Lalchak and Badalpur Buddhist stuppa,4741.772187213407,0.0,0.0,False
+250,Dharmarajika stupa and monastery,Mohra Moradu stupa and monastery,2494.6309683203995,0.0,0.0,False
+250,Dharmarajika stupa and monastery,Pippala stupa and monastery,3242.0744579590146,0.0,0.0,False
+250,Dharmarajika stupa and monastery,Jaulian stupa and monastery,3775.7026763888252,0.0,0.0,False
+250,Dharmarajika stupa and monastery,Lalchak mounds,3363.0917399596738,0.0,0.0,False
+250,Dharmarajika stupa and monastery,Buddhist remains around Bhallar stupa,7801.525432605073,0.0,0.0,False
+250,Dharmarajika stupa and monastery,Giri Mosque and tombs,3977.794884698132,0.0,0.0,False
+250,Khader Mohra (Akhuri),Kalawan group of buildings,2523.36204908829,0.0,0.0,False
+250,Khader Mohra (Akhuri),Giri complex of monuments,4094.504446224003,0.0,0.0,False
+250,Khader Mohra (Akhuri),Kunala stupa and monastery,2941.54813299572,0.0,0.0,False
+250,Khader Mohra (Akhuri),Jandial complex,2974.7070910684306,0.0,0.0,False
+250,Khader Mohra (Akhuri),Lalchak and Badalpur Buddhist stuppa,2425.285544867534,0.0,0.0,False
+250,Khader Mohra (Akhuri),Pippala stupa and monastery,792.1157863498661,0.0,0.0,False
+250,Khader Mohra (Akhuri),Jaulian stupa and monastery,1430.9852135424212,0.0,0.0,False
+250,Khader Mohra (Akhuri),Lalchak mounds,1837.8327616037952,0.0,0.0,False
+250,Khader Mohra (Akhuri),Buddhist remains around Bhallar stupa,6700.240453556556,0.0,0.0,False
+250,Khader Mohra (Akhuri),Giri Mosque and tombs,4098.263908922641,0.0,0.0,False
+250,Kalawan group of buildings,Giri complex of monuments,4466.264282366186,0.0,0.0,False
+250,Kalawan group of buildings,Kunala stupa and monastery,903.4151413918272,0.0,0.0,False
+250,Kalawan group of buildings,Jandial complex,2251.3183548617594,0.0,0.0,False
+250,Kalawan group of buildings,Lalchak and Badalpur Buddhist stuppa,4730.260082120741,0.0,0.0,False
+250,Kalawan group of buildings,Mohra Moradu stupa and monastery,2567.59283700232,0.0,0.0,False
+250,Kalawan group of buildings,Pippala stupa and monastery,3312.0279898420445,0.0,0.0,False
+250,Kalawan group of buildings,Jaulian stupa and monastery,3896.2849356619836,0.0,0.0,False
+250,Kalawan group of buildings,Lalchak mounds,3250.7026043297788,0.0,0.0,False
+250,Kalawan group of buildings,Buddhist remains around Bhallar stupa,7573.35575290825,0.0,0.0,False
+250,Kalawan group of buildings,Giri Mosque and tombs,4300.867829907855,0.0,0.0,False
+250,Giri complex of monuments,Kunala stupa and monastery,5365.184095194869,0.0,0.0,False
+250,Giri complex of monuments,Jandial complex,6388.531875892435,0.0,0.0,False
+250,Giri complex of monuments,Lalchak and Badalpur Buddhist stuppa,6016.883406757395,0.0,0.0,False
+250,Giri complex of monuments,Mohra Moradu stupa and monastery,4106.857208724669,0.0,0.0,False
+250,Giri complex of monuments,Pippala stupa and monastery,4367.02871250067,0.0,0.0,False
+250,Giri complex of monuments,Jaulian stupa and monastery,4056.6557176969663,0.0,0.0,False
+250,Giri complex of monuments,Lalchak mounds,5929.575574090763,0.0,0.0,False
+250,Giri complex of monuments,Buddhist remains around Bhallar stupa,10793.852370783505,0.0,0.0,False
+250,Kunala stupa and monastery,Jandial complex,1559.9412434143971,0.0,0.0,False
+250,Kunala stupa and monastery,Lalchak and Badalpur Buddhist stuppa,4847.534888059356,0.0,0.0,False
+250,Kunala stupa and monastery,Mohra Moradu stupa and monastery,2982.3538650055234,0.0,0.0,False
+250,Kunala stupa and monastery,Pippala stupa and monastery,3683.57693237984,0.0,0.0,False
+250,Kunala stupa and monastery,Jaulian stupa and monastery,4370.671725978285,0.0,0.0,False
+250,Kunala stupa and monastery,Lalchak mounds,3133.067402794231,0.0,0.0,False
+250,Kunala stupa and monastery,Buddhist remains around Bhallar stupa,7005.10904792865,0.0,0.0,False
+250,Kunala stupa and monastery,Giri Mosque and tombs,5203.24231204354,0.0,0.0,False
+250,Jandial complex,Lalchak and Badalpur Buddhist stuppa,4102.020903606601,0.0,0.0,False
+250,Jandial complex,Mohra Moradu stupa and monastery,3000.857407094867,0.0,0.0,False
+250,Jandial complex,Pippala stupa and monastery,3503.245544452148,0.0,0.0,False
+250,Jandial complex,Jaulian stupa and monastery,4299.047274930819,0.0,0.0,False
+250,Jandial complex,Lalchak mounds,2203.5343982941404,0.0,0.0,False
+250,Jandial complex,Buddhist remains around Bhallar stupa,5450.128911503959,0.0,0.0,False
+250,Jandial complex,Giri Mosque and tombs,6279.48571326485,0.0,0.0,False
+250,Lalchak and Badalpur Buddhist stuppa,Mohra Moradu stupa and monastery,2385.7644617709425,0.0,0.0,False
+250,Lalchak and Badalpur Buddhist stuppa,Pippala stupa and monastery,1765.9116787115292,0.0,0.0,False
+250,Lalchak and Badalpur Buddhist stuppa,Jaulian stupa and monastery,1978.160015529249,0.0,0.0,False
+250,Lalchak and Badalpur Buddhist stuppa,Lalchak mounds,1902.0756391259592,0.0,0.0,False
+250,Lalchak and Badalpur Buddhist stuppa,Buddhist remains around Bhallar stupa,5288.736017281028,0.0,0.0,False
+250,Lalchak and Badalpur Buddhist stuppa,Giri Mosque and tombs,6104.662018120678,0.0,0.0,False
+250,Mohra Moradu stupa and monastery,Pippala stupa and monastery,747.5695606964217,0.0,0.0,False
+250,Mohra Moradu stupa and monastery,Jaulian stupa and monastery,1391.5825624698377,0.0,0.0,False
+250,Mohra Moradu stupa and monastery,Lalchak mounds,1829.0761072623006,0.0,0.0,False
+250,Mohra Moradu stupa and monastery,Buddhist remains around Bhallar stupa,6687.114959376352,0.0,0.0,False
+250,Mohra Moradu stupa and monastery,Giri Mosque and tombs,4113.691885172915,0.0,0.0,False
+250,Pippala stupa and monastery,Jaulian stupa and monastery,805.0131326245506,0.0,0.0,False
+250,Pippala stupa and monastery,Lalchak mounds,1854.389972806596,0.0,0.0,False
+250,Pippala stupa and monastery,Buddhist remains around Bhallar stupa,6519.447203190436,0.0,0.0,False
+250,Pippala stupa and monastery,Giri Mosque and tombs,4422.101414706891,0.0,0.0,False
+250,Jaulian stupa and monastery,Lalchak mounds,2611.5922062001287,0.0,0.0,False
+250,Jaulian stupa and monastery,Buddhist remains around Bhallar stupa,7092.0760060723205,0.0,0.0,False
+250,Jaulian stupa and monastery,Giri Mosque and tombs,4162.574050395383,0.0,0.0,False
+250,Lalchak mounds,Buddhist remains around Bhallar stupa,4873.220744055769,0.0,0.0,False
+250,Lalchak mounds,Giri Mosque and tombs,5923.883219311387,0.0,0.0,False
+250,Buddhist remains around Bhallar stupa,Giri Mosque and tombs,10795.77942815452,0.0,0.0,False
+500,Khader Mohra (Akhuri),Mohra Moradu stupa and monastery,44.550843145675216,740862.0618951865,0.8926755927889217,True
+500,Sirsukh (fortified ruined city),Lalchak mounds,244.70247007571515,543160.2133065697,0.5285530609301029,True
+500,Giri complex of monuments,Giri Mosque and tombs,298.1682371429495,491708.87299993855,0.4556710128272608,True
+500,Dharmarajika stupa and monastery,Kalawan group of buildings,324.491913879029,466694.32025555335,0.4226913070453906,True
+500,Sirkap (fortified city),Kunala stupa and monastery,347.8844716570877,444663.96882666857,0.39485941921510265,True
+500,Mohra Moradu stupa and monastery,Pippala stupa and monastery,747.5695606964217,114938.86371909129,0.07894925611485258,False
+500,Khader Mohra (Akhuri),Pippala stupa and monastery,792.1157863498661,86522.1498557716,0.05829256561897335,False
+500,Pippala stupa and monastery,Jaulian stupa and monastery,805.0131326245506,78759.52718943864,0.05278658489540283,False
+500,Kalawan group of buildings,Kunala stupa and monastery,903.4151413918272,27886.44970276355,0.0180739329735319,False
+500,Khanpur Cave,Bhir Mound,10345.395807714407,0.0,0.0,False
+500,Khanpur Cave,Sirkap (fortified city),8940.267342165445,0.0,0.0,False
+500,Khanpur Cave,Sirsukh (fortified ruined city),6273.911650043866,0.0,0.0,False
+500,Khanpur Cave,Dharmarajika stupa and monastery,8642.112097872929,0.0,0.0,False
+500,Khanpur Cave,Khader Mohra (Akhuri),6195.282686344946,0.0,0.0,False
+500,Khanpur Cave,Kalawan group of buildings,8714.697947272842,0.0,0.0,False
+500,Khanpur Cave,Giri complex of monuments,8140.77698899129,0.0,0.0,False
+500,Khanpur Cave,Kunala stupa and monastery,9007.10041769407,0.0,0.0,False
+500,Khanpur Cave,Jandial complex,8383.861404314614,0.0,0.0,False
+500,Khanpur Cave,Lalchak and Badalpur Buddhist stuppa,4282.276730418247,0.0,0.0,False
+500,Khanpur Cave,Mohra Moradu stupa and monastery,6150.798801542094,0.0,0.0,False
+500,Khanpur Cave,Pippala stupa and monastery,5403.917100405278,0.0,0.0,False
+500,Khanpur Cave,Jaulian stupa and monastery,4925.980070005173,0.0,0.0,False
+500,Khanpur Cave,Lalchak mounds,6183.953723813376,0.0,0.0,False
+500,Khanpur Cave,Buddhist remains around Bhallar stupa,7932.750880916129,0.0,0.0,False
+500,Khanpur Cave,Giri Mosque and tombs,8359.861888262632,0.0,0.0,False
+500,Bhir Mound,Sirkap (fortified city),1433.8975501063214,0.0,0.0,False
+500,Bhir Mound,Sirsukh (fortified ruined city),4219.1220410182905,0.0,0.0,False
+500,Bhir Mound,Dharmarajika stupa and monastery,2164.0457283569845,0.0,0.0,False
+500,Bhir Mound,Khader Mohra (Akhuri),4267.133308720623,0.0,0.0,False
+500,Bhir Mound,Kalawan group of buildings,1910.3320642539682,0.0,0.0,False
+500,Bhir Mound,Giri complex of monuments,6155.50758967236,0.0,0.0,False
+500,Bhir Mound,Kunala stupa and monastery,1340.7088512591392,0.0,0.0,False
+500,Bhir Mound,Jandial complex,2442.4192344884345,0.0,0.0,False
+500,Bhir Mound,Lalchak and Badalpur Buddhist stuppa,6163.221444512863,0.0,0.0,False
+500,Bhir Mound,Mohra Moradu stupa and monastery,4308.867703074159,0.0,0.0,False
+500,Bhir Mound,Pippala stupa and monastery,5019.6554485982915,0.0,0.0,False
+500,Bhir Mound,Jaulian stupa and monastery,5690.550023940587,0.0,0.0,False
+500,Bhir Mound,Lalchak mounds,4387.365155179741,0.0,0.0,False
+500,Bhir Mound,Buddhist remains around Bhallar stupa,7735.64147813281,0.0,0.0,False
+500,Bhir Mound,Giri Mosque and tombs,5948.190582358525,0.0,0.0,False
+500,Sirkap (fortified city),Sirsukh (fortified ruined city),2785.609193765716,0.0,0.0,False
+500,Sirkap (fortified city),Dharmarajika stupa and monastery,1530.6626467045983,0.0,0.0,False
+500,Sirkap (fortified city),Khader Mohra (Akhuri),2973.539612201248,0.0,0.0,False
+500,Sirkap (fortified city),Kalawan group of buildings,1208.1260046950144,0.0,0.0,False
+500,Sirkap (fortified city),Giri complex of monuments,5639.768795502255,0.0,0.0,False
+500,Sirkap (fortified city),Jandial complex,1229.3205760340443,0.0,0.0,False
+500,Sirkap (fortified city),Lalchak and Badalpur Buddhist stuppa,4734.0289456545515,0.0,0.0,False
+500,Sirkap (fortified city),Mohra Moradu stupa and monastery,3011.9915480619843,0.0,0.0,False
+500,Sirkap (fortified city),Pippala stupa and monastery,3682.303367196694,0.0,0.0,False
+500,Sirkap (fortified city),Jaulian stupa and monastery,4403.063610379605,0.0,0.0,False
+500,Sirkap (fortified city),Lalchak mounds,2957.313961394439,0.0,0.0,False
+500,Sirkap (fortified city),Buddhist remains around Bhallar stupa,6679.373739516666,0.0,0.0,False
+500,Sirkap (fortified city),Giri Mosque and tombs,5487.508309922922,0.0,0.0,False
+500,Sirsukh (fortified ruined city),Dharmarajika stupa and monastery,3129.4451274770786,0.0,0.0,False
+500,Sirsukh (fortified ruined city),Khader Mohra (Akhuri),1627.456871809626,0.0,0.0,False
+500,Sirsukh (fortified ruined city),Kalawan group of buildings,3025.0958582242283,0.0,0.0,False
+500,Sirsukh (fortified ruined city),Giri complex of monuments,5710.8348442602955,0.0,0.0,False
+500,Sirsukh (fortified ruined city),Kunala stupa and monastery,2944.2911686973307,0.0,0.0,False
+500,Sirsukh (fortified ruined city),Jandial complex,2114.4378805554575,0.0,0.0,False
+500,Sirsukh (fortified ruined city),Lalchak and Badalpur Buddhist stuppa,1997.28712248637,0.0,0.0,False
+500,Sirsukh (fortified ruined city),Mohra Moradu stupa and monastery,1621.9528143382859,0.0,0.0,False
+500,Sirsukh (fortified ruined city),Pippala stupa and monastery,1720.0390772084254,0.0,0.0,False
+500,Sirsukh (fortified ruined city),Jaulian stupa and monastery,2500.5645172979816,0.0,0.0,False
+500,Sirsukh (fortified ruined city),Buddhist remains around Bhallar stupa,5101.817110601608,0.0,0.0,False
+500,Sirsukh (fortified ruined city),Giri Mosque and tombs,5699.809443087089,0.0,0.0,False
+500,Dharmarajika stupa and monastery,Khader Mohra (Akhuri),2450.0809737191776,0.0,0.0,False
+500,Dharmarajika stupa and monastery,Giri complex of monuments,4145.52267352744,0.0,0.0,False
+500,Dharmarajika stupa and monastery,Kunala stupa and monastery,1227.7422520238406,0.0,0.0,False
+500,Dharmarajika stupa and monastery,Jandial complex,2537.9538101901844,0.0,0.0,False
+500,Dharmarajika stupa and monastery,Lalchak and Badalpur Buddhist stuppa,4741.772187213407,0.0,0.0,False
+500,Dharmarajika stupa and monastery,Mohra Moradu stupa and monastery,2494.6309683203995,0.0,0.0,False
+500,Dharmarajika stupa and monastery,Pippala stupa and monastery,3242.0744579590146,0.0,0.0,False
+500,Dharmarajika stupa and monastery,Jaulian stupa and monastery,3775.7026763888252,0.0,0.0,False
+500,Dharmarajika stupa and monastery,Lalchak mounds,3363.0917399596738,0.0,0.0,False
+500,Dharmarajika stupa and monastery,Buddhist remains around Bhallar stupa,7801.525432605073,0.0,0.0,False
+500,Dharmarajika stupa and monastery,Giri Mosque and tombs,3977.794884698132,0.0,0.0,False
+500,Khader Mohra (Akhuri),Kalawan group of buildings,2523.36204908829,0.0,0.0,False
+500,Khader Mohra (Akhuri),Giri complex of monuments,4094.504446224003,0.0,0.0,False
+500,Khader Mohra (Akhuri),Kunala stupa and monastery,2941.54813299572,0.0,0.0,False
+500,Khader Mohra (Akhuri),Jandial complex,2974.7070910684306,0.0,0.0,False
+500,Khader Mohra (Akhuri),Lalchak and Badalpur Buddhist stuppa,2425.285544867534,0.0,0.0,False
+500,Khader Mohra (Akhuri),Jaulian stupa and monastery,1430.9852135424212,0.0,0.0,False
+500,Khader Mohra (Akhuri),Lalchak mounds,1837.8327616037952,0.0,0.0,False
+500,Khader Mohra (Akhuri),Buddhist remains around Bhallar stupa,6700.240453556556,0.0,0.0,False
+500,Khader Mohra (Akhuri),Giri Mosque and tombs,4098.263908922641,0.0,0.0,False
+500,Kalawan group of buildings,Giri complex of monuments,4466.264282366186,0.0,0.0,False
+500,Kalawan group of buildings,Jandial complex,2251.3183548617594,0.0,0.0,False
+500,Kalawan group of buildings,Lalchak and Badalpur Buddhist stuppa,4730.260082120741,0.0,0.0,False
+500,Kalawan group of buildings,Mohra Moradu stupa and monastery,2567.59283700232,0.0,0.0,False
+500,Kalawan group of buildings,Pippala stupa and monastery,3312.0279898420445,0.0,0.0,False
+500,Kalawan group of buildings,Jaulian stupa and monastery,3896.2849356619836,0.0,0.0,False
+500,Kalawan group of buildings,Lalchak mounds,3250.7026043297788,0.0,0.0,False
+500,Kalawan group of buildings,Buddhist remains around Bhallar stupa,7573.35575290825,0.0,0.0,False
+500,Kalawan group of buildings,Giri Mosque and tombs,4300.867829907855,0.0,0.0,False
+500,Giri complex of monuments,Kunala stupa and monastery,5365.184095194869,0.0,0.0,False
+500,Giri complex of monuments,Jandial complex,6388.531875892435,0.0,0.0,False
+500,Giri complex of monuments,Lalchak and Badalpur Buddhist stuppa,6016.883406757395,0.0,0.0,False
+500,Giri complex of monuments,Mohra Moradu stupa and monastery,4106.857208724669,0.0,0.0,False
+500,Giri complex of monuments,Pippala stupa and monastery,4367.02871250067,0.0,0.0,False
+500,Giri complex of monuments,Jaulian stupa and monastery,4056.6557176969663,0.0,0.0,False
+500,Giri complex of monuments,Lalchak mounds,5929.575574090763,0.0,0.0,False
+500,Giri complex of monuments,Buddhist remains around Bhallar stupa,10793.852370783505,0.0,0.0,False
+500,Kunala stupa and monastery,Jandial complex,1559.9412434143971,0.0,0.0,False
+500,Kunala stupa and monastery,Lalchak and Badalpur Buddhist stuppa,4847.534888059356,0.0,0.0,False
+500,Kunala stupa and monastery,Mohra Moradu stupa and monastery,2982.3538650055234,0.0,0.0,False
+500,Kunala stupa and monastery,Pippala stupa and monastery,3683.57693237984,0.0,0.0,False
+500,Kunala stupa and monastery,Jaulian stupa and monastery,4370.671725978285,0.0,0.0,False
+500,Kunala stupa and monastery,Lalchak mounds,3133.067402794231,0.0,0.0,False
+500,Kunala stupa and monastery,Buddhist remains around Bhallar stupa,7005.10904792865,0.0,0.0,False
+500,Kunala stupa and monastery,Giri Mosque and tombs,5203.24231204354,0.0,0.0,False
+500,Jandial complex,Lalchak and Badalpur Buddhist stuppa,4102.020903606601,0.0,0.0,False
+500,Jandial complex,Mohra Moradu stupa and monastery,3000.857407094867,0.0,0.0,False
+500,Jandial complex,Pippala stupa and monastery,3503.245544452148,0.0,0.0,False
+500,Jandial complex,Jaulian stupa and monastery,4299.047274930819,0.0,0.0,False
+500,Jandial complex,Lalchak mounds,2203.5343982941404,0.0,0.0,False
+500,Jandial complex,Buddhist remains around Bhallar stupa,5450.128911503959,0.0,0.0,False
+500,Jandial complex,Giri Mosque and tombs,6279.48571326485,0.0,0.0,False
+500,Lalchak and Badalpur Buddhist stuppa,Mohra Moradu stupa and monastery,2385.7644617709425,0.0,0.0,False
+500,Lalchak and Badalpur Buddhist stuppa,Pippala stupa and monastery,1765.9116787115292,0.0,0.0,False
+500,Lalchak and Badalpur Buddhist stuppa,Jaulian stupa and monastery,1978.160015529249,0.0,0.0,False
+500,Lalchak and Badalpur Buddhist stuppa,Lalchak mounds,1902.0756391259592,0.0,0.0,False
+500,Lalchak and Badalpur Buddhist stuppa,Buddhist remains around Bhallar stupa,5288.736017281028,0.0,0.0,False
+500,Lalchak and Badalpur Buddhist stuppa,Giri Mosque and tombs,6104.662018120678,0.0,0.0,False
+500,Mohra Moradu stupa and monastery,Jaulian stupa and monastery,1391.5825624698377,0.0,0.0,False
+500,Mohra Moradu stupa and monastery,Lalchak mounds,1829.0761072623006,0.0,0.0,False
+500,Mohra Moradu stupa and monastery,Buddhist remains around Bhallar stupa,6687.114959376352,0.0,0.0,False
+500,Mohra Moradu stupa and monastery,Giri Mosque and tombs,4113.691885172915,0.0,0.0,False
+500,Pippala stupa and monastery,Lalchak mounds,1854.389972806596,0.0,0.0,False
+500,Pippala stupa and monastery,Buddhist remains around Bhallar stupa,6519.447203190436,0.0,0.0,False
+500,Pippala stupa and monastery,Giri Mosque and tombs,4422.101414706891,0.0,0.0,False
+500,Jaulian stupa and monastery,Lalchak mounds,2611.5922062001287,0.0,0.0,False
+500,Jaulian stupa and monastery,Buddhist remains around Bhallar stupa,7092.0760060723205,0.0,0.0,False
+500,Jaulian stupa and monastery,Giri Mosque and tombs,4162.574050395383,0.0,0.0,False
+500,Lalchak mounds,Buddhist remains around Bhallar stupa,4873.220744055769,0.0,0.0,False
+500,Lalchak mounds,Giri Mosque and tombs,5923.883219311387,0.0,0.0,False
+500,Buddhist remains around Bhallar stupa,Giri Mosque and tombs,10795.77942815452,0.0,0.0,False
+1000,Khader Mohra (Akhuri),Mohra Moradu stupa and monastery,44.550843145675216,3052498.3364733686,0.9448449707914917,False
+1000,Sirsukh (fortified ruined city),Lalchak mounds,244.70247007571515,2653411.521070951,0.7310129163491451,False
+1000,Giri complex of monuments,Giri Mosque and tombs,298.1682371429495,2547472.639610586,0.6819241377223865,False
+1000,Dharmarajika stupa and monastery,Kalawan group of buildings,324.491913879029,2495467.4569680034,0.6588314007677752,False
+1000,Sirkap (fortified city),Kunala stupa and monastery,347.8844716570877,2449348.327347493,0.6388764937665045,False
+1000,Mohra Moradu stupa and monastery,Pippala stupa and monastery,747.5695606964217,1682037.8447603798,0.365569210397789,False
+1000,Khader Mohra (Akhuri),Pippala stupa and monastery,792.1157863498661,1599812.3642303925,0.34159405704363266,False
+1000,Pippala stupa and monastery,Jaulian stupa and monastery,805.0131326245506,1576163.1241656747,0.3348535577022617,False
+1000,Kalawan group of buildings,Kunala stupa and monastery,903.4151413918272,1398239.5816776787,0.28623441492464397,False
+1000,Sirkap (fortified city),Kalawan group of buildings,1208.1260046950144,881613.6780574304,0.1632142899492952,False
+1000,Dharmarajika stupa and monastery,Kunala stupa and monastery,1227.7422520238406,850494.9546265083,0.15655134002379142,False
+1000,Sirkap (fortified city),Jandial complex,1229.3205760340443,848004.0461781241,0.15602130001858938,False
+1000,Bhir Mound,Kunala stupa and monastery,1340.7088512591392,677358.9868244212,0.12083124736934522,False
+1000,Mohra Moradu stupa and monastery,Jaulian stupa and monastery,1391.5825624698377,603054.7750752087,0.10616917545586557,False
+1000,Khader Mohra (Akhuri),Jaulian stupa and monastery,1430.9852135424212,547219.3963880566,0.09540143803130509,False
+1000,Bhir Mound,Sirkap (fortified city),1433.8975501063214,543154.5107939069,0.09462571370451785,False
+1000,Sirkap (fortified city),Dharmarajika stupa and monastery,1530.6626467045983,413290.3979830841,0.07040848335045528,False
+1000,Kunala stupa and monastery,Jandial complex,1559.9412434143971,376118.51694507105,0.0636726365726667,False
+1000,Sirsukh (fortified ruined city),Mohra Moradu stupa and monastery,1621.9528143382859,300984.28283015767,0.050313301342609106,False
+1000,Sirsukh (fortified ruined city),Khader Mohra (Akhuri),1627.456871809626,294564.73292986455,0.04918740956748104,False
+1000,Sirsukh (fortified ruined city),Pippala stupa and monastery,1720.0390772084254,193307.6916174956,0.03174245917906734,False
+1000,Lalchak and Badalpur Buddhist stuppa,Pippala stupa and monastery,1765.9116787115292,148331.32283455168,0.024178460190424196,False
+1000,Mohra Moradu stupa and monastery,Lalchak mounds,1829.0761072623006,93002.75036892947,0.015024233859889087,False
+1000,Khader Mohra (Akhuri),Lalchak mounds,1837.8327616037952,86006.16273634182,0.0138782760239326,False
+1000,Pippala stupa and monastery,Lalchak mounds,1854.389972806596,73269.82079452509,0.011798843471407241,False
+1000,Lalchak and Badalpur Buddhist stuppa,Lalchak mounds,1902.0756391259592,40556.39100898022,0.006496684578499437,False
+1000,Bhir Mound,Kalawan group of buildings,1910.3320642539682,35559.20828468294,0.005691635146183404,False
+1000,Lalchak and Badalpur Buddhist stuppa,Jaulian stupa and monastery,1978.160015529249,4296.3986469215015,0.0006842609750720279,False
+1000,Sirsukh (fortified ruined city),Lalchak and Badalpur Buddhist stuppa,1997.28712248637,188.36301424923295,2.9979803575132246e-05,False
+1000,Khanpur Cave,Bhir Mound,10345.395807714407,0.0,0.0,False
+1000,Khanpur Cave,Sirkap (fortified city),8940.267342165445,0.0,0.0,False
+1000,Khanpur Cave,Sirsukh (fortified ruined city),6273.911650043866,0.0,0.0,False
+1000,Khanpur Cave,Dharmarajika stupa and monastery,8642.112097872929,0.0,0.0,False
+1000,Khanpur Cave,Khader Mohra (Akhuri),6195.282686344946,0.0,0.0,False
+1000,Khanpur Cave,Kalawan group of buildings,8714.697947272842,0.0,0.0,False
+1000,Khanpur Cave,Giri complex of monuments,8140.77698899129,0.0,0.0,False
+1000,Khanpur Cave,Kunala stupa and monastery,9007.10041769407,0.0,0.0,False
+1000,Khanpur Cave,Jandial complex,8383.861404314614,0.0,0.0,False
+1000,Khanpur Cave,Lalchak and Badalpur Buddhist stuppa,4282.276730418247,0.0,0.0,False
+1000,Khanpur Cave,Mohra Moradu stupa and monastery,6150.798801542094,0.0,0.0,False
+1000,Khanpur Cave,Pippala stupa and monastery,5403.917100405278,0.0,0.0,False
+1000,Khanpur Cave,Jaulian stupa and monastery,4925.980070005173,0.0,0.0,False
+1000,Khanpur Cave,Lalchak mounds,6183.953723813376,0.0,0.0,False
+1000,Khanpur Cave,Buddhist remains around Bhallar stupa,7932.750880916129,0.0,0.0,False
+1000,Khanpur Cave,Giri Mosque and tombs,8359.861888262632,0.0,0.0,False
+1000,Bhir Mound,Sirsukh (fortified ruined city),4219.1220410182905,0.0,0.0,False
+1000,Bhir Mound,Dharmarajika stupa and monastery,2164.0457283569845,0.0,0.0,False
+1000,Bhir Mound,Khader Mohra (Akhuri),4267.133308720623,0.0,0.0,False
+1000,Bhir Mound,Giri complex of monuments,6155.50758967236,0.0,0.0,False
+1000,Bhir Mound,Jandial complex,2442.4192344884345,0.0,0.0,False
+1000,Bhir Mound,Lalchak and Badalpur Buddhist stuppa,6163.221444512863,0.0,0.0,False
+1000,Bhir Mound,Mohra Moradu stupa and monastery,4308.867703074159,0.0,0.0,False
+1000,Bhir Mound,Pippala stupa and monastery,5019.6554485982915,0.0,0.0,False
+1000,Bhir Mound,Jaulian stupa and monastery,5690.550023940587,0.0,0.0,False
+1000,Bhir Mound,Lalchak mounds,4387.365155179741,0.0,0.0,False
+1000,Bhir Mound,Buddhist remains around Bhallar stupa,7735.64147813281,0.0,0.0,False
+1000,Bhir Mound,Giri Mosque and tombs,5948.190582358525,0.0,0.0,False
+1000,Sirkap (fortified city),Sirsukh (fortified ruined city),2785.609193765716,0.0,0.0,False
+1000,Sirkap (fortified city),Khader Mohra (Akhuri),2973.539612201248,0.0,0.0,False
+1000,Sirkap (fortified city),Giri complex of monuments,5639.768795502255,0.0,0.0,False
+1000,Sirkap (fortified city),Lalchak and Badalpur Buddhist stuppa,4734.0289456545515,0.0,0.0,False
+1000,Sirkap (fortified city),Mohra Moradu stupa and monastery,3011.9915480619843,0.0,0.0,False
+1000,Sirkap (fortified city),Pippala stupa and monastery,3682.303367196694,0.0,0.0,False
+1000,Sirkap (fortified city),Jaulian stupa and monastery,4403.063610379605,0.0,0.0,False
+1000,Sirkap (fortified city),Lalchak mounds,2957.313961394439,0.0,0.0,False
+1000,Sirkap (fortified city),Buddhist remains around Bhallar stupa,6679.373739516666,0.0,0.0,False
+1000,Sirkap (fortified city),Giri Mosque and tombs,5487.508309922922,0.0,0.0,False
+1000,Sirsukh (fortified ruined city),Dharmarajika stupa and monastery,3129.4451274770786,0.0,0.0,False
+1000,Sirsukh (fortified ruined city),Kalawan group of buildings,3025.0958582242283,0.0,0.0,False
+1000,Sirsukh (fortified ruined city),Giri complex of monuments,5710.8348442602955,0.0,0.0,False
+1000,Sirsukh (fortified ruined city),Kunala stupa and monastery,2944.2911686973307,0.0,0.0,False
+1000,Sirsukh (fortified ruined city),Jandial complex,2114.4378805554575,0.0,0.0,False
+1000,Sirsukh (fortified ruined city),Jaulian stupa and monastery,2500.5645172979816,0.0,0.0,False
+1000,Sirsukh (fortified ruined city),Buddhist remains around Bhallar stupa,5101.817110601608,0.0,0.0,False
+1000,Sirsukh (fortified ruined city),Giri Mosque and tombs,5699.809443087089,0.0,0.0,False
+1000,Dharmarajika stupa and monastery,Khader Mohra (Akhuri),2450.0809737191776,0.0,0.0,False
+1000,Dharmarajika stupa and monastery,Giri complex of monuments,4145.52267352744,0.0,0.0,False
+1000,Dharmarajika stupa and monastery,Jandial complex,2537.9538101901844,0.0,0.0,False
+1000,Dharmarajika stupa and monastery,Lalchak and Badalpur Buddhist stuppa,4741.772187213407,0.0,0.0,False
+1000,Dharmarajika stupa and monastery,Mohra Moradu stupa and monastery,2494.6309683203995,0.0,0.0,False
+1000,Dharmarajika stupa and monastery,Pippala stupa and monastery,3242.0744579590146,0.0,0.0,False
+1000,Dharmarajika stupa and monastery,Jaulian stupa and monastery,3775.7026763888252,0.0,0.0,False
+1000,Dharmarajika stupa and monastery,Lalchak mounds,3363.0917399596738,0.0,0.0,False
+1000,Dharmarajika stupa and monastery,Buddhist remains around Bhallar stupa,7801.525432605073,0.0,0.0,False
+1000,Dharmarajika stupa and monastery,Giri Mosque and tombs,3977.794884698132,0.0,0.0,False
+1000,Khader Mohra (Akhuri),Kalawan group of buildings,2523.36204908829,0.0,0.0,False
+1000,Khader Mohra (Akhuri),Giri complex of monuments,4094.504446224003,0.0,0.0,False
+1000,Khader Mohra (Akhuri),Kunala stupa and monastery,2941.54813299572,0.0,0.0,False
+1000,Khader Mohra (Akhuri),Jandial complex,2974.7070910684306,0.0,0.0,False
+1000,Khader Mohra (Akhuri),Lalchak and Badalpur Buddhist stuppa,2425.285544867534,0.0,0.0,False
+1000,Khader Mohra (Akhuri),Buddhist remains around Bhallar stupa,6700.240453556556,0.0,0.0,False
+1000,Khader Mohra (Akhuri),Giri Mosque and tombs,4098.263908922641,0.0,0.0,False
+1000,Kalawan group of buildings,Giri complex of monuments,4466.264282366186,0.0,0.0,False
+1000,Kalawan group of buildings,Jandial complex,2251.3183548617594,0.0,0.0,False
+1000,Kalawan group of buildings,Lalchak and Badalpur Buddhist stuppa,4730.260082120741,0.0,0.0,False
+1000,Kalawan group of buildings,Mohra Moradu stupa and monastery,2567.59283700232,0.0,0.0,False
+1000,Kalawan group of buildings,Pippala stupa and monastery,3312.0279898420445,0.0,0.0,False
+1000,Kalawan group of buildings,Jaulian stupa and monastery,3896.2849356619836,0.0,0.0,False
+1000,Kalawan group of buildings,Lalchak mounds,3250.7026043297788,0.0,0.0,False
+1000,Kalawan group of buildings,Buddhist remains around Bhallar stupa,7573.35575290825,0.0,0.0,False
+1000,Kalawan group of buildings,Giri Mosque and tombs,4300.867829907855,0.0,0.0,False
+1000,Giri complex of monuments,Kunala stupa and monastery,5365.184095194869,0.0,0.0,False
+1000,Giri complex of monuments,Jandial complex,6388.531875892435,0.0,0.0,False
+1000,Giri complex of monuments,Lalchak and Badalpur Buddhist stuppa,6016.883406757395,0.0,0.0,False
+1000,Giri complex of monuments,Mohra Moradu stupa and monastery,4106.857208724669,0.0,0.0,False
+1000,Giri complex of monuments,Pippala stupa and monastery,4367.02871250067,0.0,0.0,False
+1000,Giri complex of monuments,Jaulian stupa and monastery,4056.6557176969663,0.0,0.0,False
+1000,Giri complex of monuments,Lalchak mounds,5929.575574090763,0.0,0.0,False
+1000,Giri complex of monuments,Buddhist remains around Bhallar stupa,10793.852370783505,0.0,0.0,False
+1000,Kunala stupa and monastery,Lalchak and Badalpur Buddhist stuppa,4847.534888059356,0.0,0.0,False
+1000,Kunala stupa and monastery,Mohra Moradu stupa and monastery,2982.3538650055234,0.0,0.0,False
+1000,Kunala stupa and monastery,Pippala stupa and monastery,3683.57693237984,0.0,0.0,False
+1000,Kunala stupa and monastery,Jaulian stupa and monastery,4370.671725978285,0.0,0.0,False
+1000,Kunala stupa and monastery,Lalchak mounds,3133.067402794231,0.0,0.0,False
+1000,Kunala stupa and monastery,Buddhist remains around Bhallar stupa,7005.10904792865,0.0,0.0,False
+1000,Kunala stupa and monastery,Giri Mosque and tombs,5203.24231204354,0.0,0.0,False
+1000,Jandial complex,Lalchak and Badalpur Buddhist stuppa,4102.020903606601,0.0,0.0,False
+1000,Jandial complex,Mohra Moradu stupa and monastery,3000.857407094867,0.0,0.0,False
+1000,Jandial complex,Pippala stupa and monastery,3503.245544452148,0.0,0.0,False
+1000,Jandial complex,Jaulian stupa and monastery,4299.047274930819,0.0,0.0,False
+1000,Jandial complex,Lalchak mounds,2203.5343982941404,0.0,0.0,False
+1000,Jandial complex,Buddhist remains around Bhallar stupa,5450.128911503959,0.0,0.0,False
+1000,Jandial complex,Giri Mosque and tombs,6279.48571326485,0.0,0.0,False
+1000,Lalchak and Badalpur Buddhist stuppa,Mohra Moradu stupa and monastery,2385.7644617709425,0.0,0.0,False
+1000,Lalchak and Badalpur Buddhist stuppa,Buddhist remains around Bhallar stupa,5288.736017281028,0.0,0.0,False
+1000,Lalchak and Badalpur Buddhist stuppa,Giri Mosque and tombs,6104.662018120678,0.0,0.0,False
+1000,Mohra Moradu stupa and monastery,Buddhist remains around Bhallar stupa,6687.114959376352,0.0,0.0,False
+1000,Mohra Moradu stupa and monastery,Giri Mosque and tombs,4113.691885172915,0.0,0.0,False
+1000,Pippala stupa and monastery,Buddhist remains around Bhallar stupa,6519.447203190436,0.0,0.0,False
+1000,Pippala stupa and monastery,Giri Mosque and tombs,4422.101414706891,0.0,0.0,False
+1000,Jaulian stupa and monastery,Lalchak mounds,2611.5922062001287,0.0,0.0,False
+1000,Jaulian stupa and monastery,Buddhist remains around Bhallar stupa,7092.0760060723205,0.0,0.0,False
+1000,Jaulian stupa and monastery,Giri Mosque and tombs,4162.574050395383,0.0,0.0,False
+1000,Lalchak mounds,Buddhist remains around Bhallar stupa,4873.220744055769,0.0,0.0,False
+1000,Lalchak mounds,Giri Mosque and tombs,5923.883219311387,0.0,0.0,False
+1000,Buddhist remains around Bhallar stupa,Giri Mosque and tombs,10795.77942815452,0.0,0.0,False

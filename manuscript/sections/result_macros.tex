@@ -1,0 +1,10 @@
+\newcommand{\ExtensionModel}{random forest}
+\newcommand{\ExtensionFOne}{0.821}
+\newcommand{\ExtensionCV}{0.695}
+\newcommand{\ExtensionLow}{0.691}
+\newcommand{\ExtensionHigh}{0.835}
+\newcommand{\ExtensionAgreement}{0.813}
+\newcommand{\LegacyFOne}{0.830072}
+\newcommand{\LegacyAgreement}{0.828080}
+\newcommand{\LegacyECE}{0.015117}
+\newcommand{\ExtensionInterpretation}{The MLP had the largest outer macro-F1 (0.849), but did not lead the inner spatial comparison. Random forest exceeded logistic regression by 0.0145 (paired 95\% interval 0.0028--0.0283), whereas histogram gradient boosting exceeded random forest by 0.0248 (0.0117--0.0663). These are conditional, unadjusted pairwise intervals. Out-of-fold temperature scaling worsened outer log loss from 0.498 to 0.574 and calibration error from 0.014 to 0.136, indicating poor transfer of this calibration. The fixed logistic bands-only control reached macro-F1 0.824, compared with 0.671 for indices alone, 0.140 for location alone and 0.070 after label shuffling. Random-forest macro-F1 ranged from 0.8205 to 0.8214 across three refit seeds. No model was substituted on the basis of these outer diagnostics.}

@@ -1,0 +1,8 @@
+model,inner_macro_f1,parameters,fit_seconds
+Logistic,0.6553363318943733,"{""logisticregression__C"": 1}",2.094106912612915
+RandomForest,0.6945818040939145,"{""min_samples_leaf"": 12}",44.12970042228699
+ExtraTrees,0.6166499852588542,"{""min_samples_leaf"": 3}",15.647566318511963
+HistGradientBoosting,0.6107451332827315,"{""max_leaf_nodes"": 15}",55.67893958091736
+MLP,0.6242933018802884,"{""mlpclassifier__alpha"": 0.01}",66.61897039413452
+XGBoost,0.6167277108344184,"{""max_depth"": 3}",34.164639472961426
+CatBoost,0.6138498406443387,"{""depth"": 8}",178.23798608779907

@@ -1,0 +1,93 @@
+{
+  "schema": 1,
+  "created_utc": "2026-09-06T12:43:28.481819+00:00",
+  "source_sha256": "3188160a144c5020e7d21bb50a195e07a686d941134ade35a57232fe41ddc1b1",
+  "n_samples": 20749,
+  "seed": 311,
+  "features": [
+    "blue",
+    "green",
+    "red",
+    "nir08",
+    "swir16",
+    "swir22",
+    "NDVI",
+    "NDBI",
+    "MNDWI",
+    "BSI"
+  ],
+  "outer_test_columns": [
+    3,
+    4
+  ],
+  "outer_buffer_columns": [
+    2,
+    5
+  ],
+  "inner_validation_rows": [
+    [
+      0,
+      2
+    ],
+    [
+      3,
+      6
+    ],
+    [
+      7,
+      9
+    ]
+  ],
+  "inner_buffer_rows": 1,
+  "labels": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "selection": "largest mean inner buffered macro-F1; lexicographic model tie-break",
+  "bootstrap_draws": 2000,
+  "development_n": 12094,
+  "test_n": 4188,
+  "buffer_n": 4467,
+  "minimum_test_train_distance_m": 2040.0,
+  "limitation": "Retrospective extension on an already examined outer stripe; not an untouched confirmatory test or independent condition validation.",
+  "inner_training_class_counts": [
+    {
+      "1": 1213,
+      "2": 2115,
+      "3": 803,
+      "4": 1966,
+      "5": 961
+    },
+    {
+      "1": 658,
+      "2": 2200,
+      "3": 1015,
+      "4": 400,
+      "5": 1118,
+      "6": 2
+    },
+    {
+      "1": 1108,
+      "2": 509,
+      "3": 1716,
+      "4": 1324,
+      "5": 1788,
+      "6": 641
+    }
+  ],
+  "early_stopping": false,
+  "packages": {
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scipy": "1.17.0",
+    "scikit-learn": "1.8.0",
+    "xgboost": "3.4.1",
+    "catboost": "1.2.10"
+  },
+  "python": "3.12.14",
+  "platform": "Windows-11-10.0.26200-SP0"
+}

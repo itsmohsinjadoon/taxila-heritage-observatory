@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "primary": "RandomForest",
+  "source_sha256": "3188160a144c5020e7d21bb50a195e07a686d941134ade35a57232fe41ddc1b1",
+  "test_n": 4188,
+  "development_n": 12094,
+  "test_blocks": 20,
+  "minimum_distance_m": 2040.0,
+  "primary_metrics": {
+    "model": "RandomForest",
+    "primary_selected": true,
+    "macro_f1": 0.8214328773275001,
+    "overall_agreement": 0.8127984718242598,
+    "balanced_accuracy_fixed6": 0.8018376256530257,
+    "log_loss": 0.49768663809929314,
+    "brier": 0.2689232267553529,
+    "ece": 0.014311113874950366,
+    "f1_low": 0.6910988824552918,
+    "f1_high": 0.8351782871537495
+  },
+  "temperature": 1.6582819649510478,
+  "duration_seconds": 378.00360083580017,
+  "scope": "Retrospective spatial land-cover proxy benchmark; no claim of heritage-condition accuracy or universal SOTA."
+}

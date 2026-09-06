@@ -1,0 +1,7 @@
+comparison,usual limitation,CHIP contribution,meaningful decision value
+Conventional static weighted overlay,Single fixed ranking,"CHIP reports scale, block, coordinate, weight, structural and joint rank uncertainty",Decision-makers see which priorities are robust versus conditional
+Independent-factor averaging,Correlated indices can be double-counted,NDVI/NDBI are grouped before MNDWI; dependence and ablation are reported,The score hierarchy is inspectable and sensitivity-tested
+Site points treated independently,Nearby supports can duplicate local evidence,Circle-overlap/Jaccard diagnostics flag clustered components,Field teams can coordinate inspection clusters
+Random train/test split,Spatial leakage inflates proxy agreement,Development–buffer–test block geometry plus inner grouped CV,Proxy performance has a defensible spatial interpretation
+Climate folded into a risk score,Encourages causal overreach,Climate trends remain contextual and separately qualified,Contribution stays decision-relevant without claiming causation
+Map as final answer,No executable evidence chain,"Notebook exports tables, vector figures, validation checks and SHA-256 manifests",Every headline can be traced and rerun

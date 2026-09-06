@@ -1,0 +1,18 @@
+component_id,component_name,scenarios,median_rank,rank_min,rank_max,top3_frequency,top5_frequency,inspection_tier
+139-009,Giri complex of monuments,27,2.0,1,8,0.6296296296296297,0.8518518518518519,Tier 1: robust high priority
+139-018,Giri Mosque and tombs,27,2.0,1,7,0.7407407407407407,0.8518518518518519,Tier 1: robust high priority
+139-015,Jaulian stupa and monastery,27,3.0,1,11,0.6666666666666666,0.8888888888888888,Tier 1: robust high priority
+139-007,Khader Mohra (Akhuri),27,5.0,1,13,0.25925925925925924,0.5555555555555556,Tier 2: conditional high priority
+139-013,Mohra Moradu stupa and monastery,27,5.0,2,15,0.07407407407407407,0.6296296296296297,Tier 2: conditional high priority
+139-006,Dharmarajika stupa and monastery,27,6.0,1,10,0.2222222222222222,0.4074074074074074,Tier 3: routine/uncertain priority
+139-008,Kalawan group of buildings,27,8.0,3,14,0.07407407407407407,0.1111111111111111,Tier 3: routine/uncertain priority
+139-014,Pippala stupa and monastery,27,8.0,3,13,0.07407407407407407,0.07407407407407407,Tier 3: routine/uncertain priority
+139-017,Buddhist remains around Bhallar stupa,27,8.0,3,14,0.07407407407407407,0.18518518518518517,Tier 3: routine/uncertain priority
+139-005,Sirsukh (fortified ruined city),27,10.0,3,15,0.037037037037037035,0.1111111111111111,Tier 3: routine/uncertain priority
+139-010,Kunala stupa and monastery,27,10.0,3,14,0.037037037037037035,0.14814814814814814,Tier 3: routine/uncertain priority
+139-001,Khanpur Cave,27,12.0,10,15,0.0,0.0,Tier 3: routine/uncertain priority
+139-004,Sirkap (fortified city),27,12.0,1,15,0.1111111111111111,0.18518518518518517,Tier 3: routine/uncertain priority
+139-016,Lalchak mounds,27,14.0,9,17,0.0,0.0,Tier 3: routine/uncertain priority
+139-012,Lalchak and Badalpur Buddhist stuppa,27,15.0,10,17,0.0,0.0,Tier 3: routine/uncertain priority
+139-003,Bhir Mound,27,16.0,6,17,0.0,0.0,Tier 3: routine/uncertain priority
+139-011,Jandial complex,27,16.0,12,17,0.0,0.0,Tier 3: routine/uncertain priority

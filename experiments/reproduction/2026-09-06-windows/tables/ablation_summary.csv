@@ -1,0 +1,10 @@
+scenario,spearman_rho_with_reference,kendall_tau_with_reference,top5_overlap,mean_absolute_rank_shift,maximum_absolute_rank_shift,rank_1_component
+Full hierarchy,1.0,1.0,5,0.0,0.0,Giri complex of monuments
+Landscape only,0.3249540770190428,0.1845031011541865,1,4.647058823529412,11.0,Sirkap (fortified city)
+Terrain only,0.8297494129963187,0.686586283020789,4,2.3529411764705883,7.0,Buddhist remains around Bhallar stupa
+Without NDVI,0.9914110429447854,0.9481481481481482,5,0.47058823529411764,1.0,Giri complex of monuments
+Without NDBI,0.9895771326579906,0.9520360019556025,4,0.35294117647058826,2.0,Giri complex of monuments
+Without MNDWI,-0.279583130416384,-0.21402359733885637,0,6.9411764705882355,13.0,Buddhist remains around Bhallar stupa
+Without slope,0.6106684164357861,0.4354273187238802,3,3.588235294117647,8.0,Sirsukh (fortified ruined city)
+Without wetness,0.8920245398773007,0.7481481481481482,4,1.7647058823529411,4.0,Giri Mosque and tombs
+Without drainage,0.45370946602658807,0.30258508589286587,2,4.176470588235294,8.5,Sirsukh (fortified ruined city)

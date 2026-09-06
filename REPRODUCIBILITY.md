@@ -81,10 +81,28 @@ The authoritative stored proxy targets are macro-F1 `0.830795`, agreement `0.833
 
 ## Manuscript and figure builds
 
-The journal-neutral manuscript can be compiled with `manuscript/compile.sh` in a TeX environment containing `latexmk`, `pdflatex`, and BibTeX. Figure 1 can be regenerated with the QGIS script and frozen source bundle documented in `manuscript/figures/source/figure_01/README.md`.
+The journal-neutral manuscript can be compiled with `manuscript/compile.sh` in a TeX environment containing `latexmk`, `pdflatex`, and BibTeX. The active Figure 1 is the exact PDF supplied by the author on this revision. The older QGIS builder documents a historical version and must not overwrite it.
 
-The repository LaTeX is not the exact editable source of the supplied 15-page main and 18-page supplementary submission PDFs. Version the final submission source before archival release.
+The active LaTeX was comprehensively revised on 6 September 2026. It is the source of the current compiled review PDFs; the older 15-page main and 18-page supplement are historical snapshots.
 
 ## Reproducibility boundary
 
 The clean notebook and frozen evidence package cover the principal reported workflow. The older standalone package under `experiments/integrated/` preserves scientifically relevant tables and figures but currently references raw/derived inputs that are absent from its self-contained directory. Do not describe that package as independently rerunnable until those inputs or a documented canonical-data fallback are supplied.
+
+## Buffered spatial extension, executed 6 September 2026
+
+Install `requirements-extension.txt`, then run:
+
+```bash
+python scripts/run_spatial_extension.py --data data/Taxila_CHIP_Frozen_Evidence_Data/13_tables/baseline_reproduction/proxy_model_feature_table.csv --output outputs/new-spatial-run
+```
+
+The output directory must not exist. The self-contained `notebooks/Taxila_Spatial_Benchmark_Extension.ipynb` embeds the same input and script with SHA-256 checks and was executed in the author's Google Colab. An executed notebook, per-sample probabilities, model searches, split manifests, calibration, controls and three-seed results are preserved under `experiments/spatial_extension/2026-09-06-colab`. Colab outputs supply manuscript Table 2 and new supplementary model tables. Windows outputs remain separate. Only XGBoost changed outer macro-F1 across these runs (delta -0.000608 in Colab); the primary model was stable. This is a retrospective evaluation on an already examined spatial stripe, not a fresh confirmatory test.
+
+## Corrected climate uncertainty
+
+The notebook's former raw-value block shuffle destroyed the fitted trend and its sign-count p formula could exceed one. The corrected routine resamples detrended residual blocks, restores the fitted trend for intervals, and tests slopes against a constant null with a plus-one Monte Carlo correction. `python scripts/test_climate_bootstrap.py` checks a positive autocorrelated trend, constant null, probability bounds and repeatable seeds. Newly recomputed annual results are distinct from archived seasonal and mixed-family q values. No original locks were changed.
+
+The corrected publication run completed in 925 seconds: data QA passed; 24/27 historical locks passed. The three MLP score mismatches remain explicitly REVIEW, rather than being declared exact reproduction. Its receipt and executed notebook are committed under `experiments/reproduction/2026-09-06-windows`.
+
+Generate paper tables/macros from recorded outputs with `python scripts/build_manuscript_evidence.py`. Generate the editable vector framework with `python scripts/build_framework_figure.py`. Compile `main.tex` and `title_page.tex` from `manuscript/`, and `supplementary_information.tex` from `manuscript/supplementary/`, using a standard LaTeX engine or Tectonic. The author-supplied figure must be preserved.

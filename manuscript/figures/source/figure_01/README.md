@@ -1,3 +1,5 @@
+> Historical cartography source. The 6 September 2026 active Figure 1 is the exact author-supplied `Taxila_Figure1_Final.pdf` (stored under `figures/main/figure_01_study_area_context_map.pdf`). The source builder below produces an earlier version and is not the current figure regeneration path. The current neighbourhood circles are dark red.
+
 # Figure 1 source and provenance
 
 This directory documents the canonical, author-approved Figure 1 and a separate open-data audit variant. The canonical visual is used by `figures/main/figure_01_study_area_context_map.pdf` without changes to its imagery, contrast, labels, buffers or layout.

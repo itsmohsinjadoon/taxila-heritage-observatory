@@ -1,0 +1,2254 @@
+[
+  {
+    "key": "khan2022taxila",
+    "doi": "10.1016/j.culher.2022.03.011",
+    "status": "verified",
+    "title_similarity": 0.990990990990991,
+    "registered_title": "Evaluation of risks to UNESCO World Heritage (WH) sites in Taxila, Pakistan using ground-based and satellite remote sensing techniques",
+    "registered_authors": [
+      {
+        "given": "Muhammad Younis",
+        "family": "Khan",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-1525-1462",
+        "authenticated-orcid": false,
+        "given": "Federico",
+        "family": "Zaina",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Zain ul",
+        "family": "Abedin",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Shahina",
+        "family": "Tariq",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Muhammad Jahangir",
+        "family": "Khan",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "registered_year": {
+      "date-parts": [
+        [
+          2022,
+          5
+        ]
+      ]
+    },
+    "source": "https://api.crossref.org/works/10.1016/j.culher.2022.03.011"
+  },
+  {
+    "key": "agapiou2015paphos",
+    "doi": "10.1016/j.culher.2014.12.006",
+    "status": "verified",
+    "title_similarity": 1.0,
+    "registered_title": "Impact of urban sprawl to cultural heritage monuments: The case study of Paphos area in Cyprus",
+    "registered_authors": [
+      {
+        "given": "Athos",
+        "family": "Agapiou",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Dimitrios D.",
+        "family": "Alexakis",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Vasiliki",
+        "family": "Lysandrou",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Apostolos",
+        "family": "Sarris",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Branka",
+        "family": "Cuca",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Kyriacos",
+        "family": "Themistocleous",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Diofantos G.",
+        "family": "Hadjimitsis",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "registered_year": {
+      "date-parts": [
+        [
+          2015,
+          9
+        ]
+      ]
+    },
+    "source": "https://api.crossref.org/works/10.1016/j.culher.2014.12.006"
+  },
+  {
+    "key": "agapiou2016paphos",
+    "doi": "10.1007/s11069-016-2211-6",
+    "status": "verified",
+    "title_similarity": 1.0,
+    "registered_title": "Risk assessment of cultural heritage sites clusters using satellite imagery and GIS: the case study of Paphos District, Cyprus",
+    "registered_authors": [
+      {
+        "given": "A.",
+        "family": "Agapiou",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "V.",
+        "family": "Lysandrou",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "K.",
+        "family": "Themistocleous",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "D. G.",
+        "family": "Hadjimitsis",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "registered_year": {
+      "date-parts": [
+        [
+          2016,
+          2,
+          19
+        ]
+      ]
+    },
+    "source": "https://api.crossref.org/works/10.1007/s11069-016-2211-6"
+  },
+  {
+    "key": "guerriero2022derwent",
+    "doi": "10.1016/j.culher.2022.04.009",
+    "status": "verified",
+    "registered_title": "Multi-hazard susceptibility assessment using analytic hierarchy process: the Derwent Valley Mills UNESCO World Heritage Site case study (United Kingdom)",
+    "registered_authors": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-5837-5409",
+        "authenticated-orcid": false,
+        "given": "Luigi",
+        "family": "Guerriero",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-7450-068X",
+        "authenticated-orcid": false,
+        "given": "Mariano Di",
+        "family": "Napoli",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-9682-9056",
+        "authenticated-orcid": false,
+        "given": "Alessandro",
+        "family": "Novellino",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Diego Di",
+        "family": "Martire",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-7009-081X",
+        "authenticated-orcid": false,
+        "given": "Concetta",
+        "family": "Rispoli",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Kathryn",
+        "family": "Lee",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-4504-0009",
+        "authenticated-orcid": false,
+        "given": "Emma",
+        "family": "Bee",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Anna",
+        "family": "Harrison",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Domenico",
+        "family": "Calcaterra",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "registered_year": {
+      "date-parts": [
+        [
+          2022,
+          5
+        ]
+      ]
+    },
+    "source": "https://api.crossref.org/works/10.1016/j.culher.2022.04.009",
+    "title_similarity": 0.9473684210526315
+  },
+  {
+    "key": "romao2022risk",
+    "doi": "10.1016/j.ijdrr.2021.102652",
+    "status": "verified",
+    "title_similarity": 1.0,
+    "registered_title": "Risk protection for cultural heritage and historic centres: Current knowledge and further research needs",
+    "registered_authors": [
+      {
+        "given": "Xavier",
+        "family": "Rom\u00e3o",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Chiara",
+        "family": "Bertolin",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "registered_year": {
+      "date-parts": [
+        [
+          2022,
+          1
+        ]
+      ]
+    },
+    "source": "https://api.crossref.org/works/10.1016/j.ijdrr.2021.102652"
+  },
+  {
+    "key": "sesana2021climate",
+    "doi": "10.1002/wcc.710",
+    "status": "verified",
+    "registered_title": "Climate change impacts on cultural heritage: A literature review",
+    "registered_authors": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-6428-4626",
+        "authenticated-orcid": false,
+        "given": "Elena",
+        "family": "Sesana",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "School of Computing, Engineering and Physical Sciences University of the West of Scotland  Paisley UK"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-1301-6015",
+        "authenticated-orcid": false,
+        "given": "Alexandre S.",
+        "family": "Gagnon",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of Biological and Environmental Sciences Liverpool John Moores University  Liverpool UK"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-2521-7105",
+        "authenticated-orcid": false,
+        "given": "Chiara",
+        "family": "Ciantelli",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Conservation and Built Heritage, Faculty for the Built Environment University of Malta  Msida Malta"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-4325-1868",
+        "authenticated-orcid": false,
+        "given": "JoAnn",
+        "family": "Cassar",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Conservation and Built Heritage, Faculty for the Built Environment University of Malta  Msida Malta"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-7633-9607",
+        "authenticated-orcid": false,
+        "given": "John J.",
+        "family": "Hughes",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of Computing, Engineering and Physical Sciences University of the West of Scotland  Paisley UK"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "registered_year": {
+      "date-parts": [
+        [
+          2021,
+          5,
+          4
+        ]
+      ]
+    },
+    "source": "https://api.crossref.org/works/10.1002/wcc.710",
+    "title_similarity": 1.0
+  },
+  {
+    "key": "roy2016landsat",
+    "doi": "10.1016/j.rse.2015.12.024",
+    "status": "verified",
+    "title_similarity": 1.0,
+    "registered_title": "Characterization of Landsat-7 to Landsat-8 reflective wavelength and normalized difference vegetation index continuity",
+    "registered_authors": [
+      {
+        "given": "D.P.",
+        "family": "Roy",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "V.",
+        "family": "Kovalskyy",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "H.K.",
+        "family": "Zhang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "E.F.",
+        "family": "Vermote",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "L.",
+        "family": "Yan",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "S.S.",
+        "family": "Kumar",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "A.",
+        "family": "Egorov",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "registered_year": {
+      "date-parts": [
+        [
+          2016,
+          11
+        ]
+      ]
+    },
+    "source": "https://api.crossref.org/works/10.1016/j.rse.2015.12.024"
+  },
+  {
+    "key": "xu2006mndwi",
+    "doi": "10.1080/01431160600589179",
+    "status": "verified",
+    "title_similarity": 1.0,
+    "registered_title": "Modification of normalised difference water index (NDWI) to enhance open water features in remotely sensed imagery",
+    "registered_authors": [
+      {
+        "given": "Hanqiu",
+        "family": "Xu",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "a   College of Environment and Resources , Fuzhou University; Key Laboratory of Data Mining and Sharing, China's Ministry of Education , Fuzhou, Fujian 350002,  China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "registered_year": {
+      "date-parts": [
+        [
+          2006,
+          7,
+          20
+        ]
+      ]
+    },
+    "source": "https://api.crossref.org/works/10.1080/01431160600589179"
+  },
+  {
+    "key": "zha2003ndbi",
+    "doi": "10.1080/01431160304987",
+    "status": "verified",
+    "title_similarity": 1.0,
+    "registered_title": "Use of normalized difference built-up index in automatically mapping urban areas from TM imagery",
+    "registered_authors": [
+      {
+        "given": "Y.",
+        "family": "Zha",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "a   College of Geographical Sciences , Nanjing Normal University , Nanjing, 210097,  China  E-mail:"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "J.",
+        "family": "Gao",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "b   School of Geography and Environmental Science , University of Auckland , Private Bag 92019, Auckland,  New Zealand  E-mail:"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "S.",
+        "family": "Ni",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "c   College of Geographical Sciences , Nanjing Normal University , Nanjing, 210097"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "registered_year": {
+      "date-parts": [
+        [
+          2003,
+          1
+        ]
+      ]
+    },
+    "source": "https://api.crossref.org/works/10.1080/01431160304987"
+  },
+  {
+    "key": "farr2007srtm",
+    "doi": "10.1029/2005RG000183",
+    "status": "verified",
+    "title_similarity": 1.0,
+    "registered_title": "The Shuttle Radar Topography Mission",
+    "registered_authors": [
+      {
+        "given": "Tom G.",
+        "family": "Farr",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Jet Propulsion Laboratory California Institute of Technology  Pasadena California USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Paul A.",
+        "family": "Rosen",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Jet Propulsion Laboratory California Institute of Technology  Pasadena California USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Edward",
+        "family": "Caro",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Jet Propulsion Laboratory California Institute of Technology  Pasadena California USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Robert",
+        "family": "Crippen",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Jet Propulsion Laboratory California Institute of Technology  Pasadena California USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Riley",
+        "family": "Duren",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Jet Propulsion Laboratory California Institute of Technology  Pasadena California USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Scott",
+        "family": "Hensley",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Jet Propulsion Laboratory California Institute of Technology  Pasadena California USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Michael",
+        "family": "Kobrick",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Jet Propulsion Laboratory California Institute of Technology  Pasadena California USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Mimi",
+        "family": "Paller",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Jet Propulsion Laboratory California Institute of Technology  Pasadena California USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Ernesto",
+        "family": "Rodriguez",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Jet Propulsion Laboratory California Institute of Technology  Pasadena California USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Ladislav",
+        "family": "Roth",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Jet Propulsion Laboratory California Institute of Technology  Pasadena California USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "David",
+        "family": "Seal",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Jet Propulsion Laboratory California Institute of Technology  Pasadena California USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Scott",
+        "family": "Shaffer",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Jet Propulsion Laboratory California Institute of Technology  Pasadena California USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Joanne",
+        "family": "Shimada",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Jet Propulsion Laboratory California Institute of Technology  Pasadena California USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jeffrey",
+        "family": "Umland",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Jet Propulsion Laboratory California Institute of Technology  Pasadena California USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Marian",
+        "family": "Werner",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Deutsches Zentrum f\u00fcr Luft\u2010 und Raumfahrt  Wessling Germany"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Michael",
+        "family": "Oskin",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Geological Sciences University of North Carolina  Chapel Hill North Carolina USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Douglas",
+        "family": "Burbank",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Earth Science University of California  Santa Barbara California USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Douglas",
+        "family": "Alsdorf",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of Earth Sciences Ohio State University  Columbus Ohio USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "registered_year": {
+      "date-parts": [
+        [
+          2007,
+          5,
+          19
+        ]
+      ]
+    },
+    "source": "https://api.crossref.org/works/10.1029/2005RG000183"
+  },
+  {
+    "key": "beven1979topmodel",
+    "doi": "10.1080/02626667909491834",
+    "status": "verified",
+    "title_similarity": 0.6455026455026455,
+    "registered_title": "A physically based, variable contributing area model of basin hydrology / Un mod\u00e8le \u00e0 base physique de zone d'appel variable de l'hydrologie du bassin versant",
+    "registered_authors": [
+      {
+        "given": "K. J.",
+        "family": "BEVEN",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "M. J.",
+        "family": "KIRKBY",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "registered_year": {
+      "date-parts": [
+        [
+          1979,
+          3
+        ]
+      ]
+    },
+    "source": "https://api.crossref.org/works/10.1080/02626667909491834",
+    "note": "English title matches the leading Crossref title; registered title appends a translation."
+  },
+  {
+    "key": "olofsson2014accuracy",
+    "doi": "10.1016/j.rse.2014.02.015",
+    "status": "verified",
+    "title_similarity": 1.0,
+    "registered_title": "Good practices for estimating area and assessing accuracy of land change",
+    "registered_authors": [
+      {
+        "given": "Pontus",
+        "family": "Olofsson",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Giles M.",
+        "family": "Foody",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Martin",
+        "family": "Herold",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Stephen V.",
+        "family": "Stehman",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Curtis E.",
+        "family": "Woodcock",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Michael A.",
+        "family": "Wulder",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "registered_year": {
+      "date-parts": [
+        [
+          2014,
+          5
+        ]
+      ]
+    },
+    "source": "https://api.crossref.org/works/10.1016/j.rse.2014.02.015"
+  },
+  {
+    "key": "breiman2001rf",
+    "doi": "10.1023/A:1010933404324",
+    "status": "verified",
+    "title_similarity": 1.0,
+    "registered_title": "Random Forests",
+    "registered_authors": [
+      {
+        "given": "Leo",
+        "family": "Breiman",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "registered_year": {
+      "date-parts": [
+        [
+          2001,
+          10
+        ]
+      ]
+    },
+    "source": "https://api.crossref.org/works/10.1023/A:1010933404324"
+  },
+  {
+    "key": "pedregosa2011sklearn",
+    "status": "provider-or-proceedings-record",
+    "doi": null
+  },
+  {
+    "key": "unesco_taxila",
+    "status": "provider-or-proceedings-record",
+    "doi": null
+  },
+  {
+    "key": "usgs_landsat_c2",
+    "status": "provider-or-proceedings-record",
+    "doi": null
+  },
+  {
+    "key": "nust2018reproducible",
+    "doi": "10.7717/peerj.5072",
+    "status": "verified",
+    "title_similarity": 1.0,
+    "registered_title": "Reproducible research and GIScience: an evaluation using AGILE conference papers",
+    "registered_authors": [
+      {
+        "given": "Daniel",
+        "family": "N\u00fcst",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Institute for Geoinformatics, University of M\u00fcnster, M\u00fcnster, Germany"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Carlos",
+        "family": "Granell",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Institute of New Imaging Technologies, Universitat Jaume I de Castell\u00f3n, Castell\u00f3n, Spain"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Barbara",
+        "family": "Hofer",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Interfaculty Department of Geoinformatics - Z_GIS, University of Salzburg, Salzburg, Austria"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Markus",
+        "family": "Konkol",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Institute for Geoinformatics, University of M\u00fcnster, M\u00fcnster, Germany"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Frank O.",
+        "family": "Ostermann",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Faculty of Geo-Information Science and Earth Observation (ITC), University of Twente, Enschede, The Netherlands"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Rusne",
+        "family": "Sileryte",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Faculty of Architecture and the Built Environment, Delft University of Technology, Delft, The Netherlands"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Valentina",
+        "family": "Cerutti",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Faculty of Geo-Information Science and Earth Observation (ITC), University of Twente, Enschede, The Netherlands"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "registered_year": {
+      "date-parts": [
+        [
+          2018,
+          7,
+          13
+        ]
+      ]
+    },
+    "source": "https://api.crossref.org/works/10.7717/peerj.5072"
+  },
+  {
+    "key": "hijmans2012cv",
+    "doi": "10.1890/11-0826.1",
+    "status": "verified",
+    "title_similarity": 1.0,
+    "registered_title": "Cross\u2010validation of species distribution models: removing spatial sorting bias and calibration with a null model",
+    "registered_authors": [
+      {
+        "given": "Robert J.",
+        "family": "Hijmans",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "registered_year": {
+      "date-parts": [
+        [
+          2012,
+          3
+        ]
+      ]
+    },
+    "source": "https://api.crossref.org/works/10.1890/11-0826.1"
+  },
+  {
+    "key": "meyer2021aoa",
+    "doi": "10.1111/2041-210X.13650",
+    "status": "verified",
+    "title_similarity": 1.0,
+    "registered_title": "Predicting into unknown space? Estimating the area of applicability of spatial prediction models",
+    "registered_authors": [
+      {
+        "ORCID": "https://orcid.org/0000-0003-0556-0210",
+        "authenticated-orcid": false,
+        "given": "Hanna",
+        "family": "Meyer",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Institute of Landscape Ecology Westf\u00e4lische Wilhelms\u2010Universit\u00e4t M\u00fcnster M\u00fcnster Germany"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-8049-7069",
+        "authenticated-orcid": false,
+        "given": "Edzer",
+        "family": "Pebesma",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Institute for Geoinformatics Westf\u00e4lische Wilhelms\u2010Universit\u00e4t M\u00fcnster M\u00fcnster Germany"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "registered_year": {
+      "date-parts": [
+        [
+          2021,
+          7,
+          26
+        ]
+      ]
+    },
+    "source": "https://api.crossref.org/works/10.1111/2041-210X.13650"
+  },
+  {
+    "key": "meyer2018target",
+    "doi": "10.1016/j.envsoft.2017.12.001",
+    "status": "verified",
+    "title_similarity": 1.0,
+    "registered_title": "Improving performance of spatio-temporal machine learning models using forward feature selection and target-oriented validation",
+    "registered_authors": [
+      {
+        "given": "Hanna",
+        "family": "Meyer",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Christoph",
+        "family": "Reudenbach",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Tomislav",
+        "family": "Hengl",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Marwan",
+        "family": "Katurji",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Thomas",
+        "family": "Nauss",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "registered_year": {
+      "date-parts": [
+        [
+          2018,
+          3
+        ]
+      ]
+    },
+    "source": "https://api.crossref.org/works/10.1016/j.envsoft.2017.12.001"
+  },
+  {
+    "key": "crowley2022risk",
+    "doi": "10.1002/cli2.45",
+    "status": "verified",
+    "title_similarity": 1.0,
+    "registered_title": "Cultural heritage and risk assessments: Gaps, challenges, and future research directions for the inclusion of heritage within climate change adaptation and disaster management",
+    "registered_authors": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-7360-4556",
+        "authenticated-orcid": false,
+        "given": "Kate",
+        "family": "Crowley",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "School of GeoSciences University of Edinburgh  Edinburgh UK"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Rowan",
+        "family": "Jackson",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of GeoSciences University of Edinburgh  Edinburgh UK"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Siona",
+        "family": "O'Connell",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Faculty of Humanities University of Pretoria  Pretoria South Africa"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Dulma",
+        "family": "Karunarthna",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Centre for Asia Pacific Initiatives University of Victoria  Victoria British Columbia Canada"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Esti",
+        "family": "Anantasari",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Gama\u2010InaTEK: Centre of Excellence and Innovation of Disaster Mitigation Technology Universitas Gadjah Mada  Yogyakarta Indonesia"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Arry",
+        "family": "Retnowati",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Gama\u2010InaTEK: Centre of Excellence and Innovation of Disaster Mitigation Technology Universitas Gadjah Mada  Yogyakarta Indonesia"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Dominique",
+        "family": "Niemand",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Faculty of Humanities University of Pretoria  Pretoria South Africa"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "registered_year": {
+      "date-parts": [
+        [
+          2022,
+          6,
+          24
+        ]
+      ]
+    },
+    "source": "https://api.crossref.org/works/10.1002/cli2.45"
+  },
+  {
+    "key": "daly2022adaptation",
+    "doi": "10.15184/aqy.2022.114",
+    "status": "verified",
+    "title_similarity": 1.0,
+    "registered_title": "Climate change adaptation policy and planning for cultural heritage in low- and middle-income countries",
+    "registered_authors": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-3648-0806",
+        "authenticated-orcid": false,
+        "given": "Cathy",
+        "family": "Daly",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-3712-0749",
+        "authenticated-orcid": false,
+        "given": "Sandra",
+        "family": "Fatori\u0107",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-2446-3977",
+        "authenticated-orcid": false,
+        "given": "Bethune",
+        "family": "Carmichael",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Witiya",
+        "family": "Pittungnapoo",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Olufemi",
+        "family": "Adetunji",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "J\u00f8rgen",
+        "family": "Hollesen",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Masoud",
+        "family": "Nakhaei",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Alberto Herrera",
+        "family": "Diaz",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "registered_year": {
+      "date-parts": [
+        [
+          2022,
+          11,
+          2
+        ]
+      ]
+    },
+    "source": "https://api.crossref.org/works/10.15184/aqy.2022.114"
+  },
+  {
+    "key": "sesana2020vulnerability",
+    "doi": "10.1016/j.culher.2019.06.013",
+    "status": "verified",
+    "title_similarity": 1.0,
+    "registered_title": "An integrated approach for assessing the vulnerability of World Heritage Sites to climate change impacts",
+    "registered_authors": [
+      {
+        "given": "Elena",
+        "family": "Sesana",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Alexandre S.",
+        "family": "Gagnon",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Alessandra",
+        "family": "Bonazza",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "John J.",
+        "family": "Hughes",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "registered_year": {
+      "date-parts": [
+        [
+          2020,
+          1
+        ]
+      ]
+    },
+    "source": "https://api.crossref.org/works/10.1016/j.culher.2019.06.013"
+  },
+  {
+    "key": "foody2002accuracy",
+    "doi": "10.1016/S0034-4257(01)00295-4",
+    "status": "verified",
+    "title_similarity": 1.0,
+    "registered_title": "Status of land cover classification accuracy assessment",
+    "registered_authors": [
+      {
+        "given": "Giles M.",
+        "family": "Foody",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "registered_year": {
+      "date-parts": [
+        [
+          2002,
+          4
+        ]
+      ]
+    },
+    "source": "https://api.crossref.org/works/10.1016/S0034-4257(01)00295-4"
+  },
+  {
+    "key": "chen2016xgboost",
+    "doi": "10.1145/2939672.2939785",
+    "status": "verified",
+    "title_similarity": 1.0,
+    "registered_title": "XGBoost",
+    "registered_authors": [
+      {
+        "given": "Tianqi",
+        "family": "Chen",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "University of Washington, Seattle, WA, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Carlos",
+        "family": "Guestrin",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of Washington, Seattle, WA, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "registered_year": {
+      "date-parts": [
+        [
+          2016,
+          8,
+          13
+        ]
+      ]
+    },
+    "source": "https://api.crossref.org/works/10.1145/2939672.2939785"
+  },
+  {
+    "key": "hollmann2025tabpfn",
+    "doi": "10.1038/s41586-024-08328-6",
+    "status": "verified",
+    "title_similarity": 1.0,
+    "registered_title": "Accurate predictions on small data with a tabular foundation model",
+    "registered_authors": [
+      {
+        "ORCID": "https://orcid.org/0000-0001-8556-518X",
+        "authenticated-orcid": false,
+        "given": "Noah",
+        "family": "Hollmann",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0009-0000-0795-6097",
+        "authenticated-orcid": false,
+        "given": "Samuel",
+        "family": "M\u00fcller",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0009-0001-1181-0549",
+        "authenticated-orcid": false,
+        "given": "Lennart",
+        "family": "Purucker",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0009-0000-0688-9435",
+        "authenticated-orcid": false,
+        "given": "Arjun",
+        "family": "Krishnakumar",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Max",
+        "family": "K\u00f6rfer",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Shi Bin",
+        "family": "Hoo",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-5518-7445",
+        "authenticated-orcid": false,
+        "given": "Robin Tibor",
+        "family": "Schirrmeister",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-2037-3694",
+        "authenticated-orcid": false,
+        "given": "Frank",
+        "family": "Hutter",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "registered_year": {
+      "date-parts": [
+        [
+          2025,
+          1,
+          8
+        ]
+      ]
+    },
+    "source": "https://api.crossref.org/works/10.1038/s41586-024-08328-6"
+  },
+  {
+    "key": "prokhorenkova2018catboost",
+    "status": "provider-or-proceedings-record",
+    "doi": null
+  },
+  {
+    "key": "wilson2017practices",
+    "doi": "10.1371/journal.pcbi.1005510",
+    "status": "verified",
+    "registered_title": "Good enough practices in scientific computing",
+    "registered_authors": [
+      {
+        "ORCID": "https://orcid.org/0000-0001-8659-8979",
+        "authenticated-orcid": true,
+        "given": "Greg",
+        "family": "Wilson",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-6983-2759",
+        "authenticated-orcid": true,
+        "given": "Jennifer",
+        "family": "Bryan",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-4798-9499",
+        "authenticated-orcid": true,
+        "given": "Karen",
+        "family": "Cranston",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Justin",
+        "family": "Kitzes",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-5539-0999",
+        "authenticated-orcid": true,
+        "given": "Lex",
+        "family": "Nederbragt",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Tracy K.",
+        "family": "Teal",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "registered_year": {
+      "date-parts": [
+        [
+          2017,
+          6,
+          22
+        ]
+      ]
+    },
+    "source": "https://api.crossref.org/works/10.1371/journal.pcbi.1005510",
+    "title_similarity": 1.0
+  },
+  {
+    "key": "benjamini1995fdr",
+    "doi": "10.1111/j.2517-6161.1995.tb02031.x",
+    "status": "verified",
+    "registered_title": "Controlling the False Discovery Rate: A Practical and Powerful Approach to Multiple Testing",
+    "registered_authors": [
+      {
+        "given": "Yoav",
+        "family": "Benjamini",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Tel Aviv University , Israel"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Yosef",
+        "family": "Hochberg",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Tel Aviv University , Israel"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "registered_year": {
+      "date-parts": [
+        [
+          1995,
+          1,
+          1
+        ]
+      ]
+    },
+    "source": "https://api.crossref.org/works/10.1111/j.2517-6161.1995.tb02031.x",
+    "title_similarity": 1.0
+  },
+  {
+    "key": "esa_worldcover",
+    "doi": null,
+    "status": "verified-provider-page",
+    "source": "https://esa-worldcover.org/en/data-access",
+    "checked_date": "2026-09-06"
+  },
+  {
+    "key": "nasa_power",
+    "doi": null,
+    "status": "verified-provider-page",
+    "source": "https://power.larc.nasa.gov/docs/services/api/temporal/daily/",
+    "checked_date": "2026-09-06"
+  },
+  {
+    "key": "openmeteo_archive",
+    "doi": null,
+    "status": "verified-provider-page",
+    "source": "https://open-meteo.com/en/docs/historical-weather-api",
+    "checked_date": "2026-09-06"
+  },
+  {
+    "key": "sen1968slope",
+    "doi": "10.1080/01621459.1968.10480934",
+    "status": "verified",
+    "registered_title": "Estimates of the Regression Coefficient Based on Kendall's Tau",
+    "registered_authors": [
+      {
+        "given": "Pranab Kumar",
+        "family": "Sen",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "registered_year": {
+      "date-parts": [
+        [
+          1968,
+          12
+        ]
+      ]
+    },
+    "source": "https://api.crossref.org/works/10.1080/01621459.1968.10480934",
+    "title_similarity": 1.0
+  }
+]

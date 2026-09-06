@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "status": "REVIEW",
+  "profile": "publication",
+  "started_utc": "2026-09-06T12:47:58.427195+00:00",
+  "git_commit": "unavailable",
+  "source_notebook": "notebooks/Taxila_CHIP_Q1_Executable_Analysis.ipynb",
+  "source_notebook_sha256": "45AD1BF6F7B26F309596D1D8853DD9192CE05D9A709B51D36306B07DA8A1662B",
+  "data_root": "data/Taxila_CHIP_Frozen_Evidence_Data",
+  "random_seed": 311,
+  "python": "3.12.14",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "packages": {
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scipy": "1.17.0",
+    "scikit-learn": "1.8.0",
+    "matplotlib": "3.10.8",
+    "seaborn": "0.13.2",
+    "joblib": "1.5.3",
+    "rasterio": "1.5.1",
+    "geopandas": "1.1.4",
+    "pyogrio": "0.13.0",
+    "shapely": "2.1.2",
+    "pyproj": "3.7.2",
+    "nbformat": "5.11.1",
+    "nbclient": "0.11.0"
+  },
+  "scientific_boundary": "Relative landscape-pressure and field-inspection prioritisation only; not confirmed deterioration, causal climate impact, legal boundaries or external accuracy.",
+  "executed_notebook": "Taxila_CHIP_Q1_publication_executed.ipynb",
+  "executed_notebook_sha256": "B1C1A2ABBCB47810EDA5C74F572CB85F52038E3DF52332C70EF433F501F2ABB0",
+  "artifact_manifest": "artifacts/output_manifest.csv",
+  "headline_evidence_lock": {
+    "status": "FAIL",
+    "passed": 24,
+    "total": 27,
+    "failed_claims": [
+      "Primary proxy macro-F1",
+      "Primary proxy overall agreement",
+      "Primary proxy top-label ECE"
+    ]
+  },
+  "data_quality_status": "PASS",
+  "finished_utc": "2026-09-06T13:03:23.760860+00:00",
+  "duration_seconds": 925.334
+}

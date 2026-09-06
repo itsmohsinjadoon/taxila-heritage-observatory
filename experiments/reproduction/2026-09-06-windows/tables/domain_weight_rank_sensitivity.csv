@@ -1,0 +1,52 @@
+alpha,component_id,component_name,rank_median,rank_ci_low_95,rank_ci_high_95,probability_top_3,probability_top_5,draws
+0.5,139-001,Khanpur Cave,14.0,12.0,15.0,0.0,0.0,50000
+0.5,139-003,Bhir Mound,16.0,14.0,17.0,0.0,0.0,50000
+0.5,139-004,Sirkap (fortified city),12.0,1.0,15.0,0.3174,0.35126,50000
+0.5,139-005,Sirsukh (fortified ruined city),9.0,3.0,11.0,0.20818,0.29834,50000
+0.5,139-006,Dharmarajika stupa and monastery,5.0,2.0,8.0,0.17794,0.5101,50000
+0.5,139-007,Khader Mohra (Akhuri),6.0,5.0,9.0,0.0,0.0295,50000
+0.5,139-008,Kalawan group of buildings,7.0,2.0,9.0,0.33852,0.43058,50000
+0.5,139-009,Giri complex of monuments,2.0,1.0,9.0,0.6826,0.72908,50000
+0.5,139-010,Kunala stupa and monastery,10.0,6.0,10.0,0.0,0.0087,50000
+0.5,139-011,Jandial complex,16.0,13.0,17.0,0.0,0.0,50000
+0.5,139-012,Lalchak and Badalpur Buddhist stuppa,15.0,12.0,17.0,0.0,0.0,50000
+0.5,139-013,Mohra Moradu stupa and monastery,5.0,4.0,11.0,0.0,0.56942,50000
+0.5,139-014,Pippala stupa and monastery,11.0,7.0,13.0,0.0,0.0,50000
+0.5,139-015,Jaulian stupa and monastery,4.0,2.0,7.0,0.29072,0.73506,50000
+0.5,139-016,Lalchak mounds,13.0,4.0,16.0,0.0,0.22882,50000
+0.5,139-017,Buddhist remains around Bhallar stupa,8.0,1.0,15.0,0.37076,0.4604,50000
+0.5,139-018,Giri Mosque and tombs,3.0,2.0,11.0,0.61388,0.64874,50000
+1.0,139-001,Khanpur Cave,14.0,12.0,15.0,0.0,0.0,50000
+1.0,139-003,Bhir Mound,16.0,14.0,17.0,0.0,0.0,50000
+1.0,139-004,Sirkap (fortified city),12.0,1.0,15.0,0.2228,0.2678,50000
+1.0,139-005,Sirsukh (fortified ruined city),9.0,3.0,11.0,0.10022,0.1976,50000
+1.0,139-006,Dharmarajika stupa and monastery,5.0,2.0,8.0,0.21858,0.51228,50000
+1.0,139-007,Khader Mohra (Akhuri),6.0,5.0,9.0,0.0,0.04678,50000
+1.0,139-008,Kalawan group of buildings,7.0,2.0,9.0,0.25184,0.38456,50000
+1.0,139-009,Giri complex of monuments,1.0,1.0,9.0,0.7772,0.83422,50000
+1.0,139-010,Kunala stupa and monastery,10.0,6.0,10.0,0.0,0.00842,50000
+1.0,139-011,Jandial complex,16.0,13.0,17.0,0.0,0.0,50000
+1.0,139-012,Lalchak and Badalpur Buddhist stuppa,15.0,12.0,17.0,0.0,0.0,50000
+1.0,139-013,Mohra Moradu stupa and monastery,5.0,4.0,11.0,0.0,0.61544,50000
+1.0,139-014,Pippala stupa and monastery,10.0,7.0,13.0,0.0,0.0,50000
+1.0,139-015,Jaulian stupa and monastery,4.0,2.0,7.0,0.44228,0.83936,50000
+1.0,139-016,Lalchak mounds,13.0,4.0,16.0,0.0,0.1204,50000
+1.0,139-017,Buddhist remains around Bhallar stupa,8.0,1.0,15.0,0.30588,0.44094,50000
+1.0,139-018,Giri Mosque and tombs,3.0,2.0,11.0,0.6812,0.7322,50000
+2.0,139-001,Khanpur Cave,14.0,12.0,15.0,0.0,0.0,50000
+2.0,139-003,Bhir Mound,16.0,15.0,17.0,0.0,0.0,50000
+2.0,139-004,Sirkap (fortified city),12.0,1.0,14.0,0.13052,0.18128,50000
+2.0,139-005,Sirsukh (fortified ruined city),9.0,3.0,11.0,0.02882,0.10518,50000
+2.0,139-006,Dharmarajika stupa and monastery,5.0,2.0,8.0,0.21582,0.51936,50000
+2.0,139-007,Khader Mohra (Akhuri),6.0,5.0,9.0,0.0,0.06796,50000
+2.0,139-008,Kalawan group of buildings,7.0,2.0,9.0,0.16188,0.33394,50000
+2.0,139-009,Giri complex of monuments,1.0,1.0,8.0,0.86948,0.92464,50000
+2.0,139-010,Kunala stupa and monastery,10.0,6.0,10.0,0.0,0.0063,50000
+2.0,139-011,Jandial complex,16.0,13.0,17.0,0.0,0.0,50000
+2.0,139-012,Lalchak and Badalpur Buddhist stuppa,15.0,13.0,17.0,0.0,0.0,50000
+2.0,139-013,Mohra Moradu stupa and monastery,5.0,4.0,11.0,0.0,0.66606,50000
+2.0,139-014,Pippala stupa and monastery,10.0,7.0,12.0,0.0,0.0,50000
+2.0,139-015,Jaulian stupa and monastery,3.0,2.0,7.0,0.61706,0.92168,50000
+2.0,139-016,Lalchak mounds,13.0,5.0,16.0,0.0,0.0422,50000
+2.0,139-017,Buddhist remains around Bhallar stupa,8.0,1.0,15.0,0.22106,0.41268,50000
+2.0,139-018,Giri Mosque and tombs,3.0,2.0,11.0,0.75536,0.81872,50000

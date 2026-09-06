@@ -6,7 +6,7 @@ prioritisation across the Taxila World Heritage property, Pakistan**.
 
 This repository consolidates the executable analysis, frozen evidence package, experiments, results, publication figures, source-traceability records, and LaTeX manuscript prepared for further revision toward submission to the *Journal of Cultural Heritage*.
 
-> **Research status:** private pre-submission working repository. Deterministic and frozen-table checks pass, while the full proxy-model refit remains sensitive to the numerical environment and has not yet reproduced every locked value on Windows. The dated audit records this issue together with the remaining author declarations, permissions, source-version, and journal-formatting actions required before submission.
+> **Research status (6 September 2026):** revised manuscript and a seven-family buffered spatial experiment are available. The new notebook was executed in the author's Google Colab and rerun on Windows; the selected random forest has macro-F1 0.821433 in both. The corrected full historical reproduction completed with 24/27 frozen locks, preserving three MLP discrepancies. The study supports relative inspection prioritisation, not independently validated monument-condition prediction. Author declarations and reviewer-access arrangements remain pending. See [current audit](docs/audit/RESEARCH_REVISION_2026-09-06.md).
 
 ![Taxila study area, mapped UNESCO components, and 500 m analytical neighbourhoods](docs/assets/figure_01_taxila_study_area_preview.png)
 
@@ -37,6 +37,13 @@ The output is a **relative field-inspection priority**, not a monument-damage pr
 | [`scripts/`](scripts/) | Reproduction runner, scientific data audit, and repository validation |
 
 The exact environment, two execution profiles, evidence-lock rule, and known rerun boundary are documented in [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md).
+
+## Current revision entry points
+
+- [Revised main paper](manuscript/main.tex) and [supplement](manuscript/supplementary/supplementary_information.tex).
+- [Executed Google Colab notebook](https://colab.research.google.com/drive/1_-gwyfIhY3L1pYl3VSb3xihCd5TwM2HI) (account permissions apply).
+- [Clean self-contained notebook](notebooks/Taxila_Spatial_Benchmark_Extension.ipynb), [Colab evidence](experiments/spatial_extension/2026-09-06-colab), [Windows evidence](experiments/spatial_extension/2026-09-06-windows) and [platform comparison](experiments/spatial_extension/cross_platform_comparison.csv).
+- [Corrected full reproduction](experiments/reproduction/2026-09-06-windows) and [71-check revision validation](docs/audit/REVISION_VALIDATION_2026-09-06.json).
 
 ## Quick start
 

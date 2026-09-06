@@ -1,0 +1,643 @@
+{
+  "schema_version": 1,
+  "generated_utc": "2026-09-06T13:03:23.602687+00:00",
+  "data_root": "data/Taxila_CHIP_Frozen_Evidence_Data",
+  "intended_grain": {
+    "components": "18 inventory records; 17 mapped analytical points",
+    "landsat_and_scores": "component × radius × epoch",
+    "terrain": "component × radius",
+    "climate": "one site-mean row per day",
+    "proxy_features": "one row per sampled raster pixel"
+  },
+  "status": "PASS",
+  "checks_passed": 30,
+  "checks_total": 30,
+  "checks": [
+    {
+      "check_id": "frozen_sha256_manifest",
+      "passed": true,
+      "severity": "critical",
+      "observed": {
+        "verified": 157,
+        "failures": []
+      },
+      "expected": {
+        "verified": 157,
+        "failures": []
+      },
+      "implication": "A failure means the frozen evidence no longer matches its recorded study snapshot."
+    },
+    {
+      "check_id": "component_inventory",
+      "passed": true,
+      "severity": "high",
+      "observed": 18,
+      "expected": 18,
+      "implication": "The UNESCO inventory contains 18 component records."
+    },
+    {
+      "check_id": "component_id_unique",
+      "passed": true,
+      "severity": "critical",
+      "observed": 18,
+      "expected": 18,
+      "implication": "Duplicate identifiers would mix component-level observations."
+    },
+    {
+      "check_id": "saraikala_geometry_boundary",
+      "passed": true,
+      "severity": "high",
+      "observed": [
+        "139-002"
+      ],
+      "expected": [
+        "139-002"
+      ],
+      "implication": "Exactly one known unresolved component geometry must remain explicit, not silently imputed."
+    },
+    {
+      "check_id": "component_crs",
+      "passed": true,
+      "severity": "high",
+      "observed": "EPSG:32643",
+      "expected": "EPSG:32643",
+      "implication": "Metric analytical neighbourhoods require the declared projected CRS."
+    },
+    {
+      "check_id": "landsat_row_grain",
+      "passed": true,
+      "severity": "critical",
+      "observed": 255,
+      "expected": 255,
+      "implication": "landsat must contain one row at its declared analytical grain."
+    },
+    {
+      "check_id": "landsat_key_unique",
+      "passed": true,
+      "severity": "critical",
+      "observed": 0,
+      "expected": 0,
+      "implication": "Duplicate landsat keys would double-count components."
+    },
+    {
+      "check_id": "landsat_complete_components",
+      "passed": true,
+      "severity": "high",
+      "observed": 17,
+      "expected": 17,
+      "implication": "landsat must cover every mapped component and exclude unresolved Saraikala."
+    },
+    {
+      "check_id": "landsat_no_null_cells",
+      "passed": true,
+      "severity": "high",
+      "observed": 0,
+      "expected": 0,
+      "implication": "Unexpected missing values would alter landsat results."
+    },
+    {
+      "check_id": "landsat_radii",
+      "passed": true,
+      "severity": "high",
+      "observed": [
+        250,
+        500,
+        1000
+      ],
+      "expected": [
+        250,
+        500,
+        1000
+      ],
+      "implication": "landsat must retain the 250, 500 and 1000 m sensitivity design."
+    },
+    {
+      "check_id": "landsat_epochs",
+      "passed": true,
+      "severity": "high",
+      "observed": [
+        "E2004",
+        "E2009",
+        "E2014",
+        "E2019",
+        "E2024"
+      ],
+      "expected": [
+        "E2004",
+        "E2009",
+        "E2014",
+        "E2019",
+        "E2024"
+      ],
+      "implication": "landsat must retain all five declared Landsat epochs."
+    },
+    {
+      "check_id": "terrain_row_grain",
+      "passed": true,
+      "severity": "critical",
+      "observed": 51,
+      "expected": 51,
+      "implication": "terrain must contain one row at its declared analytical grain."
+    },
+    {
+      "check_id": "terrain_key_unique",
+      "passed": true,
+      "severity": "critical",
+      "observed": 0,
+      "expected": 0,
+      "implication": "Duplicate terrain keys would double-count components."
+    },
+    {
+      "check_id": "terrain_complete_components",
+      "passed": true,
+      "severity": "high",
+      "observed": 17,
+      "expected": 17,
+      "implication": "terrain must cover every mapped component and exclude unresolved Saraikala."
+    },
+    {
+      "check_id": "terrain_no_null_cells",
+      "passed": true,
+      "severity": "high",
+      "observed": 0,
+      "expected": 0,
+      "implication": "Unexpected missing values would alter terrain results."
+    },
+    {
+      "check_id": "terrain_radii",
+      "passed": true,
+      "severity": "high",
+      "observed": [
+        250,
+        500,
+        1000
+      ],
+      "expected": [
+        250,
+        500,
+        1000
+      ],
+      "implication": "terrain must retain the 250, 500 and 1000 m sensitivity design."
+    },
+    {
+      "check_id": "scores_row_grain",
+      "passed": true,
+      "severity": "critical",
+      "observed": 255,
+      "expected": 255,
+      "implication": "scores must contain one row at its declared analytical grain."
+    },
+    {
+      "check_id": "scores_key_unique",
+      "passed": true,
+      "severity": "critical",
+      "observed": 0,
+      "expected": 0,
+      "implication": "Duplicate scores keys would double-count components."
+    },
+    {
+      "check_id": "scores_complete_components",
+      "passed": true,
+      "severity": "high",
+      "observed": 17,
+      "expected": 17,
+      "implication": "scores must cover every mapped component and exclude unresolved Saraikala."
+    },
+    {
+      "check_id": "scores_no_null_cells",
+      "passed": true,
+      "severity": "high",
+      "observed": 0,
+      "expected": 0,
+      "implication": "Unexpected missing values would alter scores results."
+    },
+    {
+      "check_id": "scores_radii",
+      "passed": true,
+      "severity": "high",
+      "observed": [
+        250,
+        500,
+        1000
+      ],
+      "expected": [
+        250,
+        500,
+        1000
+      ],
+      "implication": "scores must retain the 250, 500 and 1000 m sensitivity design."
+    },
+    {
+      "check_id": "scores_epochs",
+      "passed": true,
+      "severity": "high",
+      "observed": [
+        "E2004",
+        "E2009",
+        "E2014",
+        "E2019",
+        "E2024"
+      ],
+      "expected": [
+        "E2004",
+        "E2009",
+        "E2014",
+        "E2019",
+        "E2024"
+      ],
+      "implication": "scores must retain all five declared Landsat epochs."
+    },
+    {
+      "check_id": "proxy_pixel_key_unique",
+      "passed": true,
+      "severity": "critical",
+      "observed": 0,
+      "expected": 0,
+      "implication": "Duplicated pixels would inflate the proxy benchmark."
+    },
+    {
+      "check_id": "proxy_no_null_cells",
+      "passed": true,
+      "severity": "high",
+      "observed": 0,
+      "expected": 0,
+      "implication": "Missing model features would change the fitted sample."
+    },
+    {
+      "check_id": "proxy_classes",
+      "passed": true,
+      "severity": "high",
+      "observed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "expected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "implication": "The fixed target contains six WorldCover-derived proxy classes."
+    },
+    {
+      "check_id": "proxy_canonical_partition_counts",
+      "passed": true,
+      "severity": "critical",
+      "observed": {
+        "development": 12094,
+        "buffer_excluded": 4467,
+        "outer_proxy_test": 4188
+      },
+      "expected": {
+        "development": 12094,
+        "buffer_excluded": 4467,
+        "outer_proxy_test": 4188
+      },
+      "implication": "A changed block-column split invalidates the locked spatial benchmark."
+    },
+    {
+      "check_id": "proxy_canonical_partition_blocks",
+      "passed": true,
+      "severity": "critical",
+      "observed": {
+        "development": 60,
+        "buffer_excluded": 20,
+        "outer_proxy_test": 20
+      },
+      "expected": {
+        "development": 60,
+        "buffer_excluded": 20,
+        "outer_proxy_test": 20
+      },
+      "implication": "The development, buffer and test geographies must preserve the declared block design."
+    },
+    {
+      "check_id": "climate_daily_coverage",
+      "passed": true,
+      "severity": "critical",
+      "observed": {
+        "rows": 12784,
+        "unique_dates": 12784,
+        "start": "1991-01-01",
+        "end": "2025-12-31"
+      },
+      "expected": {
+        "rows": 12784,
+        "unique_dates": 12784,
+        "start": "1991-01-01",
+        "end": "2025-12-31"
+      },
+      "implication": "Missing or duplicated days would bias climate aggregation."
+    },
+    {
+      "check_id": "climate_no_null_cells",
+      "passed": true,
+      "severity": "high",
+      "observed": 0,
+      "expected": 0,
+      "implication": "Unexpected gaps would alter annual and seasonal context."
+    },
+    {
+      "check_id": "raster_grid_alignment",
+      "passed": true,
+      "severity": "critical",
+      "observed": {
+        "files": 21,
+        "all_aligned": true
+      },
+      "expected": {
+        "files": 21,
+        "all_aligned": true
+      },
+      "implication": "Misaligned rasters would invalidate pixelwise endpoint and component extraction."
+    }
+  ],
+  "profiles": {
+    "components": {
+      "rows": 18,
+      "columns": 11,
+      "duplicate_rows": 0,
+      "null_cells": 4,
+      "null_geometries": 1,
+      "crs": "EPSG:32643"
+    },
+    "landsat_component_epoch_radius": {
+      "rows": 255,
+      "columns": 25,
+      "duplicate_rows": 0,
+      "null_cells": 0
+    },
+    "terrain_component_radius": {
+      "rows": 51,
+      "columns": 14,
+      "duplicate_rows": 0,
+      "null_cells": 0
+    },
+    "integrated_scores": {
+      "rows": 255,
+      "columns": 39,
+      "duplicate_rows": 0,
+      "null_cells": 0
+    },
+    "proxy_features": {
+      "rows": 20749,
+      "columns": 15,
+      "duplicate_rows": 0,
+      "null_cells": 0
+    },
+    "proxy_partition_contract": {
+      "canonical_rule": "block columns 3–4 test; 2 and 5 buffer; remaining columns development",
+      "legacy_partition_field_mismatches": 7085,
+      "legacy_field_status": "retained frozen metadata; not consumed by the canonical model"
+    },
+    "climate_site_daily": {
+      "rows": 12784,
+      "columns": 19,
+      "duplicate_rows": 0,
+      "null_cells": 0
+    },
+    "rasters": {
+      "files": 21,
+      "specifications": [
+        {
+          "file": "E2004_E2024_spectral_convergence.tif",
+          "width": 616,
+          "height": 655,
+          "bands": 1,
+          "crs": "EPSG:32643",
+          "pixel_x": 30.0,
+          "pixel_y": -30.0,
+          "origin_x": 292980.0,
+          "origin_y": 3748620.0
+        },
+        {
+          "file": "E2004_oli_like_indices.tif",
+          "width": 616,
+          "height": 655,
+          "bands": 4,
+          "crs": "EPSG:32643",
+          "pixel_x": 30.0,
+          "pixel_y": -30.0,
+          "origin_x": 292980.0,
+          "origin_y": 3748620.0
+        },
+        {
+          "file": "E2004_provisional_landcover.tif",
+          "width": 616,
+          "height": 655,
+          "bands": 1,
+          "crs": "EPSG:32643",
+          "pixel_x": 30.0,
+          "pixel_y": -30.0,
+          "origin_x": 292980.0,
+          "origin_y": 3748620.0
+        },
+        {
+          "file": "E2004_relative_landscape_pressure.tif",
+          "width": 616,
+          "height": 655,
+          "bands": 1,
+          "crs": "EPSG:32643",
+          "pixel_x": 30.0,
+          "pixel_y": -30.0,
+          "origin_x": 292980.0,
+          "origin_y": 3748620.0
+        },
+        {
+          "file": "E2004_valid_observation_count.tif",
+          "width": 616,
+          "height": 655,
+          "bands": 1,
+          "crs": "EPSG:32643",
+          "pixel_x": 30.0,
+          "pixel_y": -30.0,
+          "origin_x": 292980.0,
+          "origin_y": 3748620.0
+        },
+        {
+          "file": "E2009_oli_like_indices.tif",
+          "width": 616,
+          "height": 655,
+          "bands": 4,
+          "crs": "EPSG:32643",
+          "pixel_x": 30.0,
+          "pixel_y": -30.0,
+          "origin_x": 292980.0,
+          "origin_y": 3748620.0
+        },
+        {
+          "file": "E2009_provisional_landcover.tif",
+          "width": 616,
+          "height": 655,
+          "bands": 1,
+          "crs": "EPSG:32643",
+          "pixel_x": 30.0,
+          "pixel_y": -30.0,
+          "origin_x": 292980.0,
+          "origin_y": 3748620.0
+        },
+        {
+          "file": "E2009_relative_landscape_pressure.tif",
+          "width": 616,
+          "height": 655,
+          "bands": 1,
+          "crs": "EPSG:32643",
+          "pixel_x": 30.0,
+          "pixel_y": -30.0,
+          "origin_x": 292980.0,
+          "origin_y": 3748620.0
+        },
+        {
+          "file": "E2009_valid_observation_count.tif",
+          "width": 616,
+          "height": 655,
+          "bands": 1,
+          "crs": "EPSG:32643",
+          "pixel_x": 30.0,
+          "pixel_y": -30.0,
+          "origin_x": 292980.0,
+          "origin_y": 3748620.0
+        },
+        {
+          "file": "E2014_oli_like_indices.tif",
+          "width": 616,
+          "height": 655,
+          "bands": 4,
+          "crs": "EPSG:32643",
+          "pixel_x": 30.0,
+          "pixel_y": -30.0,
+          "origin_x": 292980.0,
+          "origin_y": 3748620.0
+        },
+        {
+          "file": "E2014_provisional_landcover.tif",
+          "width": 616,
+          "height": 655,
+          "bands": 1,
+          "crs": "EPSG:32643",
+          "pixel_x": 30.0,
+          "pixel_y": -30.0,
+          "origin_x": 292980.0,
+          "origin_y": 3748620.0
+        },
+        {
+          "file": "E2014_relative_landscape_pressure.tif",
+          "width": 616,
+          "height": 655,
+          "bands": 1,
+          "crs": "EPSG:32643",
+          "pixel_x": 30.0,
+          "pixel_y": -30.0,
+          "origin_x": 292980.0,
+          "origin_y": 3748620.0
+        },
+        {
+          "file": "E2014_valid_observation_count.tif",
+          "width": 616,
+          "height": 655,
+          "bands": 1,
+          "crs": "EPSG:32643",
+          "pixel_x": 30.0,
+          "pixel_y": -30.0,
+          "origin_x": 292980.0,
+          "origin_y": 3748620.0
+        },
+        {
+          "file": "E2019_oli_like_indices.tif",
+          "width": 616,
+          "height": 655,
+          "bands": 4,
+          "crs": "EPSG:32643",
+          "pixel_x": 30.0,
+          "pixel_y": -30.0,
+          "origin_x": 292980.0,
+          "origin_y": 3748620.0
+        },
+        {
+          "file": "E2019_provisional_landcover.tif",
+          "width": 616,
+          "height": 655,
+          "bands": 1,
+          "crs": "EPSG:32643",
+          "pixel_x": 30.0,
+          "pixel_y": -30.0,
+          "origin_x": 292980.0,
+          "origin_y": 3748620.0
+        },
+        {
+          "file": "E2019_relative_landscape_pressure.tif",
+          "width": 616,
+          "height": 655,
+          "bands": 1,
+          "crs": "EPSG:32643",
+          "pixel_x": 30.0,
+          "pixel_y": -30.0,
+          "origin_x": 292980.0,
+          "origin_y": 3748620.0
+        },
+        {
+          "file": "E2019_valid_observation_count.tif",
+          "width": 616,
+          "height": 655,
+          "bands": 1,
+          "crs": "EPSG:32643",
+          "pixel_x": 30.0,
+          "pixel_y": -30.0,
+          "origin_x": 292980.0,
+          "origin_y": 3748620.0
+        },
+        {
+          "file": "E2024_oli_like_indices.tif",
+          "width": 616,
+          "height": 655,
+          "bands": 4,
+          "crs": "EPSG:32643",
+          "pixel_x": 30.0,
+          "pixel_y": -30.0,
+          "origin_x": 292980.0,
+          "origin_y": 3748620.0
+        },
+        {
+          "file": "E2024_provisional_landcover.tif",
+          "width": 616,
+          "height": 655,
+          "bands": 1,
+          "crs": "EPSG:32643",
+          "pixel_x": 30.0,
+          "pixel_y": -30.0,
+          "origin_x": 292980.0,
+          "origin_y": 3748620.0
+        },
+        {
+          "file": "E2024_relative_landscape_pressure.tif",
+          "width": 616,
+          "height": 655,
+          "bands": 1,
+          "crs": "EPSG:32643",
+          "pixel_x": 30.0,
+          "pixel_y": -30.0,
+          "origin_x": 292980.0,
+          "origin_y": 3748620.0
+        },
+        {
+          "file": "E2024_valid_observation_count.tif",
+          "width": 616,
+          "height": 655,
+          "bands": 1,
+          "crs": "EPSG:32643",
+          "pixel_x": 30.0,
+          "pixel_y": -30.0,
+          "origin_x": 292980.0,
+          "origin_y": 3748620.0
+        }
+      ]
+    }
+  },
+  "scientific_boundary": "These checks establish internal completeness, declared grain and file integrity. They do not create field-condition labels, official UNESCO polygons, station validation, causal identification or external-site accuracy."
+}

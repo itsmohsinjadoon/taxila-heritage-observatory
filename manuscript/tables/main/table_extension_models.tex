@@ -1,0 +1,13 @@
+\begin{table}[tbp]\centering\small
+\caption{Buffered spatial extension. Family selection uses inner development macro-F1; outer scores are retrospective proxy agreement.}\label{tab:models}
+\begin{tabular}{p{.35\linewidth}rrrr}\toprule
+Model & Inner F1 & Outer F1 & 95\% interval & ECE \\\midrule
+Random forest (primary) & 0.695 & 0.821 & 0.691--0.835 & 0.014 \\
+Logistic regression & 0.655 & 0.807 & 0.680--0.822 & 0.050 \\
+MLP & 0.624 & 0.849 & 0.723--0.888 & 0.020 \\
+Extra trees & 0.617 & 0.826 & 0.694--0.840 & 0.029 \\
+XGBoost & 0.616 & 0.827 & 0.699--0.845 & 0.017 \\
+CatBoost & 0.614 & 0.792 & 0.680--0.825 & 0.017 \\
+Histogram gradient boosting & 0.611 & 0.846 & 0.704--0.857 & 0.051 \\
+\bottomrule\end{tabular}
+\end{table}
