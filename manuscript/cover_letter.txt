@@ -72,5 +72,6 @@ formats set out in the Guide for Authors.
 Yours sincerely,
 
 Mohsin Khan (corresponding author), on behalf of all authors
-National University of Computer and Emerging Sciences, Islamabad
+Department of Artificial Intelligence and Data Science, FAST School of Computing,
+National University of Computer and Emerging Sciences (FAST-NUCES), Islamabad 44000, Pakistan
 mohsin.khan@isb.nu.edu.pk

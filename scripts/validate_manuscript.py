@@ -261,8 +261,11 @@ def main() -> int:
     for tex_file in sorted(root.rglob("*.tex")):
         if "unused" in tex_file.parts:
             continue
-        for m in re.finditer(r"\[\[(.+?)\]\]", read(tex_file)):
-            warns.append(f"{tex_file.name}: unresolved placeholder: {m.group(1)[:70]}")
+        # DOTALL: placeholders routinely wrap across lines, and a single-line
+        # pattern silently under-reports them, which is the dangerous direction.
+        for m in re.finditer(r"\[\[(.+?)\]\]", read(tex_file), re.S):
+            text = " ".join(m.group(1).split())
+            warns.append(f"{tex_file.name}: unresolved placeholder: {text[:80]}")
 
     # --- report ------------------------------------------------------------
     print(f"main display items : {n_fig} figures + {n_tab} tables = {n_fig + n_tab} (cap {DISPLAY_CAP})")
