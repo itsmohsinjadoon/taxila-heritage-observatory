@@ -189,6 +189,27 @@ def main() -> int:
         if aim > AIM_CAP:
             fails.append(f"Research aim {aim} words exceeds cap {AIM_CAP}")
 
+    # The supplement is a separate document and cannot \ref a main-text label, so
+    # it cites main equations by number. Those numbers are hardcoded and would
+    # drift silently whenever an equation is added, removed or relocated, so
+    # check each against the numbering derived from the main document.
+    eq_labels = re.findall(r"\\begin\{equation\*?\}(.*?)\\end\{equation\*?\}", doc, re.S)
+    eq_number = {}
+    for n, eq_body in enumerate(eq_labels, 1):
+        if (lab := LABEL_RE.search(eq_body)):
+            eq_number[lab.group(1)] = n
+    canonical = {"oriented percentile definition": "eq:percentile"}
+    for m in re.finditer(r"([A-Za-z][A-Za-z\s-]{4,60}?)\s*\(main text, Eq\.~(\d+)\)", supp):
+        phrase = " ".join(m.group(1).split()).lower()
+        cited_eq = int(m.group(2))
+        label = next((v for k, v in canonical.items() if k in phrase), None)
+        if label is None:
+            warns.append(f"supplement: cross-document reference to main Eq. {cited_eq} "
+                         f"('{phrase}') has no known label; verify by hand")
+        elif eq_number.get(label) != cited_eq:
+            fails.append(f"supplement: cites main text Eq. {cited_eq} for {label}, "
+                         f"which is Eq. {eq_number.get(label)}")
+
     hl_path = root / "highlights.txt"
     highlights = [ln.strip().lstrip("-").strip()
                   for ln in read(hl_path).splitlines() if ln.strip()]
