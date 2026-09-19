@@ -9,6 +9,7 @@
 \setlength{\emergencystretch}{2em}
 \input{../sections/result_macros}
 \begin{document}
+\renewcommand{\thesection}{S\arabic{section}}
 \renewcommand{\thetable}{S\arabic{table}}
 \renewcommand{\thefigure}{S\arabic{figure}}
 \begin{center}\Large\bfseries Supplementary Information\end{center}
@@ -55,7 +56,7 @@ et0\_sum\_mm & 2.2850 & -1.2405 & 5.5941 & 0.2164 & 0.2597 \\
 \endgroup
 Precipitation and evapotranspiration slopes are in mm year$^{-1}$, temperature slopes in $^\circ$C year$^{-1}$, humidity in percentage points year$^{-1}$, soil moisture in m$^3$ m$^{-3}$ year$^{-1}$ and event counts in days year$^{-1}$. Effective-sample-size diagnostics use detrended lag-one correlation and are bounded by the observed record length; they do not replace the bootstrap.
 \begin{figure}[tbp]\centering
-\includegraphics[width=\textwidth]{figure_s06_annual_climate_trends.pdf}
+\includegraphics[width=\textwidth]{figure_s01_annual_climate_trends.pdf}
 \caption{Annual climate series and robust trend fits for the regional four-cell average, 1991--2025. Intervals are residual-block replicates; inference is conditional on the weather product.}\label{fig:s-trends}
 \end{figure}
 
@@ -298,7 +299,7 @@ The outer stripe had been examined previously, making this a retrospective compa
 
 
 \begin{figure}[tbp]\centering
-\includegraphics[width=\textwidth]{figure_s05_weather_product_comparison.pdf}
+\includegraphics[width=\textwidth]{figure_s02_weather_product_comparison.pdf}
 \caption{Matched annual precipitation and temperature in the two gridded weather products. Dashed lines indicate equality. Product disagreement constrains environmental interpretation in the absence of station validation; this figure was carried in the main article of earlier manuscript generations.}\label{fig:s-weather}
 \end{figure}
 
@@ -361,6 +362,14 @@ All pairwise crossings of the fixed E2024 linear scores were enumerated independ
 \input{../tables/supplementary/table_exact_weight_intervals}
 \section{Additional environmental diagnostics}
 Source manifests provide retained scene identifiers, acquisition windows and preprocessing specifications. The following figures supply acquisition-specific weather, terrain and indicator-dependence details supporting the main analysis.
+\begin{figure}[p]\centering\includegraphics[width=\textwidth,height=.77\textheight,keepaspectratio]{figure_s03_climatology.pdf}\caption{Daily climatology of the regional four-cell average, 1991--2025, showing the post-monsoon window from which the Landsat composites are drawn.}\label{fig:s-clim}
+\end{figure}
+\begin{figure}[p]\centering\includegraphics[width=\textwidth,height=.77\textheight,keepaspectratio]{figure_s04_seasonal_anomalies.pdf}\caption{Seasonal precipitation and temperature anomalies by year. Anomalies are relative to the 1991--2025 seasonal means of the same product.}\label{fig:s-anom}
+\end{figure}
+\begin{figure}[p]\centering\includegraphics[width=\textwidth,height=.77\textheight,keepaspectratio]{figure_s05_extreme_timeline.pdf}\caption{Timeline of heavy-precipitation and heat days. Event thresholds are defined in Section~S6.}\label{fig:s-extreme}
+\end{figure}
+\begin{figure}[p]\centering\includegraphics[width=\textwidth,height=.77\textheight,keepaspectratio]{figure_s06_weather_spectral_associations.pdf}\caption{Associations between antecedent weather windows and component spectral summaries. Five composite epochs provide only five temporal replicates, so these associations are underpowered and are reported as diagnostics, not findings.}\label{fig:s-assoc}
+\end{figure}
 \begin{figure}[p]\centering\includegraphics[width=\textwidth,height=.77\textheight,keepaspectratio]{figure_s07_epoch_specific_weather_forcing.pdf}\caption{Weather matched to the retained Landsat acquisition windows; contextual rather than causal.}\end{figure}
 \begin{figure}[p]\centering\includegraphics[width=\textwidth,height=.77\textheight,keepaspectratio]{figure_s08_terrain_hydrological_susceptibility.pdf}\caption{Elevation-derived terrain and drainage proxies. These do not constitute a hydraulic model.}\end{figure}
 \begin{figure}[p]\centering\includegraphics[width=\textwidth,height=.77\textheight,keepaspectratio]{figure_s09_indicator_redundancy.pdf}\caption{Dependence among component-level indicator ranks.}\end{figure}

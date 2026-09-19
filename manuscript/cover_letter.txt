@@ -49,14 +49,25 @@ archived evidence package with a SHA-256 manifest covering 158 files, and the
 decision-analysis scripts are included. All results were independently
 re-executed on two platforms.
 
-The manuscript is 4,998 words excluding tables and references, with ten display
-items and a Research aim section, and has not been published or submitted
-elsewhere. All authors have approved the submission and declare no competing
-interests.
+The manuscript is 4,993 words excluding tables and references, with ten display
+items (eight figures, two tables) and a Research aim section of 88 words. It has
+not been published previously and is not under consideration elsewhere. Author
+identity is confined to the separate title page, so the manuscript file is
+suitable for anonymised review.
 
-We would be glad to suggest reviewers with expertise in heritage risk assessment,
-multicriteria decision analysis or archaeological remote sensing if that would
-assist.
+In line with the journal's guidance we suggest the following possible reviewers,
+each selected because their published work is cited in this manuscript:
+
+  1. [[W. P. Megarry, affiliation, e-mail]] - land cover and climate
+     vulnerability of cultural World Heritage (J. Cult. Herit., 2026).
+  2. [[Athos Agapiou, affiliation, e-mail]] - Earth observation for heritage
+     disaster risk management (Remote Sens., 2020).
+  3. [[Xavier Romao, affiliation, e-mail]] - risk protection and prioritisation
+     for cultural heritage (Int. J. Disaster Risk Reduct., 2022).
+
+We declare no competing interests, and confirm that the manuscript, the separate
+title page, the highlights and the supplementary material are submitted in the
+formats set out in the Guide for Authors.
 
 Yours sincerely,
 

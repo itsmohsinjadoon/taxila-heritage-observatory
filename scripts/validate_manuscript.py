@@ -210,6 +210,45 @@ def main() -> int:
             fails.append(f"supplement: cites main text Eq. {cited_eq} for {label}, "
                          f"which is Eq. {eq_number.get(label)}")
 
+    # The main text cites supplementary sections, figures and tables by number.
+    # Those numbers are hardcoded (LaTeX cannot resolve them across documents)
+    # and drift whenever an item is added, removed or reordered in the
+    # supplement, so recompute the supplement's own numbering and check that
+    # every cited number exists.
+    supp_counts = {
+        "section": len(re.findall(r"\\section\{", supp)),
+        "figure": len(re.findall(r"\\begin\{figure\*?\}", supp)),
+        "table": len(re.findall(r"\\begin\{(?:table|longtable)\*?\}", supp)),
+    }
+    kind_of = {"fig": "figure", "figure": "figure", "table": "table",
+               "tables": "table", "section": "section"}
+    for sec_file in BODY_SECTIONS + ["01_abstract", "08_declarations"]:
+        text = read(root / "sections" / f"{sec_file}.tex")
+        for m in re.finditer(r"Supplementary\s+(Fig\.?|Figure|Tables?|Section)"
+                             r"[~ ]?S?(\d+)(?:--S?(\d+))?", text):
+            kind = kind_of[m.group(1).rstrip(".").lower()]
+            cited_nums = [int(m.group(2))] + ([int(m.group(3))] if m.group(3) else [])
+            for num in cited_nums:
+                if num > supp_counts[kind]:
+                    fails.append(
+                        f"{sec_file}.tex: cites Supplementary {kind} S{num}, but the "
+                        f"supplement has only {supp_counts[kind]} {kind}s")
+    if supp_counts["figure"] and not re.search(r"\\renewcommand\{\\thefigure\}\{S", supp):
+        fails.append("supplement: figures are not S-prefixed, so main-text "
+                     "'Supplementary Fig. SN' references will not match")
+    if supp_counts["section"] and not re.search(r"\\renewcommand\{\\thesection\}\{S", supp):
+        fails.append("supplement: sections are not S-prefixed, so main-text "
+                     "'Supplementary Section SN' references will not match")
+
+    # Under anonymized review the manuscript file must not name the authors.
+    identity = re.compile(r"Mohsin|Sadiq Ullah|Faridoon|FAST School|NUCES|"
+                          r"Air University|github\.com|CRediT", re.I)
+    for sec_file in BODY_SECTIONS + ["01_abstract", "08_declarations"]:
+        # strip comments first: a LaTeX comment never reaches the PDF
+        for m in identity.finditer(COMMENT_RE.sub("", read(root / "sections" / f"{sec_file}.tex"))):
+            fails.append(f"{sec_file}.tex: author-identifying text in the anonymised "
+                         f"manuscript file: '{m.group(0)}'")
+
     hl_path = root / "highlights.txt"
     highlights = [ln.strip().lstrip("-").strip()
                   for ln in read(hl_path).splitlines() if ln.strip()]
