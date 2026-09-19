@@ -1,30 +1,17 @@
-final_id,type,title,placement,manuscript_location,verified_source_or_basis,inference_label
-F1,Figure,"Study area, component inventory and analytical supports",Main,"Methods 3.1","12_maps/figure_01_study_area_context_map.pdf","analytical support"
-F2,Figure,"CHIP workflow and inference boundaries",Main,"Methods 3.2","validated run sequence; configurations; 16_validation/experiment_status_matrix.csv","workflow"
-F3,Figure,"Five-epoch relative landscape-pressure surfaces",Main,"Results 4.2","12_maps/figure_02_five_epoch_landscape_pressure_maps.pdf","relative landscape pressure"
-F4,Figure,"Endpoint adverse-spectral convergence",Main,"Results 4.3","12_maps/figure_03_spectral_pressure_convergence.pdf","spectral convergence"
-F5,Figure,"Annual climate trends and moving-block uncertainty",Main,"Results 4.4","11_figures/figure_05_annual_climate_trends.pdf","regional climate forcing"
-F6,Figure,"Landsat-epoch antecedent weather",Main,"Results 4.4","11_figures/figure_07_epoch_specific_weather_forcing.pdf","acquisition-window weather"
-F7,Figure,"Open-Meteo and NASA POWER comparison",Main,"Results 4.4","11_figures/figure_09_open_meteo_nasa_power_comparison.pdf","product agreement"
-F8,Figure,"Terrain, flow and drainage susceptibility",Main,"Results 4.5","12_maps/figure_11_terrain_flow_drainage_susceptibility.pdf","terrain and hydrological susceptibility"
-F9,Figure,"E2024 integrated 500 m inspection priority",Main,"Results 4.6","12_maps/figure_12_integrated_component_priority_map.pdf","relative field-inspection priority"
-F10,Figure,"Component ranks across analytical supports",Main,"Results 4.7","11_figures/figure_13_component_rankings_by_scale.pdf","scale sensitivity"
-F11,Figure,"Indicator redundancy",Main,"Results 4.7","11_figures/figure_15_indicator_redundancy_matrix.pdf","rank redundancy"
-F12,Figure,"Factor and domain ablation",Main,"Results 4.7","11_figures/figure_17_factor_domain_ablation.pdf","sensitivity"
-F13,Figure,"Weight and spatial-block rank uncertainty",Main,"Results 4.7","11_figures/figure_16_rank_stability_uncertainty.pdf","rank uncertainty"
-F14,Figure,"Buffered proxy-model performance and calibration",Main,"Results 4.8","11_figures/figure_14_proxy_model_performance_calibration.pdf","proxy land-cover agreement"
-T1,Table,"Data sources, periods, supports and roles",Main,"Methods 3.3","01_sources_and_manifests/source_manifest.csv; 17_reproducibility/data_dictionary.csv","data provenance"
-T2,Table,"Indicator transformations, formulae and weights",Main,"Methods 3.4 and 3.7","13_tables/composite_formulas_weights_normalisation.csv","relative scoring architecture"
-T3,Table,"Experiment and evidence-completeness status",Main,"Results 4.1","16_validation/experiment_status_matrix.csv; 18_unresolved_issues/limitations_and_unsuccessful_analyses.csv","experiment status"
-T4,Table,"Headline findings and inference boundaries",Main,"Results 4.1 to 4.8","16_validation/claim_evidence_matrix.csv and final numerical tables","evidence and boundary"
-FS1,Figure,"Monthly Open-Meteo climatology",Supplementary,"S4","11_figures/figure_04_open_meteo_climatology.pdf","regional climate context"
-FS2,Figure,"Seasonal and monsoon climate anomalies",Supplementary,"S4","11_figures/figure_06_seasonal_monsoon_anomalies.pdf","regional climate variability"
-FS3,Figure,"Climate-extreme timeline, 1991 to 2025",Supplementary,"S4","11_figures/figure_08_climate_extremes_timeline.pdf","regional climate extremes"
-FS4,Figure,"Exploratory weather-spectral lag associations",Supplementary,"S4","11_figures/figure_10_weather_spectral_lag_associations.pdf","exploratory association"
-TS1,Table,"Component inventory and geometry status",Supplementary,"S1","06_processed_vectors/taxila_components_wgs84.geojson","inventory and inclusion"
-TS2,Table,"Complete ranks and scores at all supports",Supplementary,"S6","13_tables/component_rankings_250m_500m_1000m.csv","relative priority and scale"
-TS3,Table,"Climate trends and baseline sensitivity",Supplementary,"S4","14_statistics/open_meteo_climate_trends_block_bootstrap.csv; 14_statistics/climate_baseline_period_sensitivity.csv","regional climate trend"
-TS4,Table,"Complete weather-product comparison",Supplementary,"S4","13_tables/open_meteo_nasa_power_comparison.csv and product-agreement tables","product agreement"
-TS5,Table,"Complete factor and domain ablation",Supplementary,"S7","13_tables/complete_factor_domain_ablation.csv; 13_tables/component_factor_domain_ablation_ranks.csv","sensitivity"
-TS6,Table,"Weight and spatial-block rank distributions",Supplementary,"S7","13_tables/baseline_reproduction/monte_carlo_domain_weight_rank_uncertainty.csv; 14_statistics/component_rank_spatial_block_bootstrap.csv","rank uncertainty"
-TS7,Table,"Proxy-model metrics, calibration and confusion records",Supplementary,"S8","buffered comparison, calibration, class distribution and primary confusion-matrix tables","proxy land-cover agreement"
+item_id,type,number_as_compiled,label,graphics_file,manuscript_section,caption_first_sentence
+F1,figure,1,fig:study,figure_01_study_area_context_map.pdf,"Materials and methods / Study area, inventory and evidence sources",Taxila study-area context and the official 18-component inventory
+T1,table,1,tab:data,,"Materials and methods / Study area, inventory and evidence sources",Evidence sources and permitted analytical roles.
+F2,figure,2,fig:framework,figure_02_chip_framework.pdf,"Materials and methods / Study area, inventory and evidence sources","CHIP framework linking observation support, mathematical transformations, experiments and conservation interpretation"
+F3,figure,3,fig:epochs,figure_03_five_epoch_landscape_pressure_maps.pdf,Results / Multitemporal landscape pressure and spectral convergence,Landscape-pressure patterns across the five Landsat epochs
+F4,figure,4,fig:convergence,figure_04_spectral_pressure_convergence.pdf,Results / Multitemporal landscape pressure and spectral convergence,Coincident adverse spectral criteria between E2004 and E2024
+F5,figure,5,fig:scales,figure_05_scale_weight_geometry.pdf,"Results / Spatial support, structural choices and inspection tiers",Scale--weight experiments for fixed E2024 summaries: (a) component ranks at equal domain weights; (b) Giri rank response at three discrete radii (dots: $w=0.5$); and (c) exact first-priority weight intervals
+F6,figure,6,fig:robustness,figure_06_experimental_robustness.pdf,"Results / Spatial, positional and joint uncertainty",Experimental assessment of the inspection rule: (a) rank concordance after baseline or factor changes; (b) shared-block sensitivity; (c) coordinate-displacement sensitivity with both spectral and terrain re-extraction; and (d) median ranks and central 95\% intervals under joint spatial--decision sim
+F7,figure,7,fig:priority,figure_07_integrated_priority_map.pdf,Results / Decision analysis of the reconstructed design,Integrated field-inspection priority for the mapped components
+F8,figure,8,fig:decision,figure_08_decision_diagnostics.pdf,Results / Decision analysis of the reconstructed design,"Decision diagnostics from the reconstructed 280,998-scenario design: (a) share of each component's rank variance attributable to spatial support, the landscape weight, the terrain formulation and their interaction; (b) probability that an inspection programme of size $k$, visited in acceptability or"
+T2,table,2,tab:external,,Results / Agreement with independent component-level evidence,"Components of the Taxila property for which independent component-level evidence of damage or encroachment has been published, against their CHIP position"
+SF1,figure,S1,fig:s-trends,figure_s06_annual_climate_trends.pdf,Annual climate analysis,"Annual climate series and robust trend fits for the regional four-cell average, 1991--2025"
+SF2,figure,S2,fig:s-weather,figure_s05_weather_product_comparison.pdf,Land-cover benchmark protocol (moved from the main Methods) / Buffered model selection and probability diagnostics,Matched annual precipitation and temperature in the two gridded weather products
+ST1,table,S1,tab:models,,Climate trend and forcing definitions (moved from the main Methods) / Climate trends and acquisition-matched forcing,Seven-family spatial comparison
+SF3,figure,S3,,figure_s07_epoch_specific_weather_forcing.pdf,Additional environmental diagnostics,Weather matched to the retained Landsat acquisition windows; contextual rather than causal.
+SF4,figure,S4,,figure_s08_terrain_hydrological_susceptibility.pdf,Additional environmental diagnostics,Elevation-derived terrain and drainage proxies
+SF5,figure,S5,,figure_s09_indicator_redundancy.pdf,Additional environmental diagnostics,Dependence among component-level indicator ranks.

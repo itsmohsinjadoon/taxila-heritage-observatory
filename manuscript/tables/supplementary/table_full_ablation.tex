@@ -1,28 +1,22 @@
-\begingroup\small\begin{longtable}{p{.38\linewidth}rrr}
-\caption{Complete factor and domain ablation comparisons.} \\
-\toprule
-Scenario & Spearman rho & Top-5 overlap & Max shift \\
-\midrule
-\endfirsthead
-\caption[]{Complete factor and domain ablation comparisons.} \\
-\toprule
-Scenario & Spearman rho & Top-5 overlap & Max shift \\
-\midrule
-\endhead
-\midrule
-\multicolumn{4}{r}{Continued on next page} \\
-\midrule
-\endfoot
-\bottomrule
-\endlastfoot
-Full hierarchy & 1.000 & 5 & 0.000 \\
-Landscape only & 0.325 & 1 & 11.000 \\
-Terrain only & 0.830 & 4 & 7.000 \\
-Without NDVI & 0.991 & 5 & 1.000 \\
-Without NDBI & 0.990 & 4 & 2.000 \\
-Without MNDWI & -0.280 & 0 & 13.000 \\
-Without slope & 0.611 & 3 & 8.000 \\
-Without wetness & 0.892 & 4 & 4.000 \\
-Without drainage & 0.454 & 2 & 8.500 \\
-\end{longtable}
-\endgroup
+\begingroup\small
+\begin{longtable}{p{.30\linewidth}rrrrl}
+\caption{Complete rank concordance of every computed aggregation rule and single-factor ablation with the published hierarchical ranking. Intervals are 95\% Bonett--Wright intervals for Spearman $\rho$ on $n=17$ components. Maximum shift is the largest absolute rank displacement.}\label{tab:s-ablation-full}\\
+\toprule Comparison & $\rho$ & 95\% CI & Top-5 & Max shift & First-ranked \\\midrule\endfirsthead
+\toprule Comparison & $\rho$ & 95\% CI & Top-5 & Max shift & First-ranked \\\midrule\endhead
+\bottomrule\endlastfoot
+\multicolumn{6}{l}{\itshape Alternative aggregation rules}\\
+Ungrouped equal-factor mean & 0.844 & [0.555, 0.951] & 3 & 7 & Bhallar stupa \\
+Landscape only & 0.325 & [-0.198, 0.704] & 1 & 11 & Sirkap \\
+Terrain only & 0.830 & [0.523, 0.946] & 4 & 7 & Bhallar stupa \\
+CRITIC weighting & 0.972 & [0.905, 0.992] & 4 & 4 & Giri complex of monuments \\
+Entropy weighting & 0.748 & [0.359, 0.916] & 3 & 7 & Bhallar stupa \\
+Robust-z logistic & 0.038 & [-0.451, 0.509] & 1 & 14 & Bhallar stupa \\
+Oriented first principal component & -0.771 & [-0.925, -0.403] & 0 & 16 & Bhir Mound \\
+\midrule\multicolumn{6}{l}{\itshape Single-factor ablations}\\
+Without NDVI & 0.991 & [0.969, 0.998] & 5 & 1 & Giri complex of monuments \\
+Without NDBI & 0.990 & [0.963, 0.997] & 4 & 2 & Giri complex of monuments \\
+Without MNDWI & -0.280 & [-0.676, 0.242] & 0 & 13 & Bhallar stupa \\
+Without slope & 0.611 & [0.139, 0.857] & 3 & 8 & Sirsukh \\
+Without wetness & 0.892 & [0.671, 0.967] & 4 & 4 & Giri Mosque and tombs \\
+Without drainage & 0.454 & [-0.061, 0.778] & 2 & 8.5 & Sirsukh \\
+\end{longtable}\endgroup

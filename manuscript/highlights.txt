@@ -1,5 +1,5 @@
-- Inspection priorities change with spatial support and evidence weighting.
-- Adverse spectral criteria converge on 16.93% of common endpoint support.
-- Weather-product disagreement limits climatic interpretation at Taxila.
-- Buffered spatial evaluation separates proxy agreement from heritage condition.
-- Exact weight transitions quantify the stability of leading inspection priorities.
+- Adverse spectral criteria co-occur at 1.6x the independence expectation
+- Two of eight aggregation rules reverse or erase the inspection ranking
+- No component exceeds a first-rank confidence factor of 0.42
+- Decision assumptions drive 46% of rank variance, spatial support 32%
+- Three-site inspection covers the true top three in only 18% of scenarios

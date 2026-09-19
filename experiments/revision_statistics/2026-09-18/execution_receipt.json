@@ -1,0 +1,14 @@
+{
+  "generated_utc": "2026-09-18T19:36:03+00:00",
+  "script": "build_revision_statistics.py",
+  "n_components_for_rho": 17,
+  "n_structural_scenarios": 27,
+  "comparisons_total": 14,
+  "comparisons_absent_from_2026_09_06_main_text": 5,
+  "comparisons_with_interval_spanning_zero": 4,
+  "outputs": {
+    "baseline_ablation_concordance_with_ci.csv": "fb951bfd26c335a562b43d18d5ef7b0b01ab18835ddcfe9699964228efa1a91d",
+    "tier_frequency_clopper_pearson.csv": "2703230d7bdf126bf6f7e2458248ea0d09e6b6795b4da0daa44f7d8152c37bfb",
+    "spectral_convergence_independence_benchmark.csv": "7b7a71750d47b76fab28d4291a082a6c6fdcaf136d4b5cc0570b962310f2ed56"
+  }
+}
