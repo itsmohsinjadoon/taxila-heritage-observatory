@@ -9,7 +9,7 @@ Taxila is a serial World Heritage property in Punjab, Pakistan, inscribed under 
 
 Landsat Collection 2 Level-2 surface reflectance supplied five post-monsoon three-year composites (2003--2005 to 2023--2025, abbreviated E2004--E2024) containing 11, 10, 8, 8 and 18 retained scenes from Landsat 7, 8 and 8/9 respectively. Source records preserve acquisition dates, sensor identities and quality information, and cross-sensor and masking limitations were considered explicitly \citep{usgs_landsat_c2,roy2016landsat}.
 
-Daily Open-Meteo ERA5-Seamless data covered 1991--2025 \citep{openmeteo_archive,hersbach2020era5}, resolving to four unique weather cells of 12,784 daily records each; NASA POWER supplied a comparison product over the same period \citep{nasa_power}. Neither was treated as station truth. Terrain came from the one-arc-second (approximately 30~m) SRTM-derived N33E072 elevation tile distributed through AWS Terrain Tiles \citep{farr2007srtm}. ESA WorldCover 2020/2021 consensus \citep{esa_worldcover,zanaga2021worldcover} supplied six proxy land-cover classes for an E2019 feature table. Table~\ref{tab:data} summarises the role of each source. Figure~\ref{fig:framework} separates the paths through which these inputs inform interpretation.
+Daily Open-Meteo ERA5-Seamless data covered 1991--2025 \citep{openmeteo_archive,hersbach2020era5}, resolving to four unique weather cells of 12,784 daily records each; NASA POWER supplied a comparison product over the same period \citep{nasa_power}. Neither was treated as station truth. Terrain came from the one-arc-second (approximately 30~m) SRTM-derived N33E072 elevation tile distributed through AWS Terrain Tiles \citep{farr2007srtm}. Table~\ref{tab:data} summarises the role of each source. Figure~\ref{fig:framework} separates the paths through which these inputs inform interpretation.
 
 \begin{table}[tbp]\centering\small
 \caption{Evidence sources and permitted analytical roles.}\label{tab:data}
@@ -19,14 +19,13 @@ Landsat C2 L2 & 55 scenes; five epochs; 30 m grid & Relative spectral pressure a
 Elevation tile & Approximately 30 m & Terrain and drainage susceptibility \\
 Open-Meteo & Daily, 1991--2025; four cells & Regional trends and acquisition-window context \\
 NASA POWER & Daily, 1991--2025 & Weather-product sensitivity \\
-WorldCover consensus & 2020/2021 labels matched to E2019 features & Weakly supervised land-cover benchmark \\
 UNESCO component inventory & 18 records; 17 mapped points & Component identifiers and neighbourhood centres \\\bottomrule
 \end{tabular}
 \end{table}
 
 \begin{figure}[p]\centering
 \includegraphics[width=\textwidth]{figure_02_chip_framework.pdf}
-\caption{CHIP framework linking observation support, mathematical transformations, experiments and conservation interpretation. Solid arrows carry analytical inputs; dashed arrows carry interpretation. Climate retains native support and land-cover evaluation remains a separate diagnostic. Fixed and reconstructed spectral percentile populations are distinguished. Counts describe executed designs.}\label{fig:framework}
+\caption{The CHIP workflow, shown as the data products each stage yields. (01) Relative landscape pressure for the E2024 composite. (02) Count of adverse endpoint criteria met per cell between E2004 and E2024. (03) Distribution of the component landscape-pressure score and its empirical cumulative transform (orange), the oriented percentile used throughout. (04) Median rank and 95\% interval for each of the 17 scorable components across spatial states; the three core-tier components are highlighted. (05) Component priorities in map space, core tier circled. Thumbnails preview Figs.~\ref{fig:epochs}, \ref{fig:convergence} and \ref{fig:priority}, which present these products at full size.}\label{fig:framework}
 \end{figure}
 
 
@@ -93,7 +92,7 @@ w^*_{ij}=\frac{T_j-T_i}{(L_i-T_i)-(L_j-T_j)}.
 Retaining nonzero denominators and crossings in $(0,1)$ and sorting them partitions the weight interval into regions of constant rank order, with midpoint evaluation identifying each leader. Figure~\ref{fig:scales} combines fixed ranks, a three-dimensional rank response and exact leadership intervals; radii remain discrete.
 
 \subsection{Spatial, positional and joint uncertainty propagation}
-Three perturbation designs precede the reconstruction: shared-block resampling (2,000 spectral realisations at each of 90, 150 and 300~m, using exponential block weights shared across overlapping neighbourhoods and a weighted median); coordinate displacement (spectral and terrain re-extraction at 30, 60 and 120~m offsets against an undisplaced control); and the joint simulation (500 spatial states, each under ten decision settings sampling $w\sim\mathrm{Beta}(2,2)$ and a terrain formulation, giving 5,000 draws). These are conditional sensitivity distributions over declared perturbations, not posterior probabilities of deterioration. Full definitions in Supplementary Section~S8.
+Three perturbation designs precede the reconstruction: shared-block resampling (2,000 spectral realisations at each of 90, 150 and 300~m, using exponential block weights shared across overlapping neighbourhoods and a weighted median); coordinate displacement (spectral and terrain re-extraction at 30, 60 and 120~m offsets against an undisplaced control); and the joint simulation (500 spatial states, each under ten decision settings sampling $w\sim\mathrm{Beta}(2,2)$ and a terrain formulation, giving 5,000 draws). These are conditional sensitivity distributions over declared perturbations, not posterior probabilities of deterioration. Full definitions in Supplementary Section~S6.
 
 \subsection{Deterministic reconstruction of the joint design}
 Equation~\eqref{eq:priority} is affine in $w$, so the recorded score for spatial
@@ -152,10 +151,7 @@ likely to contain the priorities the framework itself identifies.
 The ordering was compared with the two published sources reporting findings at named Taxila components \citep{khan2022taxila,butt2025taxila}, detailed in Table~\ref{tab:external}. The comparison is descriptive: five components with heterogeneous evidence types do not support a rank-correlation test, and neither source is a systematic condition survey.
 
 \subsection{Climate trends and acquisition-matched forcing}
-The regional daily series averages the four unique weather cells equally before annual aggregation. Annual trends use the Theil--Sen estimator with 2,000 five-year residual-block replicates and Benjamini--Hochberg adjustment across 12 annual metrics \citep{sen1968slope,yue2002autocorrelation,benjamini1995fdr}. Acquisition-matched forcing averages antecedent precipitation and temperature over 7, 30, 90, 180 and 365~day windows preceding each retained scene date. Inference is conditional on the weather product; five composite epochs provide only five temporal replicates. Full definitions in Supplementary Section~S7.
-
-\subsection{Land-cover proxy benchmark}
-A separate weakly supervised experiment tested whether consensus land cover can be reproduced under buffered spatial evaluation, as a control on the spectral evidence rather than a condition assessment. It used 20,749 class-stratified samples split into a 4,188-sample outer stripe, a 4,467-sample exclusion buffer and 12,094 development samples in 60 blocks, with seven model families and development-only selection \citep{roberts2017cv,meyer2018target,valavi2019blockcv,olofsson2014accuracy}. Because the outer stripe had been examined previously and WorldCover labels differ temporally from the E2019 predictors, it evaluates proxy agreement and cannot establish monument-condition accuracy. Full protocol in Supplementary Section~S6.
+The regional daily series averages the four unique weather cells equally before annual aggregation. Annual trends use the Theil--Sen estimator with 2,000 five-year residual-block replicates and Benjamini--Hochberg adjustment across 12 annual metrics \citep{sen1968slope,yue2002autocorrelation,benjamini1995fdr}. Acquisition-matched forcing averages antecedent precipitation and temperature over 7, 30, 90, 180 and 365~day windows preceding each retained scene date. Inference is conditional on the weather product; five composite epochs provide only five temporal replicates. Full definitions in Supplementary Section~S5.
 
 \subsection{Computational implementation}
 Model experiments ran in Google Colab and independently on Windows with recorded package versions, spatial splits, configurations and per-sample probabilities. Derived inputs and deterministic figure/table builders support reproduction \citep{wilson2017practices,nust2018reproducible}. Scene manifests document acquisition and preprocessing. The exact weight analysis uses recorded component summaries without refitting their percentile transforms.

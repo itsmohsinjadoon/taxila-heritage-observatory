@@ -1,7 +1,7 @@
 item_id,type,number_as_compiled,label,graphics_file,manuscript_section,caption_first_sentence
 F1,figure,1,fig:study,figure_01_study_area_context_map.pdf,"Materials and methods / Study area, inventory and evidence sources",Taxila study-area context and the official 18-component inventory
 T1,table,1,tab:data,,"Materials and methods / Study area, inventory and evidence sources",Evidence sources and permitted analytical roles.
-F2,figure,2,fig:framework,figure_02_chip_framework.pdf,"Materials and methods / Study area, inventory and evidence sources","CHIP framework linking observation support, mathematical transformations, experiments and conservation interpretation"
+F2,figure,2,fig:framework,figure_02_chip_framework.pdf,"Materials and methods / Study area, inventory and evidence sources","The CHIP workflow, shown as the data products each stage yields"
 F3,figure,3,fig:epochs,figure_03_five_epoch_landscape_pressure_maps.pdf,Results / Multitemporal landscape pressure and spectral convergence,Landscape-pressure patterns across the five Landsat epochs
 F4,figure,4,fig:convergence,figure_04_spectral_pressure_convergence.pdf,Results / Multitemporal landscape pressure and spectral convergence,Coincident adverse spectral criteria between E2004 and E2024
 F5,figure,5,fig:scales,figure_05_scale_weight_geometry.pdf,"Results / Spatial support, structural choices and inspection tiers",Scale--weight experiments for fixed E2024 summaries: (a) component ranks at equal domain weights; (b) Giri rank response at three discrete radii (dots: $w=0.5$); and (c) exact first-priority weight intervals
@@ -9,9 +9,12 @@ F6,figure,6,fig:robustness,figure_06_experimental_robustness.pdf,"Results / Spat
 F7,figure,7,fig:priority,figure_07_integrated_priority_map.pdf,Results / Decision analysis of the reconstructed design,Integrated field-inspection priority for the mapped components
 F8,figure,8,fig:decision,figure_08_decision_diagnostics.pdf,Results / Decision analysis of the reconstructed design,"Decision diagnostics from the reconstructed 280,998-scenario design: (a) share of each component's rank variance attributable to spatial support, the landscape weight, the terrain formulation and their interaction; (b) probability that an inspection programme of size $k$, visited in acceptability or"
 T2,table,2,tab:external,,Results / Agreement with independent component-level evidence,"Components of the Taxila property for which independent component-level evidence of damage or encroachment has been published, against their CHIP position"
-SF1,figure,S1,fig:s-trends,figure_s06_annual_climate_trends.pdf,Annual climate analysis,"Annual climate series and robust trend fits for the regional four-cell average, 1991--2025"
-SF2,figure,S2,fig:s-weather,figure_s05_weather_product_comparison.pdf,Land-cover benchmark protocol (moved from the main Methods) / Buffered model selection and probability diagnostics,Matched annual precipitation and temperature in the two gridded weather products
-ST1,table,S1,tab:models,,Climate trend and forcing definitions (moved from the main Methods) / Climate trends and acquisition-matched forcing,Seven-family spatial comparison
-SF3,figure,S3,,figure_s07_epoch_specific_weather_forcing.pdf,Additional environmental diagnostics,Weather matched to the retained Landsat acquisition windows; contextual rather than causal.
-SF4,figure,S4,,figure_s08_terrain_hydrological_susceptibility.pdf,Additional environmental diagnostics,Elevation-derived terrain and drainage proxies
-SF5,figure,S5,,figure_s09_indicator_redundancy.pdf,Additional environmental diagnostics,Dependence among component-level indicator ranks.
+SF1,figure,S1,fig:s-trends,figure_s01_annual_climate_trends.pdf,Annual climate analysis,"Annual climate series and robust trend fits for the regional four-cell average, 1991--2025"
+SF2,figure,S2,fig:s-weather,figure_s02_weather_product_comparison.pdf,Annual climate analysis,Matched annual precipitation and temperature in the two gridded weather products
+SF3,figure,S3,fig:s-clim,figure_s03_climatology.pdf,Additional environmental diagnostics,"Daily climatology of the regional four-cell average, 1991--2025, showing the post-monsoon window from which the Landsat composites are drawn."
+SF4,figure,S4,fig:s-anom,figure_s04_seasonal_anomalies.pdf,Additional environmental diagnostics,Seasonal precipitation and temperature anomalies by year
+SF5,figure,S5,fig:s-extreme,figure_s05_extreme_timeline.pdf,Additional environmental diagnostics,Timeline of heavy-precipitation and heat days
+SF6,figure,S6,fig:s-assoc,figure_s06_weather_spectral_associations.pdf,Additional environmental diagnostics,Associations between antecedent weather windows and component spectral summaries
+SF7,figure,S7,,figure_s07_epoch_specific_weather_forcing.pdf,Additional environmental diagnostics,Weather matched to the retained Landsat acquisition windows; contextual rather than causal.
+SF8,figure,S8,,figure_s08_terrain_hydrological_susceptibility.pdf,Additional environmental diagnostics,Elevation-derived terrain and drainage proxies
+SF9,figure,S9,,figure_s09_indicator_redundancy.pdf,Additional environmental diagnostics,Dependence among component-level indicator ranks.

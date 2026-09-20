@@ -1,64 +1,180 @@
-"""Publication vector schematic of CHIP's executed evidence and experiment paths."""
+#!/usr/bin/env python3
+"""Figure 2: the CHIP workflow, drawn from the study's own data.
+
+An earlier revision drew this figure as a grid of labelled text boxes. That
+carried the pipeline in prose rather than in graphics, and it advertised a
+land-cover classification benchmark that is out of scope for the article. This
+version renders each stage of the workflow as the actual data product that
+stage produces, so the figure is a visual roadmap rather than a table:
+
+    01 landscape evidence     E2024 relative landscape pressure raster
+    02 adverse convergence    count of adverse endpoint criteria per cell
+    03 oriented percentiles   landscape-pressure distribution and its
+                              empirical cumulative transform
+    04 rank uncertainty       median component rank and 95% interval
+    05 inspection set         component priorities in map space
+
+Thumbnails are deliberately small: Figures 3, 4 and 7 present the pressure
+epochs, the convergence surface and the priority map at full size, and this
+figure signposts them rather than competing with them.
+
+Usage:
+    python scripts/build_framework_figure.py
+"""
 from pathlib import Path
+import json
+
+import numpy as np
+import pandas as pd
 import matplotlib
-matplotlib.use('Agg')
+matplotlib.use("Agg")
+import matplotlib as mpl
 import matplotlib.pyplot as plt
-from matplotlib.patches import FancyBboxPatch,FancyArrowPatch
+from matplotlib.colors import BoundaryNorm, ListedColormap
+from matplotlib.gridspec import GridSpec
+from matplotlib.patches import FancyArrowPatch
 
-ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'manuscript/figures/main'
-INK='#203648';BLUE='#39789B';GOLD='#B17B37';GREY='#71808C';LIGHT='#F2F5F7'
-plt.rcParams.update({'font.family':'DejaVu Sans','pdf.fonttype':42,'svg.fonttype':'none','mathtext.fontset':'dejavusans'})
-fig,ax=plt.subplots(figsize=(7.6,8.6));ax.set(xlim=(0,7.6),ylim=(0,8.6));ax.axis('off')
-def text(x,y,s,size=8.5,color=INK,weight='normal',ha='left',va='center'):
- return ax.text(x,y,s,fontsize=size,color=color,fontweight=weight,ha=ha,va=va,linespacing=1.4)
-def box(x,y,w,h,title,body,color=BLUE,size=8.3):
- ax.add_patch(FancyBboxPatch((x,y),w,h,boxstyle='round,pad=0.008,rounding_size=0.04',fc='white',ec='#CCD5DB',lw=.7))
- ax.plot([x+.015,x+.015],[y+.08,y+h-.08],color=color,lw=2)
- text(x+.11,y+h-.18,title,8.7,color,'bold')
- text(x+.11,y+h-.43,body,size,va='top')
-def arrow(x1,y1,x2,y2,dashed=False,color=INK):
- ax.add_patch(FancyArrowPatch((x1,y1),(x2,y2),arrowstyle='-|>',mutation_scale=8,lw=.85,color=color,linestyle=(0,(3,2)) if dashed else '-'))
+ROOT = Path(__file__).resolve().parents[1]
+DATA = ROOT / "data" / "Taxila_CHIP_Frozen_Evidence_Data"
+OUT = ROOT / "manuscript" / "figures" / "main"
+STEM = "figure_02_chip_framework"
 
-text(.13,8.33,'CHIP',18,INK,'bold')
-text(1.09,8.34,'From geospatial evidence to inspection decisions',11.2,INK,'bold')
-text(.13,8.01,'17 geolocated components  |  250 / 500 / 1,000 m analytical neighbourhoods',8.8)
-ax.plot([.13,7.46],[7.82,7.82],lw=.8,color='#CED7DD')
-text(.13,7.64,'A   PRIORITY CONSTRUCTION',9,BLUE,'bold')
-text(4.01,7.64,'B   CLIMATE CONTEXT',8.7,GOLD,'bold')
-text(5.91,7.64,'C   PROXY EVALUATION',8.5,GREY,'bold')
-box(.13,6.53,1.69,.90,'Landsat C2 L2','55 scenes; five epochs\nE2004-E2024; 30 m',BLUE)
-box(1.99,6.53,1.73,.90,'Elevation / drainage','One-arc-second DEM\nSlope; wetness; D8',BLUE)
-box(4.01,6.53,1.68,.90,'Daily weather','1991-2025; ERA5: 4 cells\nPOWER comparison',GOLD,size=8.0)
-box(5.89,6.53,1.57,.90,'Labels + predictors','WorldCover 2020/2021\nLandsat E2019 features',GREY,size=8.0)
-arrow(.975,6.51,.975,6.25);arrow(2.85,6.51,2.85,6.25)
-arrow(4.85,6.51,4.85,6.25,color=GOLD);arrow(6.67,6.51,6.67,6.25,color=GREY)
-box(.13,5.12,3.59,1.11,'01  Summaries and oriented percentiles','Masked spectral medians: NDVI / NDBI / MNDWI\nTerrain: slope P90 / wetness P90 / drainage median\nFixed spectral reference: 85 component-epochs\nTerrain and reconstructed endpoint reference: 17',BLUE,size=8.35)
-box(4.01,5.12,1.68,1.11,'Native support','Four-cell daily mean\n35 annual summaries\nMatched acquisition dates\nNo weather downscaling',GOLD,size=8.0)
-box(5.89,5.12,1.57,1.11,'Spatial design','20,749 samples\n12,094 development\n4,467 buffer excluded\n4,188 outer test',GREY,size=8.0)
-arrow(1.925,5.1,1.925,4.90);arrow(4.85,5.1,4.85,4.90,color=GOLD);arrow(6.67,5.1,6.67,4.90,color=GREY)
-box(.13,4.03,3.59,.85,'02  Hierarchical decision rule',r'$L=\frac{1}{4}z_N+\frac{1}{4}z_B+\frac{1}{2}z_W\quad T=\frac{z_S+z_H+z_D}{3}$'+'\n'+r'$P(w)=wL+(1-w)T\quad$ reference: $w=0.5$',BLUE,size=10)
-box(4.01,4.03,1.68,.85,'Trend / window tests','Theil-Sen; residual blocks\n12 metrics; FDR adjustment\n7-365 d acquisition lags',GOLD,size=8.0)
-box(5.89,4.03,1.57,.85,'Model selection','7 families x 3 settings\n3 buffered inner folds\n63 inner training fits',GREY,size=8.0)
-arrow(1.925,4.01,1.925,3.82)
-ax.plot([.69,3.15],[3.81,3.81],color=BLUE,lw=.7)
-for x in [.69,1.925,3.15]:arrow(x,3.81,x,3.64,color=BLUE)
-box(.13,2.55,1.12,1.07,'Structure','Factor ablation\n27 scenarios\n3 x 50,000 draws\nExact crossings',BLUE,size=8.0)
-box(1.365,2.55,1.12,1.07,'Blocks','90 / 150 / 300 m\nShared weights\n2,000 per size\nOverlap retained',BLUE,size=8.0)
-box(2.60,2.55,1.12,1.07,'Position','30 / 60 / 120 m\n2,000 per radius\nUniform-area jitter\nZero-shift control',BLUE,size=7.8)
-for x in [.69,1.925,3.15]:arrow(x,2.53,x,2.34,color=BLUE)
-ax.plot([.69,3.15],[2.33,2.33],color=BLUE,lw=.7);arrow(1.925,2.33,1.925,2.15,color=BLUE)
-box(.13,1.24,3.59,.89,'03  Joint propagation and rank acceptability','500 spatial states x 10 decision settings = 5,000 vectors\nMedian ranks; central 95% intervals; top-k frequencies\nStructural tiers and reconstruction-dependent priorities',BLUE,size=8.3)
-arrow(4.85,4.01,4.85,3.64,color=GOLD);arrow(6.67,4.01,6.67,3.64,color=GREY)
-box(4.01,1.24,1.68,2.38,'Interpretation','Opposing product trends\n\nAcquisition-window forcing\n\nFive-epoch associations\n\nProduct and support limits\n\nClimate does not create\nfine-scale rank differences',GOLD,size=8.2)
-box(5.89,1.24,1.57,2.38,'Outer diagnostics','Macro-F1 / paired blocks\n\nLog loss / Brier / ECE\n\nOOF temperature scaling\n\nFeature / null controls\n\nThree refit seeds\n\nColab / Windows repeat',GREY,size=8.0)
-arrow(1.925,1.22,1.925,1.00,color=BLUE)
-arrow(4.85,1.22,4.85,1.00,True,GOLD)
-arrow(6.67,1.22,6.67,1.00,True,GREY)
-ax.add_patch(FancyBboxPatch((.13,.12),7.33,.86,boxstyle='round,pad=.008,rounding_size=.05',fc=LIGHT,ec='#CCD5DB',lw=.7))
-text(.26,.76,'04  CONSERVATION INTERPRETATION',9.2,INK,'bold')
-text(.26,.51,'Persistent inspection set  |  Mechanism-specific field questions  |  Explicit evidence limits',8.65)
-text(.26,.28,'Output: relative inspection priorities. Independent monument-condition validation remains a field task.',8.25)
-fig.subplots_adjust(left=0,right=1,bottom=0,top=1)
-for ext in ['pdf','svg','png']:fig.savefig(OUT/f'figure_02_chip_framework.{ext}',dpi=400,facecolor='white')
-p=OUT/'figure_02_chip_framework.svg';p.write_text('\n'.join(line.rstrip() for line in p.read_text(encoding='utf-8').splitlines())+'\n',encoding='utf-8',newline='\n')
-plt.close(fig)
+INK, ACCENT, MUTED, GRID = "#203648", "#A63603", "#8C99A2", "#C7D0D6"
+CORE = {
+    "Giri complex of monuments",
+    "Giri Mosque and tombs",
+    "Jaulian stupa and monastery",
+}
+
+
+def load_raster(name, spec):
+    """Read a frozen float32 raster and mask its nodata value."""
+    arr = np.fromfile(DATA / "05_processed_rasters" / name, dtype="<f4")
+    arr = arr.reshape(spec["height"], spec["width"]).astype(float)
+    arr[arr == spec["nodata"]] = np.nan
+    return arr
+
+
+def frame(ax):
+    ax.set_xticks([])
+    ax.set_yticks([])
+    for spine in ax.spines.values():
+        spine.set_edgecolor(GRID)
+        spine.set_linewidth(0.7)
+
+
+def stage(ax, number, label):
+    ax.set_title(f"{number}  {label}", fontsize=7.4, color=INK, pad=3.5)
+
+
+def main():
+    spec = json.loads((DATA / "05_processed_rasters" / "derived_raster_spec.json").read_text())
+    pressure = load_raster("E2024_relative_landscape_pressure.f32", spec)
+    convergence = load_raster("E2004_E2024_spectral_convergence.f32", spec)
+    aspect = spec["height"] / spec["width"]
+
+    scores = pd.read_csv(
+        DATA / "13_tables" / "baseline_reproduction" / "component_epoch_integrated_scores.csv"
+    )
+    e2024 = scores[(scores.radius_m == 500) & (scores.epoch_id == "E2024")]
+
+    features = json.loads(
+        (DATA / "06_processed_vectors"
+         / "taxila_integrated_field_inspection_priority_wgs84.geojson").read_text(encoding="utf-8")
+    )["features"]
+    props = pd.DataFrame([f["properties"] for f in features])
+    mapped = props[props.local_priority_score_500m.notna()].copy()
+    ranked = mapped.sort_values("bootstrap_rank_median").reset_index(drop=True)
+    n = len(ranked)
+    is_core = mapped.name.isin(CORE)
+    sizes = 22 + 130 * (mapped.local_priority_score_500m - mapped.local_priority_score_500m.min())
+
+    plt.rcParams.update({
+        "font.family": "DejaVu Sans", "pdf.fonttype": 42, "svg.fonttype": "none",
+        "axes.labelcolor": INK, "text.color": INK,
+    })
+    fig = plt.figure(figsize=(7.2, 2.25))
+    gs = GridSpec(1, 5, figure=fig, wspace=0.42, left=0.012, right=0.988, top=0.74, bottom=0.16)
+
+    ax1 = fig.add_subplot(gs[0])
+    lo, hi = np.nanpercentile(pressure, [2, 98])
+    ax1.imshow(pressure, cmap="YlOrBr", vmin=lo, vmax=hi, interpolation="nearest")
+    frame(ax1)
+    stage(ax1, "01", "Landscape evidence")
+
+    ax2 = fig.add_subplot(gs[1])
+    ax2.imshow(
+        convergence,
+        cmap=ListedColormap(["#EEF2F4", "#FDD9A8", "#F08C4B", ACCENT]),
+        norm=BoundaryNorm([-0.5, 0.5, 1.5, 2.5, 3.5], 4),
+        interpolation="nearest",
+    )
+    frame(ax2)
+    stage(ax2, "02", "Adverse convergence")
+
+    ax3 = fig.add_subplot(gs[2])
+    raw = e2024["landscape_pressure_score"].dropna().values
+    ax3.hist(raw, bins=9, color="#C9D3DA", edgecolor="white", linewidth=0.6)
+    twin = ax3.twinx()
+    ordered = np.sort(raw)
+    twin.plot(ordered, np.linspace(0, 1, len(ordered)), color=ACCENT, lw=1.6)
+    twin.set_yticks([])
+    for spine in twin.spines.values():
+        spine.set_visible(False)
+    frame(ax3)
+    stage(ax3, "03", "Oriented percentiles")
+
+    ax4 = fig.add_subplot(gs[3])
+    for i, row in ranked.iterrows():
+        y = n - 1 - i
+        core = row["name"] in CORE
+        ax4.plot(
+            [row.bootstrap_rank_ci_low_95, row.bootstrap_rank_ci_high_95], [y, y],
+            color=ACCENT if core else "#B4BFC7", lw=1.9 if core else 1.1,
+            solid_capstyle="round",
+        )
+        ax4.plot(row.bootstrap_rank_median, y, "o", ms=2.9 if core else 2.0,
+                 color=ACCENT if core else MUTED)
+    ax4.set_xlim(0.3, 18.7)
+    ax4.set_ylim(-1, n)
+    frame(ax4)
+    stage(ax4, "04", "Rank uncertainty")
+
+    ax5 = fig.add_subplot(gs[4])
+    ax5.scatter(mapped.longitude, mapped.latitude, c=mapped.local_priority_score_500m,
+                s=sizes * 0.55, cmap="YlOrBr", edgecolor="#4A5A64", linewidth=0.35, zorder=3)
+    ax5.scatter(mapped[is_core].longitude, mapped[is_core].latitude, s=sizes[is_core] * 1.9,
+                facecolors="none", edgecolor=ACCENT, linewidth=1.0, zorder=4)
+    ax5.margins(0.20)
+    frame(ax5)
+    stage(ax5, "05", "Inspection set")
+
+    for ax in (ax1, ax2, ax3, ax4, ax5):
+        ax.set_box_aspect(aspect)
+    fig.canvas.draw()
+    for left, right in [(ax1, ax2), (ax2, ax3), (ax3, ax4), (ax4, ax5)]:
+        a, b = left.get_position(), right.get_position()
+        fig.patches.append(FancyArrowPatch(
+            (a.x1 + 0.006, (a.y0 + a.y1) / 2), (b.x0 - 0.006, (b.y0 + b.y1) / 2),
+            transform=fig.transFigure, arrowstyle="-|>", mutation_scale=7, lw=0.8, color=MUTED))
+
+    fig.text(
+        0.012, 0.045,
+        "Circled: the three components that persist across spatial states and decision "
+        "weightings.  One of the eighteen inscribed components cannot be scored — its "
+        "coordinate is unresolved.",
+        fontsize=6.1, color=MUTED,
+    )
+
+    for ext in ("pdf", "png", "svg"):
+        fig.savefig(OUT / f"{STEM}.{ext}", dpi=400, bbox_inches="tight")
+
+    renderer = fig.canvas.get_renderer()
+    boxes = [t.get_window_extent(renderer) for t in fig.findobj(mpl.text.Text)
+             if t.get_text().strip() and t.get_visible()]
+    clashes = sum(1 for i, a in enumerate(boxes) for b in boxes[i + 1:] if a.overlaps(b))
+    print(f"wrote {STEM}.[pdf|png|svg] to {OUT}  (text overlaps: {clashes})")
+
+
+if __name__ == "__main__":
+    main()

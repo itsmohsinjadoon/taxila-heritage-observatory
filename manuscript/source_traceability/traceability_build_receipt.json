@@ -1,12 +1,12 @@
 {
-  "generated_utc": "2026-09-19T05:39:44+00:00",
+  "generated_utc": "2026-09-20T01:40:21+00:00",
   "script": "build_traceability_package.py",
   "main_display_items": {
     "figures": 8,
     "tables": 2,
     "total": 10
   },
-  "supplementary_display_items": 6,
+  "supplementary_display_items": 9,
   "main_numbered_equations": 10,
   "graphics_files_not_found": [],
   "note": "Derived from the compiled source rather than maintained by hand, so the maps cannot desynchronise from the manuscript."
