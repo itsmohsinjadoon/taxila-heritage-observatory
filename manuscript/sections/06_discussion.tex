@@ -1,22 +1,96 @@
 \section{Discussion}
+\subsection{What the framework measures, and what it does not}
+The comparison with independent evidence (Table~\ref{tab:external}) most
+constrains how this framework should be used. None of the five Taxila components
+with independently published damage or encroachment falls within the CHIP core
+tier, and the component with the clearest documented loss of designated area
+cannot be scored at all. Either the framework is failing at a task it was built for, or it is succeeding
+at a different task from the one the published evidence records, and the internal
+evidence supports the second reading. Removing MNDWI destroys the ordering while
+removing the vegetation or built/bare terms leaves it essentially unchanged, so
+the ordering is driven by moisture-related and terrain-hydrological evidence,
+whereas Khan et al. document fabric damage and seismic amplification
+\citep{khan2022taxila} and Butt et al. built-up clustering and core-zone
+reduction \citep{butt2025taxila}. These are different constructs and need not
+coincide.
+
+CHIP is therefore a screening layer for moisture- and drainage-driven landscape
+pressure, to be combined with damage and encroachment records rather than
+substituted for them. A defensible Taxila programme would visit the four
+components the budget analysis identifies, and separately those already on record
+with independent authorities. Presenting a single environmental ranking as a
+conservation priority list would have directed inspection away from Bhir Mound
+and Saraikala; this analysis makes that failure mode visible before the ranking
+is used.
+
 \subsection{From environmental indicators to inspection decisions}
-The principal contribution is the experimental evaluation of an inspection rule across several distinct sources of uncertainty. A component's score is accompanied by evidence about its drivers, its persistence across support and structural choices, and its response to spatial reconstruction. Inspection teams can consequently identify where to visit and which mechanism to investigate.
+Within its construct, the framework's contribution is that a score travels with
+evidence about what would change it, in three ways a frequency summary cannot
+express.
 
-The ablations show why the hierarchy matters. NDVI and NDBI supplied closely aligned information, while MNDWI and terrain pathways strongly affected the ordering. Giri's leading score was consequently associated with moisture-related spectral and terrain terms despite low surface-cover pressure. An appropriate field visit would investigate drainage routes, surface moisture and their relationship to the monument fabric, while a landscape-led priority such as Sirkap would motivate examination of surrounding surface-cover change.
+Confidence factors show that no component is a confident first priority: the
+largest is 0.42, so even at its most favourable weighting the best-supported
+component loses the lead in most spatial states.
 
-The results complement Taxila research combining ground observations and satellite evidence \citep{khan2022taxila}, and wider heritage multi-hazard assessments \citep{guerriero2022derwent,romao2022risk}. CHIP adds a structured way to test how priorities respond to analytical choices before those priorities are operationalised. Its landscape-context rationale also complements the recent South Asian World Heritage assessment of Megarry et al. \citep{megarry2026landcover}; here, that context is translated into component-level decision sensitivity rather than a general environmental classification. The transferable contribution is the experimental procedure; the Taxila percentiles, weights and tier thresholds require local reassessment at another property.
+The variance decomposition converts sensitivity analysis into a work
+instruction. A rank dominated by the landscape weight cannot be settled by better
+data, and one dominated by spatial support cannot be settled by deliberation.
+Both groups are substantial at Taxila and individually identified, so a manager
+can act on the diagnosis: convene a weighting decision for Giri Mosque and tombs,
+Sirkap and Giri complex; commission better geometry for Kalawan, Khanpur Cave and
+Pippala; and resolve the terrain formulation for Bhallar.
 
-\subsection{Interpreting persistence and disagreement}
-Giri, Giri Mosque and tombs, and Jaulian persisted across the structural scenarios, supporting a core inspection set. However, Bhallar illustrates why scenario frequencies must retain their definitions. It was seldom in the fixed structural top three but prominent after feature re-extraction and under spatial simulation. Combining those results into one unconditional confidence score would conceal the information most relevant to planning: Bhallar's priority depends strongly on how its local terrain and spectral support are represented.
+The budget curve prices the recommendation. Three components cover a scenario's
+own three highest priorities in fewer than one case in five; a fourth more than
+doubles that. Reporting a core tier without its coverage probability invites an
+authority to treat three visits as sufficient when the framework's own
+uncertainty does not support it. The central weights add that the property
+separates into terrain-led and land-cover-led priorities, so which group is
+visited first follows from one declared parameter. Bhallar shows why these
+distributions must retain their definitions: seldom in the fixed structural top
+three (2/27) yet prominent after re-extraction, it holds both the highest
+first-rank acceptability (0.310) and the largest terrain-formulation variance
+share (29.3\%).
 
-Joint intervals are wider than the certainty implied by a single ranking. They justify combining a persistent core set with additional visits targeted to particular mechanisms and representation-sensitive components. The exact crossing analysis supplies an interpretable decision margin: at 500 m, Giri's leadership tolerates substantial domain-weight variation, whereas its 250 m ordering differs. This separates preference sensitivity from support sensitivity and identifies which assumption a manager must resolve. Access, cultural significance, repair history and specialist assessment would then guide the operational sequence.
+These results complement Taxila research combining ground and satellite evidence
+\citep{khan2022taxila}, wider heritage multi-hazard assessment
+\citep{guerriero2022derwent,romao2022risk,yang2023yongtai} and recent South Asian
+World Heritage assessment \citep{megarry2026landcover}.
 
 \subsection{What the predictive experiments establish}
-The seven-family comparison demonstrates useful geographic land-cover agreement, while the controls reveal where extra complexity adds little. Bands-only logistic regression remained competitive with the selected random forest, and temperature scaling worsened probability quality. Development selection and outer performance also diverged. Reporting these experiments together is more informative for model choice than selecting the largest test score: the appropriate model depends on spatial transfer, uncertainty and the intended output, not only point accuracy.
+The seven-family comparison shows useful geographic land-cover agreement while
+the controls reveal where complexity adds little: bands-only logistic regression
+remained competitive, four families exceeded the selected model on the outer
+stripe, and temperature scaling worsened probability quality. Read alongside
+Table~\ref{tab:external}, the experiment functions as a negative control---the
+spectral evidence supports land-cover discrimination, and such agreement says
+nothing about monument condition
+\citep{hijmans2012cv,meyer2018target,meyer2021aoa,ploton2020spatial}.
 
-These findings are consistent with the importance of spatial evaluation and applicability domains \citep{hijmans2012cv,meyer2018target,meyer2021aoa}. Recent tabular foundation models offer additional comparative opportunities \citep{hollmann2025tabpfn}, but the present target remains consensus land cover. Class-stratified sampling, temporal mismatch and geographically concentrated water labels constrain interpretation. The previously examined outer stripe makes this a retrospective comparison, and neither it nor a more capable classifier provides independent monument-condition validation.
+\subsection{Limitations}
+The most consequential limitation is the exclusion of Saraikala. One of the
+eighteen inscribed components carries no usable coordinate in the records
+available to us, so it is absent from every experiment reported here, and it is
+the component for which evidence of designated-area loss is strongest
+\citep{butt2025taxila}. A framework that cannot score a component cannot
+recommend inspecting it. Resolving Saraikala's geometry, ideally as a polygon, is
+the highest-value data improvement for this property, and inventory completeness
+should be a precondition for prioritisation rather than a caveat on it.
 
-\subsection{Climate interpretation and study limitations}
-Opposing product trends prevent a simple attribution of the landscape pattern to regional drying or warming. Acquisition-matched weather describes conditions relevant to the observations more directly, but five composite epochs provide limited temporal replication. Station measurements, soil observations and higher-frequency imagery would help distinguish climatic responses from management, seasonality and land-use processes \citep{sesana2021climate,daly2022adaptation}.
+Point-centred neighbourhoods approximate landscape context rather than monument
+footprints, so the central weights and variance shares are conditional on that
+support. Percentile scores depend on the analysed inventory, D8 routing cannot
+resolve local walls or culverts, and the simulations quantify only the stated
+perturbations. The affine reconstruction is exact but inherits the recorded
+design: 34 of 500 spatial states were not identifiable and were excluded, and the
+retained 466 are not a random subsample. The five externally documented
+components are a convenience sample using heterogeneous methods, so the absence
+of overlap with the core tier indicates construct separation but does not
+quantify accuracy against condition. Opposing product trends also prevent
+attributing the landscape pattern to regional drying or warming
+\citep{sesana2021climate,daly2022adaptation}.
 
-Point-centred neighbourhoods approximate landscape context rather than monument footprints; Saraikala lacks usable geometry. DEM routing cannot resolve every local obstruction, and percentile scores depend on the analysed inventory. Spatial simulations quantify stated perturbations without covering all label, sensor or conservation-model error. The next validation should therefore use independently assessed component-condition observations, record assessor agreement and evaluate components or periods excluded from design choices. Such evidence would test whether the proposed inspection strategy identifies actionable conservation problems.
+The next validation should use independently assessed component-condition
+observations across all inscribed components, record assessor agreement, and test
+whether environmental screening of this kind adds information beyond what damage
+and encroachment records already supply.

@@ -1,0 +1,15 @@
+family,comparison,spearman_rho,rho_ci_low_95,rho_ci_high_95,interval_excludes_zero,kendall_tau,top5_overlap,max_rank_shift,first_ranked_component,reported_in_2026_09_06_main_text
+aggregation rule,Hierarchical reference,1.0,0.9999963922082363,0.9999997228224013,True,1.0,5,0.0,Giri complex of monuments,True
+aggregation rule,Ungrouped equal-factor mean,0.8441717791411044,0.5549234229358458,0.9513263782849353,True,0.6666666666666667,3,7.0,Buddhist remains around Bhallar stupa,True
+aggregation rule,Landscape only,0.3249540770190428,-0.19766039440998956,0.7037284766380432,False,0.1845031011541865,1,11.0,Sirkap (fortified city),True
+aggregation rule,Terrain only,0.8297494129963187,0.5226684427467035,0.9462500771129226,True,0.686586283020789,4,7.0,Buddhist remains around Bhallar stupa,True
+aggregation rule,CRITIC weighting,0.9724097474569846,0.9049802304674414,0.9921851029749451,True,0.9225155057709326,4,4.0,Giri complex of monuments,False
+aggregation rule,Entropy weighting,0.7480074980438344,0.35908492257143415,0.9155819163225841,True,0.5535093034625596,3,7.0,Buddhist remains around Bhallar stupa,False
+aggregation rule,Robust-z logistic,0.0380134958022276,-0.45101982006281105,0.5094920001690099,False,0.0073801240461674,1,14.0,Buddhist remains around Bhallar stupa,False
+aggregation rule,Oriented first principal component,-0.7713060922451996,-0.9246545166695851,-0.4027098382792255,True,-0.5977900477395643,0,16.0,Bhir Mound,False
+single-factor ablation,Without NDVI,0.9914110429447854,0.9694662959313289,0.9976031695156301,True,0.9481481481481482,5,1.0,Giri complex of monuments,True
+single-factor ablation,Without NDBI,0.9895771326579906,0.9630619989298707,0.9970872010188051,True,0.9520360019556025,4,2.0,Giri complex of monuments,True
+single-factor ablation,Without MNDWI,-0.279583130416384,-0.67571730225691,0.24184318226691143,False,-0.2140235973388563,0,13.0,Buddhist remains around Bhallar stupa,True
+single-factor ablation,Without slope,0.6106684164357861,0.13851857049854024,0.856633596461455,True,0.4354273187238802,3,8.0,Sirsukh (fortified ruined city),True
+single-factor ablation,Without wetness,0.8920245398773007,0.6709283512302555,0.9674635141243217,True,0.7481481481481482,4,4.0,Giri Mosque and tombs,False
+single-factor ablation,Without drainage,0.453709466026588,-0.0606837234966626,0.7776831351994774,False,0.3025850858928658,2,8.5,Sirsukh (fortified ruined city),True

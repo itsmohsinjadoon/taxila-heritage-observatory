@@ -1,0 +1,22 @@
+Declaration of interest statement
+
+Manuscript title: Sensitivity-aware inspection prioritisation for archaeological
+landscapes: a reproducible Taxila observatory
+
+Declarations of interest: none.
+
+The authors declare that they have no known competing financial interests or
+personal relationships that could have appeared to influence the work reported in
+this paper.
+
+[[If any author has a financial or personal relationship to declare, replace the
+statement above with the following form and list each one:
+
+  "The authors declare the following financial interests / personal
+   relationships which may be considered as potential competing interests:
+   <name> reports <relationship> with <entity>."]]
+
+Signed on behalf of all authors:
+
+Mohsin Khan (corresponding author)
+Date: ____________________

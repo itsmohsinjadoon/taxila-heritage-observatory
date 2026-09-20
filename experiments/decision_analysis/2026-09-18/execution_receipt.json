@@ -1,0 +1,38 @@
+{
+  "generated_utc": "2026-09-18T19:34:35+00:00",
+  "script": "build_smaa_decision_analysis.py",
+  "input_file": "experiments\\reproduction\\2026-09-06-windows\\tables\\joint_uncertainty_component_draws.csv",
+  "input_sha256": "4c5e2d9fb9d0981a4c389a17ac325a818fadf40f9559f5a3160b4cf76c1757c0",
+  "recorded_draws": 85000,
+  "spatial_states_recorded": 500,
+  "spatial_states_fully_identified": 466,
+  "components": 17,
+  "terrain_formulations": [
+    "equal_factors",
+    "correlation_adjusted",
+    "reduced_slope_drainage"
+  ],
+  "weight_grid_step": 0.005,
+  "weight_grid_points": 201,
+  "full_factorial_scenarios": 280998,
+  "max_affine_residual": 6.5503158452884236e-15,
+  "design_wide_variance_shares": {
+    "spatial_support": 0.3181794709010222,
+    "decision": 0.4575232910260228,
+    "landscape_weight": 0.35199486173451827,
+    "terrain_formulation": 0.08538054001328103,
+    "interaction": 0.2242972380729549
+  },
+  "outputs": {
+    "smaa_acceptability_central_weights.csv": "d88f0c76f249cd28e57c8f10a65ccc3d59feb92d51fbfc0233c98df85fdb41ce",
+    "rank_variance_decomposition.csv": "b4d28a243f669e96c08d03b1bd48a1a1994e9d568d2723ccae3127babc31521e",
+    "inspection_budget_curve.csv": "9e2323a4d08a51f4ede6d4894d7a33607b4dafdaa610337c40226546677b44ef"
+  },
+  "environment": {
+    "python": "3.11.16",
+    "numpy": "2.4.6",
+    "pandas": "2.3.3",
+    "platform": "Windows-10-10.0.26200-SP0"
+  },
+  "scope": "Conditional sensitivity distributions over the declared spatial and decision designs. Not posterior probabilities of deterioration and not a substitute for monument-condition assessment."
+}

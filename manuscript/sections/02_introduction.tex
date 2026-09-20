@@ -1,13 +1,77 @@
 \section{Introduction}
-Archaeological conservation requires decisions across spatial scales: monument fabric, its immediate surroundings and the wider landscape. Satellite observations, terrain models and weather products capture different parts of this system. Translating them into an inspection programme requires more than overlaying indicators: the resulting priorities must be traceable to their environmental drivers and stable enough for a defined management task.
+Conservation of an archaeological landscape is, operationally, a scheduling
+problem. A site authority with a few inspectors, a seasonal weather window and a
+property spread over tens of square kilometres must decide which components to
+visit this year and which to defer. That decision is rarely limited by a lack of
+imagery, but by the absence of a defensible procedure for turning environmental
+evidence into a visit order the authority can justify to a regulator, a funder or
+a periodic-reporting cycle.
 
-Remote sensing and GIS have documented development pressure and supported heritage multi-hazard assessment \citep{agapiou2015paphos,agapiou2016paphos,guerriero2022derwent}. At Taxila, Khan et al. integrated ground-based and satellite evidence for hazard assessment \citep{khan2022taxila}; Butt et al. subsequently examined land-cover transitions and urban encroachment over 1990--2024 \citep{butt2025taxila}. These studies establish the local conservation problem. Recent work by Megarry et al. extends the relevance of surrounding land cover to climate-vulnerability assessment across cultural World Heritage properties in the Indian Subcontinent \citep{megarry2026landcover}. The next decision-oriented question is whether an inspection set persists when spatial support, indicator composition and decision weights change. Mapping pressure and evaluating the stability of a management recommendation are complementary contributions.
+Systematic reviews of climate and cultural heritage identify this translation
+step, not hazard detection, as the weak link between research and conservation
+practice \citep{fatoric2017threatened,orr2021climate}. Deterioration mechanisms
+are diverse and site-specific, from Arctic permafrost loss
+\citep{hollesen2018arctic} to Mediterranean coastal erosion
+\citep{reimann2018mediterranean} and inland fluvial hazard
+\citep{liu2019angkor,arrighi2023flood}, and vulnerability depends on materials,
+maintenance, drainage and microenvironment as well as forcing
+\citep{sesana2021climate,sesana2020vulnerability,crowley2022risk}.
 
-GIS multicriteria methods formalise indicator aggregation, while sensitivity analysis reveals dependence on weights and spatial representation \citep{malczewski2006gis,feizizadeh2014uncertainty}. Rank-acceptability methods further describe which alternatives remain preferred under uncertain criteria and preferences \citep{lahdelma2001smaa}. For archaeological landscapes, these ideas motivate an experimental treatment of priority construction: correlated proxies can duplicate information, neighbouring buffers can share observations, and uncertain coordinates can alter the sampled environment. A single final ranking leaves these dependencies unresolved.
+Earth observation and GIS supply the inputs such assessments require, with mature
+workflows for landscape survey, hazard screening, disaster-risk management and
+monitoring of designated properties in changing environments
+\citep{lasaponara2011satellite,opitz2018trends,tapete2018geosciences,agapiou2020eo,luo2023space,guzman2020monitoring,agapiou2021dynamic,hadjimitsis2013cyprus},
+increasingly with machine-learning support
+\citep{argyrou2022review,yao2023overview,xiao2018geoinformatics}. Applications
+reaching a component-level ordering typically combine indicators by weighted
+aggregation and report the resulting index or zonation
+\citep{yang2023yongtai,guerriero2022derwent,romao2022risk}.
 
-Climate interpretation introduces temporal-support constraints. Exposure depends on materials, maintenance, drainage and microenvironment alongside meteorological forcing \citep{sesana2021climate,sesana2020vulnerability,crowley2022risk}. Acquisition-matched weather and cross-product comparison can test whether a proposed explanation is consistent with the observations. Separately, predictive evaluation must distinguish geographic land-cover transfer from conservation-condition assessment. Spatially nearby samples can share predictors and labels \citep{hijmans2012cv,roberts2017cv,meyer2021aoa}; reproducing a global land-cover product does not establish monument deterioration.
+What such outputs generally do not report is how much of the ordering is a
+property of the landscape and how much is a property of the analysis. GIS
+multicriteria methods make aggregation explicit, sensitivity analysis can expose
+dependence on weights and spatial representation
+\citep{malczewski2006gis,feizizadeh2014uncertainty,helton2006sensitivity}, and
+rank-acceptability analysis describes which alternatives stay preferred under
+uncertain criteria \citep{lahdelma2001smaa}. These tools are uncommon in heritage
+prioritisation, yet the conditions motivating them are routine: correlated
+spectral proxies duplicate information, overlapping neighbourhoods share
+observations, inventory coordinates are imprecise, and domain weights are
+declared rather than measured. A single ranking therefore leaves a site manager
+unable to separate an exposed component from an artefact of a weighting choice.
 
-We develop CHIP as an experimentally evaluated inspection framework with three contributions. First, a hierarchical landscape--terrain rule exposes indicator influence through baselines and ablations, and exact weight crossings identify where inspection leadership changes. Second, multiscale, shared-block, positional and nested spatial--decision experiments distinguish persistent priorities from representation-dependent ones. Third, acquisition-matched climate comparisons and a seven-family buffered land-cover benchmark evaluate the environmental and predictive evidence supporting interpretation. The resulting inspection portfolio retains both a persistent component set and the mechanisms that require field verification.
+Taxila makes these questions concrete: a serial inscription of 18 Gandharan
+components in northern Punjab, Pakistan, in a rapidly urbanising corridor. Khan
+et al. document damage at three components from ground geophysics and satellite
+evidence \citep{khan2022taxila}; Butt et al. map land-cover transition and urban
+encroachment across the property over 1990--2024 \citep{butt2025taxila}; and
+Megarry et al. extend the relevance of surrounding land cover to
+climate-vulnerability assessment for cultural World Heritage across the Indian
+Subcontinent \citep{megarry2026landcover}. These establish that the conservation
+problem is real and that landscape context carries information about it. They do
+not establish which components a limited inspection programme should visit first,
+nor how firmly that answer is held.
+
+We develop CHIP to address that gap, with four contributions. First, a
+hierarchical landscape--terrain rule exposes indicator influence through a
+complete set of alternative aggregation rules and single-factor ablations, with
+interval estimates on every rank comparison. Second, multiscale, shared-block,
+positional and nested spatial--decision experiments separate persistent
+priorities from representation-dependent ones. Third, and centrally, the joint
+simulation admits an exact affine reconstruction that converts it into a balanced
+full-factorial design, yielding rank-acceptability indices, central weights,
+confidence factors, a decomposition of rank variance into decision and
+spatial-support contributions, and an inspection-budget curve. Fourth, we
+confront the resulting ordering with the independent published evidence of damage
+and encroachment at Taxila, and report that confrontation whatever its outcome.
 
 \section{Research aim}
-The study identifies which Taxila components merit early field inspection and which parts of that recommendation depend on analytical choices. It tests adverse spectral convergence on common spatial support, changes in climate interpretation across acquisition windows and products, rank stability across neighbourhoods and uncertainty designs, and land-cover proxy agreement under buffered spatial evaluation. Mathematical definitions connect these experiments to reproducible component-level decisions.
+The study identifies which Taxila components merit early field inspection, how
+firmly that recommendation is held, and which assumption a manager would have to
+resolve to sharpen it. It tests adverse spectral convergence against an analytic
+independence reference, rank stability across neighbourhoods, aggregation rules
+and uncertainty designs, the relative contribution of decision and spatial
+assumptions to rank uncertainty, the inspection budget required for a stated
+coverage probability, and the agreement between the resulting order and
+independently published component-level evidence. Mathematical definitions
+connect these experiments to reproducible component-level decisions.

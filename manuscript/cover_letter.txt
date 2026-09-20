@@ -1,14 +1,77 @@
-Dear Editor,
+To the Editors, Journal of Cultural Heritage
 
-Please consider "Sensitivity-aware inspection prioritisation for archaeological landscapes: a reproducible Taxila observatory" for the Journal of Cultural Heritage.
+Dear Editors,
 
-The study addresses how conservation teams can translate heterogeneous geospatial observations into a defensible sequence of field inspections. Using the Taxila World Heritage property, it combines multi-epoch satellite observations, terrain descriptors and acquisition-matched weather with explicit tests of spatial support, indicator dependence and rank uncertainty. A separate buffered land-cover benchmark tests geographic proxy agreement without conflating it with monument condition.
+We submit for your consideration "Sensitivity-aware inspection prioritisation for
+archaeological landscapes: a reproducible Taxila observatory" as an original
+research article.
 
-The methodological contribution is an explicit evaluation of the inspection rule. Mathematical definitions connect hierarchical indicator integration to exact decision-weight transitions, shared spatial-block resampling, positional perturbations and nested spatial-decision simulation. The main article presents the central experiments, including a seven-family spatial comparison and probability diagnostics. The revised framework diagram and three-dimensional rank-response view make the dependencies between observations, assumptions and management recommendations visible.
+The problem we address is a scheduling problem that site authorities face
+everywhere and that the literature addresses only indirectly. Environmental
+screening can order the components of a serial property by inferred pressure, but
+published orderings almost never report how much of the order is a property of
+the landscape and how much is a property of the analysis. A site manager handed a
+ranking cannot tell an exposed component from an artefact of a weighting choice,
+and gets no guidance on whether to resolve a preference or to acquire better data.
 
-The study is positioned alongside recent Taxila risk and land-cover research and the journal's 2026 work on the landscape context of World Heritage climate vulnerability. Its output is a component-specific inspection portfolio with explicit evidence limits. Supplementary tables, machine-readable results and executable code document the computations supporting the main article.
+Our contribution is to answer those questions for the Taxila World Heritage
+property, and to do so with a method that transfers. We show that the joint
+spatial-decision simulation underlying such a framework admits an exact affine
+reconstruction: the latent landscape and terrain terms are identified by the
+recorded draws themselves, to machine precision. That converts 5,000 Monte Carlo
+draws into a balanced 280,998-scenario factorial design at no additional
+computational cost, and yields three results a ranking cannot express. No
+component reaches a first-rank confidence factor above 0.42. Decision assumptions
+account for 45.8% of rank variance against 31.8% for spatial support, and the
+split inverts between components, so the analysis prescribes per component
+whether a weighting decision or a data acquisition would settle its rank. And an
+inspection budget curve shows that visiting the three core-tier components covers
+a scenario's own three highest priorities in only 17.9% of cases, against 51.8%
+for four - which prices the recommendation in site visits rather than asserting a
+tier.
+
+We also report a result that does not favour our framework, and we consider it
+the most important one in the paper. We confronted the ordering with the
+independent published evidence for Taxila. None of the five components for which
+damage or encroachment has been documented by Khan et al. (2022, this journal) or
+Butt et al. (2025) falls within our core tier, and the component with the
+clearest documented loss of designated area cannot be scored at all because its
+inventory coordinate is unresolved. Rather than omit this, we have made it the
+paper's framing: environmental screening of this kind measures moisture- and
+terrain-driven landscape pressure, which is a different construct from documented
+fabric damage or built-up encroachment, and it must be combined with damage
+records rather than substituted for them. We believe a conservation readership is
+better served by a screening tool with a stated scope than by a risk ranking with
+an implied one.
+
+The work is fully reproducible. Every number, figure and table derives from an
+archived evidence package with a SHA-256 manifest covering 158 files, and the
+decision-analysis scripts are included. All results were independently
+re-executed on two platforms.
+
+The manuscript is 4,993 words excluding tables and references, with ten display
+items (eight figures, two tables) and a Research aim section of 88 words. It has
+not been published previously and is not under consideration elsewhere. Author
+identity is confined to the separate title page, so the manuscript file is
+suitable for anonymised review.
+
+In line with the journal's guidance we suggest the following possible reviewers,
+each selected because their published work is cited in this manuscript:
+
+  1. [[W. P. Megarry, affiliation, e-mail]] - land cover and climate
+     vulnerability of cultural World Heritage (J. Cult. Herit., 2026).
+  2. [[Athos Agapiou, affiliation, e-mail]] - Earth observation for heritage
+     disaster risk management (Remote Sens., 2020).
+  3. [[Xavier Romao, affiliation, e-mail]] - risk protection and prioritisation
+     for cultural heritage (Int. J. Disaster Risk Reduct., 2022).
+
+We declare no competing interests, and confirm that the manuscript, the separate
+title page, the highlights and the supplementary material are submitted in the
+formats set out in the Guide for Authors.
 
 Yours sincerely,
-Mohsin Khan
-Corresponding author
+
+Mohsin Khan (corresponding author), on behalf of all authors
+Department of Artificial Intelligence and Data Science, FAST School of Computing,
+National University of Computer and Emerging Sciences (FAST-NUCES), Islamabad 44000, Pakistan
 mohsin.khan@isb.nu.edu.pk

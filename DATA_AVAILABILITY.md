@@ -1,6 +1,6 @@
 # Data availability and reproducibility boundary
 
-## Included in this private repository
+## Included in this public archive
 
 - Frozen five-epoch Landsat-derived index, pressure, land-cover, and support rasters on the declared 30 m grid.
 - Taxila component points, analytical neighbourhoods, and derived field-inspection-priority vectors.

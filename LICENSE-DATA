@@ -1,0 +1,14 @@
+Derived data licence: Creative Commons Attribution 4.0 International (CC BY 4.0)
+https://creativecommons.org/licenses/by/4.0/
+
+This licence covers the DERIVED data products in this repository: processed
+rasters, component-level score tables, experiment outputs, simulation draw
+records and result tables.
+
+It does NOT cover the original third-party payloads from which those products
+were derived. Landsat Collection 2 (USGS/NASA), ESA WorldCover, Open-Meteo,
+NASA POWER, OpenStreetMap, Natural Earth and geoBoundaries each remain subject
+to their own providers' terms. The acquisition scripts and request manifests in
+this repository allow those inputs to be re-acquired from their sources.
+
+Attribution: please cite the associated article and this repository.

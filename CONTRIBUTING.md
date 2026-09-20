@@ -1,6 +1,6 @@
 # Contributing
 
-Taxila Heritage Observatory is currently a private pre-submission research repository. Changes should preserve the frozen evidence chain and must not silently alter numerical claims.
+Taxila Heritage Observatory is the public data and code archive supporting a submitted research article. Changes should preserve the frozen evidence chain and must not silently alter numerical claims.
 
 ## Change discipline
 

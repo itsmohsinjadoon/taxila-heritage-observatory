@@ -7,7 +7,9 @@
 \usepackage[hidelinks]{hyperref}
 \graphicspath{{../figures/main/}{../figures/supplementary/}}
 \setlength{\emergencystretch}{2em}
+\input{../sections/result_macros}
 \begin{document}
+\renewcommand{\thesection}{S\arabic{section}}
 \renewcommand{\thetable}{S\arabic{table}}
 \renewcommand{\thefigure}{S\arabic{figure}}
 \begin{center}\Large\bfseries Supplementary Information\end{center}
@@ -53,6 +55,11 @@ et0\_sum\_mm & 2.2850 & -1.2405 & 5.5941 & 0.2164 & 0.2597 \\
 \end{longtable}
 \endgroup
 Precipitation and evapotranspiration slopes are in mm year$^{-1}$, temperature slopes in $^\circ$C year$^{-1}$, humidity in percentage points year$^{-1}$, soil moisture in m$^3$ m$^{-3}$ year$^{-1}$ and event counts in days year$^{-1}$. Effective-sample-size diagnostics use detrended lag-one correlation and are bounded by the observed record length; they do not replace the bootstrap.
+\begin{figure}[tbp]\centering
+\includegraphics[width=\textwidth]{figure_s01_annual_climate_trends.pdf}
+\caption{Annual climate series and robust trend fits for the regional four-cell average, 1991--2025. Intervals are residual-block replicates; inference is conditional on the weather product.}\label{fig:s-trends}
+\end{figure}
+
 \section{Ranks and uncertainty scope}
 The following tables report component scores and two complementary sensitivity designs. The weight experiment perturbs the integrated domain architecture; the spatial experiment resamples 150 m spectral blocks with terrain fixed. They must not be described as the same probability distribution.
 
@@ -261,6 +268,90 @@ Seed & Macro-F1 & Agreement & Log loss & ECE \\
 2026.0000 & 0.8205 & 0.8116 & 0.4987 & 0.0133 \\
 \end{longtable}
 
+\section{Land-cover benchmark protocol (moved from the main Methods)}
+\subsection{Buffered model selection and probability diagnostics}
+The weakly supervised benchmark contained 20,749 class-stratified samples, six reflectance bands and four indices. Its outer stripe contained 4,188 samples in 20 blocks; 4,467 samples in adjacent block columns were excluded, leaving 12,094 development samples in 60 blocks. Three contiguous inner validation bands each excluded an adjacent block row from training. This design targets geographical transfer \citep{roberts2017cv,meyer2018target,valavi2019blockcv}, with class-stratified agreement interpreted separately from population-area map accuracy \citep{olofsson2014accuracy,stehman2019accuracy}. Spatially blocked evaluation and its limitations are both documented \citep{ploton2020spatial,wadoux2021spatial}; we report the blocked result and the controls rather than treating either convention as settled.
+
+Seven families---logistic regression, random forest, extra trees, histogram gradient boosting, MLP, XGBoost and CatBoost---each received three predeclared configurations \citep{breiman2001rf,pedregosa2011sklearn,chen2016xgboost,prokhorenkova2018catboost}. The resulting 63 inner fits selected family $m$ and configuration $\eta$ through
+\begin{equation}\label{eq:selection}
+\begin{aligned}
+(\widehat m,\widehat\eta)&=\arg\max_{m,\eta}\frac13\sum_{v=1}^{3}
+ F_{1,\mathrm{macro}}(y_v,\widehat f_{m,\eta}^{(-v)}(X_v)),\\
+F_{1,\mathrm{macro}}&=\frac16\sum_{c=1}^{6}
+ \frac{2\mathrm{TP}_c}{2\mathrm{TP}_c+\mathrm{FP}_c+\mathrm{FN}_c}.
+\end{aligned}
+\end{equation}
+Undefined class terms receive zero. Water was absent from one inner training fold; the six-class denominator was retained and unseen-class probability set to zero where necessary. Standardisation was fitted within training folds and early stopping disabled. All families were refitted on development data before outer prediction; selection used only inner scores.
+
+Alongside macro-F1, fixed-six-class mean recall and overall agreement, probability quality used
+\begin{equation}\label{eq:probability}
+\mathcal L=-\frac1n\sum_{j=1}^n\log p_{j,y_j},\qquad
+\mathrm{BS}=\frac1n\sum_{j=1}^n\sum_{c=1}^{6}(p_{jc}-\mathbf1[y_j=c])^2.
+\end{equation}
+Log loss and the unnormalised multiclass Brier score assess probabilistic predictions \citep{gneiting2007scoring}. Ten equal-width confidence bins define top-label calibration error as $\sum_b(n_b/n)|\mathrm{accuracy}_b-\mathrm{confidence}_b|$. A scalar $\tau\in[0.25,4]$ minimised development out-of-fold log loss, using
+\begin{equation}\label{eq:temperature}
+p_{jc}^{(\tau)}=\frac{\exp[\log(\max\{p_{jc},10^{-12}\})/\tau]}
+ {\sum_{h=1}^{6}\exp[\log(\max\{p_{jh},10^{-12}\})/\tau]}.
+\end{equation}
+The transform follows temperature scaling \citep{guo2017calibration}; its transfer was tested on outer probabilities. Two thousand shared test-block resamples estimated paired macro-F1 differences. Bands-only, indices-only, location-only, shuffled-label and class-prior controls tested information content; three seeds assessed refit sensitivity.
+
+The outer stripe had been examined previously, making this a retrospective comparison. WorldCover consensus labels also differ temporally from E2019 predictors. These experiments therefore evaluate land-cover proxy agreement without establishing independent monument-condition accuracy.
+
+
+\begin{figure}[tbp]\centering
+\includegraphics[width=\textwidth]{figure_s02_weather_product_comparison.pdf}
+\caption{Matched annual precipitation and temperature in the two gridded weather products. Dashed lines indicate equality. Product disagreement constrains environmental interpretation in the absence of station validation; this figure was carried in the main article of earlier manuscript generations.}\label{fig:s-weather}
+\end{figure}
+
+\section{Climate trend and forcing definitions (moved from the main Methods)}
+\subsection{Climate trends and acquisition-matched forcing}
+The regional daily series averages four unique weather cells equally before annual aggregation. For annual values $Y_t$, the Theil--Sen estimator is
+\begin{equation}\label{eq:sen}
+\widehat\beta=\operatorname{median}_{u>t}\frac{Y_u-Y_t}{u-t}.
+\end{equation}
+After robust trend fitting, five-year residual blocks were resampled and the fitted trend restored to obtain 2,000 slope replicates \citep{sen1968slope,yue2002autocorrelation}. Null replicates add resampled residuals to a constant baseline. The two-sided probability is $(1+\sum_b\mathbf1[|\beta_b^0|\geq|\widehat\beta|])/(2,001)$; Benjamini--Hochberg adjustment covers 12 annual metrics \citep{benjamini1995fdr}. Inference assumes adequate representation of short-range residual dependence and remains conditional on the weather product.
+
+For acquisition dates $a\in\mathcal A_e$, daily precipitation $W(t)$ and antecedent window $\ell$,
+\begin{equation}\label{eq:lags}
+\overline W_e(\ell)=\frac{1}{|\mathcal A_e|}\sum_{a\in\mathcal A_e}
+ \sum_{u=1}^{\ell}W(a-u),\qquad \ell\in\{7,30,90,180,365\}\ \mathrm{days}.
+\end{equation}
+Temperature uses window means. Product comparisons match dates and periods. Five composite epochs provide only five temporal replicates for exploratory weather--spectral associations; no weather field was downscaled to 30 m.
+
+
+\input{../tables/supplementary/table_s10_extension_models}
+
+\subsection{Superseded proxy-model selection protocol}
+An earlier generation of this study used a different inner cross-validation protocol for the land-cover benchmark, under which the multilayer perceptron was development-selected (inner macro-F1 0.871) and reported an outer macro-F1 of 0.831 on the identical 12,094/4,467/4,188 split. That protocol was revised to the three contiguous inner validation bands described above, each excluding an adjacent block row from training, because the earlier folds did not exclude adjacent blocks and therefore understated spatial leakage. Under the revised protocol the development-selected model is \ExtensionModel{} with inner macro-F1 \ExtensionCV{}. The superseded table is retained in the evidence archive under a \texttt{SUPERSEDED\_} filename prefix so that the change is auditable; all results reported in this article use the revised protocol.
+
+\section{Uncertainty propagation designs (moved from the main Methods)}
+\subsection{Spatial, positional and joint uncertainty propagation}
+At each block size (90, 150, 300 m), 2,000 spatial draws used shared exponential weights. If $m_{ibk}$ is the median of factor $k$ in block $b$ intersecting component $i$, and $n_{ib}$ its valid-cell count,
+\begin{equation}\label{eq:block}
+E_b^{(d)}\sim\operatorname{Exp}(1),\quad v_{ib}^{(d)}=n_{ib}E_b^{(d)},\quad
+\widetilde x_{ik}^{(d)}=\operatorname{wmed}_{b}\{m_{ibk};v_{ib}^{(d)}\}.
+\end{equation}
+The weighted median is the first ordered block median reaching half the cumulative weight. Sharing $E_b^{(d)}$ across overlapping neighbourhoods preserves their resampling dependence, and cell counts retain unequal spatial support; terrain is fixed here.
+
+For positional sensitivity, independent uniform-area displacements are
+\begin{equation}\label{eq:displacement}
+\boldsymbol\delta_i=d_{\max}\sqrt{U_i}(\cos\phi_i,\sin\phi_i),\quad
+U_i\sim U(0,1),\quad \phi_i\sim U(0,2\pi).
+\end{equation}
+Spectral and terrain summaries were re-extracted for 2,000 draws at each $d_{\max}\in\{30,60,120\}$ m. An undisplaced re-extraction supplies the appropriate control. The oriented percentile definition (main text, Eq.~2) distinguishes this endpoint reference from the fixed summary-table reference.
+
+Joint simulation generates 500 spatial states, each with sampled block size, shared block weights and independent displacement within 120 m. Ten decision settings per state sample $w\sim U(0,1)$ and one terrain formulation. For resulting ordinal ranks $R_i^{sd}$, top-$k$ frequency is
+\begin{equation}\label{eq:acceptability}
+\widehat b_i(k)=\frac{1}{500\times10}\sum_{s=1}^{500}\sum_{d=1}^{10}
+ \mathbf1[R_i^{sd}\leq k].
+\end{equation}
+Median ranks and central 95\% intervals summarise these 5,000 nested score vectors. They are conditional sensitivity distributions, not 5,000 independent maps or posterior probabilities of deterioration. The same frequency definition over 27 structural scenarios defines a core tier at
+$b_i(3)\geq0.5$ and a conditional tier outside it at $b_i(5)\geq0.5$. Because
+these frequencies are read from 27 scenarios, each is reported with an exact
+Clopper--Pearson interval; the interval expresses the resolving power of 27
+comparisons rather than sampling from a scenario population.
+
+
 \section{Complete sensitivity experiments}
 The main experimental robustness figure presents selected components and contrasts. The tables below report every component in the joint simulation and structural scenarios, together with complete baseline and ablation comparisons. Spatial states and decision settings remain nested; frequencies are conditional simulation summaries.
 \input{../tables/supplementary/table_full_joint}
@@ -271,7 +362,15 @@ All pairwise crossings of the fixed E2024 linear scores were enumerated independ
 \input{../tables/supplementary/table_exact_weight_intervals}
 \section{Additional environmental diagnostics}
 Source manifests provide retained scene identifiers, acquisition windows and preprocessing specifications. The following figures supply acquisition-specific weather, terrain and indicator-dependence details supporting the main analysis.
-\begin{figure}[p]\centering\includegraphics[width=\textwidth,height=.77\textheight,keepaspectratio]{figure_06_epoch_specific_weather_forcing.pdf}\caption{Weather matched to the retained Landsat acquisition windows; contextual rather than causal.}\end{figure}
-\begin{figure}[p]\centering\includegraphics[width=\textwidth,height=.77\textheight,keepaspectratio]{figure_08_terrain_hydrological_susceptibility.pdf}\caption{Elevation-derived terrain and drainage proxies. These do not constitute a hydraulic model.}\end{figure}
-\begin{figure}[p]\centering\includegraphics[width=\textwidth,height=.77\textheight,keepaspectratio]{figure_12_indicator_redundancy.pdf}\caption{Dependence among component-level indicator ranks.}\end{figure}
+\begin{figure}[p]\centering\includegraphics[width=\textwidth,height=.77\textheight,keepaspectratio]{figure_s03_climatology.pdf}\caption{Daily climatology of the regional four-cell average, 1991--2025, showing the post-monsoon window from which the Landsat composites are drawn.}\label{fig:s-clim}
+\end{figure}
+\begin{figure}[p]\centering\includegraphics[width=\textwidth,height=.77\textheight,keepaspectratio]{figure_s04_seasonal_anomalies.pdf}\caption{Seasonal precipitation and temperature anomalies by year. Anomalies are relative to the 1991--2025 seasonal means of the same product.}\label{fig:s-anom}
+\end{figure}
+\begin{figure}[p]\centering\includegraphics[width=\textwidth,height=.77\textheight,keepaspectratio]{figure_s05_extreme_timeline.pdf}\caption{Timeline of heavy-precipitation and heat days. Event thresholds are defined in Section~S6.}\label{fig:s-extreme}
+\end{figure}
+\begin{figure}[p]\centering\includegraphics[width=\textwidth,height=.77\textheight,keepaspectratio]{figure_s06_weather_spectral_associations.pdf}\caption{Associations between antecedent weather windows and component spectral summaries. Five composite epochs provide only five temporal replicates, so these associations are underpowered and are reported as diagnostics, not findings.}\label{fig:s-assoc}
+\end{figure}
+\begin{figure}[p]\centering\includegraphics[width=\textwidth,height=.77\textheight,keepaspectratio]{figure_s07_epoch_specific_weather_forcing.pdf}\caption{Weather matched to the retained Landsat acquisition windows; contextual rather than causal.}\end{figure}
+\begin{figure}[p]\centering\includegraphics[width=\textwidth,height=.77\textheight,keepaspectratio]{figure_s08_terrain_hydrological_susceptibility.pdf}\caption{Elevation-derived terrain and drainage proxies. These do not constitute a hydraulic model.}\end{figure}
+\begin{figure}[p]\centering\includegraphics[width=\textwidth,height=.77\textheight,keepaspectratio]{figure_s09_indicator_redundancy.pdf}\caption{Dependence among component-level indicator ranks.}\end{figure}
 \end{document}
