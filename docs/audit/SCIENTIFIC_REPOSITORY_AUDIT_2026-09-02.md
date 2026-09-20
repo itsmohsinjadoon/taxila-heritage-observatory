@@ -1,5 +1,13 @@
 # Taxila Heritage Observatory scientific and repository audit
 
+> **Status note (2026-09-19).** This audit describes the repository as it stood on
+> 2 September 2026 and is retained as a historical record. Its verdict — "not yet
+> suitable for a public archival release" — refers to that state, **not** to the
+> current one. The defects it identified were addressed in the revision documented
+> in [`REVISION_REPORT.md`](../../REVISION_REPORT.md). Read this file as history,
+> not as a current assessment.
+
+
 **Audit date:** 2 September 2026  
 **Scope:** frozen evidence package, executable notebook, integrated experiment bundle, figures, journal-neutral LaTeX source, and the submitted anonymised main and supplementary PDFs supplied separately by the author.  
 **Decision:** suitable as a private revision repository; **not yet suitable for a public archival release or an unchanged Journal of Cultural Heritage resubmission**.
