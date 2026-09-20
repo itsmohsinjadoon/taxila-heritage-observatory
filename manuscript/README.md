@@ -1,8 +1,8 @@
 > Current technical revision: 14 equations, 44 references, seven figures and three tables, including exact decision-weight analysis and a comprehensive framework.
 
-# Active manuscript revision — 6 September 2026
+# Active manuscript revision — 19 September 2026
 
-`main.tex` is the anonymous main article; `supplementary/supplementary_information.tex` is its anonymous supplement. `title_page.tex` contains the author identities and unresolved declarations. `highlights.txt` and `cover_letter.txt` are separate submission components. Compiled PDFs are in `output/` locally and the versioned `review-package/` directory for repository handoff.
+`main.tex` is the anonymous main article; `supplementary/supplementary_information.tex` is its anonymous supplement. `title_page.tex` carries the author identities, the CRediT statement and the remaining author-supplied details. `highlights.txt` and `cover_letter.txt` are separate submission components. Compiled PDFs are not tracked here: build them with `latexmk -pdf main.tex`, or use the ready-to-upload project in `../submission-packages/JCH_2026-09-19/`. Run `scripts/validate_manuscript.py` to check the sources against the Journal of Cultural Heritage submission limits before compiling.
 
 The seven-family table and diagnostics use actual Colab outputs. `source_traceability/revision_result_sources.csv` records the exact result hashes. Rebuild with `scripts/build_manuscript_evidence.py` from the repository root. New deterministic decision-weight calculations are stored separately from the earlier Colab and Windows experiments.
 
