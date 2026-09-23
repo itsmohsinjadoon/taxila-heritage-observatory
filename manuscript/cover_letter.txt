@@ -55,16 +55,6 @@ not been published previously and is not under consideration elsewhere. Author
 identity is confined to the separate title page, so the manuscript file is
 suitable for anonymised review.
 
-In line with the journal's guidance we suggest the following possible reviewers,
-each selected because their published work is cited in this manuscript:
-
-  1. [[W. P. Megarry, affiliation, e-mail]] - land cover and climate
-     vulnerability of cultural World Heritage (J. Cult. Herit., 2026).
-  2. [[Athos Agapiou, affiliation, e-mail]] - Earth observation for heritage
-     disaster risk management (Remote Sens., 2020).
-  3. [[Xavier Romao, affiliation, e-mail]] - risk protection and prioritisation
-     for cultural heritage (Int. J. Disaster Risk Reduct., 2022).
-
 We declare no competing interests, and confirm that the manuscript, the separate
 title page, the highlights and the supplementary material are submitted in the
 formats set out in the Guide for Authors.
