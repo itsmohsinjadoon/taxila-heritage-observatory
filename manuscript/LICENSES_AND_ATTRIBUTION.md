@@ -1,6 +1,6 @@
 # Licences and attribution
 
-The manuscript text and original workflow diagram are supplied for author review and scholarly submission. Copyright and licensing remain subject to the authors' final decision and any later publisher agreement.
+The manuscript text and original CHIP framework diagram are supplied for author review and scholarly submission. Copyright and licensing remain subject to the authors' final decision and any later publisher agreement.
 
 The analytical figures and tables were generated from the study's verified outputs. Underlying third-party datasets retain their original terms and must be cited and accessed through the providers identified in Table 1, `references.bib` and `source_traceability/source_manifest.csv`. Principal providers include UNESCO World Heritage Centre, United States Geological Survey, European Space Agency WorldCover, Open-Meteo, NASA POWER and the Shuttle Radar Topography Mission data provider.
 
@@ -17,3 +17,7 @@ The canonical Figure 1 under `figures/main/` preserves the author-approved carto
 - Sentinel-2, Natural Earth and geoBoundaries files in the same directory support the clearly labelled open-data comparison variant; they are not represented as the basemap of the canonical manuscript figure.
 
 The analytical circles in the figure are sampling neighbourhoods and are not UNESCO or legal boundaries.
+
+## Figure 2 Sentinel imagery
+
+Figure 2 panel A uses a modified Sentinel-2 true-colour raster from 2024. Its manuscript caption carries the notice: "Contains modified Copernicus Sentinel data 2024." This source imagery is for contextual display within the author-created CHIP diagram; underlying third-party imagery retains its provider terms.
