@@ -13,9 +13,9 @@ Use the [current Guide for Authors](https://www.sciencedirect.com/journal/journa
 
 ## Checks remaining for the authors and submission system
 
-1. Decide whether any person or institution should be added to acknowledgements for inventory access. The current title page thanks only public-data providers.
+1. The author-approved acknowledgement names only the FAST-NUCES research environment and institutional resources where Mohsin Khan conducted this research. Data-provider credits remain in figure captions, citations and attribution records.
 2. Confirm that every author agrees with their CRediT role and the final competing-interest, originality, ethics/permit and AI-use declarations. Mohsin Khan has reported approval of the manuscript and author order by all three authors.
-3. Screen suggested reviewers Megarry, Tapete and Fatorić for collaboration, shared affiliation and other conflicts with any author before entering them in Editorial Manager.
+3. Mohsin Khan reports no personal acquaintance with suggested reviewers Megarry, Tapete and Fatorić. Sadiq Ullah and Faridoon Khan must still screen them for recent collaboration, shared affiliation and other conflicts before they are entered in Editorial Manager. The journal chooses the handling editor and reviewers; reviewer leniency cannot be established in advance.
 4. Check that the exact repository snapshot supports every reported result, that all displayed figures are legible at print size, and that source attribution and permissions are adequate. Check the GitHub Actions build on the final commit.
 5. Do not claim the historical proxy-model rerun met every frozen evidence lock. The [2 September scientific audit](audit/SCIENTIFIC_REPOSITORY_AUDIT_2026-09-02.md) recorded 24/27 passing checks and three MLP discrepancies. The main article must keep its proxy benchmark and landscape-priority claims within their stated limits. See [reproducibility](../REPRODUCIBILITY.md).
 
