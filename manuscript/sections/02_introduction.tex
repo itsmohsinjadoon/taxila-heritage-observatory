@@ -1,11 +1,5 @@
 \section{Introduction}
-Conservation of an archaeological landscape is, operationally, a scheduling
-problem. A site authority with a few inspectors, a seasonal weather window and a
-property spread over tens of square kilometres must decide which components to
-visit this year and which to defer. That decision is rarely limited by a lack of
-imagery, but by the absence of a defensible procedure for turning environmental
-evidence into a visit order the authority can justify to a regulator, a funder or
-a periodic-reporting cycle.
+Conserving a serial archaeological landscape requires deciding which components to inspect with limited staff and time. Satellite imagery is abundant, but authorities still need a defensible way to turn environmental evidence into a visit order.
 
 Systematic reviews of climate and cultural heritage identify this translation
 step, not hazard detection, as the weak link between research and conservation
@@ -27,51 +21,8 @@ reaching a component-level ordering typically combine indicators by weighted
 aggregation and report the resulting index or zonation
 \citep{yang2023yongtai,guerriero2022derwent,romao2022risk}.
 
-What such outputs generally do not report is how much of the ordering is a
-property of the landscape and how much is a property of the analysis. GIS
-multicriteria methods make aggregation explicit, sensitivity analysis can expose
-dependence on weights and spatial representation
-\citep{malczewski2006gis,feizizadeh2014uncertainty,helton2006sensitivity}, and
-rank-acceptability analysis describes which alternatives stay preferred under
-uncertain criteria \citep{lahdelma2001smaa}. These tools are uncommon in heritage
-prioritisation, yet the conditions motivating them are routine: correlated
-spectral proxies duplicate information, overlapping neighbourhoods share
-observations, inventory coordinates are imprecise, and domain weights are
-declared rather than measured. A single ranking therefore leaves a site manager
-unable to separate an exposed component from an artefact of a weighting choice.
+A ranked index rarely shows whether its order reflects landscape differences or analytical choices. GIS multicriteria methods expose aggregation, sensitivity analysis tests weights and spatial representation \citep{malczewski2006gis,feizizadeh2014uncertainty,helton2006sensitivity}, and rank acceptability identifies alternatives preferred under uncertain criteria \citep{lahdelma2001smaa}. These checks matter when spectral proxies correlate, neighbourhoods share observations, inventory points are imprecise and weights are declared rather than measured. Without them, a manager cannot distinguish exposure from a modelling artefact.
 
-Taxila makes these questions concrete: a serial inscription of 18 Gandharan
-components in northern Punjab, Pakistan, in a rapidly urbanising corridor. Khan
-et al. document damage at three components from ground geophysics and satellite
-evidence \citep{khan2022taxila}; Butt et al. map land-cover transition and urban
-encroachment across the property over 1990--2024 \citep{butt2025taxila}; and
-Megarry et al. extend the relevance of surrounding land cover to
-climate-vulnerability assessment for cultural World Heritage across the Indian
-Subcontinent \citep{megarry2026landcover}. These establish that the conservation
-problem is real and that landscape context carries information about it. They do
-not establish which components a limited inspection programme should visit first,
-nor how firmly that answer is held.
+Taxila, a serial inscription of 18 Gandharan components in Punjab, Pakistan, faces documented damage and encroachment. Khan et al. report damage at three components from ground geophysics and satellite evidence \citep{khan2022taxila}; Butt et al. map land-cover transition and urban encroachment over 1990--2024 \citep{butt2025taxila}; and Megarry et al. assess surrounding land cover in South Asian World Heritage climate vulnerability \citep{megarry2026landcover}. These studies establish the conservation need but neither an inspection order nor its uncertainty.
 
-We develop CHIP to address that gap, with four contributions. First, a
-hierarchical landscape--terrain rule exposes indicator influence through a
-complete set of alternative aggregation rules and single-factor ablations, with
-interval estimates on every rank comparison. Second, multiscale, shared-block,
-positional and nested spatial--decision experiments separate persistent
-priorities from representation-dependent ones. Third, and centrally, the joint
-simulation admits an exact affine reconstruction that converts it into a balanced
-full-factorial design, yielding rank-acceptability indices, central weights,
-confidence factors, a decomposition of rank variance into decision and
-spatial-support contributions, and an inspection-budget curve. Fourth, we
-confront the resulting ordering with the independent published evidence of damage
-and encroachment at Taxila, and report that confrontation whatever its outcome.
-
-\section{Research aim}
-The study identifies which Taxila components merit early field inspection, how
-firmly that recommendation is held, and which assumption a manager would have to
-resolve to sharpen it. It tests adverse spectral convergence against an analytic
-independence reference, rank stability across neighbourhoods, aggregation rules
-and uncertainty designs, the relative contribution of decision and spatial
-assumptions to rank uncertainty, the inspection budget required for a stated
-coverage probability, and the agreement between the resulting order and
-independently published component-level evidence. Mathematical definitions
-connect these experiments to reproducible component-level decisions.
+CHIP addresses that gap. A hierarchical landscape--terrain rule exposes indicator influence through alternative aggregation rules and factor ablations, with interval estimates on rank comparisons. Multiscale, shared-block, positional and joint experiments test whether priorities survive spatial and decision assumptions. Exact affine reconstruction converts the joint simulation into a balanced full-factorial design for rank acceptability, variance decomposition and an inspection-budget curve. Finally, we compare the ordering with independent published evidence of damage and encroachment at Taxila, regardless of agreement. The aim is to identify which components merit early inspection, how firmly that recommendation is held and which assumption would sharpen it.
