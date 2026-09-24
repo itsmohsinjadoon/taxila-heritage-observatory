@@ -1,61 +1,30 @@
 \section{Discussion}
 \subsection{What the framework measures, and what it does not}
-The comparison with independent evidence (Table~\ref{tab:external}) most
-constrains how this framework should be used. None of the five Taxila components
-with independently published damage or encroachment falls within the CHIP core
-tier, and the component with the clearest documented loss of designated area
-cannot be scored at all. Either the framework is failing at a task it was built for, or it is succeeding
-at a different task from the one the published evidence records, and the internal
-evidence supports the second reading. Removing MNDWI destroys the ordering while
-removing the vegetation or built/bare terms leaves it essentially unchanged, so
-the ordering is driven by moisture-related and terrain-hydrological evidence,
-whereas Khan et al. document fabric damage and seismic amplification
-\citep{khan2022taxila} and Butt et al. built-up clustering and core-zone
-reduction \citep{butt2025taxila}. These are different constructs and need not
-coincide.
+Independent evidence (Table~\ref{tab:external}) limits the framework's interpretation. None of five components with published damage or encroachment falls in CHIP's structural core tier, and Saraikala, with documented core-zone loss, cannot be scored. Ablation shows why: removing MNDWI disrupts the order, while removing vegetation or built/bare terms barely changes it. CHIP thus responds chiefly to moisture-related and terrain-hydrological evidence, whereas Khan et al. report fabric damage and seismic amplification \citep{khan2022taxila} and Butt et al. built-up clustering and core-zone reduction \citep{butt2025taxila}. These constructs need not coincide.
 
-CHIP is therefore a screening layer for moisture- and drainage-driven landscape
-pressure, to be combined with damage and encroachment records rather than
-substituted for them. A defensible Taxila programme would visit the four
-components the budget analysis identifies, and separately those already on record
-with independent authorities. Presenting a single environmental ranking as a
-conservation priority list would have directed inspection away from Bhir Mound
-and Saraikala; this analysis makes that failure mode visible before the ranking
-is used.
+CHIP should therefore screen moisture- and drainage-driven landscape pressure alongside damage and encroachment records. A Taxila programme would inspect the four components selected by the budget analysis and separately those documented by other authorities. Treating the environmental order as a general condition ranking would miss Bhir Mound and Saraikala.
 
 \subsection{From environmental indicators to inspection decisions}
-Within its construct, the framework's contribution is that a score travels with
-evidence about what would change it, in three ways a frequency summary cannot
-express.
 
 Confidence factors show that no component is a confident first priority: the
 largest is 0.42, so even at its most favourable weighting the best-supported
 component loses the lead in most spatial states.
 
-The variance decomposition converts sensitivity analysis into a work
-instruction. A rank dominated by the landscape weight cannot be settled by better
-data, and one dominated by spatial support cannot be settled by deliberation.
-Both groups are substantial at Taxila and individually identified, so a manager
-can act on the diagnosis: convene a weighting decision for Giri Mosque and tombs,
-Sirkap and Giri complex; commission better geometry for Kalawan, Khanpur Cave and
-Pippala; and resolve the terrain formulation for Bhallar.
+Variance decomposition identifies which assumption to resolve: better data cannot settle a weight-driven rank, and deliberation cannot settle a support-driven rank. At Taxila, weighting decisions matter most for Giri Mosque and tombs, Sirkap and Giri complex; better geometry matters for Kalawan, Khanpur Cave and Pippala; terrain formulation matters for Bhallar.
 
-The budget curve prices the recommendation. Three components cover a scenario's
-own three highest priorities in fewer than one case in five; a fourth more than
-doubles that. Reporting a core tier without its coverage probability invites an
-authority to treat three visits as sufficient when the framework's own
-uncertainty does not support it. The central weights add that the property
-separates into terrain-led and land-cover-led priorities, so which group is
-visited first follows from one declared parameter. Bhallar shows why these
-distributions must retain their definitions: seldom in the fixed structural top
-three (2/27) yet prominent after re-extraction, it holds both the highest
-first-rank acceptability (0.310) and the largest terrain-formulation variance
-share (29.3\%).
+Three visits cover a scenario's three highest priorities in fewer than one case in five; a fourth more than doubles coverage. A structural core tier alone could therefore understate the required inspection budget. Central weights distinguish terrain-led from land-cover-led priorities. Bhallar illustrates why the uncertainty designs must stay separate: it appeared in the fixed structural top three only 2/27 times, yet after re-extraction had the highest first-rank acceptability (0.310) and the largest terrain-formulation variance share (29.3\%).
 
-These results complement Taxila research combining ground and satellite evidence
-\citep{khan2022taxila}, wider heritage multi-hazard assessment
-\citep{guerriero2022derwent,romao2022risk,yang2023yongtai} and recent South Asian
-World Heritage assessment \citep{megarry2026landcover}.
+These findings extend Taxila and wider heritage risk studies \citep{khan2022taxila,guerriero2022derwent,romao2022risk,yang2023yongtai,megarry2026landcover}.
+
+\subsection{What the predictive experiments establish}
+The seven-family comparison shows useful geographic land-cover agreement while
+the controls reveal where complexity adds little: bands-only logistic regression
+remained competitive, four families exceeded the selected model on the outer
+stripe, and temperature scaling worsened probability quality. Read alongside
+Table~\ref{tab:external}, the experiment functions as a negative control---the
+spectral evidence supports land-cover discrimination, and such agreement says
+nothing about monument condition
+\citep{hijmans2012cv,meyer2018target,meyer2021aoa,ploton2020spatial}.
 
 \subsection{Limitations}
 The most consequential limitation is the exclusion of Saraikala. One of the
@@ -84,3 +53,4 @@ The next validation should use independently assessed component-condition
 observations across all inscribed components, record assessor agreement, and test
 whether environmental screening of this kind adds information beyond what damage
 and encroachment records already supply.
+
