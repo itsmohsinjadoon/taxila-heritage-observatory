@@ -1,43 +1,24 @@
-# Journal of Cultural Heritage submission readiness
+# Journal of Cultural Heritage submission readiness (24 September 2026)
 
-## Already available
+Use the [current Guide for Authors](https://www.sciencedirect.com/journal/journal-of-cultural-heritage/publish/guide-for-authors) and [manuscript template](https://www.sciencedirect.com/journal/journal-of-cultural-heritage/about/policies-and-guidelines/manuscript-template) for the final upload. This document tracks the current submission package; older files under [audit/](audit/) preserve the development history.
 
-- Modular LaTeX manuscript and separate Supplementary Information.
-- Verified bibliography with 91 cited records.
-- Fourteen main figures, four main tables, four supplementary figures, and seven supplementary tables.
-- Claim/evidence, equation/code, display/source, reference-verification, and result-disposition records.
-- Clean executable notebook and frozen evidence package.
-- Scale, threshold, weight, ablation, spatial-block, harmonisation, and proxy-model sensitivity analyses.
-- Reproducibility metadata, fixed seed, software environment, checksums, and validation reports.
+## Current manuscript
 
-## Scientific blockers identified on 2 September 2026
+- Original Research Article. The anonymized main manuscript compiles in Overleaf to 22 pages with 0 errors and 0 warnings. The separate title page compiles to 2 pages with 0 errors and 0 warnings.
+- Source-based main-article count: 4,837 words excluding tables and references; this count includes the abstract, captions and declarations. The Overleaf word counter fails on the nested source layout. The JCH Guide limits original articles to 5,000 words excluding tables and references; the template separately asks for a count including references.
+- Eight figures and two tables = ten display items. Nineteen figure panels are within the journal's 20-panel limit. Six keywords and five short highlights are present.
+- Figure 2 is the raster-inclusive CHIP evidence-chain diagram. The manuscript credits Esri imagery on Figure 1 and modified Copernicus Sentinel 2024 data on Figure 2. See [licences and attribution](../manuscript/LICENSES_AND_ATTRIBUTION.md).
+- The [separate title page](../manuscript/title_page.tex) states the verified institutional postal addresses, no specific grant funding, no competing interests, author contributions, repository availability and ChatGPT use for English wording only. Do not include the title page in the anonymized review manuscript or source archive.
+- [Data availability](../DATA_AVAILABILITY.md) describes the public repository, derived evidence, code and third-party terms. No release or DOI has been assigned; do not imply one exists.
 
-- The supplied 15-page main and 18-page supplementary PDFs state that every headline evidence-lock check passed, but the supplementary table resets three proxy targets to the newly observed values. The executed V8 notebook retaining the frozen targets passes 24 of 27 checks. Correct the statement or produce a preserved execution that verifies the original locks.
-- Retain the corrected fixed-six-class bootstrap implementation. The audited exact-version rerun now reproduces the PDFs' rounded MLP interval of 0.701–0.851; the original V8 code had changed the class denominator in resamples with an absent class.
-- Choose one authoritative proxy-model result generation and propagate it consistently through the abstract, tables, supplement, and validation text. Do not mix the frozen Linux, V8/Colab, and Windows rerun values.
-- Recover or recreate and version the exact editable source of the supplied submission PDFs. The repository's current 50/21-page journal-neutral LaTeX source is a different manuscript generation.
-- Repair or explicitly archive the standalone integrated experiment rerun boundary: its script refers to raw/derived inputs that are not present in its package.
+## Checks remaining for the authors and submission system
 
-See [`SCIENTIFIC_REPOSITORY_AUDIT_2026-09-02.md`](audit/SCIENTIFIC_REPOSITORY_AUDIT_2026-09-02.md) before revising the submission.
+1. Decide whether any person or institution should be added to acknowledgements for inventory access. The current title page thanks only public-data providers.
+2. Confirm that every author agrees with their CRediT role and the final competing-interest, originality, ethics/permit and AI-use declarations. Mohsin Khan has reported approval of the manuscript and author order by all three authors.
+3. Screen suggested reviewers Megarry, Tapete and Fatorić for collaboration, shared affiliation and other conflicts with any author before entering them in Editorial Manager.
+4. Check that the exact repository snapshot supports every reported result, that all displayed figures are legible at print size, and that source attribution and permissions are adequate. Check the GitHub Actions build on the final commit.
+5. Do not claim the historical proxy-model rerun met every frozen evidence lock. The [2 September scientific audit](audit/SCIENTIFIC_REPOSITORY_AUDIT_2026-09-02.md) recorded 24/27 passing checks and three MLP discrepancies. The main article must keep its proxy benchmark and landscape-priority claims within their stated limits. See [reproducibility](../REPRODUCIBILITY.md).
 
-## Required before final submission
+## Upload arrangement
 
-- Confirm the complete author list, order, affiliations, and corresponding author.
-- Finalise CRediT contributions for every author.
-- Confirm funding and grant numbers, or state that no specific funding supported the work.
-- Confirm competing interests.
-- Finalise acknowledgements and permissions/site-access statements.
-- Decide the final code and data licence.
-- Create permanent public repository/release identifiers only after the author approves public disclosure.
-- Adapt the journal-neutral LaTeX source to the current *Journal of Cultural Heritage* submission template and live author guidelines.
-- Re-check abstract length, keywords, highlights, graphical abstract, declarations, figure/table placement, and separate-file requirements against the live submission portal.
-- Perform a final language, reference, figure-resolution, and cross-file consistency audit after journal formatting.
-- Use the restored author-approved Figure 1, its Esri World Imagery attribution, and the manuscript text that distinguishes analytical neighbourhoods from legal or UNESCO buffers.
-- Retain a transparent generative-AI declaration consistent with the publisher's current policy; do not conceal code, figure-production, or language-editing assistance.
-
-## Scientific wording that must remain controlled
-
-- Use **relative field-inspection priority**, **landscape pressure**, and **terrain/hydrological susceptibility**.
-- Do not describe the composite as confirmed damage, absolute risk, deterioration probability, causal climate impact, or legal/UNESCO buffer mapping.
-- Keep climate–spectral findings exploratory unless new independent evidence supports stronger inference.
-- Describe the machine-learning benchmark as WorldCover-derived proxy agreement, not independent heritage-condition accuracy.
+Upload the separate title page, anonymized article PDF and editable LaTeX source, standalone figures, anonymized supplementary information, highlights, declaration-of-interest file and cover letter as requested by Editorial Manager. For the anonymized source archive, exclude the title page, draft/editor notes and superseded workflow-only figures. Include the raster-inclusive Figure 2 and inspect the archive for author-identifying metadata. Review the submission-generated PDF before final submission.
