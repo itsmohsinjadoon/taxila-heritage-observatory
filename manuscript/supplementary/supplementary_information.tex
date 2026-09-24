@@ -15,7 +15,7 @@
 \begin{center}\Large\bfseries Supplementary Information\end{center}
 \begin{center}Sensitivity-aware inspection prioritisation for archaeological landscapes: a reproducible Taxila observatory\end{center}
 \section{Supporting methods and complete experimental results}
-The main article presents the multitemporal maps, score baselines, ablations, support and joint-uncertainty experiments, and the climate comparison. This supplement provides full component inventories, numerical tables, configurations and secondary diagnostics. Spatial simulations and land-cover agreement have the distinct scopes specified in the main methods. The public archive additionally contains a weakly supervised land-cover classification benchmark carried out during development. It addresses a different question from the one posed here, supports no claim in this article, and is retained in the archive for completeness only.
+The main article presents the multitemporal maps, score baselines, ablations, support and joint-uncertainty experiments, climate comparison and seven-family land-cover analysis. This supplement provides full component inventories, numerical tables, configurations and secondary diagnostics. Spatial simulations and land-cover agreement have the distinct scopes specified in the main methods.
 
 \section{Component inventory and analytical support}
 Saraikala is preserved without invented geometry. Coordinates are inventory points, not property polygons. The same 17 mapped components are compared at all three radii.
@@ -60,10 +60,6 @@ Precipitation and evapotranspiration slopes are in mm year$^{-1}$, temperature s
 \caption{Annual climate series and robust trend fits for the regional four-cell average, 1991--2025. Intervals are residual-block replicates; inference is conditional on the weather product.}\label{fig:s-trends}
 \end{figure}
 
-\begin{figure}[tbp]\centering
-\includegraphics[width=\textwidth]{figure_s02_weather_product_comparison.pdf}
-\caption{Matched annual precipitation and temperature in the two gridded weather products. Dashed lines indicate equality. Product disagreement constrains environmental interpretation in the absence of station validation; this figure was carried in the main article of earlier manuscript generations.}\label{fig:s-weather}
-\end{figure}
 \section{Ranks and uncertainty scope}
 The following tables report component scores and two complementary sensitivity designs. The weight experiment perturbs the integrated domain architecture; the spatial experiment resamples 150 m spectral blocks with terrain fixed. They must not be described as the same probability distribution.
 
@@ -175,6 +171,138 @@ Component & Median rank & Low & High & Top-3 frequency \\
 139-003 & 16.0000 & 14.0000 & 17.0000 & 0.0000 \\
 \end{longtable}
 
+\section{Spatial benchmark protocol and complete diagnostics}
+The input SHA-256 is \texttt{3188160a144c5020e7d21bb50a195e07a686d941134ade35a57232fe41ddc1b1}. The outer development/buffer/test counts are 12,094/4,467/4,188. The minimum observed inter-sample distance is 2,040 m; the nominal grid-boundary separation is 2,010 m. The observed distance is used for reporting.
+
+Inner validation covers block rows 0--2, 3--6 and 7--9, with adjacent block rows excluded from training. One fold has no water-class training observations. The six-class scoring denominator remains fixed. All model families receive three configurations; there is no test-driven hyperparameter search. Random forest and extra trees use 300 trees; histogram boosting 250 iterations; XGBoost and CatBoost 300 iterations; MLP a (64,32) hidden layout and 400 iterations. Complete parameters and per-fold scores are in the executable notebook and JSON search record. Early stopping is disabled. All families share the same split and selection protocol.
+
+\begin{longtable}{p{.38\linewidth}rrr}
+\caption{Paired 2,000-block-bootstrap macro-F1 differences: primary random forest minus comparator. Intervals are unadjusted exploratory comparisons.} \\
+\toprule
+Comparator & F1 difference & CI low & CI high \\
+\midrule
+\endfirsthead
+\caption[]{Paired 2,000-block-bootstrap macro-F1 differences: primary random forest minus comparator. Intervals are unadjusted exploratory comparisons.} \\
+\toprule
+Comparator & F1 difference & CI low & CI high \\
+\midrule
+\endhead
+\midrule
+\multicolumn{4}{r}{Continued on next page} \\
+\midrule
+\endfoot
+\bottomrule
+\endlastfoot
+Logistic & 0.0145 & 0.0028 & 0.0283 \\
+ExtraTrees & -0.0049 & -0.0099 & 0.0014 \\
+HistGradientBoosting & -0.0248 & -0.0663 & -0.0117 \\
+MLP & -0.0281 & -0.1063 & 0.0504 \\
+XGBoost & -0.0054 & -0.0587 & 0.0094 \\
+CatBoost & 0.0290 & -0.0051 & 0.0990 \\
+\end{longtable}
+
+\begin{longtable}{lrrrr}
+\caption{Development-only temperature calibration evaluated on the outer stripe.} \\
+\toprule
+Variant & Temperature & Log loss & Brier & ECE \\
+\midrule
+\endfirsthead
+\caption[]{Development-only temperature calibration evaluated on the outer stripe.} \\
+\toprule
+Variant & Temperature & Log loss & Brier & ECE \\
+\midrule
+\endhead
+\midrule
+\multicolumn{5}{r}{Continued on next page} \\
+\midrule
+\endfoot
+\bottomrule
+\endlastfoot
+raw & 1.0000 & 0.4977 & 0.2689 & 0.0143 \\
+OOF-temperature & 1.6583 & 0.5735 & 0.2999 & 0.1357 \\
+\end{longtable}
+
+\begin{longtable}{p{.38\linewidth}rrrr}
+\caption{Fixed-capacity diagnostic controls; not alternative model-selection candidates.} \\
+\toprule
+Control & Macro-F1 & Agreement & Log loss & ECE \\
+\midrule
+\endfirsthead
+\caption[]{Fixed-capacity diagnostic controls; not alternative model-selection candidates.} \\
+\toprule
+Control & Macro-F1 & Agreement & Log loss & ECE \\
+\midrule
+\endhead
+\midrule
+\multicolumn{5}{r}{Continued on next page} \\
+\midrule
+\endfoot
+\bottomrule
+\endlastfoot
+bands-only & 0.8245 & 0.7954 & 0.5619 & 0.0513 \\
+indices-only & 0.6706 & 0.6566 & 0.8156 & 0.0337 \\
+location-only & 0.1404 & 0.2290 & 1.9122 & 0.1467 \\
+shuffled-development-labels & 0.0699 & 0.1538 & 1.7117 & 0.0627 \\
+class-prior & 0.0495 & 0.1743 & 1.7062 & 0.0410 \\
+\end{longtable}
+
+\begin{longtable}{lrrrr}
+\caption{Three-seed sensitivity of the development-selected random forest.} \\
+\toprule
+Seed & Macro-F1 & Agreement & Log loss & ECE \\
+\midrule
+\endfirsthead
+\caption[]{Three-seed sensitivity of the development-selected random forest.} \\
+\toprule
+Seed & Macro-F1 & Agreement & Log loss & ECE \\
+\midrule
+\endhead
+\midrule
+\multicolumn{5}{r}{Continued on next page} \\
+\midrule
+\endfoot
+\bottomrule
+\endlastfoot
+311.0000 & 0.8214 & 0.8128 & 0.4977 & 0.0143 \\
+733.0000 & 0.8214 & 0.8128 & 0.5002 & 0.0142 \\
+2026.0000 & 0.8205 & 0.8116 & 0.4987 & 0.0133 \\
+\end{longtable}
+
+\section{Land-cover benchmark protocol (moved from the main Methods)}
+\subsection{Buffered model selection and probability diagnostics}
+The weakly supervised benchmark contained 20,749 class-stratified samples, six reflectance bands and four indices. Its outer stripe contained 4,188 samples in 20 blocks; 4,467 samples in adjacent block columns were excluded, leaving 12,094 development samples in 60 blocks. Three contiguous inner validation bands each excluded an adjacent block row from training. This design targets geographical transfer \citep{roberts2017cv,meyer2018target,valavi2019blockcv}, with class-stratified agreement interpreted separately from population-area map accuracy \citep{olofsson2014accuracy,stehman2019accuracy}. Spatially blocked evaluation and its limitations are both documented \citep{ploton2020spatial,wadoux2021spatial}; we report the blocked result and the controls rather than treating either convention as settled.
+
+Seven families---logistic regression, random forest, extra trees, histogram gradient boosting, MLP, XGBoost and CatBoost---each received three predeclared configurations \citep{breiman2001rf,pedregosa2011sklearn,chen2016xgboost,prokhorenkova2018catboost}. The resulting 63 inner fits selected family $m$ and configuration $\eta$ through
+\begin{equation}\label{eq:selection}
+\begin{aligned}
+(\widehat m,\widehat\eta)&=\arg\max_{m,\eta}\frac13\sum_{v=1}^{3}
+ F_{1,\mathrm{macro}}(y_v,\widehat f_{m,\eta}^{(-v)}(X_v)),\\
+F_{1,\mathrm{macro}}&=\frac16\sum_{c=1}^{6}
+ \frac{2\mathrm{TP}_c}{2\mathrm{TP}_c+\mathrm{FP}_c+\mathrm{FN}_c}.
+\end{aligned}
+\end{equation}
+Undefined class terms receive zero. Water was absent from one inner training fold; the six-class denominator was retained and unseen-class probability set to zero where necessary. Standardisation was fitted within training folds and early stopping disabled. All families were refitted on development data before outer prediction; selection used only inner scores.
+
+Alongside macro-F1, fixed-six-class mean recall and overall agreement, probability quality used
+\begin{equation}\label{eq:probability}
+\mathcal L=-\frac1n\sum_{j=1}^n\log p_{j,y_j},\qquad
+\mathrm{BS}=\frac1n\sum_{j=1}^n\sum_{c=1}^{6}(p_{jc}-\mathbf1[y_j=c])^2.
+\end{equation}
+Log loss and the unnormalised multiclass Brier score assess probabilistic predictions \citep{gneiting2007scoring}. Ten equal-width confidence bins define top-label calibration error as $\sum_b(n_b/n)|\mathrm{accuracy}_b-\mathrm{confidence}_b|$. A scalar $\tau\in[0.25,4]$ minimised development out-of-fold log loss, using
+\begin{equation}\label{eq:temperature}
+p_{jc}^{(\tau)}=\frac{\exp[\log(\max\{p_{jc},10^{-12}\})/\tau]}
+ {\sum_{h=1}^{6}\exp[\log(\max\{p_{jh},10^{-12}\})/\tau]}.
+\end{equation}
+The transform follows temperature scaling \citep{guo2017calibration}; its transfer was tested on outer probabilities. Two thousand shared test-block resamples estimated paired macro-F1 differences. Bands-only, indices-only, location-only, shuffled-label and class-prior controls tested information content; three seeds assessed refit sensitivity.
+
+The outer stripe had been examined previously, making this a retrospective comparison. WorldCover consensus labels also differ temporally from E2019 predictors. These experiments therefore evaluate land-cover proxy agreement without establishing independent monument-condition accuracy.
+
+
+\begin{figure}[tbp]\centering
+\includegraphics[width=\textwidth]{figure_s02_weather_product_comparison.pdf}
+\caption{Matched annual precipitation and temperature in the two gridded weather products. Dashed lines indicate equality. Product disagreement constrains environmental interpretation in the absence of station validation; this figure was carried in the main article of earlier manuscript generations.}\label{fig:s-weather}
+\end{figure}
+
 \section{Climate trend and forcing definitions (moved from the main Methods)}
 \subsection{Climate trends and acquisition-matched forcing}
 The regional daily series averages four unique weather cells equally before annual aggregation. For annual values $Y_t$, the Theil--Sen estimator is
@@ -191,7 +319,11 @@ For acquisition dates $a\in\mathcal A_e$, daily precipitation $W(t)$ and anteced
 Temperature uses window means. Product comparisons match dates and periods. Five composite epochs provide only five temporal replicates for exploratory weather--spectral associations; no weather field was downscaled to 30 m.
 
 
+\input{../tables/supplementary/table_s10_extension_models}
+
 \subsection{Superseded proxy-model selection protocol}
+An earlier generation of this study used a different inner cross-validation protocol for the land-cover benchmark, under which the multilayer perceptron was development-selected (inner macro-F1 0.871) and reported an outer macro-F1 of 0.831 on the identical 12,094/4,467/4,188 split. That protocol was revised to the three contiguous inner validation bands described above, each excluding an adjacent block row from training, because the earlier folds did not exclude adjacent blocks and therefore understated spatial leakage. Under the revised protocol the development-selected model is \ExtensionModel{} with inner macro-F1 \ExtensionCV{}. The superseded table is retained in the evidence archive under a \texttt{SUPERSEDED\_} filename prefix so that the change is auditable; all results reported in this article use the revised protocol.
+
 \section{Uncertainty propagation designs (moved from the main Methods)}
 \subsection{Spatial, positional and joint uncertainty propagation}
 At each block size (90, 150, 300 m), 2,000 spatial draws used shared exponential weights. If $m_{ibk}$ is the median of factor $k$ in block $b$ intersecting component $i$, and $n_{ib}$ its valid-cell count,
@@ -241,4 +373,6 @@ Source manifests provide retained scene identifiers, acquisition windows and pre
 \begin{figure}[p]\centering\includegraphics[width=\textwidth,height=.77\textheight,keepaspectratio]{figure_s07_epoch_specific_weather_forcing.pdf}\caption{Weather matched to the retained Landsat acquisition windows; contextual rather than causal.}\end{figure}
 \begin{figure}[p]\centering\includegraphics[width=\textwidth,height=.77\textheight,keepaspectratio]{figure_s08_terrain_hydrological_susceptibility.pdf}\caption{Elevation-derived terrain and drainage proxies. These do not constitute a hydraulic model.}\end{figure}
 \begin{figure}[p]\centering\includegraphics[width=\textwidth,height=.77\textheight,keepaspectratio]{figure_s09_indicator_redundancy.pdf}\caption{Dependence among component-level indicator ranks.}\end{figure}
+\bibliographystyle{unsrtnat}
+\bibliography{01_latex_project/references}
 \end{document}
