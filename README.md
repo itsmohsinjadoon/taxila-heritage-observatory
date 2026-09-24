@@ -4,9 +4,9 @@ A reproducible geospatial evidence framework for **climate-contextual
 landscape-pressure screening and sensitivity-aware field-inspection
 prioritisation across the Taxila World Heritage property, Pakistan**.
 
-This repository consolidates the executable analysis, frozen evidence package, experiments, results, publication figures, source-traceability records, and LaTeX manuscript prepared for further revision toward submission to the *Journal of Cultural Heritage*.
+This repository consolidates the executable analysis, frozen evidence package, experiments, results, publication figures, source-traceability records, and LaTeX manuscript prepared for submission to the *Journal of Cultural Heritage*.
 
-> **Research status (6 September 2026):** revised manuscript and a seven-family buffered spatial experiment are available. The new notebook was executed in the author's Google Colab and rerun on Windows; the selected random forest has macro-F1 0.821433 in both. The corrected full historical reproduction completed with 24/27 frozen locks, preserving three MLP discrepancies. The study supports relative inspection prioritisation, not independently validated monument-condition prediction. Author declarations and reviewer-access arrangements remain pending. See [current audit](docs/audit/RESEARCH_REVISION_2026-09-06.md).
+> **Research status (24 September 2026):** the Journal of Cultural Heritage article and separate title page have been revised. The main Overleaf article compiles to 22 pages with 8 figures and 2 tables; the title page records author contributions, no specific grant funding, no competing interests, and ChatGPT use for English wording only. The study supports relative inspection prioritisation, not independently validated monument-condition prediction. Historical reproducibility findings remain documented in the [6 September audit](docs/audit/RESEARCH_REVISION_2026-09-06.md).
 
 ![Taxila study area, mapped UNESCO components, and 500 m analytical neighbourhoods](docs/assets/figure_01_taxila_study_area_preview.png)
 
@@ -14,7 +14,7 @@ This repository consolidates the executable analysis, frozen evidence package, e
 
 ## Current manuscript emphasis
 
-The main article presents 14 numbered equations, 44 references, seven figures and three tables. A comprehensive framework and a three-panel scale/weight figure expose the mathematical and experimental design. The new exact decision-weight analysis reports leadership intervals and validates them against the recorded Monte Carlo results. Internal review history remains in repository documentation. See [mathematical revision](docs/audit/MATHEMATICAL_REVISION_2026-09-06.md).
+The current JCH article contains 8 figures and 2 tables. Figure 2 is the raster-inclusive CHIP evidence-chain diagram; the exact decision-weight analysis reports leadership intervals and checks them against recorded Monte Carlo results. Earlier mathematical development is preserved in the [6 September audit](docs/audit/MATHEMATICAL_REVISION_2026-09-06.md).
 
 ## What the study does
 
@@ -130,9 +130,9 @@ These values are tied to the frozen evidence and validation records; they should
 
 ## Manuscript and submission status
 
-The current source compiles to a 50-page journal-neutral manuscript plus 21-page Supplementary Information, with 91 verified and cited references, 14 main figures, four main tables, four supplementary figures, and seven supplementary tables. It is a strong scientific baseline for the planned *Journal of Cultural Heritage* revision; it is not yet the final publisher-formatted submission. The preserved checkpoint QA report recorded an earlier 48-page count; the current build verification is documented in [`REPOSITORY_VERIFICATION.md`](docs/audit/REPOSITORY_VERIFICATION.md).
+The current anonymized JCH article compiles in Overleaf to 22 pages with 0 errors and 0 warnings. Its source-based count is 4,837 words excluding tables and references. It contains 8 figures and 2 tables; the separate title page compiles to 2 pages with 0 errors and 0 warnings. Historical page and figure counts in [repository verification](docs/audit/REPOSITORY_VERIFICATION.md) describe an earlier manuscript version.
 
-Before submission, confirm the complete author list and affiliations, CRediT roles, funding, competing interests, acknowledgements, permissions, and permanent data/code identifiers. The complete checklist is in [`JCH_SUBMISSION_READINESS.md`](docs/JCH_SUBMISSION_READINESS.md).
+Before submission, check reviewer conflicts, the final acknowledgements, figure-source attribution, and the exact repository snapshot used for the reported results. No repository release or DOI has been assigned. The separate [title page](manuscript/title_page.tex) contains author and declaration details; it must be excluded from the anonymized review manuscript.
 
 ## Data and licensing
 
